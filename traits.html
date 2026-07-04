@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traits - Cybernetic Strategy Galaxy Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="universe.css" />
+  <style>
+    .traits-page { padding: 10rem 0 8rem; min-height: 100vh; position: relative; z-index: 1; }
+
+    /* Two-column layout: sidebar + main */
+    .traits-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .traits-sidebar {
+      position: sticky; top: 80px;
+      background: var(--bg-card); border: 1px solid var(--border-dim);
+      border-radius: 5px; overflow: hidden;
+    }
+    .traits-sidebar__header {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--border-dim);
+      font-family: var(--font-mono); font-size: 0.9rem;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-dim);
+    }
+    .traits-sidebar__list { list-style: none; max-height: 75vh; overflow-y: auto; }
+    .traits-sidebar__item {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 1.2rem 2rem; cursor: pointer;
+      border-bottom: 1px solid var(--border-dim);
+      transition: background 0.15s;
+    }
+    .traits-sidebar__item:hover, .traits-sidebar__item.active {
+      background: var(--bg-hover);
+    }
+    .traits-sidebar__item.active { border-left: 3px solid var(--trait-active-color, var(--gold)); }
+    .traits-sidebar__icon { font-size: 1.8rem; }
+    .traits-sidebar__name {
+      font-family: var(--font-display); font-size: 1.2rem;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-bright);
+      flex: 1;
+    }
+    .traits-sidebar__type {
+      font-family: var(--font-mono); font-size: 0.8rem;
+      letter-spacing: 0.15em; text-transform: uppercase;
+    }
+    .traits-sidebar__section {
+      padding: 0.8rem 2rem; background: rgba(0,0,0,0.3);
+      font-family: var(--font-mono); font-size: 0.85rem;
+      letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-dim);
+    }
+
+    /* Main trait display */
+    .trait-detail {
+      background: var(--bg-card); border: 1px solid var(--border-dim);
+      border-radius: 5px; overflow: hidden;
+    }
+    .trait-detail__hero {
+      padding: 4rem; border-bottom: 1px solid var(--border-dim);
+      position: relative; overflow: hidden;
+    }
+    .trait-detail__hero-bg {
+      position: absolute; inset: 0; opacity: 0.06;
+    }
+    .trait-detail__hero-content { position: relative; z-index: 1; }
+    .trait-detail__icon-row {
+      display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;
+    }
+    .trait-detail__icon { font-size: 6rem; line-height: 1; }
+    .trait-detail__title-group {}
+    .trait-detail__type-tag {
+      font-family: var(--font-mono); font-size: 1rem; letter-spacing: 0.3em;
+      text-transform: uppercase; margin-bottom: 0.8rem; display: block;
+    }
+    .trait-detail__name {
+      font-family: var(--font-display); font-size: clamp(3rem, 4vw, 5rem);
+      font-weight: 400; color: var(--text-bright); letter-spacing: 0.1em;
+      text-transform: uppercase; margin-bottom: 0.3rem;
+    }
+    .trait-detail__tagline {
+      font-size: 2rem; color: var(--text-mid); font-style: italic;
+    }
+    .trait-detail__body { padding: 4rem; }
+    .trait-detail__desc {
+      font-size: 1.9rem; color: var(--text-mid); font-style: italic;
+      line-height: 1.8; margin-bottom: 3.5rem;
+      padding-left: 2.5rem; border-left: 2px solid var(--current-trait-color, var(--gold));
+    }
+    .trait-detail__section-label {
+      font-family: var(--font-mono); font-size: 1rem; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--text-dim); margin-bottom: 2rem;
+      padding-bottom: 0.8rem; border-bottom: 1px solid var(--border-dim);
+    }
+    .trait-detail__tiers { margin-bottom: 4rem; }
+    .trait-detail__tier {
+      display: grid; grid-template-columns: 80px 1fr;
+      gap: 2rem; align-items: center; padding: 1.8rem 0;
+      border-bottom: 1px solid var(--border-dim);
+    }
+    .trait-detail__tier:last-child { border-bottom: none; }
+    .trait-detail__tier-num {
+      font-family: var(--font-display); font-size: 3.5rem; font-weight: 400;
+      text-align: center; line-height: 1;
+    }
+    .trait-detail__tier-label {
+      font-family: var(--font-mono); font-size: 0.9rem; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.4rem;
+    }
+    .trait-detail__tier-effect {
+      font-size: 1.7rem; color: var(--text-bright); line-height: 1.6;
+    }
+
+    /* Unit roster in trait */
+    .trait-unit-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 1rem;
+    }
+    .trait-unit-card {
+      background: var(--bg-panel); border: 1px solid var(--border-dim);
+      border-radius: 4px; overflow: hidden; cursor: pointer;
+      transition: all 0.15s;
+    }
+    .trait-unit-card:hover { border-color: var(--current-trait-color, var(--gold)); transform: translateY(-2px); }
+    .trait-unit-card__portrait {
+      height: 80px; display: flex; align-items: center; justify-content: center;
+      font-size: 3.5rem; position: relative;
+    }
+    .trait-unit-card__info { padding: 0.8rem 1rem; border-top: 1px solid var(--border-dim); }
+    .trait-unit-card__name {
+      font-family: var(--font-display); font-size: 1rem; letter-spacing: 0.05em;
+      color: var(--text-bright); text-transform: uppercase;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .trait-unit-card__cost {
+      font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-dim);
+      display: flex; align-items: center; gap: 0.5rem; margin-top: 0.2rem;
+    }
+
+    @media (max-width: 900px) {
+      .traits-layout { grid-template-columns: 1fr; }
+      .traits-sidebar { position: static; }
+      .traits-sidebar__list { max-height: 200px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient">
+    <div class="ambient__grid"></div>
+    <div class="ambient__glow ambient__glow--purple"></div>
+    <div class="ambient__glow ambient__glow--blue"></div>
+    <div class="ambient__scanlines"></div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__brand-mark" aria-hidden="true"></span>
+        <span class="nav__brand-text">Cybernetic Strategy</span>
+        <span class="nav__brand-sub">Universe</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="units.html" class="nav__link">Units</a></li>
+        <li><a href="traits.html" class="nav__link nav__link--active">Traits</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="traits-page">
+    <div class="container">
+      <div style="margin-bottom:5rem;text-align:center">
+        <span class="section-tag">Factions &amp; Classes</span>
+        <h1 class="section-title">Traits</h1>
+        <p class="section-desc">Every Origin and Class that defines the Cybernetic Universe.</p>
+      </div>
+      <div class="traits-layout">
+        <aside class="traits-sidebar">
+          <div class="traits-sidebar__header">Trait Index</div>
+          <ul class="traits-sidebar__list" id="traitSidebar"></ul>
+        </aside>
+        <div class="trait-detail" id="traitDetail"></div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal__close" id="modalClose">Close</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="site-data-patch.js"></script>
+  <script src="universe.js"></script>
+  <script>
+
+    function getInitialMark(text, fallback = "CS") {
+      const source = String(text || fallback).replace(/[^a-zA-Z0-9 ]/g, " ").trim();
+      if (!source) return fallback;
+      const parts = source.split(/\s+/).filter(Boolean);
+      if (parts.length >= 2) return (parts[0][0] + parts[1][0]).toUpperCase();
+      return source.slice(0, 2).toUpperCase();
+    }
+    function traitMark(traitName) { return getInitialMark(traitName, "TR"); }
+    function unitMark(unit) { return getInitialMark(unit && unit.name, "UN"); }
+
+    let activeTrait = null;
+
+    function buildSidebar() {
+      const el = document.getElementById("traitSidebar");
+      const origins = CS_DATA.traits.filter(t => t.type === "origin");
+      const classes = CS_DATA.traits.filter(t => t.type === "class");
+
+      const makeItem = trait => `
+        <li class="traits-sidebar__item" data-id="${trait.id}"
+            style="--trait-active-color:${trait.color}"
+            onclick="showTrait('${trait.id}')">
+          <span class="traits-sidebar__icon">${traitMark(trait.name)}</span>
+          <span class="traits-sidebar__name">${trait.name}</span>
+          <span class="traits-sidebar__type" style="color:${trait.color}">
+            ${trait.type === "origin" ? "O" : "C"}
+          </span>
+        </li>
+      `;
+
+      el.innerHTML = `
+        <div class="traits-sidebar__section">Origins (${origins.length})</div>
+        ${origins.map(makeItem).join("")}
+        <div class="traits-sidebar__section">Classes (${classes.length})</div>
+        ${classes.map(makeItem).join("")}
+      `;
+    }
+
+    function showTrait(id) {
+      const trait = CS_DATA.traits.find(t => t.id === id);
+      if (!trait) return;
+      activeTrait = id;
+
+      // Update sidebar active state
+      document.querySelectorAll(".traits-sidebar__item").forEach(item => {
+        item.classList.toggle("active", item.dataset.id === id);
+      });
+
+      // Get units for this trait
+      const traitUnits = (trait.units || []).map(name =>
+        CS_DATA.units.find(u => u.name === name)
+      ).filter(Boolean);
+
+      const tiersHTML = trait.tiers.map(tier => {
+        const pct = Math.round((tier.count / Math.max(...trait.tiers.map(t => t.count))) * 100);
+        return `
+          <div class="trait-detail__tier">
+            <div class="trait-detail__tier-num" style="color:${trait.color}">${tier.count}</div>
+            <div>
+              <div class="trait-detail__tier-label">Tier ${tier.count}</div>
+              <div class="trait-detail__tier-effect">${tier.effect}</div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      const unitsHTML = traitUnits.length > 0 ? `
+        <div class="trait-unit-grid">
+          ${traitUnits.map(unit => `
+            <div class="trait-unit-card" onclick="openUnitModal('${unit.id}')"
+                 style="--current-trait-color:${trait.color}">
+              <div class="trait-unit-card__portrait"
+                   style="background:linear-gradient(160deg,${COST_COLORS[unit.cost]}22,#0a0c1499)">
+                ${unitMark(unit)}
+              </div>
+              <div class="trait-unit-card__info">
+                <div class="trait-unit-card__name">${unit.name}</div>
+                <div class="trait-unit-card__cost">
+                  <span class="cost-pip cost-${unit.cost}" style="width:16px;height:16px;font-size:1rem">${unit.cost}</span>
+                  ${unit.role}
+                </div>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      ` : `<p style="color:var(--text-dim);font-style:italic">No linked units listed yet.</p>`;
+
+      document.getElementById("traitDetail").innerHTML = `
+        <div class="trait-detail__hero" style="--current-trait-color:${trait.color}">
+          <div class="trait-detail__hero-bg"
+               style="background:radial-gradient(ellipse at top right,${trait.color},transparent 70%)"></div>
+          <div class="trait-detail__hero-content">
+            <div class="trait-detail__icon-row">
+              <span class="trait-detail__icon">${traitMark(trait.name)}</span>
+              <div class="trait-detail__title-group">
+                <span class="trait-detail__type-tag" style="color:${trait.color}">
+                  ${trait.type === "origin" ? "Origin" : "Class"}
+                </span>
+                <h2 class="trait-detail__name">${trait.name}</h2>
+                <p class="trait-detail__tagline">${trait.tagline}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trait-detail__body" style="--current-trait-color:${trait.color}">
+          <blockquote class="trait-detail__desc">${trait.description}</blockquote>
+
+          <p class="trait-detail__section-label">Trait Tiers</p>
+          <div class="trait-detail__tiers">${tiersHTML}</div>
+
+          ${traitUnits.length > 0 ? `
+            <p class="trait-detail__section-label">
+              Linked Units - ${traitUnits.length} unit${traitUnits.length !== 1 ? "s" : ""}
+            </p>
+            ${unitsHTML}
+          ` : ""}
+        </div>
+      `;
+
+      // Scroll detail into view on mobile
+      if (window.innerWidth < 900) {
+        document.getElementById("traitDetail").scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    const COST_COLORS = { 1:"#888", 2:"#3a9940", 3:"#3a60c0", 4:"#8830c0", 5:"#c9a84c" };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      buildSidebar();
+      // Show first trait by default
+      if (CS_DATA.traits.length > 0) showTrait(CS_DATA.traits[0].id);
+    });
+  </script>
+</body>
+</html>

@@ -1,166 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <title>Dean Satine | Systems & Gameplay Designer</title>
-
-  <meta name="description" content="Systems & Gameplay Designer">
-  <meta name="keywords" content="systems design, character design, game design, UX design, interactive systems" />
-  <link rel="stylesheet" href="index.css" />
+  <title>Cybernetic Strategy - Galaxy Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="universe.css" />
 </head>
-
 <body>
 
-  <header class="header" role="banner" id="top">
+  <!-- AMBIENT BACKGROUND -->
+  <div class="ambient">
+    <div class="ambient__grid"></div>
+    <div class="ambient__glow ambient__glow--purple"></div>
+    <div class="ambient__glow ambient__glow--blue"></div>
+    <div class="ambient__glow ambient__glow--gold"></div>
+    <div class="ambient__scanlines"></div>
+  </div>
 
-    <nav class="nav nav__panel" role="navigation">
-      <ul class="nav__items">
-        <li class="nav__item"><a href="#clients" class="nav__link">Collaborations</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__brand-mark" aria-hidden="true"></span>
+        <span class="nav__brand-text">Cybernetic Strategy</span>
+        <span class="nav__brand-sub">Universe</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="units.html" class="nav__link">Units</a></li>
+        <li><a href="traits.html" class="nav__link">Traits</a></li>
+        <li><a href="stories.html" class="nav__link">Stories</a></li>
       </ul>
-      <div class="nav__socials">
-        <a href="https://x.com/deansatine" target="_blank">
-          <img src="./images/twitter.svg" alt="Twitter" class="nav__social-icon">
-        </a>
-        <a href="https://www.linkedin.com/in/dean-satine-881949300/" target="_blank">
-          <img src="./images/linkedin.svg" alt="LinkedIn" class="nav__social-icon">
-        </a>
-        <a href="https://www.instagram.com/dens.ig/" target="_blank">
-          <img src="./images/instagram.png" alt="Instagram" class="nav__social-icon">
-        </a>
-        <a href="https://www.youtube.com/@DeanSatine" target="_blank">
-          <img src="./images/Youtube.png" alt="YouTube" class="nav__social-icon">
-        </a>
-      </div>
-    </nav>
-
-    <div class="header__hero row">
-      <div class="header__identity">
-        <img src="./images/DeanSatineLogo.png" alt="Dean Satine Logo" class="header__logo" />
-        <h1 class="heading-primary">Dean Satine</h1>
-        <p class="header__subtitle">Systems &amp; Gameplay Designer</p>
-      </div>
-
-      <div class="header__featured" id="work">
-        <h2 class="header__featured-label">Featured Projects</h2>
-        <div class="featured-projects__grid">
-
-          <!-- KUNAI STRIKE -->
-          <div class="featured-card-wrap">
-            <a href="kunaistrike.html" class="featured-card">
-              <div class="featured-card__image-wrap">
-                <img src="./images/KunaiStrikeIcon.png" alt="Kunai Strike" />
-                <div class="featured-card__overlay"><span>View Project &rarr;</span></div>
-              </div>
-              <div class="featured-card__info">
-                <h3>Kunai Strike</h3>
-                <p>Become the Master Ninja! Slow time, throw a single bouncing kunai, and cut down all ninjas!</p>
-              </div>
-            </a>
-            <p class="featured-card__tags">Game Design &bull; Programming &bull; Unity</p>
-          </div>
-
-          <!-- CYBERNETIC STRATEGY (centre) -->
-          <div class="featured-card-wrap">
-            <a href="cybernetic-strategy.html" class="featured-card">
-              <div class="featured-card__image-wrap">
-                <img src="./images/project-1.png" alt="Cybernetic Strategy" />
-                <div class="featured-card__overlay"><span>View Project &rarr;</span></div>
-              </div>
-              <div class="featured-card__info">
-                <h3>Cybernetic Strategy</h3>
-                <p>Auto Battler prototype demonstrating Teamfight Tactics' Unit &amp; Trait Design.</p>
-                <span class="featured-card__badge">⚡ In Progress</span>
-              </div>
-            </a>
-            <p class="featured-card__tags">Game Creator &bull; Game Design &bull; Programming &bull; Unity</p>
-          </div>
-
-          <!-- TRISOUL CHAMBER -->
-          <div class="featured-card-wrap">
-            <a href="trisoul-tower.html" class="featured-card">
-              <div class="featured-card__image-wrap">
-                <img src="./images/trisoul-tower.png" alt="Trisoul Chamber" />
-                <div class="featured-card__overlay"><span>View Project &rarr;</span></div>
-              </div>
-              <div class="featured-card__info">
-                <h3>Trisoul Chamber</h3>
-                <p>Action packed hack &amp; slash using the power of the elemental swords to take down the evil boss!</p>
-              </div>
-            </a>
-            <p class="featured-card__tags">Combat Design &bull; Enemy Design &bull; Programming &bull; Unreal Engine 5 &bull; Blueprint</p>
-          </div>
-
-        </div>
-
-        <div class="view-all-projects-container">
-          <a href="projects.html" class="btn btn--pink">View All Projects</a>
-        </div>
+      <div class="nav__search-wrap">
+        <span class="nav__search-icon" aria-hidden="true"></span>
+        <input type="text" class="nav__search" placeholder="Search units, traits..." id="globalSearch" />
       </div>
     </div>
+  </nav>
 
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__particles" id="particles"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Tactical Galaxy Archive</p>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Cybernetic</span>
+        <span class="hero__title-line hero__title-line--accent">Strategy</span>
+      </h1>
+      <p class="hero__desc">
+        The Dominion archive for Cybernetic Strategy: regions, factions, character biographies, and the conflicts that shaped the roster.
+      </p>
+      <div class="hero__cta-row">
+        <a href="units.html" class="btn btn--primary">Open Roster</a>
+        <a href="stories.html" class="btn btn--ghost">Open Archives</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <span class="hero__scroll-arrow" aria-hidden="true"></span>
+    </div>
   </header>
 
-  <main role="main">
+  <main>
 
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Experience</h2>
-        <div class="client__logos">
-          <img src="./images/FullCircleCS.png" class="client__logo" alt="Full Circle CS" />
-          <img src="./images/OntarioTech.png" class="client__logo" alt="Ontario Tech University" />
-          <img src="./images/GDSA.png" class="client__logo" alt="GDSA" />
+    <!-- FEATURED UNIT SPOTLIGHT -->
+    <section class="section spotlight-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured</span>
+          <h2 class="section-title">Unit Spotlight</h2>
+        </div>
+        <div class="spotlight" id="spotlight">
+          <!-- Populated by JS -->
+        </div>
+        <div class="spotlight-nav">
+          <button class="spotlight-nav__btn" id="spotlightPrev">Prev</button>
+          <div class="spotlight-nav__dots" id="spotlightDots"></div>
+          <button class="spotlight-nav__btn" id="spotlightNext">Next</button>
         </div>
       </div>
     </section>
 
-    <section class="about-contact" id="about">
-      <div class="row">
-        <div class="about-contact__row">
-          <div class="about-contact__about">
-            <h2>About Me</h2>
-            <div class="about__content">
-              <div class="about__text">
-                <p>
-                  Hey! I'm a systems and character designer who's incredibly passionate about creation with constraints.
-                  I love to make cool designs with as small as a scope as possible. I love socializing and working with others,
-                  and there's so much for me to learn!
-                </p>
-                <p>
-                  I’m incredibly passionate about uplifting and encouraging others, and my performance in the Game Development Student Association (GDSA) has been reflective of that for the last 3 years!
-                </p>
-                <p>
-                  I am currently attending Ontario Tech University's Game Development & Interactive Program as a part of
-                  the Game Development Student Association! I hope you're liking what you see!
-                </p>
-                <a href="Dean Satine Resume.pdf" class="btn" target="_blank">View Resume</a>
-              </div>
-              <div class="about__photo-container">
-                <img class="about__photo" src="./images/dean-satine.webp" alt="Dean Satine portrait" />
-              </div>
-            </div>
-          </div>
+    <!-- REGIONS -->
+    <section class="section regions-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">World</span>
+          <h2 class="section-title">The Dominion</h2>
+          <p class="section-desc">A continent of cybernetic cities, old magic, underground markets, quiet suburbs, and a floating military state.</p>
+        </div>
+        <div class="regions-grid" id="regionsGrid"></div>
+      </div>
+    </section>
 
-          <div class="about-contact__contact" id="contact">
-            <h2>Contact Me!</h2>
-            <div class="contact__info">
-              <p>
-                Interested in my work or have any questions? I would love to talk about anything, anytime!
-                Please reach out to me via email, or any of my social media!
-              </p>
-              <a href="mailto:satinedean@gmail.com" class="btn">satinedean@gmail.com</a>
-            </div>
-          </div>
+    <!-- FACTIONS -->
+    <section class="section factions-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Organizations</span>
+          <h2 class="section-title">Factions</h2>
+          <p class="section-desc">Peacekeeping cyber-series, assassin clans, performance troupes, military councils, and spectacle industries shape the Dominion.</p>
+        </div>
+        <div class="factions-grid" id="factionsGrid"></div>
+      </div>
+    </section>
 
+    <!-- TRAIT BROWSER -->
+    <section class="section traits-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Factions &amp; Classes</span>
+          <h2 class="section-title">Traits</h2>
+          <p class="section-desc">Origins and Classes define the board. Stack them to unlock trait thresholds and team-wide power spikes.</p>
+        </div>
+        <div class="trait-filter">
+          <button class="trait-filter__btn active" data-filter="all">All</button>
+          <button class="trait-filter__btn" data-filter="origin">Origins</button>
+          <button class="trait-filter__btn" data-filter="class">Classes</button>
+        </div>
+        <div class="traits-grid" id="traitsGrid"></div>
+      </div>
+    </section>
+
+<!-- STORIES TEASER -->
+    <section class="section stories-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Lore</span>
+          <h2 class="section-title">Stories</h2>
+          <p class="section-desc">Faction records, unit biographies, and timeline fragments from the Cybernetic Strategy setting.</p>
+        </div>
+        <div class="stories-grid" id="storiesGrid"></div>
+        <div class="units-more">
+          <a href="stories.html" class="btn btn--ghost">Browse Stories</a>
         </div>
       </div>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="nav__brand-mark" aria-hidden="true"></span>
+          <span>Cybernetic Strategy Universe</span>
+        </div>
+        <p class="footer__credit">Cybernetic Strategy archive by Dean Satine &bull; <a href="../index.html">Back to Portfolio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- UNIT MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal__close" id="modalClose">Close</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="site-data-patch.js"></script>
+  <script src="universe.js"></script>
 </body>
 </html>
