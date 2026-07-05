@@ -127,8 +127,19 @@
     }
     .trait-unit-card:hover { border-color: var(--current-trait-color, var(--gold)); transform: translateY(-2px); }
     .trait-unit-card__portrait {
-      height: 80px; display: flex; align-items: center; justify-content: center;
-      font-size: 3.5rem; position: relative;
+      height: 96px; display: flex; align-items: center; justify-content: center;
+      font-size: 3.5rem; position: relative; overflow: hidden;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.06), transparent 70%), var(--bg-card);
+    }
+    .trait-unit-card__portrait-img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center;
+      display: block;
+    }
+    .trait-unit-card__portrait-mark {
+      position: absolute; inset: 0; display: none; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 3.2rem; letter-spacing: 0.08em;
+      color: var(--text-bright);
+      background: radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 70%);
     }
     .trait-unit-card__info { padding: 0.8rem 1rem; border-top: 1px solid var(--border-dim); }
     .trait-unit-card__name {
@@ -210,6 +221,37 @@
     }
     function traitMark(traitName) { return getInitialMark(traitName, "TR"); }
     function unitMark(unit) { return getInitialMark(unit && unit.name, "UN"); }
+    function unitImageSafeName(unit) {
+      return String(unit && unit.name ? unit.name : "")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-zA-Z0-9]/g, "");
+    }
+    function unitIconCandidates(unit) {
+      const safeName = unitImageSafeName(unit);
+      const idName = String(unit && unit.id ? unit.id : "")
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-zA-Z0-9]/g, "");
+      const names = Array.from(new Set([safeName, idName].filter(Boolean)));
+      const exts = ["png", "PNG", "jpg", "jpeg", "webp"];
+      const paths = [];
+      names.forEach(name => {
+        exts.forEach(ext => paths.push(`images/icons/${name}Icon.${ext}`));
+      });
+      return paths;
+    }
+    function tryNextUnitIcon(img) {
+      const paths = String(img.dataset.iconCandidates || "").split("|").filter(Boolean);
+      let index = Number(img.dataset.iconIndex || 0) + 1;
+      if (index < paths.length) {
+        img.dataset.iconIndex = String(index);
+        img.src = paths[index];
+        return;
+      }
+      img.style.display = "none";
+      if (img.nextElementSibling) img.nextElementSibling.style.display = "flex";
+    }
 
     let activeTrait = null;
 
@@ -253,19 +295,6 @@
         CS_DATA.units.find(u => u.name === name)
       ).filter(Boolean);
 
-      const tiersHTML = trait.tiers.map(tier => {
-        const pct = Math.round((tier.count / Math.max(...trait.tiers.map(t => t.count))) * 100);
-        return `
-          <div class="trait-detail__tier">
-            <div class="trait-detail__tier-num" style="color:${trait.color}">${tier.count}</div>
-            <div>
-              <div class="trait-detail__tier-label">Tier ${tier.count}</div>
-              <div class="trait-detail__tier-effect">${tier.effect}</div>
-            </div>
-          </div>
-        `;
-      }).join("");
-
       const unitsHTML = traitUnits.length > 0 ? `
         <div class="trait-unit-grid">
           ${traitUnits.map(unit => `
@@ -273,7 +302,13 @@
                  style="--current-trait-color:${trait.color}">
               <div class="trait-unit-card__portrait"
                    style="background:linear-gradient(160deg,${COST_COLORS[unit.cost]}22,#0a0c1499)">
-                ${unitMark(unit)}
+                <img class="trait-unit-card__portrait-img"
+                     src="${unitIconCandidates(unit)[0]}"
+                     data-icon-index="0"
+                     data-icon-candidates="${unitIconCandidates(unit).join('|')}"
+                     alt="${unit.name}"
+                     onerror="tryNextUnitIcon(this)" />
+                <span class="trait-unit-card__portrait-mark">${unitMark(unit)}</span>
               </div>
               <div class="trait-unit-card__info">
                 <div class="trait-unit-card__name">${unit.name}</div>
@@ -306,9 +341,6 @@
         </div>
         <div class="trait-detail__body" style="--current-trait-color:${trait.color}">
           <blockquote class="trait-detail__desc">${trait.description}</blockquote>
-
-          <p class="trait-detail__section-label">Trait Tiers</p>
-          <div class="trait-detail__tiers">${tiersHTML}</div>
 
           ${traitUnits.length > 0 ? `
             <p class="trait-detail__section-label">

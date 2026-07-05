@@ -254,14 +254,6 @@
   function openUnitModal(unitId) {
     const unit = (data().units || []).find(u => String(u.id) === String(unitId));
     if (!unit) return;
-    const traits = Array.isArray(unit.traits) ? unit.traits : [];
-    const stats = unit.stats || {};
-    const statsHtml = Object.entries(stats).slice(0, 8).map(([key, value]) => `
-      <div class="modal__stat-box">
-        <span class="modal__stat-val">${escapeHtml(value)}</span>
-        <span class="modal__stat-key">${escapeHtml(key)}</span>
-      </div>
-    `).join('');
 
     openModal(`
       <div class="modal__unit">
@@ -271,11 +263,6 @@
           <h2 class="modal__name">${escapeHtml(unit.name)}</h2>
           <p class="modal__role">${escapeHtml(unit.role || 'Unit')}</p>
           <p class="modal__lore">${escapeHtml(unit.lore || 'No biography entry has been added for this unit yet.')}</p>
-          ${statsHtml ? `<p class="modal__section-label">Stats</p><div class="modal__stats">${statsHtml}</div>` : ''}
-          <p class="modal__section-label">Traits</p>
-          <div class="modal__traits-row">
-            ${traits.map(t => `<button class="modal__trait-pill" onclick="openTraitModalByName('${escapeHtml(t)}')">${escapeHtml(t)}</button>`).join('')}
-          </div>
         </div>
       </div>
     `);
