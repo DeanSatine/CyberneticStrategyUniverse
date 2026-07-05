@@ -108,13 +108,7 @@
     .ucf__portrait-img { position: relative; z-index: 1; }
 
     /* Cost badge top-right */
-    .ucf__cost-badge {
-      position: absolute; top: 10px; right: 10px; z-index: 3;
-      width: 28px; height: 28px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.3rem; font-weight: 700; font-family: sans-serif;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
-    }
+    .ucf__cost-badge { display: none; }
 
     /* Bottom gradient fade */
     .ucf__portrait-shade {
@@ -584,6 +578,10 @@
         return costMatch && roleMatch && searchMatch;
       });
 
+      if (activeCost === "all") {
+        filtered.sort((a, b) => String(a.name || "").localeCompare(String(b.name || ""), undefined, { sensitivity: "base" }));
+      }
+
       document.getElementById("unitCount").textContent = filtered.length;
 
       if (filtered.length === 0) {
@@ -610,7 +608,6 @@
                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
               <div class="ucf__portrait-fallback" style="display:none">${mark}</div>
               <div class="ucf__portrait-shade"></div>
-              <div class="ucf__cost-badge cost-${unit.cost}">${unit.cost}</div>
             </div>
             <div class="ucf__info">
               <div class="ucf__name-row">

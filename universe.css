@@ -1753,3 +1753,96 @@ body::after {
   .timeline-item { grid-template-columns: 1fr; }
   .region-card { min-height: auto; }
 }
+
+
+/* Spotlight polish: randomizer arrows, no cost, styled trait chips */
+.spotlight__portrait .unit-card__cost-badge,
+.spotlight__cost {
+  display: none !important;
+}
+
+.spotlight {
+  position: relative;
+}
+
+.spotlight__traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2.2rem;
+}
+
+.spotlight__trait {
+  appearance: none;
+  border: 1px solid rgba(116,204,255,0.28);
+  background: rgba(8, 18, 42, 0.68);
+  color: var(--text-mid);
+  border-radius: 999px;
+  padding: 0.55rem 1.15rem;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: inset 0 0 18px rgba(69,216,255,0.04);
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.spotlight__trait:hover {
+  border-color: var(--nebula-cyan);
+  color: var(--nebula-cyan);
+  transform: translateY(-1px);
+  box-shadow: 0 0 22px rgba(69,216,255,0.14), inset 0 0 18px rgba(69,216,255,0.06);
+}
+
+.spotlight-nav {
+  position: relative;
+  gap: 1.2rem;
+}
+
+.spotlight-nav__btn {
+  width: 52px;
+  height: 52px;
+  font-size: 3.2rem;
+  line-height: 1;
+  color: var(--text-bright);
+  border-color: rgba(116,204,255,0.26);
+  background: rgba(8, 18, 42, 0.58);
+}
+
+.spotlight-nav__btn:hover {
+  color: #02030a;
+  background: linear-gradient(90deg, var(--nebula-cyan), var(--gold));
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+.spotlight-nav__dots {
+  min-width: 86px;
+  justify-content: center;
+}
+
+.spotlight-nav__dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  opacity: 0.52;
+}
+
+.spotlight-nav__dot.active {
+  width: 22px;
+  border-radius: 999px;
+  opacity: 1;
+}
+
+@media (min-width: 900px) {
+  .spotlight-nav__btn--prev,
+  .spotlight-nav__btn--next {
+    position: absolute;
+    top: -260px;
+    z-index: 2;
+  }
+  .spotlight-nav__btn--prev { left: max(0px, calc(50% - 690px)); }
+  .spotlight-nav__btn--next { right: max(0px, calc(50% - 690px)); }
+}

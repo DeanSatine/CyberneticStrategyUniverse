@@ -106,7 +106,19 @@
     `;
   }
 
-  function renderSpotlight(index = 0) {
+  function randomSpotlightIndex(excludeIndex = null) {
+    const units = data().units || [];
+    if (!units.length) return 0;
+    if (units.length === 1) return 0;
+    let nextIndex = Math.floor(Math.random() * units.length);
+    const current = excludeIndex === null ? null : Number(excludeIndex);
+    while (nextIndex === current) {
+      nextIndex = Math.floor(Math.random() * units.length);
+    }
+    return nextIndex;
+  }
+
+  function renderSpotlight(index = randomSpotlightIndex()) {
     const root = document.getElementById('spotlight');
     if (!root) return;
     const units = data().units || [];
@@ -116,17 +128,17 @@
       return;
     }
     const pool = units;
-    const unit = pool[((index % pool.length) + pool.length) % pool.length];
+    const safeIndex = ((Number(index) % pool.length) + pool.length) % pool.length;
+    const unit = pool[safeIndex];
     const traits = Array.isArray(unit.traits) ? unit.traits : [];
-    root.dataset.index = String(index);
+    root.dataset.index = String(safeIndex);
     root.innerHTML = `
       ${unitPortraitHTML(unit, 'spotlight__portrait')}
       <div class="spotlight__content">
-        <div class="spotlight__cost">Cost ${escapeHtml(unit.cost)}</div>
         <h3 class="spotlight__name">${escapeHtml(unit.name)}</h3>
         <p class="spotlight__subtitle">${escapeHtml(unit.subtitle || 'Subtitle')}</p>
         <p class="spotlight__lore">${escapeHtml(unit.lore || 'No biography entry has been added for this unit yet.')}</p>
-        <div class="spotlight__traits">
+        <div class="spotlight__traits" aria-label="Unit traits">
           ${traits.map(t => `<button class="spotlight__trait" onclick="event.stopPropagation(); openTraitModalByName('${escapeHtml(t)}')">${escapeHtml(t)}</button>`).join('')}
         </div>
       </div>
@@ -135,10 +147,16 @@
 
     const dots = document.getElementById('spotlightDots');
     if (dots) {
-      dots.innerHTML = pool.slice(0, Math.min(pool.length, 6)).map((_, i) =>
-        `<button class="spotlight-nav__dot ${i === (index % pool.length) ? 'active' : ''}" onclick="renderSpotlight(${i})"></button>`
+      dots.innerHTML = Array.from({ length: 5 }, (_, i) =>
+        `<span class="spotlight-nav__dot ${i === 2 ? 'active' : ''}"></span>`
       ).join('');
     }
+  }
+
+  function renderRandomSpotlight() {
+    const root = document.getElementById('spotlight');
+    const current = root ? Number(root.dataset.index || 0) : null;
+    renderSpotlight(randomSpotlightIndex(current));
   }
 
   function renderTraitGrid(filter = 'all') {
@@ -327,8 +345,8 @@
     });
     const prev = document.getElementById('spotlightPrev');
     const next = document.getElementById('spotlightNext');
-    if (prev) prev.addEventListener('click', () => renderSpotlight(Number(document.getElementById('spotlight')?.dataset.index || 0) - 1));
-    if (next) next.addEventListener('click', () => renderSpotlight(Number(document.getElementById('spotlight')?.dataset.index || 0) + 1));
+    if (prev) prev.addEventListener('click', renderRandomSpotlight);
+    if (next) next.addEventListener('click', renderRandomSpotlight);
   }
 
   function wireModal() {
@@ -411,6 +429,7 @@
   window.openUnitModalByName = openUnitModalByName;
   window.openStoryModal = openStoryModal;
   window.renderSpotlight = renderSpotlight;
+  window.renderRandomSpotlight = renderRandomSpotlight;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
