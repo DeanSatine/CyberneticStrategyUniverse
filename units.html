@@ -409,7 +409,7 @@
     <button class="bio-panel__close" id="bioPanelClose">Close</button>
     <div class="bio-panel__portrait" id="bioPanelPortrait">
       <div class="bio-panel__portrait-fallback" id="bioPanelFallback"></div>
-      <img id="bioPanelImg" src="" alt="" onerror="this.style.display='none';document.getElementById('bioPanelFallback').style.display='flex'" />
+      <img id="bioPanelImg" src="" alt="" onerror="tryNextUnitCardImage(this)" />
       <div class="bio-panel__portrait-shade"></div>
       <div class="bio-panel__header">
         <div class="bio-panel__cost-row">
@@ -441,6 +441,50 @@
 
     function imageSafeName(value) {
       return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, "");
+    }
+
+    function uniqueList(values) {
+      const out = [];
+      const seen = new Set();
+      (values || []).forEach(value => {
+        const cleaned = String(value || "").trim();
+        if (!cleaned || seen.has(cleaned)) return;
+        seen.add(cleaned);
+        out.push(cleaned);
+      });
+      return out;
+    }
+
+    function unitCardImageCandidates(unit) {
+      const safeName = imageSafeName(unit && unit.name);
+      const baseName = unit && unit.imageName ? String(unit.imageName) : safeName;
+      const stems = uniqueList([
+        unit && unit.cardImageName,
+        baseName ? `${baseName}Card` : "",
+        safeName ? `${safeName}Card` : "",
+        unit && unit.id ? `${imageSafeName(unit.id)}Card` : ""
+      ]);
+      const exts = ["png", "PNG", "jpg", "jpeg", "webp"];
+      const paths = [];
+      stems.forEach(stem => exts.forEach(ext => paths.push(`./images/units/${stem}.${ext}`)));
+      return uniqueList(paths);
+    }
+
+    function tryNextUnitCardImage(img) {
+      const paths = String(img.dataset.imageCandidates || "").split("|").filter(Boolean);
+      let index = Number(img.dataset.imageIndex || 0) + 1;
+      if (index < paths.length) {
+        img.dataset.imageIndex = String(index);
+        img.src = paths[index];
+        return;
+      }
+      img.style.display = "none";
+      if (img.id === "bioPanelImg") {
+        const fb = document.getElementById("bioPanelFallback");
+        if (fb) fb.style.display = "flex";
+        return;
+      }
+      if (img.nextElementSibling) img.nextElementSibling.style.display = "flex";
     }
 
     const COST_COLORS_PAGE = { 1:"#888", 2:"#3a9940", 3:"#3a60c0", 4:"#8830c0", 5:"#c9a84c" };
@@ -592,9 +636,8 @@
       grid.innerHTML = filtered.map(unit => {
         const mark = unitMark(unit);
         const costColor = COST_COLORS_PAGE[unit.cost] || "#888";
-        // Image: ./images/units/[Name]Card.png - no spaces, original casing
-        const safeName = unit.imageName || imageSafeName(unit.name);
-        const imgPath = `./images/units/${safeName}Card.png`;
+        const imageCandidates = unitCardImageCandidates(unit);
+        const imgPath = imageCandidates[0] || "";
 
         const subtitle = unit.subtitle || "Subtitle";
         
@@ -604,8 +647,10 @@
               <img class="ucf__portrait-img"
                    src="${imgPath}"
                    alt="${unit.name}"
+                   data-image-index="0"
+                   data-image-candidates="${imageCandidates.join('|')}"
                    style="object-fit:contain;object-position:center center;padding:1.2rem 1.2rem 0.6rem"
-                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+                   onerror="tryNextUnitCardImage(this)" />
               <div class="ucf__portrait-fallback" style="display:none">${mark}</div>
               <div class="ucf__portrait-shade"></div>
             </div>
@@ -626,13 +671,15 @@
       if (!unit) return;
 
       const costColor = COST_COLORS_PAGE[unit.cost] || "#888";
-      const safeName = unit.imageName || imageSafeName(unit.name);
-      const imgPath = `./images/units/${safeName}Card.png`;
+      const imageCandidates = unitCardImageCandidates(unit);
+      const imgPath = imageCandidates[0] || "";
       const mark = unitMark(unit);
 
       // Portrait
       const img = document.getElementById("bioPanelImg");
       const fallback = document.getElementById("bioPanelFallback");
+      img.dataset.imageIndex = "0";
+      img.dataset.imageCandidates = imageCandidates.join("|");
       img.src = imgPath;
       img.alt = unit.name;
       img.style.display = "block";
@@ -654,44 +701,8 @@
       document.getElementById("bioPanelRole").textContent = unit.role;
       document.getElementById("bioPanelName").textContent = unit.name;
 
-      // Trait row (icons + names)
-      const bioTraitList = Array.isArray(unit.traits) ? unit.traits : [];
-      document.getElementById("bioPanelTraitRow").innerHTML = bioTraitList.map(t => {
-        const traitData = CS_DATA.traits.find(tr => tr.name === t);
-        const traitCode = traitMark(t);
-        const traitColor = traitData ? traitData.color : "#c9a84c";
-        const tSafe = imageSafeName(t);
-        return `
-          <div class="bio-panel__trait-tag" style="border-color:${traitColor}30">
-            <img src="./images/traits/${tSafe}Icon.png" alt="${t}"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"
-                 style="width:18px;height:18px;border-radius:2px;object-fit:cover" />
-            <span class="bio-panel__trait-tag-mark" style="display:none">${traitCode}</span>
-            <span class="bio-panel__trait-tag-name" style="color:${traitColor}">${t}</span>
-          </div>
-        `;
-      }).join("");
-
-      // Body: bio placeholder + trait detail
-      const traitsDetailHTML = bioTraitList.map(t => {
-        const traitData = CS_DATA.traits.find(tr => tr.name === t);
-        const traitColor = traitData && traitData.color ? traitData.color : "#c9a84c";
-        const traitType = traitData && traitData.type ? (traitData.type === "origin" ? "Origin" : "Class") : "Trait";
-        const traitTagline = traitData && traitData.tagline ? traitData.tagline : "Supplemental archive entry";
-        const tSafe = imageSafeName(t);
-        return `
-          <div class="bio-panel__trait-block" style="border-color:${traitColor}25">
-            <img src="./images/traits/${tSafe}Icon.png" alt="${t}"
-                 onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
-                 style="width:36px;height:36px;border-radius:4px;object-fit:cover;flex-shrink:0" />
-            <span class="bio-panel__trait-block-mark" style="display:none">${traitMark(t)}</span>
-            <div class="bio-panel__trait-block-info">
-              <div class="bio-panel__trait-block-name" style="color:${traitColor}">${traitData ? traitData.name : t}</div>
-              <div class="bio-panel__trait-block-type">${traitType} / ${traitTagline}</div>
-            </div>
-          </div>
-        `;
-      }).join("");
+      // Trait row intentionally hidden on unit click panels.
+      document.getElementById("bioPanelTraitRow").innerHTML = "";
 
       const detailsEntries = unit.details ? Object.entries(unit.details) : [];
       const abilityEntries = unit.ability ? Object.entries(unit.ability) : [];
@@ -707,11 +718,6 @@
         ${abilityEntries.length ? `<div class="bio-panel__section-label">Ability Notes</div><div class="bio-panel__traits-detail">${abilityEntries.map(([label, value]) => `<div class="bio-panel__trait-block"><div class="bio-panel__trait-block-info"><div class="bio-panel__trait-block-name">${label.charAt(0).toUpperCase() + label.slice(1)}</div><div class="bio-panel__trait-block-type">${value}</div></div></div>`).join("")}</div>` : ""}
 
         ${detailsEntries.length ? `<div class="bio-panel__section-label">Combat Data</div><div class="bio-panel__traits-detail">${detailsEntries.map(([label, value]) => `<div class="bio-panel__trait-block"><div class="bio-panel__trait-block-info"><div class="bio-panel__trait-block-name">${label.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase())}</div><div class="bio-panel__trait-block-type">${value}</div></div></div>`).join("")}</div>` : ""}
-
-        <div class="bio-panel__section-label">Traits</div>
-        <div class="bio-panel__traits-detail">
-          ${traitsDetailHTML}
-        </div>
       `;
 
       // Open panel

@@ -40,13 +40,66 @@
   function imageSafeName(value) {
     return String(value || '')
       .normalize('NFD')
-      .replace(/[̀-ͯ]/g, '')
+      .replace(/[\u0300-\u036f]/g, '')
       .replace(/[^a-zA-Z0-9]/g, '');
   }
 
+  function uniqueList(values) {
+    const out = [];
+    const seen = new Set();
+    (values || []).forEach(value => {
+      const cleaned = String(value || '').trim();
+      if (!cleaned || seen.has(cleaned)) return;
+      seen.add(cleaned);
+      out.push(cleaned);
+    });
+    return out;
+  }
+
+  function unitCardImageCandidates(unit) {
+    const safeName = imageSafeName(unit && unit.name);
+    const baseName = unit && unit.imageName ? String(unit.imageName) : safeName;
+    const stems = uniqueList([
+      unit && unit.cardImageName,
+      baseName ? `${baseName}Card` : '',
+      safeName ? `${safeName}Card` : '',
+      unit && unit.id ? `${imageSafeName(unit.id)}Card` : ''
+    ]);
+    const exts = ['png', 'PNG', 'jpg', 'jpeg', 'webp'];
+    const paths = [];
+    stems.forEach(stem => exts.forEach(ext => paths.push(`./images/units/${stem}.${ext}`)));
+    return uniqueList(paths);
+  }
+
+  function unitIconImageCandidates(unit) {
+    const safeName = imageSafeName(unit && unit.name);
+    const baseName = unit && unit.imageName ? String(unit.imageName) : safeName;
+    const stems = uniqueList([
+      unit && unit.iconImageName,
+      baseName ? `${baseName}Icon` : '',
+      safeName ? `${safeName}Icon` : '',
+      unit && unit.id ? `${imageSafeName(unit.id)}Icon` : ''
+    ]);
+    const exts = ['png', 'PNG', 'jpg', 'jpeg', 'webp'];
+    const paths = [];
+    stems.forEach(stem => exts.forEach(ext => paths.push(`./images/icons/${stem}.${ext}`)));
+    return uniqueList(paths);
+  }
+
   function unitImagePath(unit) {
-    const safeName = unit.imageName || imageSafeName(unit.name);
-    return `./images/units/${safeName}Card.png`;
+    return unitCardImageCandidates(unit)[0] || '';
+  }
+
+  function tryNextUnitCardImage(img) {
+    const paths = String(img.dataset.imageCandidates || '').split('|').filter(Boolean);
+    let index = Number(img.dataset.imageIndex || 0) + 1;
+    if (index < paths.length) {
+      img.dataset.imageIndex = String(index);
+      img.src = paths[index];
+      return;
+    }
+    img.style.display = 'none';
+    if (img.nextElementSibling) img.nextElementSibling.style.display = 'flex';
   }
 
   function traitImagePath(name) {
@@ -86,7 +139,9 @@
       <div class="${className}" style="background:linear-gradient(160deg,${color}25,#06081099)" data-role="${escapeHtml(getRoleCat(unit.role))}">
         <div class="unit-card__bg"></div>
         <img class="unit-card__portrait-img" src="${imgPath}" alt="${escapeHtml(unit.name)}"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+             data-image-index="0"
+             data-image-candidates="${unitCardImageCandidates(unit).map(escapeHtml).join('|')}"
+             onerror="window.tryNextUnitCardImage ? window.tryNextUnitCardImage(this) : (this.style.display='none')" />
         <span class="unit-card__portrait-mark" style="display:none">${escapeHtml(unitMark(unit))}</span>
         <div class="unit-card__overlay"></div>
         <span class="unit-card__cost-badge cost-${unit.cost}">${escapeHtml(unit.cost)}</span>
@@ -261,7 +316,7 @@
         <div>
           <div class="modal__cost-bar">${Array.from({ length: Number(unit.cost) || 1 }, () => `<span class="modal__cost-gem cost-${unit.cost}"></span>`).join('')}</div>
           <h2 class="modal__name">${escapeHtml(unit.name)}</h2>
-          <p class="modal__role">${escapeHtml(unit.role || 'Unit')}</p>
+          <p class="modal__role">${escapeHtml(unit.subtitle || unit.role || 'Unit')}</p>
           <p class="modal__lore">${escapeHtml(unit.lore || 'No biography entry has been added for this unit yet.')}</p>
         </div>
       </div>
@@ -410,6 +465,9 @@
 
   window.CS_THEME = { getInitialMark, unitMark, traitMark, storyMark };
   window.COST_COLORS = COST_COLORS;
+  window.tryNextUnitCardImage = tryNextUnitCardImage;
+  window.unitCardImageCandidates = unitCardImageCandidates;
+  window.unitIconImageCandidates = unitIconImageCandidates;
   window.openUnitModal = openUnitModal;
   window.openTraitModal = openTraitModal;
   window.openTraitModalByName = openTraitModalByName;

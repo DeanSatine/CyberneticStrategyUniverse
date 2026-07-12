@@ -221,25 +221,36 @@
     }
     function traitMark(traitName) { return getInitialMark(traitName, "TR"); }
     function unitMark(unit) { return getInitialMark(unit && unit.name, "UN"); }
-    function unitImageSafeName(unit) {
-      return String(unit && unit.name ? unit.name : "")
+    function imageSafeName(value) {
+      return String(value || "")
         .normalize("NFKD")
         .replace(/[\u0300-\u036f]/g, "")
         .replace(/[^a-zA-Z0-9]/g, "");
     }
+    function uniqueList(values) {
+      const out = [];
+      const seen = new Set();
+      (values || []).forEach(value => {
+        const cleaned = String(value || "").trim();
+        if (!cleaned || seen.has(cleaned)) return;
+        seen.add(cleaned);
+        out.push(cleaned);
+      });
+      return out;
+    }
     function unitIconCandidates(unit) {
-      const safeName = unitImageSafeName(unit);
-      const idName = String(unit && unit.id ? unit.id : "")
-        .normalize("NFKD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .replace(/[^a-zA-Z0-9]/g, "");
-      const names = Array.from(new Set([safeName, idName].filter(Boolean)));
+      const safeName = imageSafeName(unit && unit.name);
+      const baseName = unit && unit.imageName ? String(unit.imageName) : safeName;
+      const stems = uniqueList([
+        unit && unit.iconImageName,
+        baseName ? `${baseName}Icon` : "",
+        safeName ? `${safeName}Icon` : "",
+        unit && unit.id ? `${imageSafeName(unit.id)}Icon` : ""
+      ]);
       const exts = ["png", "PNG", "jpg", "jpeg", "webp"];
       const paths = [];
-      names.forEach(name => {
-        exts.forEach(ext => paths.push(`images/icons/${name}Icon.${ext}`));
-      });
-      return paths;
+      stems.forEach(stem => exts.forEach(ext => paths.push(`images/icons/${stem}.${ext}`)));
+      return uniqueList(paths);
     }
     function tryNextUnitIcon(img) {
       const paths = String(img.dataset.iconCandidates || "").split("|").filter(Boolean);
