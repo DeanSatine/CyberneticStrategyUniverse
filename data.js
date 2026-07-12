@@ -25,7 +25,7 @@ window.CS_DATA = {
       },
       "abilitySummary": "-AbilityActive: Rapidly throw 3 needles split between the nearest 2 enemies, each dealing 45/65/95 damage. Every 10 needles shot, increase the needle count by 1 permanently.",
       "subtitle": "The Underdog",
-      "cardImageName": "NeedleBotCard",
+      "cardImageName": "NeedlebotCard",
       "iconImageName": "NeedlebotIcon"
     },
     {
@@ -81,7 +81,7 @@ window.CS_DATA = {
       },
       "abilitySummary": "Passive: Attacks deal bonus magic damage and every 10 attacks shoot a bolt at the farthest enemy instead, dealing magic damage. Bolt Damage: 175 / 240 / 400 + 50% AP SteelGuard",
       "subtitle": "The Shadow Mother",
-      "cardImageName": "TracercoreCard",
+      "cardImageName": "TracerCoreCard",
       "iconImageName": "TracerCoreIcon"
     },
     {
@@ -110,7 +110,7 @@ window.CS_DATA = {
       "abilitySummary": "Active: Start roaring, gaining a 190/240/350 + 280/350/420% shield. If the shield is still active after 4 seconds, refresh the shield at 75% effectiveness. Shield: 190/240/400 + 280/350/420% AP BackSlash",
       "subtitle": "The Shield of Sateen",
       "cardImageName": "SteelGuardCard",
-      "iconImageName": "SteelguardIcon"
+      "iconImageName": "Steelguardicon"
     },
     {
       "id": "backslash",
@@ -281,8 +281,8 @@ window.CS_DATA = {
       },
       "abilitySummary": "Active: Stab the target, dealing 80/120/170 physical damage. Gain 15% / 20% / 30% attack speed and 10 / 15 / 25 bonus AD for the rest of combat. Consume-OS",
       "subtitle": "The Son Who Remains",
-      "cardImageName": "FrontPointCard",
-      "iconImageName": "FrontpointIcon"
+      "cardImageName": "FrontpointCard",
+      "iconImageName": "FrontpointICon"
     },
     {
       "id": "consume-os",
@@ -632,7 +632,7 @@ window.CS_DATA = {
       },
       "abilitySummary": "Forticore expands her shield for 5 seconds and gains 30/33/45 combined armour/mr as magic damage in a cone. CommandCore",
       "subtitle": "The Fortress",
-      "cardImageName": "FortiCoreCard",
+      "cardImageName": "ForticoreCard",
       "iconImageName": "Forticoreicon"
     },
     {
@@ -691,7 +691,7 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Enemies struck with Kunai are Sharded, losing 10 magic resist for the rest of combat. Throw a Kunai at the nearest non Sharded enemy, dealing 400/600/1000 (+ 55% AP) magic damage over 6/7/8 seconds. BoltJaw",
       "subtitle": "The Bladed Girl",
       "cardImageName": "ShardFrameCard",
-      "iconImageName": "ShardframeIcon"
+      "iconImageName": "Shardframeicon"
     },
     {
       "id": "boltjaw",
@@ -864,7 +864,7 @@ window.CS_DATA = {
       },
       "abilitySummary": "Fire a magic missile at the target. The missile then travels in a line to the opposite side of the board, damaging adjacent enemies and shielding adjacent allies. This effect is reduced by 50% per target hit. Shield: 60/80/110 + 95% / 115% / 135% AP Target Damage: 100/150/250 + 310% / 465% / 700% AP AnchorFire",
       "subtitle": "The Sparkly Popstar",
-      "cardImageName": "BioSynthCard",
+      "cardImageName": "BiosynthCard",
       "iconImageName": "BiosynthIcon"
     },
     {
@@ -1092,8 +1092,8 @@ window.CS_DATA = {
       },
       "abilitySummary": "Active: Shoot a swiveling laser beam across the board, dealing physical damage and healing per target hit, reduced by 20% per hex from Headshot. Replace the next 6 attacks with a smash that deals bonus damage & knock up an enemy the first time hitting them. Laser Damage: 200 / 230 / 500 + 45% AD + 20% Armour Heal: 150 / 180 / 250 + 25% Armour Bonus...",
       "subtitle": "The Wanderer",
-      "cardImageName": "HeadShotCard",
-      "iconImageName": "HeadshotIcon"
+      "cardImageName": "Headshotcard",
+      "iconImageName": "Headshoticon"
     },
     {
       "id": "hypershot",
@@ -1519,7 +1519,7 @@ window.CS_DATA = {
       },
       "abilitySummary": "Passive: When an enemy reaches below 50/55/90% health, absorb a portion of their attack speed for the rest of combat. Active: Gain 100% attack speed and 10/15/80% healing for 5 seconds. Attacks deal (250/250%/800% AD) bonus damage to all adjacent enemies during this time. KillSwitch Passive: Every attack lowers the target’s magic resist by 3. When...",
       "subtitle": "The Ecologist",
-      "cardImageName": "SwiftframeCard",
+      "cardImageName": "SwiftFrameCard",
       "iconImageName": "SwiftFrameIcon"
     },
     {
@@ -2327,7 +2327,7 @@ window.CS_DATA = {
       },
       "abilitySummary": "Ballin’: Kobolt & Shackbyte work together and share a health bar, stats and items. When 1 dies, both units die. Kobolt Passive: Every 3rd attack marks enemies and bounce off of enemies and leave a ball on the ground near the target. Shackbyte Passive: Whenever Shackbyte is within 2 hexes of Kobolt’s basketball, he will grab it midair and dunk on the...",
       "subtitle": "Subtitle",
-      "cardImageName": "KoboltShackbyteCard",
+      "cardImageName": "KoboltShackByteCard",
       "iconImageName": "KoboltShackbyteIcon"
     },
     {
@@ -3894,7 +3894,6 @@ window.CS_DATA = {
     {
       "id": "ecsthea-city",
       "name": "Ecsthea City",
-      "pronunciation": "EX-THEY-UH SIT-EE",
       "atmosphere": "Bustling, diverse, cybernetic",
       "tagline": "The City of Tomorrow",
       "description": "A central metropolis where communities gather, collaborate, and chase fame. After an economic crash, cyber celebrity culture and Mecha-Clash revived the city and funded its technology sector.",
@@ -3907,7 +3906,6 @@ window.CS_DATA = {
     {
       "id": "riang",
       "name": "Riang",
-      "pronunciation": "REE-ONG",
       "atmosphere": "Green, traditional, spiritual",
       "tagline": "The old moors and the hidden myth",
       "description": "A distant archipelago of moss, fog, swamp, and old traditions. Riang accepted technology slowly, holding tight to its environment while rumours persist of a secret power beyond cybernetics.",
@@ -3922,7 +3920,6 @@ window.CS_DATA = {
     {
       "id": "sateen-lanes",
       "name": "Sateen Lanes",
-      "pronunciation": "SAH-TEEN-LAYNZ",
       "atmosphere": "Sandy, risky, humid",
       "tagline": "Haggler’s County beneath the Dominion",
       "description": "A cavernous underground city stretching through countless lanes. Its Main Lane is a legendary market, while Harkin Square and the deeper routes hide criminals, illegal trade, and a lethal battle ring.",
@@ -3937,7 +3934,6 @@ window.CS_DATA = {
     {
       "id": "pristal",
       "name": "Pristal",
-      "pronunciation": "PRISS-TALL",
       "atmosphere": "Calm, historical, quaint",
       "tagline": "A preserved human refuge",
       "description": "A suburban nation built from the wreckage of human-cyber conflict. Pristal preserves older human cultures and carries the Intertwine Movement’s hope for a United Dominion.",
@@ -3951,7 +3947,6 @@ window.CS_DATA = {
     {
       "id": "spiro",
       "name": "Spiro",
-      "pronunciation": "SPEER-ROW",
       "atmosphere": "Intensive, groundbreaking, bright",
       "tagline": "The floating nation of military science",
       "description": "A skyborne nation leading technology, science, magic, and military development. Empyrean University and the Spiro Military Academy train the Dominion’s brightest and most formidable minds.",

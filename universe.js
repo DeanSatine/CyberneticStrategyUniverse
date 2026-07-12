@@ -267,7 +267,6 @@
       <article class="region-card" style="--region-color:${escapeHtml(region.color || '#45d8ff')}">
         <div class="region-card__mark">${escapeHtml(getInitialMark(region.name, 'RG'))}</div>
         <div class="region-card__body">
-          <p class="region-card__meta">${escapeHtml(region.pronunciation || 'The Dominion')}</p>
           <h3 class="region-card__title">${escapeHtml(region.name)}</h3>
           <p class="region-card__tagline">${escapeHtml(region.tagline || '')}</p>
           <p class="region-card__desc">${escapeHtml(region.description || '')}</p>
