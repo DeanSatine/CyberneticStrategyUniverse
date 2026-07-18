@@ -3,151 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stories - Cybernetic Strategy Galaxy Archive</title>
+  <title>Stories - Cybernetic Strategy Universe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="universe.css" />
-  <style>
-    .stories-page { padding: 10rem 0 8rem; min-height: 100vh; position: relative; z-index: 1; }
-
-    /* Featured story banner */
-    .stories-featured {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 0; border: 1px solid var(--border-dim); border-radius: 6px;
-      overflow: hidden; margin-bottom: 6rem; min-height: 400px;
-    }
-    .stories-featured__visual {
-      display: flex; align-items: center; justify-content: center;
-      font-size: 10rem; position: relative;
-      background: linear-gradient(135deg, #1a0830, #080418);
-    }
-    .stories-featured__visual-glow {
-      position: absolute; inset: 0; opacity: 0.3;
-      background: radial-gradient(ellipse at center, #6030a0, transparent 70%);
-    }
-    .stories-featured__visual-mark { position: relative; z-index: 1; }
-    .stories-featured__content {
-      padding: 5rem; background: var(--bg-card);
-      border-left: 1px solid var(--border-dim);
-      display: flex; flex-direction: column; justify-content: center;
-    }
-    .stories-featured__eyebrow {
-      font-family: var(--font-mono); font-size: 1rem; letter-spacing: 0.3em;
-      text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem;
-      display: flex; align-items: center; gap: 1rem;
-    }
-    .stories-featured__eyebrow::before {
-      content: ''; display: block; width: 30px; height: 1px; background: var(--gold);
-    }
-    .stories-featured__title {
-      font-family: var(--font-display); font-size: clamp(2.5rem, 3vw, 4rem);
-      font-weight: 400; color: var(--text-bright); letter-spacing: 0.06em;
-      margin-bottom: 2rem; line-height: 1.2;
-    }
-    .stories-featured__excerpt {
-      font-size: 1.9rem; color: var(--text-mid); font-style: italic;
-      line-height: 1.8; margin-bottom: 3rem;
-    }
-    .stories-featured__meta {
-      font-family: var(--font-mono); font-size: 1rem; color: var(--text-dim);
-      letter-spacing: 0.12em; text-transform: uppercase;
-    }
-
-    /* Category tabs */
-    .stories-tabs {
-      display: flex; gap: 0; border-bottom: 1px solid var(--border-dim);
-      margin-bottom: 4rem;
-    }
-    .stories-tab {
-      font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 0.15em;
-      text-transform: uppercase; padding: 1.4rem 2.5rem; cursor: pointer;
-      color: var(--text-dim); border-bottom: 2px solid transparent;
-      transition: all 0.2s; background: transparent; border-top: none;
-      border-left: none; border-right: none;
-    }
-    .stories-tab:hover { color: var(--text-mid); }
-    .stories-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
-
-    /* Stories grid */
-    .stories-full-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 2.5rem; margin-bottom: 6rem;
-    }
-    .story-card-full {
-      background: var(--bg-card); border: 1px solid var(--border-dim);
-      border-radius: 5px; overflow: hidden; cursor: pointer; transition: all 0.2s;
-    }
-    .story-card-full:hover { border-color: var(--border); transform: translateY(-3px); box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
-    .scf__banner {
-      height: 140px; display: flex; align-items: center; justify-content: center;
-      font-size: 5rem; position: relative;
-    }
-    .scf__banner-bg { position: absolute; inset: 0; opacity: 0.25; }
-    .scf__banner-mark { position: relative; z-index: 1; }
-    .scf__body { padding: 2.5rem; }
-    .scf__meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem; }
-    .scf__type {
-      font-family: var(--font-mono); font-size: 0.9rem; letter-spacing: 0.2em;
-      text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 2px;
-    }
-    .scf__category { font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-dim); }
-    .scf__title {
-      font-family: var(--font-display); font-size: 2rem; font-weight: 400;
-      color: var(--text-bright); letter-spacing: 0.05em; margin-bottom: 1.2rem;
-    }
-    .scf__excerpt {
-      font-size: 1.6rem; color: var(--text-mid); font-style: italic;
-      line-height: 1.7; margin-bottom: 2rem;
-    }
-    .scf__unit-tag {
-      font-family: var(--font-mono); font-size: 1rem; letter-spacing: 0.1em;
-      color: var(--text-dim); display: flex; align-items: center; gap: 0.6rem;
-    }
-
-    /* Coming soon section */
-    .stories-soon {
-      padding: 6rem 0; text-align: center;
-      border-top: 1px solid var(--border-dim);
-    }
-    .stories-soon__title {
-      font-family: var(--font-display); font-size: 2.5rem; color: var(--text-dim);
-      letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1.5rem;
-    }
-    .stories-soon__desc {
-      font-size: 1.8rem; color: var(--text-dim); font-style: italic; max-width: 500px; margin: 0 auto;
-    }
-
-    /* Unit lore teasers */
-    .unit-lore-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.5rem; margin-bottom: 4rem;
-    }
-    .unit-lore-card {
-      background: var(--bg-card); border: 1px solid var(--border-dim);
-      border-radius: 4px; padding: 2rem; cursor: pointer; transition: all 0.2s;
-      display: grid; grid-template-columns: 60px 1fr; gap: 1.5rem; align-items: start;
-    }
-    .unit-lore-card:hover { border-color: var(--border); background: var(--bg-hover); }
-    .unit-lore-card__portrait {
-      width: 60px; height: 60px; border-radius: 4px; border: 1px solid var(--border-dim);
-      display: flex; align-items: center; justify-content: center; font-size: 2.8rem;
-    }
-    .unit-lore-card__name {
-      font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--text-bright); margin-bottom: 0.4rem;
-    }
-    .unit-lore-card__lore {
-      font-size: 1.4rem; color: var(--text-mid); font-style: italic; line-height: 1.6;
-      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
-    }
-
-    @media (max-width: 768px) {
-      .stories-featured { grid-template-columns: 1fr; }
-      .stories-featured__visual { height: 200px; font-size: 6rem; }
-      .stories-featured__content { padding: 3rem; }
-      .stories-full-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="stories.css" />
 </head>
 <body>
   <div class="ambient">
@@ -173,68 +33,101 @@
     </div>
   </nav>
 
-  <main class="stories-page">
-    <div class="container">
-      <div style="margin-bottom:5rem;text-align:center">
-        <span class="section-tag">Lore Archive</span>
-        <h1 class="section-title">Stories</h1>
-        <p class="section-desc">Unit records, faction files, and timeline entries from the Cybernetic Strategy setting.</p>
-      </div>
-
-      <!-- Featured World -->
-      <div class="stories-featured">
-        <div class="stories-featured__visual">
-          <div class="stories-featured__visual-glow"></div>
-          <span class="stories-featured__visual-mark">TD</span>
+  <main class="lore-page">
+    <header class="lore-masthead">
+      <div class="container lore-masthead__inner">
+        <div class="lore-masthead__copy">
+          <p class="section-tag">Dominion Archive</p>
+          <h1 class="lore-masthead__title">Stories</h1>
+          <p class="lore-masthead__intro">Lives, conflicts, places, and alliances from a world where cybernetic spectacle meets old magic.</p>
+          <div class="lore-stats" id="loreStats" aria-label="Archive totals"></div>
         </div>
-        <div class="stories-featured__content">
-          <div class="stories-featured__eyebrow">World Overview</div>
-          <h2 class="stories-featured__title">The Dominion</h2>
-          <p class="stories-featured__excerpt">
-            The Dominion is a continent built on cybernetic innovation, regional tension, old magic, and public spectacle. Ecsthea City turns cybers into celebrities, Riang guards tradition and hidden myths, Sateen Lanes trades in danger, Pristal preserves human culture, and Spiro watches from the sky.
-          </p>
-          <p class="stories-featured__meta">World Lore · Regions · Timeline</p>
+        <button class="featured-record" id="featuredRecord" type="button">
+          <span class="featured-record__label">World Overview</span>
+          <span class="featured-record__title">The Dominion</span>
+          <span class="featured-record__excerpt" id="featuredExcerpt"></span>
+          <span class="featured-record__action">Open world record</span>
+          <span class="featured-record__portraits" id="featuredPortraits" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="lore-directory" aria-labelledby="directoryTitle">
+      <div class="container">
+        <div class="lore-section-heading">
+          <div>
+            <p class="section-tag">Archive Index</p>
+            <h2 id="directoryTitle">Explore the records</h2>
+          </div>
+          <p id="storyResultCount" class="lore-result-count"></p>
+        </div>
+
+        <div class="lore-toolbar">
+          <div class="lore-tabs" id="storyTypeTabs" aria-label="Story type">
+            <button class="lore-tab is-active" type="button" data-type="all">All</button>
+            <button class="lore-tab" type="button" data-type="unit">Characters</button>
+            <button class="lore-tab" type="button" data-type="world">World</button>
+            <button class="lore-tab" type="button" data-type="faction">Factions</button>
+            <button class="lore-tab" type="button" data-type="timeline">Timeline</button>
+          </div>
+          <div class="lore-toolbar__fields">
+            <label class="lore-select-wrap">
+              <span>Location</span>
+              <select id="regionFilter">
+                <option value="all">All locations</option>
+              </select>
+            </label>
+            <label class="lore-search-wrap">
+              <span>Search archive</span>
+              <input id="storySearch" type="search" placeholder="Story, character, faction..." autocomplete="off" />
+            </label>
+          </div>
+        </div>
+
+        <div class="story-library" id="storyLibrary"></div>
+        <div class="story-library__empty" id="storyEmpty" hidden>No records match these filters.</div>
+        <div class="story-library__more" id="storyMoreWrap">
+          <button class="btn btn--ghost" id="storyMore" type="button">Load more records</button>
         </div>
       </div>
+    </section>
 
-      <p class="section-tag" style="margin-bottom:1.5rem">Regions</p>
-      <h2 class="section-title" style="text-align:left;margin-bottom:1rem;font-size:3rem">The Dominion Map</h2>
-      <div class="regions-grid regions-grid--stories" id="storyRegionsGrid"></div>
-
-      <p class="section-tag" style="margin:5rem 0 1.5rem">Factions</p>
-      <h2 class="section-title" style="text-align:left;margin-bottom:1rem;font-size:3rem">Power Groups</h2>
-      <div class="factions-grid" id="storyFactionsGrid"></div>
-
-      <p class="section-tag" style="margin:5rem 0 1.5rem">Timeline</p>
-      <h2 class="section-title" style="text-align:left;margin-bottom:1rem;font-size:3rem">Major Events</h2>
-      <div class="timeline-list" id="timelineList"></div>
-
-      <!-- Category tabs -->
-      <div class="stories-tabs">
-        <button class="stories-tab active" data-tab="all">All Stories</button>
-        <button class="stories-tab" data-tab="unit">Unit Lore</button>
-        <button class="stories-tab" data-tab="world">World</button>
-        <button class="stories-tab" data-tab="faction">Factions</button>
+    <section class="world-index" aria-labelledby="worldIndexTitle">
+      <div class="container">
+        <div class="lore-section-heading">
+          <div>
+            <p class="section-tag">World Index</p>
+            <h2 id="worldIndexTitle">People and powers</h2>
+          </div>
+        </div>
+        <div class="world-index__layout">
+          <div>
+            <h3 class="world-index__subhead">Regions</h3>
+            <div class="region-index" id="regionIndex"></div>
+          </div>
+          <div>
+            <h3 class="world-index__subhead">Factions</h3>
+            <div class="faction-index" id="factionIndex"></div>
+          </div>
+        </div>
       </div>
-
-      <!-- Published stories -->
-      <div class="stories-full-grid" id="storiesFullGrid"></div>
-
-      <!-- Unit Lore Teasers -->
-      <p class="section-tag" style="margin-bottom:1.5rem">Unit Biographies</p>
-      <h2 class="section-title" style="text-align:left;margin-bottom:1rem;font-size:3rem">Individual Lore</h2>
-      <p style="color:var(--text-mid);font-style:italic;font-size:1.7rem;margin-bottom:3rem">
-        Biography entries connect units to their traits, factions, and combat identity.
-      </p>
-      <div class="unit-lore-grid" id="unitLoreGrid"></div>
-
-      <!-- Coming soon -->
-      <div class="stories-soon">
-        <h2 class="stories-soon__title">Archive Expanding</h2>
-        <p class="stories-soon__desc">Additional timeline entries and faction records can be added as the roster develops.</p>
-      </div>
-    </div>
+    </section>
   </main>
+
+  <aside class="story-reader" id="storyReader" aria-hidden="true">
+    <div class="story-reader__bar">
+      <button class="story-reader__back" id="storyReaderClose" type="button">Back to archive</button>
+      <span class="story-reader__bar-title" id="storyReaderBarTitle"></span>
+    </div>
+    <div class="story-reader__scroll" id="storyReaderScroll">
+      <div class="story-reader__hero" id="storyReaderHero"></div>
+      <div class="story-reader__layout container">
+        <article class="story-article" id="storyArticle"></article>
+        <aside class="story-dossier" id="storyDossier"></aside>
+      </div>
+      <div class="story-related container" id="storyRelated"></div>
+    </div>
+  </aside>
 
   <div class="modal-overlay" id="modalOverlay">
     <div class="modal" id="modal">
@@ -246,148 +139,6 @@
   <script src="data.js"></script>
   <script src="site-data-patch.js"></script>
   <script src="universe.js"></script>
-  <script>
-
-    function getInitialMark(text, fallback = "CS") {
-      const source = String(text || fallback).replace(/[^a-zA-Z0-9 ]/g, " ").trim();
-      if (!source) return fallback;
-      const parts = source.split(/\s+/).filter(Boolean);
-      if (parts.length >= 2) return (parts[0][0] + parts[1][0]).toUpperCase();
-      return source.slice(0, 2).toUpperCase();
-    }
-    function traitMark(traitName) { return getInitialMark(traitName, "TR"); }
-    function unitMark(unit) { return getInitialMark(unit && unit.name, "UN"); }
-
-    const STORY_MARK_MAP = {
-      "the-last-upload": "UP",
-      "fractured-accord": "FA",
-      "shadow-force-origin": "SF",
-      "mech-gods": "MG",
-      "k4ge-origin": "K4",
-      "gundam-fall": "GF"
-    };
-    const STORY_CATEGORY_MAP = {
-      "Short Story": "unit",
-      "Unit Lore": "unit",
-      "Timeline Event": "world",
-      "Region": "world",
-      "Origin Story": "faction",
-      "Faction": "faction",
-      "Mythology": "world"
-    };
-
-    function buildStoriesGrid(filter = "all") {
-      const grid = document.getElementById("storiesFullGrid");
-      const filtered = CS_DATA.stories.filter(s =>
-        filter === "all" || STORY_CATEGORY_MAP[s.type] === filter
-      );
-      grid.innerHTML = filtered.map(story => {
-        const mark = STORY_MARK_MAP[story.id] || getInitialMark(story.title, "ST");
-        const tabCat = STORY_CATEGORY_MAP[story.type] || "world";
-        return `
-          <div class="story-card-full" data-category="${tabCat}" onclick="openStoryModal('${story.id}')">
-            <div class="scf__banner" style="background:${story.color}18">
-              <div class="scf__banner-bg" style="background:${story.color}"></div>
-              <span class="scf__banner-mark">${mark}</span>
-            </div>
-            <div class="scf__body">
-              <div class="scf__meta">
-                <span class="scf__type"
-                  style="color:${story.color};background:${story.color}15;border:1px solid ${story.color}30">
-                  ${story.type}
-                </span>
-                <span class="scf__category">${story.category}</span>
-              </div>
-              <h3 class="scf__title">${story.title}</h3>
-              <p class="scf__excerpt">${story.excerpt}</p>
-              ${story.unit ? `<div class="scf__unit-tag">${story.unit}</div>` : ""}
-            </div>
-          </div>
-        `;
-      }).join("");
-    }
-
-    function buildUnitLore() {
-      const grid = document.getElementById("unitLoreGrid");
-      // Sample of units with lore
-      const loreUnits = CS_DATA.units.filter(u => u.lore).slice(0, 18);
-      grid.innerHTML = loreUnits.map(unit => {
-        const mark = unitMark(unit);
-        const costColor = COST_COLORS[unit.cost] || "#888";
-        return `
-          <div class="unit-lore-card" onclick="openUnitModal('${unit.id}')">
-            <div class="unit-lore-card__portrait"
-                 style="background:linear-gradient(160deg,${costColor}22,#0a0c1499)">
-              ${mark}
-            </div>
-            <div>
-              <div class="unit-lore-card__name">${unit.name}</div>
-              <p class="unit-lore-card__lore">${unit.lore}</p>
-            </div>
-          </div>
-        `;
-      }).join("");
-    }
-
-    const COST_COLORS = { 1:"#888", 2:"#3a9940", 3:"#3a60c0", 4:"#8830c0", 5:"#c9a84c" };
-
-    function buildRegionsGrid() {
-      const grid = document.getElementById("storyRegionsGrid");
-      if (!grid) return;
-      grid.innerHTML = (CS_DATA.regions || []).map(region => `
-        <article class="region-card" style="--region-color:${region.color || '#45d8ff'}">
-          <div class="region-card__mark">${getInitialMark(region.name, 'RG')}</div>
-          <div class="region-card__body">
-            <h3 class="region-card__title">${region.name}</h3>
-            <p class="region-card__tagline">${region.tagline || ''}</p>
-            <p class="region-card__desc">${region.description || ''}</p>
-          </div>
-        </article>
-      `).join("");
-    }
-
-    function buildFactionsGrid() {
-      const grid = document.getElementById("storyFactionsGrid");
-      if (!grid) return;
-      grid.innerHTML = (CS_DATA.factions || []).map(faction => `
-        <article class="faction-card" style="--faction-color:${faction.color || '#45d8ff'}">
-          <div class="faction-card__type">${faction.type || 'Faction'}</div>
-          <h3 class="faction-card__title">${faction.name}</h3>
-          <p class="faction-card__desc">${faction.description || ''}</p>
-          <div class="faction-card__members">${(faction.members || []).join(' / ')}</div>
-        </article>
-      `).join("");
-    }
-
-    function buildTimeline() {
-      const list = document.getElementById("timelineList");
-      if (!list) return;
-      list.innerHTML = (CS_DATA.timeline || []).map(item => `
-        <article class="timeline-item">
-          <div class="timeline-item__year">${item.year}</div>
-          <div>
-            <h3 class="timeline-item__title">${item.title}</h3>
-            <p class="timeline-item__desc">${item.description}</p>
-          </div>
-        </article>
-      `).join("");
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      buildRegionsGrid();
-      buildFactionsGrid();
-      buildTimeline();
-      buildStoriesGrid();
-      buildUnitLore();
-
-      document.querySelectorAll(".stories-tab").forEach(tab => {
-        tab.addEventListener("click", () => {
-          document.querySelectorAll(".stories-tab").forEach(t => t.classList.remove("active"));
-          tab.classList.add("active");
-          buildStoriesGrid(tab.dataset.tab);
-        });
-      });
-    });
-  </script>
+  <script src="stories.js"></script>
 </body>
 </html>
