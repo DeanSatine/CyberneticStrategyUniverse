@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybernetic Strategy - Archive Editor</title>
+  <link rel="stylesheet" href="universe.css" />
+  <link rel="stylesheet" href="editor.css" />
+</head>
+<body class="editor-page">
+  <div class="editor-shell">
+    <header class="editor-header">
+      <a class="editor-brand" href="index.html">
+        <span class="editor-brand__mark" aria-hidden="true"></span>
+        <span>
+          <strong>Cybernetic Strategy</strong>
+          <small>Archive Editor</small>
+        </span>
+      </a>
+
+      <div class="editor-actions" aria-label="Editor actions">
+        <label class="editor-button editor-button--quiet" for="importFile">Import data.js</label>
+        <input id="importFile" type="file" accept=".js,.json,application/json,text/javascript" hidden />
+        <button class="editor-button editor-button--quiet" id="saveDraft" type="button">Save draft</button>
+        <button class="editor-button editor-button--quiet" id="validateData" type="button">Validate</button>
+        <button class="editor-button editor-button--primary" id="exportData" type="button">Export data.js</button>
+      </div>
+    </header>
+
+    <div class="editor-statusbar">
+      <span id="editorStatus">Website data loaded</span>
+      <span id="recordCounts"></span>
+    </div>
+
+    <nav class="editor-tabs" id="sectionTabs" aria-label="Content sections"></nav>
+
+    <main class="editor-workspace">
+      <aside class="record-browser">
+        <div class="record-browser__tools">
+          <label class="editor-search">
+            <span>Search</span>
+            <input id="recordSearch" type="search" placeholder="Find a record" autocomplete="off" />
+          </label>
+          <button class="editor-button editor-button--primary editor-button--wide" id="addRecord" type="button">Add new</button>
+        </div>
+        <div class="record-list" id="recordList" role="listbox" aria-label="Records"></div>
+      </aside>
+
+      <section class="record-editor" id="recordEditor" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <dialog class="editor-dialog" id="validationDialog">
+    <div class="editor-dialog__header">
+      <div>
+        <p class="editor-kicker">Archive check</p>
+        <h2 id="validationTitle">Validation</h2>
+      </div>
+      <button class="editor-icon-button" id="closeValidation" type="button" aria-label="Close">x</button>
+    </div>
+    <div id="validationResults"></div>
+  </dialog>
+
+  <dialog class="editor-dialog editor-dialog--confirm" id="confirmDialog">
+    <div class="editor-dialog__header">
+      <div>
+        <p class="editor-kicker">Confirm removal</p>
+        <h2>Delete this record?</h2>
+      </div>
+      <button class="editor-icon-button" id="cancelDeleteIcon" type="button" aria-label="Close">x</button>
+    </div>
+    <p id="confirmMessage"></p>
+    <div class="editor-dialog__actions">
+      <button class="editor-button editor-button--quiet" id="cancelDelete" type="button">Cancel</button>
+      <button class="editor-button editor-button--danger" id="confirmDelete" type="button">Delete</button>
+    </div>
+  </dialog>
+
+  <script src="data.js"></script>
+  <script src="site-data-patch.js"></script>
+  <script src="editor.js"></script>
+</body>
+</html>
