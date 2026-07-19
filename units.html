@@ -154,37 +154,46 @@
       color: var(--text-dim); letter-spacing: 0.1em; text-transform: uppercase;
     }
 
-    /* -- UNIT BIO PANEL (full-page slide-in) ---- */
+    /* -- UNIT BIO FOCAL DOSSIER ------------------ */
     .bio-panel {
       position: fixed;
-      top: 0; right: 0; bottom: 0;
-      width: min(680px, 100vw);
+      top: 50%; left: 50%;
+      width: min(1280px, calc(100vw - 6rem));
+      height: min(820px, calc(100vh - 6rem));
       z-index: 300;
       background: var(--bg-dark);
-      border-left: 1px solid var(--border);
-      display: flex; flex-direction: column;
-      transform: translateX(100%);
-      transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: grid;
+      grid-template-columns: minmax(380px, 0.9fr) minmax(0, 1.1fr);
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, -46%) scale(0.96);
+      transition: opacity 0.25s ease, transform 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
       overflow: hidden;
     }
-    .bio-panel.open { transform: translateX(0); }
+    .bio-panel.open {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, -50%) scale(1);
+    }
 
     .bio-panel__backdrop {
       position: fixed; inset: 0; z-index: 299;
-      background: rgba(6,8,16,0.7);
-      backdrop-filter: blur(4px);
+      background: rgba(2,4,12,0.86);
+      backdrop-filter: blur(10px);
       opacity: 0; pointer-events: none;
-      transition: opacity 0.38s;
+      transition: opacity 0.3s;
     }
     .bio-panel__backdrop.open { opacity: 1; pointer-events: all; }
 
-    /* Portrait strip at the top */
+    /* Portrait occupies the left half of the dossier. */
     .bio-panel__portrait {
       width: 100%;
-      height: 420px;
+      height: 100%;
       position: relative;
-      flex-shrink: 0;
       overflow: hidden;
+      border-right: 1px solid var(--border-dim);
       background: var(--bg-panel);
     }
     .bio-panel__portrait img {
@@ -197,8 +206,8 @@
       font-size: 12rem;
     }
     .bio-panel__portrait-shade {
-      position: absolute; bottom: 0; left: 0; right: 0; height: 70%;
-      background: linear-gradient(0deg, var(--bg-dark) 0%, transparent 100%);
+      position: absolute; inset: 0;
+      background: linear-gradient(0deg, rgba(4,7,20,0.98) 0%, rgba(4,7,20,0.28) 58%, transparent 100%);
     }
 
     /* Close button */
@@ -215,7 +224,7 @@
     /* Header overlaid on bottom of portrait */
     .bio-panel__header {
       position: absolute; bottom: 0; left: 0; right: 0;
-      padding: 2rem 3rem;
+      padding: 3.5rem;
       z-index: 5;
     }
     .bio-panel__cost-row {
@@ -227,12 +236,12 @@
       width: 12px; height: 12px; border-radius: 50%;
     }
     .bio-panel__role {
-      font-family: var(--font-mono); font-size: 1rem;
+      font-family: var(--font-mono); font-size: 1.15rem;
       letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-dim);
     }
     .bio-panel__name {
       font-family: var(--font-display);
-      font-size: clamp(3rem, 5vw, 4.5rem);
+      font-size: clamp(3.6rem, 5vw, 5.8rem);
       font-weight: 400; color: var(--text-bright);
       letter-spacing: 0.08em; text-transform: uppercase;
       line-height: 1; margin-bottom: 1.2rem;
@@ -259,7 +268,10 @@
 
     /* Scrollable body */
     .bio-panel__body {
-      flex: 1; overflow-y: auto; padding: 3rem;
+      min-width: 0;
+      height: 100%;
+      overflow-y: auto;
+      padding: 4rem;
       scrollbar-width: thin;
       scrollbar-color: var(--border) transparent;
     }
@@ -267,7 +279,7 @@
     .bio-panel__body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
     .bio-panel__section-label {
-      font-family: var(--font-mono); font-size: 1rem;
+      font-family: var(--font-mono); font-size: 1.1rem;
       letter-spacing: 0.3em; text-transform: uppercase;
       color: var(--gold); margin-bottom: 1.5rem;
       display: flex; align-items: center; gap: 1rem;
@@ -291,15 +303,15 @@
     .bio-panel__placeholder {
       border: 1px dashed rgba(201,168,76,0.2);
       border-radius: 4px;
-      padding: 4rem 3rem;
-      text-align: center;
+      padding: 3rem;
+      text-align: left;
       margin-bottom: 3rem;
     }
-    .bio-panel__placeholder-icon { font-size: 4rem; margin-bottom: 1.5rem; opacity: 0.4; }
+    .bio-panel__placeholder-icon { font-size: 1.15rem; margin-bottom: 1.8rem; opacity: 0.75; }
     .bio-panel__placeholder-text {
-      font-family: var(--font-mono); font-size: 1.1rem;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--text-dim); line-height: 1.8;
+      font-family: var(--font-body); font-size: 1.75rem;
+      letter-spacing: 0; text-transform: none;
+      color: var(--text-mid); line-height: 1.7;
     }
 
     /* Trait detail in bio */
@@ -317,19 +329,46 @@
     .bio-panel__trait-block-mark { font-size: 2.8rem; flex-shrink: 0; }
     .bio-panel__trait-block-info {}
     .bio-panel__trait-block-name {
-      font-family: var(--font-display); font-size: 1.4rem;
+      font-family: var(--font-display); font-size: 1.55rem;
       letter-spacing: 0.1em; text-transform: uppercase;
       color: var(--text-bright); margin-bottom: 0.3rem;
     }
     .bio-panel__trait-block-type {
-      font-family: var(--font-mono); font-size: 1rem;
-      letter-spacing: 0.12em; color: var(--text-dim);
+      font-family: var(--font-mono); font-size: 1.15rem;
+      line-height: 1.55;
+      letter-spacing: 0.04em; color: var(--text-dim);
+    }
+
+    @media (max-width: 900px) {
+      .bio-panel {
+        width: calc(100vw - 2rem);
+        height: calc(100vh - 2rem);
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(280px, 42vh) minmax(0, 1fr);
+      }
+      .bio-panel__portrait {
+        height: 100%;
+        border-right: 0;
+        border-bottom: 1px solid var(--border-dim);
+      }
+      .bio-panel__header { padding: 2.4rem; }
+      .bio-panel__body { padding: 2.5rem; }
     }
 
     @media (max-width: 700px) {
-      .bio-panel { width: 100vw; }
-      .bio-panel__portrait { height: 300px; }
       .all-units-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.4rem; }
+    }
+
+    @media (max-width: 520px) {
+      .bio-panel {
+        width: 100vw;
+        height: 100vh;
+        border: 0;
+        border-radius: 0;
+      }
+      .bio-panel__name { font-size: 3.2rem; }
+      .bio-panel__placeholder { padding: 2rem; }
+      .bio-panel__placeholder-text { font-size: 1.55rem; }
     }
   </style>
 </head>
@@ -422,7 +461,7 @@
   <div class="bio-panel__backdrop" id="bioBackdrop"></div>
 
   <!-- BIO PANEL -->
-  <aside class="bio-panel" id="bioPanel">
+  <aside class="bio-panel" id="bioPanel" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="bioPanelName">
     <button class="bio-panel__close" id="bioPanelClose">Close</button>
     <div class="bio-panel__portrait" id="bioPanelPortrait">
       <div class="bio-panel__portrait-fallback" id="bioPanelFallback"></div>
@@ -742,12 +781,14 @@
 
       // Open panel
       document.getElementById("bioPanel").classList.add("open");
+      document.getElementById("bioPanel").setAttribute("aria-hidden", "false");
       document.getElementById("bioBackdrop").classList.add("open");
       document.body.style.overflow = "hidden";
     }
 
     function closeBioPanel() {
       document.getElementById("bioPanel").classList.remove("open");
+      document.getElementById("bioPanel").setAttribute("aria-hidden", "true");
       document.getElementById("bioBackdrop").classList.remove("open");
       document.body.style.overflow = "";
     }

@@ -492,7 +492,7 @@
   function dossierUnits(title, units) {
     if (!units.length) return '';
     return `
-      <section class="dossier-section">
+      <section class="dossier-section dossier-section--units">
         <h2 class="dossier-section__title">${escapeHtml(title)}</h2>
         ${units.map(unit => `
           <button class="dossier-unit" type="button" data-reader-unit="${escapeAttribute(unit.id)}">

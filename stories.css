@@ -1104,7 +1104,7 @@
 }
 
 .story-reader__hero-content {
-  width: min(1200px, 100%);
+  width: min(1500px, 100%);
   margin: 0 auto;
   padding: 6rem 3rem;
   position: relative;
@@ -1128,7 +1128,7 @@
 }
 
 .story-reader__deck {
-  max-width: 720px;
+  max-width: 900px;
   margin-top: 1.7rem;
   color: #d0c8b8;
   font-size: 1.9rem;
@@ -1136,16 +1136,17 @@
 }
 
 .story-reader__layout {
+  max-width: 1500px;
   padding-top: 6rem;
   padding-bottom: 5rem;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 310px;
+  grid-template-columns: minmax(0, 1fr) 440px;
   align-items: start;
-  gap: 7rem;
+  gap: 5.5rem;
 }
 
 .story-article {
-  max-width: 760px;
+  max-width: 900px;
 }
 
 .story-article__label,
@@ -1153,7 +1154,7 @@
   margin-bottom: 2rem;
   color: var(--gold);
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -1161,8 +1162,8 @@
 .story-article p {
   color: #d9d3c7;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2rem;
-  line-height: 1.9;
+  font-size: 2.35rem;
+  line-height: 1.78;
 }
 
 .story-article p + p {
@@ -1175,7 +1176,7 @@
   border-top: 1px solid var(--border-dim);
   color: var(--reader-color, var(--gold));
   font-family: var(--font-mono);
-  font-size: 1rem;
+  font-size: 1.15rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -1197,20 +1198,31 @@
 
 .story-dossier__label {
   margin: 0;
-  padding: 1.5rem 0;
+  padding: 1.8rem 0;
   border-bottom: 1px solid var(--border-dim);
 }
 
 .dossier-section {
-  padding: 1.5rem 0;
+  padding: 1.8rem 0;
   border-bottom: 1px solid var(--border-dim);
 }
 
+.dossier-section--units {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
+}
+
+.dossier-section--units .dossier-section__title {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
 .dossier-section__title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   color: var(--text-dim);
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -1220,7 +1232,7 @@
   padding: 0;
   border: 0;
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-columns: 58px minmax(0, 1fr);
   align-items: center;
   gap: 1rem;
   background: transparent;
@@ -1230,13 +1242,13 @@
 }
 
 .dossier-unit + .dossier-unit {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .dossier-unit img,
 .dossier-unit__mark {
-  width: 48px;
-  height: 48px;
+  width: 58px;
+  height: 58px;
   border: 1px solid var(--border-dim);
   object-fit: cover;
 }
@@ -1256,41 +1268,44 @@
 
 .dossier-unit strong {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.15rem;
+  line-height: 1.15;
 }
 
 .dossier-unit span {
   margin-top: 0.2rem;
   color: var(--text-dim);
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.82rem;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
 .dossier-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.75rem;
 }
 
 .dossier-tag {
-  padding: 0.45rem 0.65rem;
+  padding: 0.65rem 0.85rem;
   border: 1px solid var(--border-dim);
   color: var(--text-mid);
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
 .story-related {
+  max-width: 1500px;
   padding-top: 4rem;
   padding-bottom: 8rem;
   border-top: 1px solid var(--border-dim);
 }
 
 .story-related__title {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-family: var(--font-display);
-  font-size: 2.3rem;
+  font-size: 3rem;
 }
 
 .story-related__grid {
@@ -1300,8 +1315,8 @@
 }
 
 .story-related__item {
-  min-height: 120px;
-  padding: 1.6rem;
+  min-height: 170px;
+  padding: 2.2rem;
   border: 1px solid var(--border-dim);
   border-radius: 4px;
   background: var(--bg-card);
@@ -1322,14 +1337,14 @@
 .story-related__item span {
   color: var(--text-dim);
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
 }
 
 .story-related__item strong {
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 1380px) {
@@ -1377,6 +1392,10 @@
 
   .story-dossier__label {
     grid-column: 1 / -1;
+  }
+
+  .dossier-section--units {
+    grid-template-columns: 1fr;
   }
 
   .archive-overview-layout {
