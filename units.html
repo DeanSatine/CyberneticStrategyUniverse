@@ -401,6 +401,23 @@
     </div>
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="nav__brand-mark" aria-hidden="true"></span>
+          <span>Cybernetic Strategy Universe</span>
+        </div>
+        <div class="footer__credits" aria-label="Credits">
+          <p class="footer__credits-title">Credits</p>
+          <p class="footer__credit"><span>Universe &amp; archive</span><strong>Dean Satine</strong></p>
+          <p class="footer__credit"><span>Stories</span><strong>Chloe Lee Wong</strong></p>
+        </div>
+        <p class="footer__portfolio"><a href="../index.html">Back to Portfolio</a></p>
+      </div>
+    </div>
+  </footer>
+
   <!-- BIO PANEL BACKDROP -->
   <div class="bio-panel__backdrop" id="bioBackdrop"></div>
 
@@ -409,7 +426,7 @@
     <button class="bio-panel__close" id="bioPanelClose">Close</button>
     <div class="bio-panel__portrait" id="bioPanelPortrait">
       <div class="bio-panel__portrait-fallback" id="bioPanelFallback"></div>
-      <img id="bioPanelImg" src="" alt="" onerror="tryNextUnitCardImage(this)" />
+      <img id="bioPanelImg" src="" alt="" decoding="async" onerror="tryNextUnitCardImage(this)" />
       <div class="bio-panel__portrait-shade"></div>
       <div class="bio-panel__header">
         <div class="bio-panel__cost-row">
@@ -466,6 +483,7 @@
       ]);
       const exts = ["png", "PNG", "jpg", "jpeg", "webp"];
       const paths = [];
+      stems.forEach(stem => paths.push(`./images/optimized/units/${stem}.webp`));
       stems.forEach(stem => exts.forEach(ext => paths.push(`./images/units/${stem}.${ext}`)));
       return uniqueList(paths);
     }
@@ -597,11 +615,11 @@
     // Build trait icon HTML. If a custom image is missing, use a short text code.
     function traitIconHTML(traitName, size = 20) {
       const safeName = imageSafeName(traitName);
-      const imgPath = `./images/traits/${safeName}Icon.png`;
+      const imgPath = `./images/optimized/traits/${safeName}Icon.webp`;
       const mark = traitMark(traitName);
       return `
         <div class="ucf__trait-icon" title="${traitName}" style="width:${size}px;height:${size}px">
-          <img src="${imgPath}" alt="${traitName}"
+          <img src="${imgPath}" alt="${traitName}" loading="lazy" decoding="async"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
                style="width:100%;height:100%;object-fit:cover;display:block" />
           <span class="ucf__trait-icon-fallback" style="display:none">${mark}</span>
@@ -647,6 +665,8 @@
               <img class="ucf__portrait-img"
                    src="${imgPath}"
                    alt="${unit.name}"
+                   loading="lazy"
+                   decoding="async"
                    data-image-index="0"
                    data-image-candidates="${imageCandidates.join('|')}"
                    style="object-fit:contain;object-position:center center;padding:1.2rem 1.2rem 0.6rem"

@@ -182,11 +182,20 @@
     // Sort units by cost then name for stability.
     normalizedUnits.sort((a, b) => (Number(a.cost) - Number(b.cost)) || String(a.name).localeCompare(String(b.name)));
 
+    // Unit stories are filed by origin. Current residence is only a fallback
+    // when a character has no recorded origin.
+    const normalizedStories = stories.map(story => {
+      if (story.type !== 'Unit Lore') return story;
+      const unit = unitMap.get(String(story.unit || '').toLowerCase());
+      const category = unit?.origin || unit?.currentResidence || story.category;
+      return category === story.category ? story : { ...story, category };
+    });
+
     window.CS_DATA = {
       ...source,
       units: normalizedUnits,
       traits: normalizedTraits,
-      stories
+      stories: normalizedStories
     };
   }
 

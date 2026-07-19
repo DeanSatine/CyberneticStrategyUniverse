@@ -67,6 +67,7 @@
     ]);
     const exts = ['png', 'PNG', 'jpg', 'jpeg', 'webp'];
     const paths = [];
+    stems.forEach(stem => paths.push(`./images/optimized/units/${stem}.webp`));
     stems.forEach(stem => exts.forEach(ext => paths.push(`./images/units/${stem}.${ext}`)));
     return uniqueList(paths);
   }
@@ -82,6 +83,7 @@
     ]);
     const exts = ['png', 'PNG', 'jpg', 'jpeg', 'webp'];
     const paths = [];
+    stems.forEach(stem => paths.push(`./images/optimized/icons/${stem}.webp`));
     stems.forEach(stem => exts.forEach(ext => paths.push(`./images/icons/${stem}.${ext}`)));
     return uniqueList(paths);
   }
@@ -104,7 +106,7 @@
 
   function traitImagePath(name) {
     const safeName = imageSafeName(name);
-    return `./images/traits/${safeName}Icon.png`;
+    return `./images/optimized/traits/${safeName}Icon.webp`;
   }
 
   function escapeHtml(value) {
@@ -139,6 +141,7 @@
       <div class="${className}" style="background:linear-gradient(160deg,${color}25,#06081099)" data-role="${escapeHtml(getRoleCat(unit.role))}">
         <div class="unit-card__bg"></div>
         <img class="unit-card__portrait-img" src="${imgPath}" alt="${escapeHtml(unit.name)}"
+             loading="lazy" decoding="async"
              data-image-index="0"
              data-image-candidates="${unitCardImageCandidates(unit).map(escapeHtml).join('|')}"
              onerror="window.tryNextUnitCardImage ? window.tryNextUnitCardImage(this) : (this.style.display='none')" />
@@ -241,7 +244,7 @@
     if (!grid) return;
     const stories = (data().stories || []).slice(0, 3);
     grid.innerHTML = stories.map(story => `
-      <article class="story-card" onclick="openStoryModal('${escapeHtml(story.id)}')">
+      <a class="story-card" href="stories.html?story=${encodeURIComponent(story.id)}">
         <div class="story-card__banner" style="background:${escapeHtml(story.color || '#45d8ff')}18">
           <div class="story-card__banner-bg" style="background:${escapeHtml(story.color || '#45d8ff')}"></div>
           <span class="story-card__banner-mark">${escapeHtml(storyMark(story))}</span>
@@ -254,7 +257,7 @@
           <h3 class="story-card__title">${escapeHtml(story.title)}</h3>
           <p class="story-card__excerpt">${escapeHtml(story.excerpt || '')}</p>
         </div>
-      </article>
+      </a>
     `).join('') || '<p class="section-desc">Story data was not found.</p>';
   }
 
@@ -264,14 +267,14 @@
     if (!grid) return;
     const regions = data().regions || [];
     grid.innerHTML = regions.map(region => `
-      <article class="region-card" style="--region-color:${escapeHtml(region.color || '#45d8ff')}">
-        <div class="region-card__mark">${escapeHtml(getInitialMark(region.name, 'RG'))}</div>
-        <div class="region-card__body">
-          <h3 class="region-card__title">${escapeHtml(region.name)}</h3>
-          <p class="region-card__tagline">${escapeHtml(region.tagline || '')}</p>
-          <p class="region-card__desc">${escapeHtml(region.description || '')}</p>
-        </div>
-      </article>
+      <a class="home-archive-link" href="stories.html?story=${encodeURIComponent(region.id)}" style="--archive-color:${escapeHtml(region.color || '#45d8ff')}">
+        <span class="home-archive-link__mark">${escapeHtml(getInitialMark(region.name, 'RG'))}</span>
+        <span class="home-archive-link__copy">
+          <strong>${escapeHtml(region.name)}</strong>
+          <small>${escapeHtml(region.tagline || 'Region record')}</small>
+        </span>
+        <span class="home-archive-link__action">Open story</span>
+      </a>
     `).join('') || '<p class="section-desc">Region data was not found.</p>';
   }
 
@@ -280,12 +283,14 @@
     if (!grid) return;
     const factions = data().factions || [];
     grid.innerHTML = factions.slice(0, 6).map(faction => `
-      <article class="faction-card" style="--faction-color:${escapeHtml(faction.color || '#45d8ff')}">
-        <div class="faction-card__type">${escapeHtml(faction.type || 'Faction')}</div>
-        <h3 class="faction-card__title">${escapeHtml(faction.name)}</h3>
-        <p class="faction-card__desc">${escapeHtml(faction.description || '')}</p>
-        <div class="faction-card__members">${escapeHtml((faction.members || []).slice(0, 5).join(' / '))}</div>
-      </article>
+      <a class="home-archive-link" href="stories.html?story=${encodeURIComponent(faction.id)}" style="--archive-color:${escapeHtml(faction.color || '#45d8ff')}">
+        <span class="home-archive-link__mark">${escapeHtml(getInitialMark(faction.name, 'FC'))}</span>
+        <span class="home-archive-link__copy">
+          <strong>${escapeHtml(faction.name)}</strong>
+          <small>${escapeHtml(faction.type || 'Faction')} / ${(faction.members || []).length} members</small>
+        </span>
+        <span class="home-archive-link__action">Open story</span>
+      </a>
     `).join('') || '<p class="section-desc">Faction data was not found.</p>';
   }
 

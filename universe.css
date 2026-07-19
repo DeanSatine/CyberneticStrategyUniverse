@@ -3,8 +3,6 @@
    Galaxy archive aesthetic with nebula gradients and orbital UI details
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
 /* -- RESET & BASE ------------------------------------------- */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -98,6 +96,22 @@ img { display: block; max-width: 100%; }
 @keyframes driftA { from { transform: translate(0,0); } to { transform: translate(60px, 80px); } }
 @keyframes driftB { from { transform: translate(0,0); } to { transform: translate(-40px, 60px); } }
 @keyframes driftC { from { transform: translate(0,0); } to { transform: translate(30px, -50px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ambient__glow {
+    animation: none;
+    filter: blur(80px);
+  }
+}
 
 /* -- LAYOUT ------------------------------------------------- */
 .container {
@@ -773,6 +787,7 @@ img { display: block; max-width: 100%; }
   margin-bottom: 4rem;
 }
 .story-card {
+  display: block;
   background: var(--bg-card);
   border: 1px solid var(--border-dim);
   border-radius: 5px;
@@ -829,6 +844,114 @@ img { display: block; max-width: 100%; }
   color: var(--text-mid);
   font-style: italic;
   line-height: 1.7;
+}
+
+/* -- HOME LORE DIRECTORIES --------------------------------- */
+.stories-section--home {
+  padding-top: 7rem;
+}
+
+.home-directory-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.home-directory-section .section-header {
+  margin-bottom: 2.5rem;
+}
+
+.home-directory-section .regions-grid,
+.home-directory-section .factions-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-archive-link {
+  min-width: 0;
+  min-height: 88px;
+  padding: 1.3rem 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--archive-color) 28%, transparent);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.3rem;
+  background: linear-gradient(100deg, color-mix(in srgb, var(--archive-color) 9%, transparent), rgba(7, 11, 28, 0.72));
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.home-archive-link:hover {
+  border-color: var(--archive-color);
+  background: linear-gradient(100deg, color-mix(in srgb, var(--archive-color) 15%, transparent), rgba(10, 16, 38, 0.88));
+  transform: translateX(3px);
+}
+
+.home-archive-link__mark {
+  width: 46px;
+  height: 46px;
+  border: 1px solid color-mix(in srgb, var(--archive-color) 55%, transparent);
+  display: grid;
+  place-items: center;
+  color: var(--archive-color);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+
+.home-archive-link__copy,
+.home-archive-link__copy strong,
+.home-archive-link__copy small {
+  min-width: 0;
+  display: block;
+}
+
+.home-archive-link__copy strong {
+  overflow: hidden;
+  color: var(--text-bright);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-archive-link__copy small {
+  margin-top: 0.35rem;
+  overflow: hidden;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.home-archive-link__action {
+  color: var(--archive-color);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .home-directory-section .regions-grid,
+  .home-directory-section .factions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-archive-link {
+    grid-template-columns: 42px minmax(0, 1fr);
+  }
+
+  .home-archive-link__mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .home-archive-link__action {
+    display: none;
+  }
 }
 
 /* -- MODAL -------------------------------------------------- */
@@ -1064,11 +1187,41 @@ img { display: block; max-width: 100%; }
   color: var(--text-dim);
 }
 .footer__credit {
+  display: grid;
+  gap: 0.25rem;
   font-family: var(--font-mono);
   font-size: 1.1rem;
   color: var(--text-dim);
 }
-.footer__credit a { color: var(--gold); }
+.footer__credits {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 0.8rem 2.5rem;
+}
+.footer__credits-title {
+  grid-column: 1 / -1;
+  color: var(--gold);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.footer__credit span {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.footer__credit strong {
+  color: var(--text-bright);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer__portfolio {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+.footer__portfolio a { color: var(--gold); }
 
 /* -- UNIT ROLE PALETTES ------------------------------------ */
 /* Used as portrait backgrounds by role */

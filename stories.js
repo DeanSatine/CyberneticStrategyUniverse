@@ -81,6 +81,18 @@
     });
 
     refs.library.addEventListener('click', event => {
+      const browseButton = event.target.closest('[data-browse-type]');
+      if (browseButton) {
+        state.type = browseButton.dataset.browseType;
+        state.region = 'all';
+        state.query = '';
+        state.visible = PAGE_SIZE;
+        refs.regionFilter.value = 'all';
+        refs.search.value = '';
+        updateActiveTab();
+        renderLibrary();
+        return;
+      }
       const button = event.target.closest('[data-story-id]');
       if (button) openStoryReader(button.dataset.storyId);
     });
@@ -157,18 +169,147 @@
     const names = ['CommandCore', 'Tracercore', 'Coreweaver'];
     refs.featuredPortraits.innerHTML = names.map(name => unitByName.get(normalize(name)))
       .filter(Boolean)
-      .map(unit => `<img src="${unitImage(unit, 'card')}" alt="" />`)
+      .map(unit => `<img src="${unitImage(unit, 'card')}" alt="" decoding="async" />`)
       .join('');
   }
 
   function renderLibrary() {
+    const overviewMode = state.type === 'all' && state.region === 'all' && !state.query;
+    if (overviewMode) {
+      refs.resultCount.textContent = `${data.stories.length} records`;
+      refs.empty.hidden = true;
+      refs.library.hidden = false;
+      refs.moreWrap.hidden = true;
+      refs.library.classList.add('story-library--overview');
+      refs.library.innerHTML = renderArchiveOverview();
+      return;
+    }
+
     const stories = filteredStories();
     const visible = stories.slice(0, state.visible);
+    refs.library.classList.remove('story-library--overview');
     refs.resultCount.textContent = `${stories.length} record${stories.length === 1 ? '' : 's'}`;
     refs.empty.hidden = stories.length > 0;
     refs.library.hidden = stories.length === 0;
     refs.moreWrap.hidden = stories.length <= state.visible;
     refs.library.innerHTML = visible.map(renderStoryCard).join('');
+  }
+
+  function renderArchiveOverview() {
+    const worldStory = storyById.get('the-dominion') || data.stories.find(story => story.type === 'World');
+    const unitStories = data.stories.filter(story => story.type === 'Unit Lore').slice(0, 12);
+    const timelineStories = data.stories.filter(story => story.type === 'Timeline Event').slice(0, 6);
+
+    const regionLinks = data.regions.map(region => {
+      const story = storyById.get(region.id);
+      const residents = unitsFromRegion(region);
+      const coverUnit = getCoverUnit(story || {}, story ? getRelations(story) : { primary: null, featured: [], mentioned: [], regionResidents: residents });
+      const shownResidents = residents.slice(0, 5);
+      const remainingResidents = Math.max(0, residents.length - shownResidents.length);
+      return `
+        <button class="overview-index-card" type="button" data-story-id="${escapeAttribute(story?.id || region.id)}" style="--overview-color:${escapeAttribute(region.color || '#54d7ff')}">
+          <span class="overview-index-card__cover">
+            ${coverUnit ? `<img src="${unitImage(coverUnit, 'card')}" alt="" loading="lazy" decoding="async" />` : ''}
+            <span>${escapeHtml(initials(region.name, 'RG'))}</span>
+          </span>
+          <span class="overview-index-card__body">
+            <span class="overview-index-card__heading"><strong>${escapeHtml(region.name)}</strong><small>${residents.length} ${residents.length === 1 ? 'character' : 'characters'}</small></span>
+            <span class="overview-index-card__involved">
+              <small>Involved</small>
+              <span class="involved-faces">${shownResidents.map(renderFace).join('')}${remainingResidents ? `<span class="involved-face-more">+${remainingResidents}</span>` : ''}</span>
+            </span>
+          </span>
+        </button>
+      `;
+    }).join('');
+
+    const factionLinks = data.factions.map(faction => {
+      const story = storyById.get(faction.id);
+      const members = (faction.members || []).map(name => unitByName.get(normalize(name))).filter(Boolean);
+      const coverUnit = getCoverUnit(story || {}, story ? getRelations(story) : { primary: null, featured: members, mentioned: [], regionResidents: [] });
+      const shownMembers = members.slice(0, 5);
+      const remainingMembers = Math.max(0, members.length - shownMembers.length);
+      return `
+        <button class="overview-index-card" type="button" data-story-id="${escapeAttribute(story?.id || faction.id)}" style="--overview-color:${escapeAttribute(faction.color || '#8d67ff')}">
+          <span class="overview-index-card__cover">
+            ${coverUnit ? `<img src="${unitImage(coverUnit, 'card')}" alt="" loading="lazy" decoding="async" />` : ''}
+            <span>${escapeHtml(initials(faction.name, 'FC'))}</span>
+          </span>
+          <span class="overview-index-card__body">
+            <span class="overview-index-card__heading"><strong>${escapeHtml(faction.name)}</strong><small>${members.length} ${members.length === 1 ? 'member' : 'members'}</small></span>
+            <span class="overview-index-card__involved">
+              <small>Involved</small>
+              <span class="involved-faces">${shownMembers.map(renderFace).join('')}${remainingMembers ? `<span class="involved-face-more">+${remainingMembers}</span>` : ''}</span>
+            </span>
+          </span>
+        </button>
+      `;
+    }).join('');
+
+    return `
+      <div class="archive-overview-layout">
+        <section class="overview-side overview-side--regions">
+          <div class="overview-group-heading"><span>World index</span><h3>Regions</h3></div>
+          <div class="overview-index-list">${regionLinks}</div>
+        </section>
+
+        <button class="overview-world-feature" type="button" data-story-id="${escapeAttribute(worldStory?.id || 'the-dominion')}">
+          <img src="images/optimized/units/CommandCoreCard.webp" alt="" decoding="async" />
+          <span class="overview-world-feature__shade"></span>
+          <span class="overview-world-feature__copy">
+            <small>World overview</small>
+            <strong>${escapeHtml(worldStory?.title || 'The Dominion')}</strong>
+            <span>${escapeHtml(worldStory?.excerpt || '')}</span>
+            <b>Open world record</b>
+          </span>
+        </button>
+
+        <section class="overview-side overview-side--factions">
+          <div class="overview-group-heading"><span>Power index</span><h3>Factions</h3></div>
+          <div class="overview-index-list">${factionLinks}</div>
+        </section>
+      </div>
+
+      <section class="overview-character-band">
+        <div class="overview-band-heading">
+          <div><span>Character archive</span><h3>Unit stories</h3></div>
+          <button type="button" data-browse-type="unit">View all ${data.units.length}</button>
+        </div>
+        <div class="overview-unit-grid">
+          ${unitStories.map(renderCompactUnitStory).join('')}
+        </div>
+      </section>
+
+      <section class="overview-timeline-band">
+        <div class="overview-band-heading">
+          <div><span>Dominion history</span><h3>Timeline</h3></div>
+          <button type="button" data-browse-type="timeline">View full timeline</button>
+        </div>
+        <div class="overview-timeline-list">
+          ${timelineStories.map(story => `
+            <button class="overview-timeline-item" type="button" data-story-id="${escapeAttribute(story.id)}">
+              <span>${escapeHtml(story.category || 'Event')}</span>
+              <strong>${escapeHtml(story.title)}</strong>
+            </button>
+          `).join('')}
+        </div>
+      </section>
+    `;
+  }
+
+  function renderCompactUnitStory(story) {
+    const unit = unitByName.get(normalize(story.unit || story.title));
+    return `
+      <button class="overview-unit-story" type="button" data-story-id="${escapeAttribute(story.id)}">
+        <span class="overview-unit-story__portrait">
+          ${unit ? `<img src="${unitImage(unit, 'card')}" alt="" loading="lazy" decoding="async" />` : `<span>${escapeHtml(initials(story.title, 'UN'))}</span>`}
+        </span>
+        <span class="overview-unit-story__copy">
+          <strong>${escapeHtml(story.title)}</strong>
+          <small>${escapeHtml(unit?.subtitle || story.category || 'Unit lore')}</small>
+        </span>
+      </button>
+    `;
   }
 
   function filteredStories() {
@@ -206,7 +347,7 @@
       <article class="archive-story-card" style="--story-color:${escapeAttribute(color)}">
         <button class="archive-story-card__button" type="button" data-story-id="${escapeAttribute(story.id)}">
           <span class="archive-story-card__visual">
-            ${coverUnit ? `<img src="${unitImage(coverUnit, 'card')}" alt="" loading="lazy" />` : ''}
+            ${coverUnit ? `<img src="${unitImage(coverUnit, 'card')}" alt="" loading="lazy" decoding="async" />` : ''}
             <span class="archive-story-card__mark">${escapeHtml(initials(story.title, 'CS'))}</span>
           </span>
           <span class="archive-story-card__body">
@@ -282,7 +423,7 @@
     refs.reader.style.setProperty('--reader-color', color);
     refs.readerBarTitle.textContent = story.title;
     refs.readerHero.innerHTML = `
-      ${coverUnit ? `<img class="story-reader__hero-image" src="${unitImage(coverUnit, 'card')}" alt="" />` : ''}
+      ${coverUnit ? `<img class="story-reader__hero-image" src="${unitImage(coverUnit, 'card')}" alt="" decoding="async" />` : ''}
       <div class="story-reader__hero-content">
         <p class="story-reader__meta">${escapeHtml(story.type || 'Archive')}${story.category ? ` / ${escapeHtml(story.category)}` : ''}</p>
         <h1 class="story-reader__title">${escapeHtml(story.title)}</h1>
@@ -292,6 +433,7 @@
     refs.article.innerHTML = `
       <p class="story-article__label">${escapeHtml(articleLabel(story))}</p>
       ${paragraphs.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join('')}
+      <div class="story-article__credit">Written by Chloe Lee Wong</div>
     `;
     refs.dossier.innerHTML = renderDossier(story, relations);
     refs.related.innerHTML = renderRelatedStories(story, relations);
@@ -354,12 +496,18 @@
         <h2 class="dossier-section__title">${escapeHtml(title)}</h2>
         ${units.map(unit => `
           <button class="dossier-unit" type="button" data-reader-unit="${escapeAttribute(unit.id)}">
-            ${unit.iconImageName ? `<img src="${unitImage(unit, 'icon')}" alt="" loading="lazy" />` : `<span class="dossier-unit__mark">${escapeHtml(initials(unit.name, 'UN'))}</span>`}
-            <span><strong>${escapeHtml(unit.name)}</strong><span>${escapeHtml(unit.origin || unit.currentResidence || unit.role || '')}</span></span>
+            ${unit.iconImageName ? `<img src="${unitImage(unit, 'icon')}" alt="" loading="lazy" decoding="async" />` : `<span class="dossier-unit__mark">${escapeHtml(initials(unit.name, 'UN'))}</span>`}
+            <span><strong>${escapeHtml(unit.name)}</strong><span>${escapeHtml(unitDossierLabel(unit))}</span></span>
           </button>
         `).join('')}
       </section>
     `;
+  }
+
+  function unitDossierLabel(unit) {
+    const subtitle = String(unit.subtitle || '').trim();
+    if (subtitle && normalize(subtitle) !== 'subtitle') return subtitle;
+    return unit.origin || unit.currentResidence || unit.role || '';
   }
 
   function dossierTags(title, tags) {
@@ -467,9 +615,11 @@
   }
 
   function unitBelongsRegion(unit, region) {
-    const fields = [unit.origin, unit.currentResidence].filter(Boolean).map(normalize);
+    const canonicalLocation = unit.origin || unit.currentResidence;
+    if (!canonicalLocation) return false;
+    const field = normalize(canonicalLocation);
     const names = [region.name, ...(region.locations || [])].map(normalize);
-    return fields.some(field => names.some(name => name && (field.includes(name) || name.includes(field))));
+    return names.some(name => name && (field.includes(name) || name.includes(field)));
   }
 
   function getCoverUnit(story, relations) {
@@ -516,13 +666,13 @@
   }
 
   function renderFace(unit) {
-    return `<span class="involved-face" title="${escapeAttribute(unit.name)}">${unit.iconImageName ? `<img src="${unitImage(unit, 'icon')}" alt="" loading="lazy" />` : escapeHtml(initials(unit.name, 'UN'))}</span>`;
+    return `<span class="involved-face" title="${escapeAttribute(unit.name)}">${unit.iconImageName ? `<img src="${unitImage(unit, 'icon')}" alt="" loading="lazy" decoding="async" />` : escapeHtml(initials(unit.name, 'UN'))}</span>`;
   }
 
   function unitImage(unit, type) {
     const folder = type === 'icon' ? 'icons' : 'units';
     const filename = type === 'icon' ? unit.iconImageName : unit.cardImageName;
-    return `images/${folder}/${encodeURIComponent(filename || unit.imageName || unit.name)}.png`;
+    return `images/optimized/${folder}/${encodeURIComponent(filename || unit.imageName || unit.name)}.webp`;
   }
 
   function initials(value, fallback) {

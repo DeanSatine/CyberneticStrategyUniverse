@@ -200,6 +200,23 @@
     </div>
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="nav__brand-mark" aria-hidden="true"></span>
+          <span>Cybernetic Strategy Universe</span>
+        </div>
+        <div class="footer__credits" aria-label="Credits">
+          <p class="footer__credits-title">Credits</p>
+          <p class="footer__credit"><span>Universe &amp; archive</span><strong>Dean Satine</strong></p>
+          <p class="footer__credit"><span>Stories</span><strong>Chloe Lee Wong</strong></p>
+        </div>
+        <p class="footer__portfolio"><a href="../index.html">Back to Portfolio</a></p>
+      </div>
+    </div>
+  </footer>
+
   <div class="modal-overlay" id="modalOverlay">
     <div class="modal" id="modal">
       <button class="modal__close" id="modalClose">Close</button>
@@ -249,6 +266,7 @@
       ]);
       const exts = ["png", "PNG", "jpg", "jpeg", "webp"];
       const paths = [];
+      stems.forEach(stem => paths.push(`images/optimized/icons/${stem}.webp`));
       stems.forEach(stem => exts.forEach(ext => paths.push(`images/icons/${stem}.${ext}`)));
       return uniqueList(paths);
     }
@@ -315,6 +333,8 @@
                    style="background:linear-gradient(160deg,${COST_COLORS[unit.cost]}22,#0a0c1499)">
                 <img class="trait-unit-card__portrait-img"
                      src="${unitIconCandidates(unit)[0]}"
+                     loading="lazy"
+                     decoding="async"
                      data-icon-index="0"
                      data-icon-candidates="${unitIconCandidates(unit).join('|')}"
                      alt="${unit.name}"
