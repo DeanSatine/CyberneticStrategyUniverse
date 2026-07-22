@@ -2043,20 +2043,37 @@ body::after {
 }
 
 .home-page .hero {
-  min-height: min(860px, 88vh);
-  padding: 11rem 3rem 7rem;
+  min-height: min(940px, 92vh);
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 13rem max(3rem, 6vw) 7rem;
+  background:
+    linear-gradient(90deg, rgba(2, 5, 14, 0.92) 0%, rgba(2, 5, 14, 0.62) 31%, rgba(2, 5, 14, 0.08) 58%),
+    linear-gradient(180deg, rgba(2, 5, 14, 0.42) 0%, rgba(2, 5, 14, 0.05) 48%, rgba(2, 5, 14, 0.68) 100%),
+    url("images/intro-screen.png") center 5% / cover no-repeat;
+  isolation: isolate;
+}
+
+.home-page .hero::before,
+.home-page .hero::after {
+  display: none;
 }
 
 .home-page .hero__content {
-  max-width: 1120px;
+  max-width: 720px;
+  margin-top: clamp(1rem, 5vh, 5rem);
+  margin-left: clamp(0rem, 2vw, 3rem);
 }
 
 .home-page .hero__title {
-  margin-bottom: 3rem;
+  align-items: flex-start;
+  margin-bottom: 3.2rem;
+  text-shadow: 0 6px 40px rgba(0, 0, 0, 0.78), 0 0 24px rgba(46, 213, 255, 0.18);
 }
 
 .home-page .hero__title-line {
-  font-size: clamp(7rem, 9vw, 12rem);
+  font-size: clamp(6.8rem, 7.1vw, 10.2rem);
   letter-spacing: 0;
 }
 
@@ -2067,15 +2084,24 @@ body::after {
   line-height: 1.6;
 }
 
+.home-page .hero__cta-row {
+  justify-content: flex-start;
+}
+
 .home-page .btn {
   padding: 1.45rem 3.5rem;
   font-size: 1.35rem;
   letter-spacing: 0;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
 }
 
 .home-page .hero__scroll-hint {
   font-size: 1.15rem;
   letter-spacing: 0;
+  right: max(2rem, 4vw);
+  left: auto;
+  transform: none;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.9);
 }
 
 .home-page .section,
@@ -2281,8 +2307,26 @@ body::after {
   }
 
   .home-page .hero {
-    min-height: 0;
-    padding: 17rem 2rem 8rem;
+    min-height: 760px;
+    align-items: center;
+    text-align: center;
+    padding: 13rem 2rem 7rem;
+    background:
+      linear-gradient(180deg, rgba(2, 5, 14, 0.86) 0%, rgba(2, 5, 14, 0.34) 44%, rgba(2, 5, 14, 0.82) 100%),
+      url("images/intro-screen.png") 52% 8% / cover no-repeat;
+  }
+
+  .home-page .hero__content {
+    max-width: 680px;
+    margin: 0;
+  }
+
+  .home-page .hero__title {
+    align-items: center;
+  }
+
+  .home-page .hero__cta-row {
+    justify-content: center;
   }
 
   .home-page .spotlight {
@@ -2310,7 +2354,7 @@ body::after {
 
 @media (max-width: 600px) {
   .home-page .hero__title-line {
-    font-size: 5rem;
+    font-size: 4.6rem;
   }
 
   .home-page .hero__desc {
