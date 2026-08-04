@@ -187,7 +187,9 @@
     const normalizedStories = stories.map(story => {
       if (story.type !== 'Unit Lore') return story;
       const unit = unitMap.get(String(story.unit || '').toLowerCase());
-      const category = unit?.origin || unit?.currentResidence || story.category;
+      const origin = String(unit?.origin || '').trim();
+      const usableOrigin = origin && !/^(unknown|n\/a|unspecified)$/i.test(origin) ? origin : '';
+      const category = usableOrigin || unit?.currentResidence || story.category;
       return category === story.category ? story : { ...story, category };
     });
 

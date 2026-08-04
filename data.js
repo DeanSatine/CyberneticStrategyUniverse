@@ -14,8 +14,8 @@ window.CS_DATA = {
       "species": "Cyber",
       "yearsActive": "40",
       "currentResidence": "",
-      "fullName": "NeedleBot",
-      "lore": "Needlebot invigorates the crowd in every Mecha-Clash match with his piercing needles. His notoriety in Mecha-Clash isn't as strong as others'; his humbly shy personality doesn't leave an effective impact on the audience, and he entered the sport later in his activity. Despite the challenges, Needlebot has made use of his sharpshooting skills and put on some decent shows for the crowd. Created from several scrapped parts from several different cybers, Needlebot is determined to make a name for himself in this world.",
+      "fullName": "Needlebot",
+      "lore": "Needlebot is a timid and impressionable soldier for the ECCU, who's still learning how to get the hang of their talents. Despite the years of experience, most of Needlebot’s days consisted of boring lookouts and meaningless perimeter checks around the city. It was the disappearance of a fellow soldier that finally put him on the field, forcing him to use skills he hasn’t used in decades. Assigned a real mission for the first time, gathering the confidence and mastering his needle technique is just the beginning.",
       "stats": {
         "Damage": "45 / 65 / 95",
         "Armour/MR": "15",
@@ -43,7 +43,7 @@ window.CS_DATA = {
       "yearsActive": "80",
       "currentResidence": "",
       "fullName": "KNOX",
-      "lore": "KNOX is a strategic fighter with a stern nature and great vigour. Originally one of Mecha-Clash's earliest stars, he's now been reprogrammed to train the cadets of the Spiro Military Academy. His teaching expertise is close combat, and his common teaching method is sparring with students without holding back. Despite discussions of him being \"outdated\", he's become one of the most popular instructors due to effective improvement in students resulting from his classes. Whether it's a practice session or a real battle, KNOX is always ready to teach a lesson to whoever challenges him.",
+      "lore": "KNOX is a strategic fighter with a stern nature and great vigour. Originally one of Mecha-Clash’s earliest stars, he’s now been reprogrammed to train the cadets of the Spiro Military Academy. His teaching expertise is close combat, and his common teaching method is sparring with students without holding back. Despite discussions of him being “outdated”, he’s become one of the most popular instructors due to effective improvement in students resulting from his classes. Whether it’s a practice session or a real battle, KNOX is always ready to teach a lesson to whoever challenges him.",
       "stats": {
         "Damage": "50 / 75 / 115",
         "Armour/MR": "35",
@@ -71,7 +71,7 @@ window.CS_DATA = {
       "yearsActive": "170",
       "currentResidence": "Riang (Reassembled)",
       "fullName": "Tracercore",
-      "lore": "Tracercore is one of the deadliest assassins in Riang. Originally a part of the Core Four, she washed ashore on Riang in pieces after being dumped from the mainland. Her memory chip turned out to be functional after reassembly, which brought back haunting memories. Her resentment made her rebel from her moral code and into the dark world of assassins-for-hire. Her appearances are limited, often travelling alone through shadows or at night.",
+      "lore": "Under a new identity, Tracercore is one of the deadliest assassins in Riang. Originally a part of the Core Four, she washed ashore on Riang in pieces after being dumped from the mainland. Her memory chip turned out to be functional after reassembly, which brought back haunting memories. Her resentment caused her to rebel from her moral code and fall into the dark world of assassins-for-hire. Her appearances are limited, often travelling alone through shadows or at night.",
       "stats": {
         "HP": "450/900/1700",
         "Damage": "30/50/70",
@@ -100,7 +100,7 @@ window.CS_DATA = {
       "yearsActive": "35",
       "currentResidence": "",
       "fullName": "SteelGuard",
-      "lore": "Spending most of his days in the tunnels, SteelGuard maintains peace by protecting citizens and disciplining anyone who's causing trouble. His kindness even extends to escorting travellers as a guide and bodyguard if needed. A boxing accident in the deeper lanes convinced him to leave his shady lifestyle behind. As a result, he's dedicated the rest of his life to justice and order as a way of redemption. SteelGuard may lead with a heart of steel, but it'll open up to anyone in need.",
+      "lore": "Spending most of his days in the tunnels, SteelGuard maintains peace by protecting citizens and disciplining anyone who’s causing trouble. His kindness even extends to escorting travellers through the tunnels as a guide and bodyguard if needed. A boxing accident in the deeper lanes convinced him to leave his shady lifestyle behind. As a result, he’s dedicated the rest of his life to justice and order as a way of redemption. SteelGuard may lead with a heart of steel, but it’ll open up to anyone in need.",
       "stats": {
         "HP": "650/1200/2200",
         "Damage": "45/75/115",
@@ -129,7 +129,7 @@ window.CS_DATA = {
       "yearsActive": "19",
       "currentResidence": "",
       "fullName": "BackSlash",
-      "lore": "BackSlash took the Mecha-Clash world by storm after participating in just three matches. Her agility paired with her impressive blade proved to be a lethal combination; it was even enough to gain her a fanbase overnight. Her humble beginning starts in one of the city's many alleyways, where a human boy first discovered her. After some light repairs and upgrades, the two swore to rise to the top by whatever means necessary. So far, it's going according to plan as BackSlash is now one of the fastest-growing Mecha-Clash stars to ever grace the arena.",
+      "lore": "BackSlash took the Mecha-Clash world by storm after participating in just three matches. Her agility paired with her impressive blade proved to be a lethal combination; it was even enough to gain her a fanbase overnight. Her humble beginning starts in one of the city’s many alleyways, where a human boy first discovered her. After some light repairs and upgrades, the two swore to rise to the top by whatever means necessary. So far, it’s going according to plan as BackSlash is now one of the fastest-growing Mecha-Clash stars to ever grace the arena.",
       "stats": {
         "HP": "700/1250/2000",
         "Damage": "45/70/105",
@@ -158,7 +158,7 @@ window.CS_DATA = {
       "yearsActive": "10",
       "currentResidence": "",
       "fullName": "Patch",
-      "lore": "Known mostly for repairing mechanical and electronic equipment, Patch is beloved by his community and praised for being the quickest handyman in all of Paintersfield. His nimble feet, small size, and incredible eyesight allow him to examine big and small problems. The longest he's ever taken for a repair was ten minutes, and that was for a blown head gasket. If you're ever in need of a fixer, Patch is the one to call.",
+      "lore": "Known mostly for repairing mechanical and electronic equipment, Patch is beloved by his community and praised for being the quickest handyman in all of Paintersfield. His nimble feet, small size, and incredible eyesight allow him to examine big and small problems. The longest he’s ever taken for a repair was ten minutes, and that was for a blown head gasket. If you’re ever in need of a fixer, Patch is the one to call.",
       "stats": {
         "HP": "500/900/1500",
         "Damage": "35/60/95",
@@ -187,7 +187,7 @@ window.CS_DATA = {
       "yearsActive": "21",
       "currentResidence": "",
       "fullName": "SteelShade",
-      "lore": "SteelShade is the black sheep among the other Mecha-Clash stars; their \"slow and steady wins the race\" approach isn't as captivating to watch in an action-packed sport. However, the energy they save up for the last few minutes is when audiences start leaning in. Their wildcard move involves running laps at high speed, summoning clones that'll throw off other opponents. Amidst the chaos, their cloaking ability helps them discreetly move to the top without anyone spotting them. They seem to prioritize privacy in and out of the arena; once their match is over, you won't see them till the next one.",
+      "lore": "SteelShade is the black sheep among the other Mecha-Clash stars; their “slow and steady wins the race” approach isn’t as captivating to watch in an action-packed sport. However, the energy they save up for the last few minutes is when audiences start leaning in. Their wildcard move involves running laps at high speed, summoning clones that’ll throw off other opponents. Amidst the chaos, their cloaking ability helps them discreetly move to the top without anyone spotting them. They seem to prioritize privacy in and out of the arena; once their match is over, you won’t see them till the next one.",
       "stats": {
         "HP": "650/1150/2100",
         "Damage": "45/70/100",
@@ -216,7 +216,7 @@ window.CS_DATA = {
       "yearsActive": "30",
       "currentResidence": "",
       "fullName": "Overturn",
-      "lore": "Stationed somewhere in the Main Lane, Overturn challenges any passersby to a friendly wrestling match. At first glance, beating someone like him seems possible and pretty easy. However, engaging with him in the ring is a whole other level. Using grappling techniques, Overturn either subdues his opponent or puts them into submission till they forfeit. He's taken some wins and losses, but if it means becoming the best boxer in Sateen Lanes, he'll never stop.",
+      "lore": "Stationed somewhere in the Main Lane, Overturn challenges any passersby to a friendly wrestling match. At first glance, beating someone like him seems possible and pretty easy. However, engaging with him in the ring is a whole other level. Using grappling techniques, Overturn either subdues his opponent or puts them into submission till they forfeit. He’s taken some wins and losses, but if it means becoming the best boxer in Sateen Lanes, he’ll never stop.",
       "stats": {
         "HP": "650/1150/2100",
         "Damage": "45/70/100",
@@ -244,8 +244,8 @@ window.CS_DATA = {
       "species": "Cyber",
       "yearsActive": "69",
       "currentResidence": "",
-      "fullName": "DreadLine",
-      "lore": "The ruthlessness of his fire beam attacks paralyze all who oppose him with an overwhelming dread. Having the highest kill count on Riang has earned him the utmost respect and fear from everyone. Even the bloodthirsty Ebony Clan tries not to interact with him if possible. However, his astounding record as an assassin only scratches the surface. Not only is he one of the few to have seen Tracercore, but he's also the only one to have ever worked alongside her.",
+      "fullName": "Dreadline",
+      "lore": "The ruthlessness of his fire beam attacks paralyzes all who oppose him with an overwhelming dread. Having the highest kill count among Riang has earned him the utmost respect and fear from everyone. Even the bloodthirsty Ebony Clan tries not to interact with him if possible. However, his astounding record as an assassin only scratches the surface. Not only is he one of the few to have seen Tracercore, but he’s also the only one to have ever worked alongside her.",
       "stats": {
         "HP": "500/1150/2100",
         "Damage": "45/70/100",
@@ -271,11 +271,11 @@ window.CS_DATA = {
         "Triggershot"
       ],
       "origin": "Riang",
-      "species": "Human (w/ Cybernetics)",
+      "species": "Human",
       "yearsActive": "37",
       "currentResidence": "",
-      "fullName": "FrontPoint",
-      "lore": "Strictly following Riang's traditional values, FrontPoint approaches his work differently from his fellow assassins. As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family's fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins.",
+      "fullName": "Nori Eisaku",
+      "lore": "Strictly following Riang’s traditional values, FrontPoint approaches his work differently from his fellow assassins. As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family’s fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins.",
       "stats": {
         "HP": "650/1150/2100",
         "Damage": "40/60/90",
@@ -304,7 +304,7 @@ window.CS_DATA = {
       "yearsActive": "38",
       "currentResidence": "",
       "fullName": "Consume-OS",
-      "lore": "Out of all the Ebony Clan members, Consume-OS is the most unhinged and vicious of them all. Their unpredictable movements and rapid speed allow them to get the jump on opponents by literally jumping and crashing down on them with a overwhelming force. Their spontaneity proves to be a challenge within the Ebony Clan as well, challenging to the point that the clan's archon is the only one who can control the beast. Any encounter with Consume-OS is guaranteed to end in a bloodbath.",
+      "lore": "Out of all the Ebony Clan members, Consume-OS is the most unhinged and vicious of them all. Their unpredictable movements and rapid speed allow them to get the jump on opponents by literally jumping and crashing down on them with overwhelming force. Their spontaneity proves to be a challenge within the Ebony Clan as well, challenging to the point that the clan’s archon is the only one who can control the beast. Any encounter with Consume-OS is guaranteed to end in a bloodbath.",
       "stats": {
         "HP": "700/1250/2250",
         "Damage": "45/60/85",
@@ -333,7 +333,7 @@ window.CS_DATA = {
       "yearsActive": "55 (including stasis 258, blown up at 52)",
       "currentResidence": "",
       "fullName": "Dr. Boost",
-      "lore": "Specializing in medicine, Dr. Boost knows hundreds of ways to heal and upgrade his allies. After he was blown up during the human-cyber war, he remained inactive for decades until some curious Pristilians found and reassembled him. The only setback was that his memory chip was lost, forcing him to relearn old methods and adopt new ones. It's not all that bad, though; Dr. Boost has been letting his curiosity run wild in Pristal. Excited to explore the rest of this new world, he hopes to find solutions to heal any problem in the Dominion.",
+      "lore": "Specializing in medicine, Dr. Boost knows hundreds of ways to heal and upgrade his allies. After he was blown up during the human-cyber war, he remained inactive for decades until some curious Pristilians reassembled him. The only setback was that his memory chip was lost, forcing him to relearn old methods and adopt new ones. It’s not all that bad, though; Dr. Boost has been letting his curiosity run wild. Excited to explore the rest of this new world, he hopes to find solutions to heal any problem in the Dominion.",
       "stats": {
         "HP": "700/1250/2250",
         "Damage": "35/55/75",
@@ -390,8 +390,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "21",
       "currentResidence": "",
-      "fullName": "AutoShot",
-      "lore": "Combining her deadly aim and natural talent for tinkering, AutoShot's got a kind of firepower that'll knock your socks off! Watching Mecha-Clash growing up has inspired her biggest dream: becoming the first human Mecha-Clash star ever. At the age of 15, she successfully created her own Gatling gun from the comfort of her own home! She's been training every day since then, successfully piercing every target she lays her eyes on.",
+      "fullName": "Sophea Minsharma",
+      "lore": "Combining her deadly aim and natural talent for tinkering, AutoShot’s got a kind of firepower that’ll knock your socks off! Watching Mecha-Clash growing up has inspired her biggest dream: becoming the first human Mecha-Clash star ever. At the age of 15, she successfully created her own Gatling gun from the comfort of her own home! She’s been training every day since then, successfully piercing every target she lays her eyes on.",
       "stats": {
         "HP": "500/900/1650",
         "Damage": "30/45/70",
@@ -420,7 +420,7 @@ window.CS_DATA = {
       "yearsActive": "85",
       "currentResidence": "",
       "fullName": "LoadBearer",
-      "lore": "LoadBearer is an adaptable and athletic being with a destructive throw. Their appearance often fools those who judge too quickly; their big stature means nothing to the fact that they can leap across ponds and medium-sized rivers. They've had several career changes over the years, including construction cyberworker and Prime Time Mecha-Clash celebrity. Their path has now led them back to Sateen Lanes, where they have yet to discover their next purpose.",
+      "lore": "LoadBearer is an adaptable and athletic being with a destructive throw. Their appearance often fools those who judge too quickly; their big stature means nothing to the fact that they can leap across ponds and medium-sized rivers. They’ve had several career changes over the years, including construction cyberworker and Prime Time Mecha-Clash celebrity. Their path has now led them back to Sateen Lanes, where they have yet to discover their next purpose.",
       "stats": {
         "HP": "500/900/1650",
         "Damage": "35/50/75",
@@ -448,9 +448,9 @@ window.CS_DATA = {
       "origin": "Sateen Lanes",
       "species": "Cyber",
       "yearsActive": "Unknown",
-      "currentResidence": "Sateen Lanes",
+      "currentResidence": "",
       "fullName": "Hull",
-      "lore": "The darkest corners at the edge of Sateen Lanes are where you can find Hull. His origins remain a mystery to the locals; the giant stronghold itself doesn't even seem to know how he ended up here or what his programmed purpose was. Whatever the case, Hull is unbreakable like no other. Tales of encounters with him conclude with Hull as the victor, always mentioning his sturdy resistance against physical force and magic.",
+      "lore": "The darkest corners at the edge of Sateen Lanes are where you can find Hull. His origins remain a mystery to the locals; the giant stronghold itself doesn’t even seem to know how he ended up here or what his programmed purpose was. Whatever the case, Hull is unbreakable like no other. Tales of encounters with him conclude with Hull as the victor, always mentioning his sturdy resistance against physical force and magic.",
       "stats": {
         "HP": "700/1250/2250",
         "Damage": "35/50/75",
@@ -479,8 +479,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "13",
       "currentResidence": "",
-      "fullName": "Acolyte",
-      "lore": "As a curious boy from Harlow, Acolyte naturally began an imaginative obsession with cybers. Most of the time, he's even dressed up as one! His costume includes a homemade mask, thigh-high boots, and gloves that shoot laser balls. He's always dreamt of going to Spiro to train at the academy. However, he fears their strict admission requirements for human cadets may hinder his chances. His dreams lie in his hands and in his mentor's care.",
+      "fullName": "Bodhi Brndiar",
+      "lore": "As a curious boy from Baxterside, Acolyte naturally began an imaginative obsession with cybers. Most of the time, he’s even dressed up as one! His costume includes a homemade mask, thigh-high boots, and gloves that shoot laser balls. He’s always dreamt of going to Spiro to train at the academy. However, he fears their strict admission requirements for human cadets may hinder his chances. His dreams lie in his hands and in his mentor’s care.",
       "stats": {
         "HP": "500/900/1650",
         "Damage": "35/50/75",
@@ -508,8 +508,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "25",
       "currentResidence": "",
-      "fullName": "SliceNode",
-      "lore": "After years of studying Riangnese swordsmanship at Soratai Village, SliceNode wields a resilient, swift blade that's ready to spill blood if necessary. After the mysterious death of his father, the tragedy set him on a path for answers and possibly revenge. With his only lead connecting him to the criminal underworld of Ecsthea City, SliceNode is ready to flip that city upside down in search of his father's killer.",
+      "fullName": "Riko Orion Delorna",
+      "lore": "After years of studying swordsmanship at Soratai Village, SliceNode wields a resilient, swift blade that’s ready to spill blood if necessary. The mysterious death of his father set him on a path for answers and possibly revenge. With his only lead connecting him to the criminal underworld of Ecsthea City, SliceNode is ready to flip that city upside down in search of his father’s killer.",
       "stats": {
         "HP": "650/1150/2100",
         "Damage": "30/50/70",
@@ -537,8 +537,8 @@ window.CS_DATA = {
       "species": "Cyber",
       "yearsActive": "70",
       "currentResidence": "",
-      "fullName": "B.O.P.",
-      "lore": "Inspired by missile paratrooper units from the war, B.O.P was created to withstand the mightiest bomb attacks with a prioritization for mitigating civilian casualties. Stemming from an assignment at Empyrean University, B.O.P presented his creator's engineering class with an impressive showcase. After resisting the full force of five different missiles, as well as successfully protecting every test dummy behind him, B.O.P was immediately transferred to the school's Mechanical Defence Research department. He proves to be a vital aspect in the trials and errors of defence innovations at the school.",
+      "fullName": "Bomb Optimization Participant",
+      "lore": "Inspired by shield units from the war, B.O.P was created to withstand the mightiest bomb attacks with a prioritization for mitigating civilian casualties. Born from an assignment, B.O.P presented his creator’s engineering class with an impressive showcase. After resisting the full force of five different missiles, as well as protecting every test dummy behind him, B.O.P was immediately transferred to the school’s Mechanical Defence Research department. He proved to be a vital part in improving defence innovations at the school.",
       "stats": {
         "Damage": "35/45/55",
         "Armour/MR": "50",
@@ -547,7 +547,7 @@ window.CS_DATA = {
         "Range": "1 hex"
       },
       "abilitySummary": "Goal: Create a unit that has a minor gimmick which is easily comprehensible but gives it a fun identity and synergies with its traits to create a unique unit. B.O.P. pounds its chest, granting itself +10/12/15% max health. Then bonk the target, dealing 20% of B.O.P.’s max health + Attack Kurōmushadō",
-      "subtitle": "The Ultimate Bomb Defense",
+      "subtitle": "The Ultimate Bomb Defence",
       "cardImageName": "BOPCard",
       "iconImageName": "BOPIcon"
     },
@@ -567,7 +567,7 @@ window.CS_DATA = {
       "yearsActive": "2",
       "currentResidence": "",
       "fullName": "Kurōmushadō",
-      "lore": "As one of Mecha-Clash's newest stars, Kurōmushadō enters the arena with a bold attitude that shines in his acrobatic flair. He isn't afraid to go all in once a match starts; he'll bounce and maneuver off platforms in record-breaking time while jump-kicking anyone in his way. Though his energetic approach is engaging to watch, some find his fast-paced demeanour to be \"too overconfident\". SteelShade, his fellow Mecha-Clash star, feels this way especially. Regardless of the varying opinions on him, an appearance from Kurōmushadō in the arena locks the audience in for an unforgettable match.",
+      "lore": "As one of Mecha-Clash’s newest stars, Kurōmushadō enters the arena with a bold attitude that shines in his acrobatic flair. He’ll bounce and maneuver off platforms in record-breaking time while jump-kicking anyone in his way. Though his energetic approach is engaging to watch, some find his fast-paced demeanour to be “too overconfident”. SteelShade, his fellow Mecha-Clash star, feels this way especially. Regardless of the varying opinions on him, an appearance from Kurōmushadō in the arena locks the audience in for an unforgettable match.",
       "stats": {
         "HP": "850/1400/2200",
         "Damage": "45/65/120 ⭐",
@@ -597,7 +597,7 @@ window.CS_DATA = {
       "yearsActive": "120",
       "currentResidence": "",
       "fullName": "SplitShine",
-      "lore": "Previously Riang's sole protector, SplitShine ushered the entire archipelago into a time of peace for ten years. Programmed with almost all of Riang's fighting styles and history, he used the land to his advantage when battling against opponents with his razor sharp Sai technique. He grew to believe that Riang would never be safe as long as the mainland existed, seeing their complete eradication as the only solution. After he initiated a calamitous attack on Ecsthea, he was banished to the Faded Islands. Somewhere, SplitShine lurks in the jungles with seething hate, waiting to enact his day of reckoning once more.",
+      "lore": "Previously Riang’s sole protector, SplitShine ushered the land into a time of peace for ten years. Programmed with almost all of Riang’s fighting styles and history, he used the land to his advantage when battling against opponents. He grew to believe that Riang would never be safe as long as the mainland existed, seeing their complete eradication as the only solution. After he initiated a calamitous attack on Ecsthea City, he was banished to the Faded Islands. Somewhere, SplitShine lurks in the jungles with seething hate, waiting to enact his day of reckoning once more.",
       "stats": {
         "HP": "550/1000/1800",
         "Damage": "35/65/110",
@@ -626,7 +626,7 @@ window.CS_DATA = {
       "yearsActive": "170",
       "currentResidence": "Ecsthea City",
       "fullName": "FortiCore",
-      "lore": "Skulking around Ecsthea City, FortiCore maintains a steady career as a city guard in the Grim Row. She moved around a lot after leaving Spiro, looking for a new purpose to fulfill her code. Since settling down, most of her days include cracking down on the city's criminal network. Her most recent accomplishment was leading a raid on one of Irondon's dens; the warehouse was almost demolished from the strength of her expandable shield. Desperate to reinvent herself, FortiCore tries to right injustices day and night.",
+      "lore": "Skulking around Ecsthea City, FortiCore maintains a steady career as a city guard in the Grim Row. She moved around a lot after leaving Spiro, looking for a new purpose to keep her busy. Most of her days include cracking down on the city’s criminal network. Her most recent accomplishment was leading a raid on one of Irondon’s dens; the warehouse was almost demolished from the strength of her expandable shield. Desperate to reinvent herself, FortiCore tries to right injustices day and night.",
       "stats": {
         "HP": "800/1450/2550",
         "Damage": "35/65/100",
@@ -655,7 +655,7 @@ window.CS_DATA = {
       "yearsActive": "170",
       "currentResidence": "",
       "fullName": "CommandCore",
-      "lore": "Serving as a lieutenant in Spiro's military, CommandCore leads several squadrons through combat drills, flight practices, magic training, and other daily routines. There's no doubt that he's a crucial member of Spiro society, but there have been complaints of his leadership being excessively demanding. Unlike his former teammates, he chose to stay on Spiro after the team's disbandment. He often speaks fondly of the times with his team, especially about FortiCore. Nevertheless, CommandCore has a new mission now: continuing to lead Spiro into the future.",
+      "lore": "Serving as a lieutenant in Spiro’s military, CommandCore leads several squadrons through combat drills, flight practices, magic training, and other daily routines. There's no doubt that he’s a crucial member of Spiro society, but there have been complaints of his leadership being excessively demanding. Unlike his former teammates, he chose to stay on Spiro after the team’s disbandment. He often speaks fondly of the times with his team, especially about FortiCore.",
       "stats": {
         "HP": "800/1450/2550",
         "Damage": "35/65/100",
@@ -683,8 +683,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "17",
       "currentResidence": "",
-      "fullName": "ShardFrame",
-      "lore": "An enigmatic local hero in Lunaya, ShardFrame steps up to save the day when the system fails. Tired of loan sharks harassing her family, she finally took the fight to them by pummeling their leader out of town. Using the enchanted Kunai, blessed by her grandmother, she's able to weaken her enemies with a single cut from her blades. While fighting off mobsters is no easy task, hiding her vigilante identity from her family and the public has been the most stressful part of the job.",
+      "fullName": "Runa Shizue",
+      "lore": "An enigmatic local hero in Lunaya, ShardFrame steps up to save the day when the system fails. Tired of loan sharks harassing her family, she finally took the fight to them by singlehandedly driving their leader out of town. Using enchanted Kunai, she’s able to weaken her enemies with a single cut from her blades. While fighting off mobsters is no easy task, hiding her vigilante identity from her family and the public has been the most stressful part of the job.",
       "stats": {
         "HP": "600/1050/1900",
         "Damage": "35/50/130",
@@ -712,8 +712,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "30",
       "currentResidence": "",
-      "fullName": "BoltJaw",
-      "lore": "BoltJaw is a resourceful and humble handyman with a passion for creating anything and everything. Growing up repairing things himself, BoltJaw has become self-taught in reinforcing technology with old or recycled parts. As Patch's assistant, he spends most of his time gathering parts for clients or sending fixed items back to their owners after repair is completed. The life he has made in Pristal is delightful, but his end goal is to be a mechanic for Ecsthea City's famous Motorland races. In his hands, BoltJaw can find the value of wrecked parts and make extraordinary use of them.",
+      "fullName": "Davy Simon Felixton",
+      "lore": "BoltJaw is a resourceful and humble handyman with a passion for creating anything and everything. Growing up repairing things himself, he has become self-taught in reinforcing technology with old or recycled parts. As Patch’s assistant, he spends most of his time gathering parts for clients or sending fixed items back to their owners. The life he has made in Pristal is delightful, but his end goal is to be a mechanic for Ecsthea City’s famous Motorland races.",
       "stats": {
         "HP": "800/1450/2600",
         "Damage": "30/45/75",
@@ -742,7 +742,7 @@ window.CS_DATA = {
       "yearsActive": "48",
       "currentResidence": "",
       "fullName": "BurnByte",
-      "lore": "Creating his very own circus, BurnByte prioritizes performance and optimizes entertainment for his troupe and his excited audiences. He begins each show with a display of his own talents, releasing cones of fire around the circus tent for the audience to admire. Be sure to keep your hands and feet within your seating box. Getting in the crossfire of his cones isn't a pleasant memory you want to remember from this fantastic circus!",
+      "lore": "Creating his very own circus, BurnByte prioritizes performance and optimizes entertainment for his troupe and his excited audiences. He begins each show with a display of his own talents, releasing cones of fire around the circus tent for the audience to admire. Be sure to keep your hands and feet within your seating box. Getting in the crossfire of his cones isn’t a pleasant memory you want to remember from this fantastic circus!",
       "stats": {
         "HP": "850/1000/1800",
         "Damage": "25/40/70",
@@ -772,7 +772,7 @@ window.CS_DATA = {
       "yearsActive": "29",
       "currentResidence": "",
       "fullName": "RuneWall",
-      "lore": "Roaming around Cashelbury, RuneWall is always looking for missions to keep her wallet flowing with cash and satisfy her battle-hungry soul. Taking on anticipated bounty or component retrieval missions, she often runs into competing individuals who are disadvantaged by her success. In the event of tensions escalating, RuneWall can summon shields accompanied by fireballs to orbit her perimeter, which can be sent hurdling toward enemies at a fierce speed. It may sound like a rough lifestyle, but this is what she lives for.",
+      "lore": "Roaming around Cashelbury, RuneWall is always looking for missions to keep her wallet flowing with cash and her battle-hungry soul satisfied. Taking on anticipated bounty or component retrieval missions, she often runs into competing individuals who are disadvantaged by her success. In the event of tensions escalating, RuneWall can summon shields accompanied by fireballs to orbit her perimeter, which can be sent hurdling toward enemies at a fierce speed.",
       "stats": {
         "HP": "850/1550/2800",
         "Damage": "25/45/75",
@@ -801,7 +801,7 @@ window.CS_DATA = {
       "yearsActive": "27",
       "currentResidence": "",
       "fullName": "WidowFrame",
-      "lore": "In tune with her arachnid-inspired design, WidowFrame is a formidable and calculated star who excels at navigating Mecha-Clash's challenging arenas. Her arms allow her to travel on all surfaces, which includes climbing upside down on ceilings and arena platforms. Her agility also works hand-in-hand with her battle intelligence; WidowFrame can sneak up on opponents from all angles, striking them with a temporary venom that'll give her the upper hand.",
+      "lore": "In tune with her arachnid-inspired design, WidowFrame is a formidable and calculated star who excels at navigating Mecha-Clash’s challenging arenas. Her arms allow her to travel on all surfaces, which includes climbing upside down on ceilings and arena platforms. Her agility also works hand-in-hand with her battle intelligence; WidowFrame can sneak up on opponents from all angles, striking them with a temporary venom that’ll give her the upper hand.",
       "stats": {
         "HP": "750/1350/2400",
         "Damage": "35/55/70",
@@ -830,7 +830,7 @@ window.CS_DATA = {
       "yearsActive": "56",
       "currentResidence": "",
       "fullName": "PinPoint",
-      "lore": "A notable bounty hunter in Grim Row, PinPoint has known no other life besides tracking down runaway criminals and hauling them over to crime lords. His impeccable aim became a fatal skill when paired with his spear; launching accurate hits into enemies from afar is no sweat for PinPoint. His work helped out several of Grim Row's gangs, earning him respect from each. However, his neutrality has hindered him from gaining trust and allies.",
+      "lore": "A notable bounty hunter in Grim Row, PinPoint has known no other life besides tracking down runaway criminals and hauling them over to crime lords. His impeccable aim became a fatal skill when paired with his spear; launching accurate hits into enemies from afar is no sweat for PinPoint. His work helped out several of Grim Row’s gangs, earning him respect from each. However, his neutrality has hindered him from gaining trust and allies.",
       "stats": {
         "HP": "550/1000/1800",
         "Damage": "40/55/80",
@@ -859,7 +859,7 @@ window.CS_DATA = {
       "yearsActive": "25",
       "currentResidence": "",
       "fullName": "BioSynth",
-      "lore": "Among the celebrities of Ecsthea City, BioSynth has achieved the highest of the high life from her Mecha-Clash and popstar career. Though she openly talks about her enjoyment of being famous, she struggles finding balance between participating in matches and performing. On the bright side, her attire and magic ability can be used for both jobs. While her magic is used for special effects in her concerts, BioSynth creates chaotic missiles to knock her opponents out of the arena. Don't let the flashy attire fool you, BioSynth knows how to get it popping wherever she goes.",
+      "lore": "Among the celebrities of Ecsthea City, BioSynth has achieved the highest of the high life from her Mecha-Clash and popstar career. Though she openly talks about her enjoyment of being famous, she struggles to balance participating in matches and performing. On the bright side, her attire and magic ability can be used for both jobs. While her magic is used for special effects in her concerts, BioSynth creates chaotic missiles to knock her opponents out of the arena.",
       "stats": {
         "HP": "550/1050/1900",
         "Damage": "20/40/65",
@@ -888,7 +888,7 @@ window.CS_DATA = {
       "yearsActive": "44",
       "currentResidence": "",
       "fullName": "AnchorFire",
-      "lore": "Programmed as the sheriff of Alaphada, AnchorFire is willing to terminate anyone who jeopardizes the safety of his town. Recently, he's only encountered simple raiders and thieves, which he has successfully stopped from committing more crimes. His dashing speed allows him to dodge bullets and get close enough to his targets for the final shot. He is honoured throughout the town, but his strict and overprotective nature startle some of the citizens.",
+      "lore": "Programmed as the sheriff of Alaphada, AnchorFire is willing to terminate anyone who jeopardizes the safety of his town. Recently, he’s only encountered simple raiders and thieves, which he has successfully stopped without killing them. His dashing speed allows him to dodge bullets and get close enough to his targets for the final shot. He is honoured throughout the town, but his strict and overprotective nature startles some of the citizens.",
       "stats": {
         "HP": "550/1050/1900",
         "Damage": "45/60/85",
@@ -917,7 +917,7 @@ window.CS_DATA = {
       "yearsActive": "35",
       "currentResidence": "",
       "fullName": "SpringLock",
-      "lore": "An overzealous boxer scraping by in Grim Row, SpringLock has participated in every boxing ring that'll take him. He discovered and mastered his unique ability through several matches; pulling opponents from afar into his attack range and unleashing a combination of painful punches. He also looks for training opportunities outside of the ring, which includes fighting off rival gangsters for IronDon. If you're ever in the mood for a good fight, SpringLock can guarantee that for you as an opponent.",
+      "lore": "An overzealous boxer scraping by in Grim Row, SpringLock has participated in every boxing ring that’ll take him. He discovered and mastered his unique ability through several matches, pulling opponents from afar into his attack range and unleashing a combination of painful punches. He also looks for training opportunities outside the ring, including fighting off rival gangsters for IronDon. If you’re ever in the mood for a good fight, SpringLock can guarantee that for you as an opponent.",
       "stats": {
         "HP": "850/1550/2800",
         "Damage": "30/45/65",
@@ -946,7 +946,7 @@ window.CS_DATA = {
       "yearsActive": "19",
       "currentResidence": "Riang",
       "fullName": "NovaBurst",
-      "lore": "NovaBurst is a rebellious and strong-willed shooter that'll do anything to make sure her hits land. Failing to stand out and connect with audiences, she was released from the Mecha-Clash program not long into her career. Though the company tried to settle it as civilly as possible, she departed with a very \"destructive\" goodbye. Settling down in Lunaya, NovaBurst searches for a fresh beginning of calm. However, her battle instincts are tempted as she witnesses more and more injustices happen each day.",
+      "lore": "NovaBurst is a rebellious, strong-willed shooter who’ll do anything to make her shots land. Unpopular with audiences, she was released from the Mecha-Clash program not long into her career. Though the company tried to settle it civilly, she departed with a very “destructive” goodbye. Settling down in Lunaya, NovaBurst searches for a fresh beginning. However, the corrupt instances around the city are giving her more than enough reason to get violent.",
       "stats": {
         "HP": "550/1000/1800",
         "Damage": "50/70/90",
@@ -975,7 +975,7 @@ window.CS_DATA = {
       "yearsActive": "46",
       "currentResidence": "",
       "fullName": "RocketBott",
-      "lore": "Explosive in weaponry and personality, RocketBott is the wildest Battleground Training teaching assistant to ever walk in the academy. Enthralled by his own chaos, he enjoys sending a rainfall of missiles upon his students during training, which they find terrifying every time. He also assists in the Mechanical Defence Research experiments with B.O.P, who is the only individual to enjoy and endure his explosive power. Remaining as untamed as ever, RocketBott charges into every situation with his missiles ready to launch.",
+      "lore": "Explosive in weaponry and personality, RocketBott is the wildest Battleground Training teaching assistant to ever walk the halls. Enthralled by his own chaos, he enjoys raining missiles down on his students during training, which they find terrifying every time. He also assists in the Mechanical Defence Research experiments with B.O.P, who is the only individual to enjoy enduring his explosive power. Remaining as untamed as ever, RocketBott charges into every situation with his missiles ready to launch.",
       "stats": {
         "HP": "850/1550/2800",
         "Damage": "30/50/70",
@@ -1003,8 +1003,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "19",
       "currentResidence": "",
-      "fullName": "Magnetrix",
-      "lore": "An orphan living in the backwater alleyways of Lunaya, Magnetrix grew up acclimated to unjust violence and heavily involved in criminal activity. Strangely, several incidents involving lightning striking out of nowhere began raising suspicions towards Magnetrix, who just happened to be present every time it occurred. Worried she would cause more harm, she fled to the Faded Islands to tame her powers safely away from society. In her isolation, Magnetrix improved in controlling her powers as she understood the triggers to them. However, she must master them before dark forces close in on her.",
+      "fullName": "Sanvi Levina",
+      "lore": "An orphan from the backwater alleyways of Lunaya, Magnetrix grew up acclimated to unjust violence. Strangely, several incidents of lightning striking out of nowhere began raising suspicions towards Magnetrix, who just happened to be present every time it occurred. Worried she would become a target, she fled to the Faded Islands to attempt taming her powers safely. In her isolation, Magnetrix improved at controlling her powers as she understood her triggers. However, she must master them before dark forces close in on her.",
       "stats": {
         "HP": "550/1000/1800",
         "Damage": "30/50/70",
@@ -1032,8 +1032,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "42",
       "currentResidence": "",
-      "fullName": "DashBlade",
-      "lore": "DashBlade is a stoic bounty hunter of patience and poise, remaining steady while waiting for the perfect time to strike. Estranged from his family, he has committed the last ten years to hunting down lowlives and collecting bounties throughout Harkin Square. During the night, he frequently participates in illegal battles against cybers and other humans. DashBlade always comes out victorious, and sometimes, covered in blood.",
+      "fullName": "Aleq Garza",
+      "lore": "DashBlade is a stoic bounty hunter of patience and poise, waiting for the perfect time to strike. Estranged from his family, he has committed the last ten years to hunting down lowlives and collecting bounties throughout Harkin Square. During the night, he frequently participates in illegal battles against cybers and other humans. DashBlade always comes out victorious, and sometimes, covered in blood.",
       "stats": {
         "HP": "750/1350/2500",
         "Damage": "50/75/110",
@@ -1062,7 +1062,7 @@ window.CS_DATA = {
       "yearsActive": "9",
       "currentResidence": "",
       "fullName": "ManaDrive",
-      "lore": "ManaDrive is a compassionate and vigilant bodyguard for the mayoral family of Kiyosa. Recently, the town experienced frequent and severe attacks from raiders, one of which resulted in putting the mayor's wife in a coma. Seeing the family in grief, ManaDrive searched everywhere for external help to drive away the raiders for good. After receiving \"experimental\" upgrades, he found his new explosive abilities to be effective in scaring them away and, if needed, wiping them out.",
+      "lore": "ManaDrive is a compassionate and vigilant bodyguard for Kiyosa’s mayoral family. The town has recently experienced severe attacks from raiders, one of which resulted in putting the mayor’s wife in a coma. Desperate, ManaDrive searched everywhere for help to drive away the raiders for good. After receiving “experimental” upgrades, he found his new explosive abilities to be effective in scaring them away and, if needed, wiping them out.",
       "stats": {
         "Damage": "30/40/60",
         "Armour/MR": "20",
@@ -1090,7 +1090,7 @@ window.CS_DATA = {
       "yearsActive": "4",
       "currentResidence": "",
       "fullName": "Headshot",
-      "lore": "Headshot has a natural talent for long-range battle from the moment he was created. Mixed with parts from an old battle cyber and a wrecked fighter jet, he can shoot a devastating laser beam that'll disrupt his enemies and anyone near it with lethal aim. His creators, two humble sisters from Harlow, originally intended for him to become a Mecha-Clash star. However, his heavy set and sizzling power have led them to believe his destiny lies elsewhere. Encouraged by his creators, Headshot travels freely throughout the Dominion to look for his purpose.",
+      "lore": "Mixed with parts from an old battle cyber and a wrecked fighter jet, Headshot can shoot a devastating laser beam that’ll disrupt his enemies and anyone near it with lethal aim. His creators, two humble sisters from Baxterside, originally intended for him to become a Mecha-Clash star. However, his heavy set and sizzling power have led them to believe his destiny lies elsewhere. Encouraged by his creators, Headshot travels freely throughout the Dominion to look for his purpose.",
       "stats": {
         "HP": "900/1650/2900",
         "Damage": "45/75/115",
@@ -1119,7 +1119,7 @@ window.CS_DATA = {
       "yearsActive": "65",
       "currentResidence": "",
       "fullName": "Hypershot",
-      "lore": "Right-hand woman to the Ebony Clan's archon, Hypershot carries out orders for the clan with the utmost loyalty and extreme malevolence. Disassembled and trashed somewhere off the coast, the Archon found her and offered a second chance to enact revenge with all the power she ever wanted. All he asked in return was everlasting loyalty to the clan, which she continues to uphold to this day. Leaving a river of blood everywhere she goes, Hypershot stands proudly beside her clan members and leader for all time.",
+      "lore": "Right-hand woman to the Ebony Clan’s archon, Hypershot carries out orders for the clan with the utmost loyalty and extreme malevolence. Disassembled and trashed somewhere off the coast, the Archon found her and offered a second chance to enact revenge with all the power she ever wanted. All he asked in return was everlasting loyalty to the clan, which she continues to uphold to this day. Leaving a river of blood everywhere she goes, Hypershot stands proudly beside her clan for all time.",
       "stats": {
         "HP": "600/1650/2900",
         "Damage": "55/65/95",
@@ -1148,7 +1148,7 @@ window.CS_DATA = {
       "yearsActive": "60",
       "currentResidence": "",
       "fullName": "Fireline",
-      "lore": "Recruited for the ECCU, Fireline is called in whenever fire needs to be met with a lot more fire. While everyone else was deployed immediately, Fireline was assigned to stay on Spiro for the duration of his career unless he was needed elsewhere. His superiors found his Gatling lasers to be a great force for Spiro's defence, but a large risk if unsupervised. Fireline's pride in being a soldier drives him to succeed, but the idea of mission failure isn't an option for him.",
+      "lore": "Recruited for the ECCU, Fireline is called in whenever fire needs to be met with a lot more fire. He was assigned to stay on Spiro for the duration of his career unless he was needed elsewhere. His superiors found his Gatling firepower to be a great force for Spiro’s defence, but a large risk if unsupervised. Fireline’s pride in being a soldier drives him to succeed, to the point that mission failure isn’t an option for him.",
       "stats": {
         "HP": "650/1150/2100",
         "Damage": "50/65/105",
@@ -1158,7 +1158,7 @@ window.CS_DATA = {
         "Range": "1 hex"
       },
       "abilitySummary": "Passive: Every 10% bonus attack speed is converted to 1 AD. Fire a gatling laser at the target, dealing physical damage, increasing by every second. Damage resets on new targets. Initial Damage: 60% AD Scaling Damage: 25% AD PulseFist",
-      "subtitle": "The Soldier of the Flame",
+      "subtitle": "The Wildfire",
       "cardImageName": "FirelineCard",
       "iconImageName": "FirelineIcon"
     },
@@ -1178,7 +1178,7 @@ window.CS_DATA = {
       "yearsActive": "26",
       "currentResidence": "Spiro",
       "fullName": "PulseFist",
-      "lore": "The newest combat teacher at Spiro Military Academy, PulseFist, has immediately become a popular topic of discussion amongst students and faculty. His mysterious and sudden recruitment from Ecsthea City sparked rumours of his origins, relating to illegal boxing rings and murder conspiracies. His teaching methods say otherwise about his \"dark\" past; he talks about inner peace as a crucial foundation and encourages students to approach everything with enthusiasm. Visibly lighthearted, PulseFist warns of misleading appearances as he won't hesitate to let his fists do the talking.",
+      "lore": "The newest combat teacher at Spiro Military Academy, PulseFist, has immediately become a popular topic of discussion amongst students and faculty. His mysterious and sudden recruitment from Ecsthea City sparked rumours of his origins, relating to illegal boxing rings and murder conspiracies. However, he prioritizes inner peace as a crucial foundation and encourages students to approach everything with enthusiasm.",
       "stats": {
         "HP": "850/1550/2750",
         "Damage": "55/75/105",
@@ -1208,7 +1208,7 @@ window.CS_DATA = {
       "yearsActive": "33",
       "currentResidence": "",
       "fullName": "StormCoil",
-      "lore": "StormCoil is a playful and mischievous companion whose study assistance code malfunctioned and turned them into a restless ball of energy. They often made chaos wherever they went; gathering dropped books on the floor and exploding them away in the library was their favourite activity. Regardless of the rebellion from the original code, they successfully guided their creator through school and made exciting memories along the way. Now, StormCoil will have to do it again as their creator's daughter begins her journey at Empyrean University.",
+      "lore": "StormCoil is a playful and mischievous companion whose study assistance code malfunctioned, turning them into a restless ball of energy. They often made chaos wherever they went; gathering dropped books on the floor and exploding them away in the library was their favourite activity. Despite the trouble, they successfully guided their creator through school. Now, StormCoil will have to do it again as their creator’s daughter begins her journey at Empyrean University.",
       "stats": {
         "HP": "900/1650/2900",
         "Damage": "40/55/95",
@@ -1238,7 +1238,7 @@ window.CS_DATA = {
       "yearsActive": "40",
       "currentResidence": "",
       "fullName": "WhirlGuard",
-      "lore": "WhirlGuard is the most popular town guard in Cashelbury for his warm-hearted personality and entertaining abilities. He's especially popular with the kids, whom he often allows onto his back before spinning around ecstatically. When he's not a walking playground, WhirlGuard patrols the town daily while enforcing peace if necessary. He doesn't need to use his ability on most days, but when he does, it becomes a whirlwind of a day for anyone nearby.",
+      "lore": "WhirlGuard is the most popular town guard in Cashelbury for his warm-hearted personality and entertaining abilities. He’s especially popular with the kids, whom he often allows onto his back before spinning around ecstatically. When he’s not a walking playground, WhirlGuard patrols the town daily while enforcing peace. He doesn’t need to use his ability on most days, but when he does, it becomes a whirlwind of a day for anyone nearby.",
       "stats": {
         "HP": "900/1650/2900",
         "Damage": "45/60/85",
@@ -1266,8 +1266,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "47",
       "currentResidence": "",
-      "fullName": "Arcanode",
-      "lore": "Thriving in the shadows of Lunaya's dead-end streets, Arcanode waits in the night for any unlucky soul who's willing to take a gamble. His shady hardware store has already become a frequent hub for humans and cyber to get quick off-the-record items and upgrades. The currency he takes doesn't stop at money; he also takes favours. Though it sounds more enticing, favours with Arcanode come with a greater risk than you can imagine.",
+      "fullName": "Jacob Erisson",
+      "lore": "Thriving in the shadows of Lunaya’s dead-end streets, Arcanode waits in the night for any unlucky soul who’s willing to take a gamble. His shady hardware store has already become a frequent hub for humans and cyber to get quick off-the-record items and upgrades. The currency he takes doesn’t stop at money; he also takes favours. Though it sounds more enticing, favours with Arcanode come with a greater risk than you can imagine.",
       "stats": {
         "Damage": "30/40/60",
         "Armour/MR": "25",
@@ -1294,8 +1294,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "20",
       "currentResidence": "",
-      "fullName": "SteelRunner",
-      "lore": "SteelRunner is an impulsive and ambitious racer, aiming to get first place in every race possible. Starting out in humble street races, they discovered a divine joy in pursuing their irresistible need for speed. SteelRunner made the most of their Motorland debut, rising to fame after beating notable racers in their first race. Living life in the fast lane, SteelRunner will put pedal to the metal until they reach the top of the world.",
+      "fullName": "Darren Cassiel",
+      "lore": "SteelRunner is an impulsive and ambitious racer, aiming to get first place in every race possible. Starting in humble street races, they discovered a divine joy in pursuing their irresistible need for speed. SteelRunner made the most of their Motorland debut, rising to fame after beating notable racers in their first race. Living life in the fast lane, SteelRunner will put pedal to the metal until they reach the top of the world.",
       "stats": {
         "Damage": "40/60/90",
         "Armour/MR": "50",
@@ -1323,8 +1323,8 @@ window.CS_DATA = {
       "species": "Human (w/ Cybernetics)",
       "yearsActive": "31",
       "currentResidence": "Sateen Lanes",
-      "fullName": "SharpLink",
-      "lore": "SharpLink is a rugged assassin of unyielding spirit, using her greatest pain to create her most valued strength. After years of relentless bullying for her respiratory disorder, she ran away from home as a teenager in search of power. Arriving in Harkin Square, a crime lord took her under his wing after she pummeled a mugger close to death. From there, she was given cybernetics to help with her breathing and make her fighting style more \"fatal\". Now, SharpLink holds a ruthless power that'll earn her the respect she deserves.",
+      "fullName": "Chels Brawlins",
+      "lore": "SharpLink is a rugged assassin of unyielding spirit, using her greatest pain to create her most valued strength. After years of relentless bullying for her respiratory disorder, she ran away from home as a teenager in search of power. Arriving in Harkin Square, a crime lord took her under his wing after she pummeled a mugger close to death. From there, she was given cybernetics to help with her breathing and make her fighting style more “fatal”. Now, she holds a ruthless power that’ll earn her the respect she deserves.",
       "stats": {
         "Damage": "55/85/115",
         "Armour/MR": "25",
@@ -1352,7 +1352,7 @@ window.CS_DATA = {
       "yearsActive": "105",
       "currentResidence": "",
       "fullName": "OverStrike",
-      "lore": "One of the Councillors on the Spiro Military Council, OverStrike provides wisdom and encourages peaceful resolution above all else. Following SplitShine's attack on Ecsthea City, he showed incredible initiative in evacuating citizens, cleaning up the aftermath, and maintaining order during the city's darkest years. Soon after, he was offered a seat on the council as his idea of peace could be beneficial in a leadership role. Dedicated to keeping all of the Dominion safe from harm, OverStrike will do anything to achieve world peace.",
+      "lore": "Lead Councillor on the Spiro Military Council, OverStrike provides wisdom and encourages peaceful resolution above all else. Following SplitShine’s attack on Ecsthea City, he showed incredible initiative in evacuating citizens, cleaning up the aftermath, and maintaining order during the city’s darkest years. Soon after, he was offered a seat on the council as his idea of peace could be beneficial in a leadership role. Dedicated to keeping all of the Dominion safe from harm, OverStrike will do anything to achieve world peace.",
       "stats": {
         "Damage": "55/85/115",
         "Armour/MR": "50",
@@ -1380,7 +1380,7 @@ window.CS_DATA = {
       "yearsActive": "7",
       "currentResidence": "",
       "fullName": "StarStruck",
-      "lore": "StarStruck knows everything about astrology and geology while having a passion for teaching those topics. Created to mimic meteor landings on a miniature scale, he surprised his homeroom class when he sent a giant asteroid crashing into the school field. After some angry lectures from the school board and expensive repairs to the field, StarStruck wouldn't be allowed to use his ability for teaching purposes anymore. However, that hasn't stopped him from being the best teaching assistant ever!",
+      "lore": "StarStruck knows everything about astrology and geology while having a passion for teaching. Created to mimic meteor landings on a miniature scale, he surprised his homeroom class when he sent a giant asteroid crashing into the school field. After some angry lectures from the school board and expensive repairs, StarStruck wouldn’t be allowed to use his ability for teaching purposes anymore. However, that hasn’t stopped him from being the best teaching assistant ever!",
       "stats": {
         "Damage": "55/85/115",
         "Armour/MR": "25",
@@ -1409,7 +1409,7 @@ window.CS_DATA = {
       "yearsActive": "12",
       "currentResidence": "",
       "fullName": "MechSoon",
-      "lore": "Living life by all wayward means, MechSoon always finds creative ways to cause chaos throughout Sateen Lanes daily. With his memory chip and code corrupted, he's turned out to be a complete whackjob left with an unsolvable mystery of his creator. Thankfully, MechSoon doesn't seem bothered or overwhelmed about that as long as he stirs up trouble, which is often the messiest part of SteelGuard's day. Thanks to his agile limbs, getting away with the crime is just as easy as taking candy from a baby, which he has done several times.",
+      "lore": "Living life by all wayward means, MechSoon always finds creative ways to cause chaos throughout Sateen Lanes daily. With his memory chip and code corrupted, he’s turned out to be a complete whackjob left with an unsolvable mystery of his creator. Thankfully, MechSoon doesn’t seem bothered about that as long as he stirs up trouble. Thanks to his agile limbs, getting away with the crime is just as easy as taking candy from a baby, which he has done several times.",
       "stats": {
         "Damage": "35/55/85",
         "Armour/MR": "50",
@@ -1437,7 +1437,7 @@ window.CS_DATA = {
       "yearsActive": "58",
       "currentResidence": "",
       "fullName": "Sister Aegis",
-      "lore": "Silence as her strength, Sister Aegis commands others without ever having to say a word. As the warden of Spiro's correctional facility, she believes that forgiveness and rehabilitation are possible for anyone who seeks it. Sister Aegis hammers the importance of discipline and hard work into her inmates, metaphorically and literally if necessary. Her experience with the redeemed and the irredeemable has only strengthened her role as an enforcer; she is the answer when redemption is not.",
+      "lore": "Silence is her strength; Sister Aegis commands others without ever having to say a word. As the warden of Spiro’s biggest correctional facility, Sister Aegis hammers the importance of discipline and hard work into her inmates, metaphorically and literally if necessary. Her experience with the redeemed and the irredeemable has only strengthened her role as an enforcer; she is the answer when redemption is not.",
       "stats": {
         "Damage": "35/55/85",
         "Armour/MR": "50",
@@ -1474,7 +1474,7 @@ window.CS_DATA = {
         "Range": "4 hexes"
       },
       "abilitySummary": "Launch a hurricane of Flails split between the target and the nearest enemy. They each alternate between dealing physical and magical damage and reduce attack speed by 1% for 10 seconds. 50% AD Flail Count: 21 + 1 per 20% bonus AS Exodium",
-      "subtitle": "The Rewriter of History",
+      "subtitle": "The Denier of Fate",
       "cardImageName": "HookFlailCard",
       "iconImageName": "HookFlailIcon"
     },
@@ -1492,7 +1492,7 @@ window.CS_DATA = {
       "yearsActive": "99",
       "currentResidence": "",
       "fullName": "Exodium",
-      "lore": "Exodium is one of the more pessimistic and assertive members of the Spiro Military Council, as he believes violence will always be necessary to achieve order. Witnessing Ecsthea City's tragedy in his first year of activity, he was convinced that peace would never be achieved, certainly not through treaties and alliances. His beliefs often create arguments between himself and OverStrike, his optimistic counterpart on the council. If the situation ever calls for his force, Exodium will gladly decimate any army in his way.",
+      "lore": "Exodium is one of the more pessimistic and assertive members of the Spiro Military Council, as he believes violence will always be necessary to achieve order. Witnessing Ecsthea City’s tragedy in his first year of activity, he was convinced that peace would never be achieved, certainly not through treaties and alliances. His beliefs often create arguments between himself and OverStrike, his optimistic counterpart on the council. If the situation ever calls for his force, Exodium will gladly decimate any army in his way.",
       "stats": {
         "Damage": "40/60/95",
         "Armour/MR": "55",
@@ -1516,11 +1516,11 @@ window.CS_DATA = {
         "Hacker"
       ],
       "origin": "Riang",
-      "species": "Human (Suit)",
+      "species": "Human",
       "yearsActive": "23",
       "currentResidence": "",
-      "fullName": "Swiftframe",
-      "lore": "Led by his fixation for nature and its creatures, Swiftframe explores uninhabited areas of Riang to understand the land's ancient circle of life. Unshaken by things others would consider \"gross\" or \"savage\", he keeps an open mind and prefers to form his own opinions from solid evidence. Assisted by his cybernetic examination suit, Swiftframe can safely collect and analyze all sorts of samples. However, in his thrill for the unknown, he can sometimes forget about safety measures as he jumps ahead too quickly.",
+      "fullName": "Kuan Dimayuga",
+      "lore": "Led by his fixation for nature and its creatures, Swiftframe explores uninhabited areas of Riang to understand the land’s ancient circle of life. Unshaken by things others would consider “gross” or “savage”, he keeps an open mind and prefers to form his own opinions from solid evidence. Assisted by his cybernetic examination suit, Swiftframe can safely collect and analyze all sorts of samples. However, in his thrill for the unknown, he can sometimes forget about safety measures as he jumps ahead too quickly.",
       "stats": {
         "HP": "950/1750/3400",
         "Damage": "65/90/145",
@@ -1549,7 +1549,7 @@ window.CS_DATA = {
       "yearsActive": "42",
       "currentResidence": "",
       "fullName": "IronVeil",
-      "lore": "IronVeil is a karate teacher-turned-acrobat who combines his fighting skills with his circus routine. Replaced by a faster and more modern karate education unit, he was tossed aside with nothing but feelings of shame. Luckily, he received an offer from BurnByte, who was looking for new circus recruits at the time. Hesitant about his new life on the road, he accepted this career change with a concerned outlook. He didn't have to worry, though; IronVeil's clone acrobatic act is now one of the most popular parts in the circus.",
+      "lore": "IronVeil is a karate teacher-turned-acrobat who combines his fighting skills with his circus routine. Replaced by a faster and more modern karate education unit, he was tossed aside like garbage. Luckily, he soon received an offer from BurnByte, who was looking for new circus recruits at the time. Hesitant about his new life on the road, he accepted this career change with a concerned outlook. He didn’t have to worry, though; IronVeil’s clone acrobatic act is now one of the most popular parts in the circus.",
       "stats": {
         "HP": "1100/1950/3500",
         "Damage": "70/105/170",
@@ -1579,7 +1579,7 @@ window.CS_DATA = {
       "yearsActive": "5",
       "currentResidence": "",
       "fullName": "Cobaltine",
-      "lore": "Powered by admiration from their worshippers, Cobaltine basks in nationwide fame for simply existing. Their charming personality on social media turned them into a popular \"digital creator\", gaining fans from all over the Dominion. Though they conduct routine aerial perimeter checks for Spiro, Cobaltine would rather spend their days socializing and relaxing with citizens. To their military superiors, they're a pain in the ass. To their fans, Cobaltine is the trendy leader of the digital world.",
+      "lore": "Powered by admiration from their worshippers, Cobaltine basks in nationwide fame for simply existing. Their charming personality on social media turned them into a popular “digital creator”, gaining fans from all over the Dominion. Though they conduct routine aerial perimeter checks for Spiro, Cobaltine would rather spend their days socializing and relaxing with citizens. To their military superiors, they’re a pain in the ass. To their fans, Cobaltine is the trendy leader of the digital world.",
       "stats": {
         "HP": "1200/2100/4100",
         "Damage": "50/85/190",
@@ -1607,7 +1607,7 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "32",
       "currentResidence": "",
-      "fullName": "Sightline",
+      "fullName": "Hindrix Toh",
       "lore": "A snarky sharpshooter whose aim transcends space and time, Sightline has the skills that can validate his bold attitude. Raised by cyber assassins, he honed his archery skills to utter perfection. Spotted by the Ebony Clan, he was given a portaling ability in exchange for joining them, using it to rain down hell on his opponents with a fury of lasers. Now, Sightline walks among fearless killers that complement the power he holds.",
       "stats": {
         "HP": "900/1650/2700",
@@ -1665,8 +1665,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "16",
       "currentResidence": "",
-      "fullName": "DuskBlade",
-      "lore": "DuskBlade is an awkward, sincere boy whose current challenge is figuring out where he fits in the world. Coming from a cold household, silence and solitude have become part of his colourless lifestyle. Everything changes when he discovers an innate talent for the mysterious chakrams from his basement; he ricochets them off surfaces and hits targets with precise aim without even knowing what they are. As if his identity crisis isn't enough, DuskBlade is now left with questions about his family's history.",
+      "fullName": "Enzo Mittal",
+      "lore": "DuskBlade is an awkward, sincere boy whose current challenge is figuring out where he fits in the world. Coming from a cold household, silence and solitude have become part of his colourless lifestyle. Everything changes when he discovers an innate talent for the mysterious chakrams from his basement; he ricochets them off surfaces and hits targets with precise aim without even knowing what they are. As if his identity crisis isn’t enough, DuskBlade is now left with questions about his family’s history.",
       "stats": {
         "HP": "800/1450/2600",
         "Damage": "65/80/125",
@@ -1695,7 +1695,7 @@ window.CS_DATA = {
       "yearsActive": "58",
       "currentResidence": "",
       "fullName": "LitanyNode",
-      "lore": "LitanyNode guides people with an unbreakable faith in good persevering over evil. Compared to Sister Aegis, her rehabilitation methods are much gentler and her outlook on the inmates are more optimistic. Disliking the ideas of punishment and force altogether, she leads several lighthearted activities every week for inmates to participate if they wish. Whether its group praying or book club, LitanyNode keeps the flames of hope ablaze.",
+      "lore": "LitanyNode guides people with an unbreakable faith in the power of good persevering over evil. Compared to Sister Aegis, her rehabilitation methods are much gentler, and her outlook on inmates is more optimistic. Disliking the ideas of punishment and force altogether, she leads several lighthearted activities every week for inmates to participate if they wish. Whether it's group praying or book club, LitanyNode keeps the flames of hope ablaze.",
       "stats": {
         "HP": "800/1450/2600",
         "Damage": "30/45/70",
@@ -1705,7 +1705,7 @@ window.CS_DATA = {
         "Range": "4 hex"
       },
       "abilitySummary": "Passive: Every 15 mana spent, summon a ritual circle at the nearest cluster of enemies, dealing magic damage every second. Active: Pray to the gods and move all circles to the nearest enemy, then explode all ritual circles, each dealing magic damage in a 2 hex radius. Ritual Circle Orbit Damage Per second: 80 / 120 / 300 + 65% AP Explosion Damage: 180 /...",
-      "subtitle": "The Forgiving Counselor",
+      "subtitle": "The Forgiving Counsellor",
       "cardImageName": "LitanyNodeCard",
       "iconImageName": "LitanyNodeIcon"
     },
@@ -1724,7 +1724,7 @@ window.CS_DATA = {
       "yearsActive": "83",
       "currentResidence": "Pristal",
       "fullName": "ServoSwing",
-      "lore": "The iconic face of baseball for 50 years, ServoSwing is known throughout the Dominion as the eternal king of baseball. After dominating baseball for the first few decades of its recreation, he stepped away to live a simple life away from the public eye. Thankfully, he found a way to keep his passion for the sport alive through coaching local teams of all ages. From big shot celebrity to hometown hero, ServoSwing continues to reign his legendary status.",
+      "lore": "The iconic face of baseball for 50 years, ServoSwing is known throughout the Dominion as the eternal king of baseball. After dominating baseball for the first few decades of its recreation, he stepped away to live a simple life away from the public eye. Thankfully, he found a way to keep his passion for the sport alive through coaching local teams of all ages. From big shot celebrity to hometown hero, ServoSwing continues to reign in his legendary status.",
       "stats": {
         "HP": "850/1550/2700",
         "Damage": "50/75/115",
@@ -1753,7 +1753,7 @@ window.CS_DATA = {
       "yearsActive": "66",
       "currentResidence": "Spiro",
       "fullName": "SkyDrive",
-      "lore": "SkyDrive is a bad-tempered and intimidating machine whose past has caused him years of grinding his gears. An alarming scandal of his creator sparked a public outcry that disapproved of his status as a Mecha-Clash star. The ongoing negativity and lack of opportunity afterward pushed SkyDrive to flee the city with nothing but shattered dreams. He now lives up in the sky, wondering if a scandal is all he'll ever be.",
+      "lore": "SkyDrive is a bad-tempered and intimidating machine whose past has caused him years of grinding his gears. An alarming scandal involving his creator sparked a public outcry that disapproved of his status as a Mecha-Clash star. The ongoing negativity and lack of opportunity afterward pushed SkyDrive to flee the city with nothing but shattered dreams. He now lives up in the sky, wondering if a disgrace is all he’ll ever be.",
       "stats": {
         "HP": "850/1550/2700",
         "Damage": "50/75/115",
@@ -1783,7 +1783,7 @@ window.CS_DATA = {
       "yearsActive": "1",
       "currentResidence": "",
       "fullName": "Thunk",
-      "lore": "Curling up into a big ball of destruction, Thunk paints the ground with the blood and bodies of his enemies. Resulting as a failed prototype from the war, he was immediately deactivated and discontinued. Years later, he was reactivated by a couple kids who stumbled upon his body in a junkyard. With the guidance of the children, Thunk must readapt his code from the world he was programmed for to the world he's in now.",
+      "lore": "Curling up into a big ball of destruction, Thunk paints the ground with the blood and bodies of his enemies. Resulting from a failed prototype from the war, he was immediately deactivated and discontinued. Years later, he was reactivated by a couple of kids who stumbled upon his body in a junkyard. With the guidance of the children, Thunk must readapt his code from the world he was programmed for to the world he’s in now.",
       "stats": {
         "HP": "1200/2150/3900",
         "Damage": "35/55/105",
@@ -1813,7 +1813,7 @@ window.CS_DATA = {
       "yearsActive": "39",
       "currentResidence": "",
       "fullName": "Rotora",
-      "lore": "Rotora is a beautiful and kind dancer who graces the land with her captivating performances. Made to teach ballet to the daughter of a rich Pristalian family, she spent a year collecting dust only a few months after her creation. When BurnByte came around, looking for any cyber to join his circus, Rotora leaped at the chance to put her ballerina skills to use. Mastering her aerial dancing act, she learned how to draw in a crowd in with her infamous dance.",
+      "lore": "Rotora is a beautiful and kind dancer who graces the others with her captivating performances. Made to teach ballet to the daughter of a rich Pristalian family, she spent a year collecting dust only a few months after her creation. When BurnByte came around, looking for any cyber to join his circus, Rotora leaped at the chance to finally put her ballerina skills to use. Mastering her aerial dancing act, she learned how to draw in a crowd with her infamous dance.",
       "stats": {
         "HP": "1200/2150/3900",
         "Damage": "55/80/120",
@@ -1839,10 +1839,10 @@ window.CS_DATA = {
       ],
       "origin": "Sateen Lanes",
       "species": "Cyber",
-      "yearsActive": "100",
+      "yearsActive": "140",
       "currentResidence": "",
       "fullName": "PlungeDrill",
-      "lore": "PlungeDrill is an orderly and efficient director of public works in Sateen Lanes, ensuring proper maintenance of the tunnels and oversight of new infrastructure plans. Partly responsible for the creation of the Main Lane, his drilling contributions earned him a spot on the city's construction council. Continuing to be an integral part of the city's evolution, PlungeDrill has become the voice of reason in times of structural obstacles and setbacks.",
+      "lore": "PlungeDrill is an orderly and efficient director of public works in Sateen Lanes, ensuring proper maintenance of the tunnels and oversight of new infrastructure plans. Partly responsible for the creation of the Main Lane, his drilling contributions earned him a spot on the city’s construction council. Continuing to be an integral part of the city’s evolution, PlungeDrill has become the voice of reason in times of structural obstacles and setbacks.",
       "stats": {
         "HP": "1150/2100/3800",
         "Damage": "40/60/90",
@@ -1870,8 +1870,8 @@ window.CS_DATA = {
       "species": "Human",
       "yearsActive": "50",
       "currentResidence": "",
-      "fullName": "MechClock",
-      "lore": "A creatively foul-mouthed private investigator, MechClock finds joy in stirring trouble for any amateur hoodlum or alleyway scumbag without a care in the world. He knows all there is about reading body language and detecting lies, which combined with his habit of talking back, makes him a punchable guy to most people. Having his childhood dreams crushed by Grim Row poverty, MechClock lives paycheck to paycheck with no ambitions of changing his lifestyle.",
+      "fullName": "Philips Wainwick",
+      "lore": "A creatively foul-mouthed private investigator, MechClock finds joy in stirring trouble for any alleyway scumbag without a care in the world. He knows all there is about reading body language and detecting lies, which combined with his habit of talking back, makes him a punchable guy to most people. Having his childhood dreams crushed by Grim Row poverty, MechClock lives paycheck to paycheck with no ambitions of changing his lifestyle.",
       "stats": {
         "HP": "800/1400/2500",
         "Damage": "20/30/90",
@@ -1900,7 +1900,7 @@ window.CS_DATA = {
       "yearsActive": "Unknown",
       "currentResidence": "Riang",
       "fullName": "Sanguinox",
-      "lore": "Perhaps the most mysterious being on Riang, the existence of Sanguinox mirrors that of an old legend or a childhood story. Known as \"The Archon\", he leads his horsemen to kill and execute orders without outsiders ever discovering his real name. Even to his own clan members, his identity is questioned. Though, it's said there's a way to sense his presence. Goosebumps. Breathing difficulty. Feeling all the blood in your body run cold. That's when he may be near.",
+      "lore": "Perhaps the most mysterious being on Riang, the existence of Sanguinox mirrors that of an old legend or a childhood story. Known as “The Archon”, he leads his horsemen to kill and execute orders without outsiders ever discovering his real name. Even to his own clan members, his identity is questioned. Though it’s said there’s a way to sense his presence. Goosebumps. Breathing difficulty. Feeling all the blood in your body run cold. That’s when he may be near.",
       "stats": {
         "HP": "950/1550/2800",
         "Damage": "25/35/90",
@@ -1924,12 +1924,12 @@ window.CS_DATA = {
         "Gundam",
         "Overclocked"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
-      "currentResidence": "",
+      "origin": "Spiro",
+      "species": "Cyber",
+      "yearsActive": "2",
+      "currentResidence": "Pristal",
       "fullName": "Prime-78",
-      "lore": "The newest addition to Cashelbury's defence, Prime-78 soars the skies as a valiant protector of the capital. Seeing the nation's pride for preserving history, Spiro gifted this vintage replica soldier as a way to strengthen relations with Pristal. The townspeople welcomed him with open arms, and he became a good friend to WhirlGuard. Loving his new home more than anything in the world, Prime-78 stands ready at the helm with his mighty sword raised high.",
+      "lore": "The newest addition to Cashelbury’s defence, Prime-78 soars the skies as a valiant protector of the capital. Seeing the nation’s pride for preserving history, Spiro gifted this vintage replica soldier as a way to strengthen relations with Pristal. The townspeople welcomed him with open arms, and he became a great friend to WhirlGuard. Loving his new home more than anything in the world, Prime-78 stands ready at the helm with his mighty sword raised high.",
       "stats": {
         "HP": "1000/1800/3300",
         "Damage": "55/85/125",
@@ -1953,12 +1953,12 @@ window.CS_DATA = {
         "Orbital",
         "Overloader"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Spiro",
+      "species": "Cyber",
+      "yearsActive": "123",
       "currentResidence": "",
       "fullName": "Satellite-Titan",
-      "lore": "Satellite-Titan is the oldest engineer of Spiro's Platform Maintenance workers, whose contributions throughout the years have now earned her the position of Electrical Utilities Director. Highly aware of the citizens and the planet's health, she wanted to power the city through sustainable means that would be safe for all. Thanks to her proposal of using satellites and solar panels, Spiro has thrived off her leadership and has been successfully powered by the sun for years.",
+      "lore": "Satellite-Titan is the oldest engineer of Spiro’s Platform Maintenance workers, whose contributions throughout the years have now earned her the position of Electrical Utilities Director. Highly aware of the citizens and the planet’s health, she wanted to power the city through means that would be safe for all. Thanks to her proposal of using satellites and solar panels, Spiro has thrived under her direction and has been successfully powered by the sun for years.",
       "stats": {
         "HP": "1200/2150/3300",
         "Damage": "40/60/90",
@@ -1982,12 +1982,12 @@ window.CS_DATA = {
         "Overclocked",
         "Voltage"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
-      "currentResidence": "",
+      "origin": "Unknown",
+      "species": "Cyber",
+      "yearsActive": "1",
+      "currentResidence": "Pristal",
       "fullName": "Edge-X",
-      "lore": "Becoming Harlow's first serial killer in over a hundred years, Edge-X has terrorised the town through its grizzly murders. He made his first kills on the night of his arrival; stabbing two drunken men and leaving his daggers in their bodies. His targets share the same physical pattern; middle-aged men who wander the streets at night. Nobody has figured out his motive or his identity, but after a few months of gruesome killing, he seems to have stopped. Though, a swift figure has been reported to be jumping from rooftop to rooftop, searching for something…or someone.",
+      "lore": "Becoming Baxterside’s first serial killer in over a hundred years, Edge-X has terrorized the town through its grizzly murders. He made his first kills on the night of his arrival, stabbing two drunken men and leaving his daggers in their bodies. His targets share the same physical pattern: middle-aged men who wander the streets at night. Nobody has figured out his motive or his identity, but after a few months of gruesome killing, he seems to have stopped. Though a swift figure has been reported to be jumping from rooftop to rooftop, searching for something…or someone.",
       "stats": {
         "HP": "1000/1800/3250",
         "Damage": "55/85/125",
@@ -2016,7 +2016,7 @@ window.CS_DATA = {
       "yearsActive": "163",
       "currentResidence": "Sateen Lanes",
       "fullName": "Coreweaver",
-      "lore": "Coreweaver is a whimsical entertainer with an elemental gift of fire and ice. As the later addition to the Core Four, they always felt out of place in the group. Made to mitigate challenging environmental situations, Coreweaver believed their abilities to be more beneficial in entertainment. After the Core Four disbanded, they travelled around the Dominion to fulfill their true calling. To this day, Coreweaver has been putting on fun solo shows wherever they can, though they're still open to finding a group to call their own.",
+      "lore": "Coreweaver is a whimsical entertainer with an elemental gift of fire and ice. As the later addition to the Core Four, they always felt out of place in the group. Made to mitigate challenging environmental situations, Coreweaver believed their abilities to be more beneficial in entertainment. After the Core Four disbanded, they travelled around the Dominion to fulfill their true calling. To this day, Coreweaver has been putting on fun solo shows wherever they can, though they’re still open to finding a group to call their own.",
       "stats": {
         "HP": "1000/2000/9000",
         "Damage": "50/100/900",
@@ -2041,12 +2041,12 @@ window.CS_DATA = {
         "Prompter",
         "Bulkhead"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Sateen Lanes",
+      "species": "Cyber",
+      "yearsActive": "6",
       "currentResidence": "",
       "fullName": "MUNCH-R",
-      "lore": "Surprisingly cuddly and constantly hungry, MUNCH-R easily makes new friends every time they look for their next meal. Similar to garbage compactors, they were designed to get rid of waste through digestion and excretion. Their adorable appearance often attracts individuals to interact with them. Besides collecting garbage, this social butterfly also enjoys going on patrol with SteelGuard. When it comes to the community, MUNCH-R wants to help in any way they can.",
+      "lore": "Surprisingly cuddly and constantly hungry, MUNCH-R easily makes new friends every time they look for their next meal. Inspired by garbage compactors, they were designed to get rid of waste through sustainable digestion and excretion. Besides collecting garbage, this social butterfly also enjoys going on patrol with SteelGuard. When it comes to the community, MUNCH-R wants to help in any way they can.",
       "stats": {
         "HP": "1000/1800/9999",
         "Damage": "80/130/999",
@@ -2071,9 +2071,9 @@ window.CS_DATA = {
         "Clobbertron",
         "Hyperdrive"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Sateen Lanes",
+      "species": "Cyber",
+      "yearsActive": "65",
       "currentResidence": "",
       "fullName": "Haymaker",
       "lore": "Haymaker is a loyal and trusted guard to the presidential family of Sateen Lanes, keeping them safe for two generations. His duties expand past physical defence; he actually spends more time organizing events for the president, cooking for the family, and cleaning the mansion. With the authority to summon and lead other servants, Haymaker mastered the core values of leadership and understands how to be an effective leader for all tasks.",
@@ -2100,11 +2100,11 @@ window.CS_DATA = {
         "Edgelord",
         "Phasers"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
-      "currentResidence": "",
-      "fullName": "Stylet",
+      "origin": "Spiro",
+      "species": "Human",
+      "yearsActive": "27",
+      "currentResidence": "Ecsthea City",
+      "fullName": "Nolana Penton",
       "lore": "A brilliant mind paired with a reckless work ethic, Stylet stops at nothing to achieve more knowledge and skill. Previously enrolled at Empyrean University, a laboratory incident landed her in hot water, leading to her immediate expulsion. Stylet promptly moved away to continue her engineering and medical studies. To her surprise, the city has taught her a lot more than what she anticipated: the teachings of new knowledge and skill, but also the means to weaponize it.",
       "stats": {
         "HP": "1100/1400/9999",
@@ -2130,12 +2130,12 @@ window.CS_DATA = {
         "Hacker",
         "Technomancer"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Spiro",
+      "species": "Cyber",
+      "yearsActive": "4",
       "currentResidence": "",
       "fullName": "Aetherion",
-      "lore": "Aetherion soars the skies with mastery in her assortment of maces, prepared to take down all sorts of aerial enemies. Her battle program weighs heavy in her performance; the ideas of new and powerful enemies striking from above always loom in her mind. However, patrolling with Cobaltine has effectively pulled her away from overthinking. With a clear mind and some confidence, Aetherion's chances of winning any battle are much higher than she'd think.",
+      "lore": "Aetherion soars the skies with mastery in her assortment of maces, prepared to take down all sorts of aerial enemies. Her battle program weighs heavily in her performance; the idea of new and powerful enemies striking from above always looms in her mind. However, patrolling with Cobaltine has effectively pulled her away from her overthinking. With a clear mind and some confidence, Aetherion’s chances of winning any battle are much higher than she’d think.",
       "stats": {
         "HP": "1000/1800/9000",
         "Damage": "65/80/999",
@@ -2159,12 +2159,12 @@ window.CS_DATA = {
         "Shadow Force",
         "Channeler"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
-      "currentResidence": "",
-      "fullName": "K4GE",
-      "lore": "An unknown soul risen from the dead, K4GE plans to make big moves in his second try at life. Brought back by the Archon, he was given his life back and was offered a newfound power if he swore allegiance. Becoming an agent of chaos, K4GE was a tenacious natural with his new shuriken ability. His quick delivery on orders and missions makes him a valuable member of the clan. The only thing holding him back is his remnants of memory from his life before death.",
+      "origin": "Unknown",
+      "species": "Human (Undead)",
+      "yearsActive": "19",
+      "currentResidence": "Riang",
+      "fullName": "Unknown",
+      "lore": "An unknown soul risen from the dead, K4GE plans to make big moves in his second try at life. Brought back to life by the Archon, he was offered a newfound power if he swore allegiance. Becoming an agent of chaos, K4GE was a tenacious natural with his new shuriken ability. His quick delivery on orders and missions makes him a valuable member of the clan. The only thing holding him back is the remnants of memory from his life before death.",
       "stats": {
         "HP": "900/1600/3000",
         "Damage": "65/80/999",
@@ -2189,12 +2189,12 @@ window.CS_DATA = {
         "Bioforge",
         "Overloader"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Ecsthea City",
+      "species": "Cyber",
+      "yearsActive": "50",
       "currentResidence": "",
       "fullName": "SoulSync",
-      "lore": "Owning the liveliest disco club in the city, SoulSync makes every night a memorable one with his groovy hits. The club was created in partnership with his creator, who handles the business side of things while SoulSync pumps up the crowd. Programmed with authorized synchronisation to all technology in the club, he can manipulate dance floors, strobe lights, and more to his will! You'll never see a room of mellow dancers as long as SoulSync is around.",
+      "lore": "Owning the liveliest disco club in the city, SoulSync makes every night a memorable one with his groovy hits. The club was created in partnership with his creator, who handles the business side of things while SoulSync pumps up the crowd. Programmed with authorized synchronization to all technology in the club, he can manipulate dance floors, strobe lights, and more to his will! You’ll never see a room of mellow dancers as long as SoulSync is around.",
       "stats": {
         "HP": "900/1600/9999",
         "Damage": "45/65/100",
@@ -2218,9 +2218,9 @@ window.CS_DATA = {
         "Worlds Strongest",
         "Eradicator"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Pristal",
+      "species": "Cyber",
+      "yearsActive": "32",
       "currentResidence": "",
       "fullName": "GraveMarch",
       "lore": "A commander of great exponential growth, GraveMarch has risen up the ranks faster than any other soldier in his brigade. With abilities as versatile as his, he could be placed in any position and squadron without hindering performance. In fact, he often improved it. GraveMarch was eventually promoted to commander, effectively leading others to achieve great improvement like him.",
@@ -2247,12 +2247,12 @@ window.CS_DATA = {
         "Orbital",
         "PowerNode"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
-      "currentResidence": "",
-      "fullName": "StarBreaker",
-      "lore": "Once an honourable engineer of technology and science, StarBreaker has turned away from the light and given in to dark beliefs. After his parents were killed in an accident, his grief put the cybers to blame for their deaths. His hatred for the cyber beings engulfed him, leading him to build a suit of total destruction. Now, he ventures out to spread word of his mission, and hopefully, recruit an army to help lead his vision of the future.",
+      "origin": "Spiro",
+      "species": "Human",
+      "yearsActive": "47",
+      "currentResidence": "Unknown",
+      "fullName": "Sylvan Clyde",
+      "lore": "Once an honourable engineer of technology and science, StarBreaker has turned away from the light and given in to dangerous beliefs. After his parents were killed in an accident, his grief put the cyber beings to blame for their deaths. His hatred for the cyber beings engulfed him, leading him to build a suit of destruction. Now, he ventures out to spread the word of his mission, and hopefully, recruit an army to help lead his vision of the future.",
       "stats": {
         "HP": "900/1650/3000",
         "Damage": "30/50/70",
@@ -2276,12 +2276,12 @@ window.CS_DATA = {
         "Student And Master",
         "Alloyed"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
-      "currentResidence": "",
+      "origin": "Ecsthea City",
+      "species": "Cyber",
+      "yearsActive": "21",
+      "currentResidence": "Pristal",
       "fullName": "Master Prime",
-      "lore": "Encountering trouble back in the city, Master Prime has retreated to the countryside, hoping to wait out the wrath that awaits him back home. He soon learns that karma can be just as tricky as him; the appearance of a human teenager has flipped his world upside down. It results in Master Prime agreeing to train the kid in exchange for a place to stay. With a new protege in his care, he'll have to guide him down a moral path while adjusting to his new role.",
+      "lore": "Encountering trouble back in the city, Master Prime has retreated to the countryside, hoping to wait out the wrath that awaits him back home. He soon learns that karma can be just as tricky as him; the appearance of a human teenager has flipped his world upside down. With a new protege in his care, he’ll have to guide him down a moral path while adjusting to his new role.",
       "stats": {
         "HP": "1500/2500/8000",
         "Damage": "60/85/130",
@@ -2305,11 +2305,11 @@ window.CS_DATA = {
         "Big Gear Tony",
         "Triggershot"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Ecsthea City",
+      "species": "Cyber",
+      "yearsActive": "89",
       "currentResidence": "",
-      "fullName": "IronDon & Goons",
+      "fullName": "IronDon",
       "lore": "IronDon is a pragmatic and ruthless mafia boss, whose leadership has led his gang to be one of the most dominant criminal groups in Grim Row. In his first year of activity, he led a rebellion that overthrew the human mafia responsible for creating him. He now runs his own criminal empire, powered by drug and weaponry smuggling operations. His influence remains solid, though his vulgar attitude has become a big turn-off for potential workers and partners.",
       "stats": {
         "HP": "950/1750/8000",
@@ -2333,12 +2333,12 @@ window.CS_DATA = {
       "traits": [
         "Ballin’"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Ecsthea City",
+      "species": "Cyber",
+      "yearsActive": "79",
       "currentResidence": "",
-      "fullName": "Kobolt & Shackbyte",
-      "lore": "Kobolt and ShackByte are the most exceptional basketball players in the sport, notable for their daredevil skills and admirable sportsmanship. Brought on during the surge of entertainment, the two players captured the hearts of everyone in the city with their court coordination and synergy. Retiring from the sport disheartened everyone, but it didn't mean the end of basketball for Kobolt and ShackByte. The dynamic duo continues to play basketball throughout the city, offering local fun and training to whoever needs it.",
+      "fullName": "Kobolt and ShackByte",
+      "lore": "Kobolt and ShackByte are the most exceptional basketball players in the sport, notable for their daredevil skills and admirable sportsmanship. Brought on during the surge of entertainment, the two players captured the hearts of everyone in the city with their court coordination and synergy. Retiring from the sport disheartened everyone, but it didn’t mean the end of basketball for Kobolt and ShackByte. The dynamic duo continues to play basketball throughout the city, offering local fun and training to whoever needs it.",
       "stats": {
         "HP": "1100/2000/8000",
         "Damage": "60/85/130",
@@ -2363,9 +2363,9 @@ window.CS_DATA = {
         "Bounty Hunter",
         "Voltage"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Sateen Lanes",
+      "species": "Cyber",
+      "yearsActive": "140",
       "currentResidence": "",
       "fullName": "Prototype V",
       "lore": "A sharp-edged hazard for construction and all forms of life, Prototype V has redeemed past shortcomings by gaining a painful skillset. His most overlooked accomplishment was the creation of the Main Lane, which, despite his mistakes made during that project, did contribute to its existence. That fact, along with a hundred years of unappreciated work, led him to change career paths. His life as an assassin has offered him something his previous job could not: a chance to build himself up instead of others.",
@@ -2392,12 +2392,12 @@ window.CS_DATA = {
         "All Wise",
         "Philosopher"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Pristal",
+      "species": "Cyber",
+      "yearsActive": "70",
       "currentResidence": "",
       "fullName": "SocraTech",
-      "lore": "From his many years of activity, SocraTech has questioned every aspect of human and cyber life there is. In his hometown of Paintersfield, he was known for bothering the townspeople daily with his deep questions and rants. However, BurnByte saw a talent in him nobody else could see. Curious to discover a lifestyle he hadn't experienced, SocraTech joined the circus as a comedy act. Despite the occasional tomatoes thrown and boos shouted at him, he found fulfillment in bringing out laughs, even if it means they are laughing at him.",
+      "lore": "From his many years of activity, SocraTech has questioned every aspect of human and cyber life there is. In his hometown of Paintersfield, he was known for bothering the townspeople daily with his deep questions and rants. However, BurnByte saw a talent in him nobody else could see. Curious to discover a lifestyle he hadn’t experienced, SocraTech joined the circus as a comedy act. Despite the occasional tomatoes thrown and boos shouted at him, he found fulfillment in bringing out laughs, even if it means they are laughing at him.",
       "stats": {
         "HP": "900/1650/8000",
         "Damage": "60/85/130",
@@ -2421,12 +2421,12 @@ window.CS_DATA = {
         "Gambling",
         "Strikebyte"
       ],
-      "origin": "",
-      "species": "",
-      "yearsActive": "",
+      "origin": "Ecsthea City",
+      "species": "Cyber",
+      "yearsActive": "21",
       "currentResidence": "",
       "fullName": "RNGine",
-      "lore": "RNGine is a quick-witted and energetic master at card tricks and illusions, entertaining audiences by messing with their perception. She has a less-than-ideal start for a career, subjected to pickpocketing and scamming to make ends meet. It wasn't until she heard of BurnByte's travelling circus that she decided to leave the city for the first time. Her successful audition in Tunneltown got her a job right on the spot, instantly becoming the new illusionist act. Combined with her charisma, the audiences would never dare to look away during her performances.",
+      "lore": "RNGine is a quick-witted and energetic master at card tricks and illusions, entertaining audiences by messing with their perception. She had a less-than-ideal start, relying on pickpocketing and scamming to make ends meet. It wasn’t until she heard of BurnByte’s travelling circus that she decided to leave the city for the first time. Her successful audition in Tunneltown got her the job, becoming the circus’ new illusionist act. Combined with her charisma, the audiences would never dare to look away during her performances.",
       "stats": {
         "HP": "900/1650/8000",
         "Damage": "70/95/140",
@@ -2454,11 +2454,11 @@ window.CS_DATA = {
         "Triggershot"
       ],
       "origin": "Sateen Lanes",
-      "species": "Human (Suit)",
+      "species": "Human",
       "yearsActive": "Unknown",
       "currentResidence": "",
-      "fullName": "KillSwitch",
-      "lore": "The wildcard of Sateen assassins, KillSwitch has made a name for himself through his unnecessarily violent kills. The gruesome result of his killings isn't the most disturbing part; he always presents a happy and unbothered attitude while carrying dead bodies and completing tasks. His real identity is unknown as he uses many names, though Calvin seems to be a frequent one. His desensitized nature has even concerned other assassins, making KillSwitch one of a kind in his madness.",
+      "fullName": "Calvin",
+      "lore": "The wildcard of Sateen assassins, KillSwitch has made a name for himself through his unnecessarily violent kills. The gruesome result of his killings isn’t the most disturbing part; he always presents a happy and unbothered attitude while carrying dead bodies and completing tasks. His real identity is unknown, though Calvin seems to be a frequent name he uses. His desensitized nature has even concerned other assassins, making KillSwitch one of a kind in his madness.",
       "stats": {
         "HP": "1000/1800/3600",
         "Damage": "60/70/180",
@@ -3118,8 +3118,8 @@ window.CS_DATA = {
       "type": "World",
       "category": "Worldbuilding",
       "color": "#c9a84c",
-      "excerpt": "A continent shaped by cybernetic innovation, mysterious magic, and the people and cybers who live among both.",
-      "content": "The Dominion is a continent of nations whose futuristic and technological environment is shaped by the people and cybers who reside there. The world is filled with breathtaking cybernetic innovations alongside mysterious magic that has intertwined with the new technology."
+      "excerpt": "The Dominion is the world of Cybernetic Strategy and houses the following nations. Its futuristic, technological environment is shaped by the individuals and cyber that reside in it. The world is filled with breathtaking cybern...",
+      "content": "The Dominion is the world of Cybernetic Strategy and houses the following nations. Its futuristic, technological environment is shaped by the individuals and cyber that reside in it. The world is filled with breathtaking cybernetic innovations, but also contains mysterious magic that has meshed with the new technology. Nearing the end of the Human-Cyber War, the land began altering itself in scientifically impossible ways, including the appearance of new environments and forms of life. The biggest one being automatons gaining a magic-sourced soul capable of human emotion and magical abilities, permanently overriding the AI that originally powered them. It’s theorized that the massive bloodshed and land degradation from the war called on a higher power to step in, or forced the land to adapt as a way to salvage itself. This occurrence was named “The Equalizing”, and the scientific cause for it continues to stump researchers and scientists decades later. Since then, humans and cybers have lived an integrated lifestyle. Religions of Mech-Gods have appeared, praised by both species, while cyber-sourced entertainment has become the norm. However, the relationship of the two factions isn’t all that smooth; individuals on both sides still hold grudges and bias against one another for wrongdoings of the past. Relying on each other to sustain life, humans and cybers must find a way to live in harmony."
     },
     {
       "id": "ecsthea-city",
@@ -3127,8 +3127,8 @@ window.CS_DATA = {
       "type": "Region",
       "category": "The Dominion",
       "color": "#54d7ff",
-      "excerpt": "Located in the center of The Dominion, Ecsthea City is a thriving metropolis that acts as the middle ground for all communities to gather and collaborate. Often known as \"The City of Tomorrow\", the city's...",
-      "content": "Located in the center of The Dominion, Ecsthea City is a thriving metropolis that acts as the middle ground for all communities to gather and collaborate. Often known as \"The City of Tomorrow\", the city's bright atmosphere of entertainment and fame is the ideal place to keep up the hustle and make it big! After an economic crash, Ecstheans found their saviour in the cybers. Once mainly used as servants or service workers, cybers have now been popularized to celebrity status through a new cyber-only sport: Mecha-Clash! A competitive sport of battle, parkour, and intellect. The sport has generated an unbelievable wealth for the city, single-handedly funding its technological research and development sector alone. With the marketing and media promotions of Mecha-Clash, Ecsthea City created dedicated fan bases across the world, who are willing to invest their love and wallets into keeping this modern culture alive. Key locations: Ecsthea City, Grim Row."
+      "excerpt": "Located in the center of The Dominion, Ecsthea City is a thriving metropolis that serves as a central hub for all communities to gather and collaborate. Often known as “The Dominion’s Second Sun”, the city’s bright atmosphere o...",
+      "content": "Located in the center of The Dominion, Ecsthea City is a thriving metropolis that serves as a central hub for all communities to gather and collaborate. Often known as “The Dominion’s Second Sun”, the city’s bright atmosphere of entertainment and fame has been a beacon of hope for people to follow their dreams! After an economic crash, Ecstheans found their saviour in the cybers. Once mainly used as servants or service workers, cybers have now been popularized to celebrity status through a new cyber-only sport: Mecha-Clash! A competitive sport of battle, parkour, and intellect. The sport has generated an unbelievable wealth for the city, single-handedly funding its technological research and development sector alone. With the marketing and media promotions of Mecha-Clash, Ecsthea City created dedicated fan bases across the world, who are willing to invest their love and wallets into keeping this modern culture alive. Key locations: Ecsthea City, Grim Row, Stallard Stadium."
     },
     {
       "id": "riang",
@@ -3136,8 +3136,8 @@ window.CS_DATA = {
       "type": "Region",
       "category": "The Dominion",
       "color": "#65e087",
-      "excerpt": "The ancient moors of Riang have been said to be the oldest in all the lands. Away from the mainland, Riang is a distant archipelago of moss, fog, and swamp. Its environment is abundant in trees and plants,...",
-      "content": "The ancient moors of Riang have been said to be the oldest in all the lands. Away from the mainland, Riang is a distant archipelago of moss, fog, and swamp. Its environment is abundant in trees and plants, making it a vital hub for textile, grain, and other kinds of exports. Riang was the slowest in accepting technology into its society due to the citizens' unwavering loyalty to their environment. The concept of living with cyber and relying on technology took decades for the Riangnese to even tolerate; some are still against it. The threat of neighbouring nations possibly overpowering them finally convinced the people to finally allow new technology to settle. Riang continues to have a strong grasp on its environmental connection while modernizing itself. In its long and mysterious history, a popular myth has rumoured a secret power that can only be found on Riang. It is said to be so powerful that it surpasses all cybernetic advancements that have been or will ever be made. Though the mainland believes it to be impossible, the people of Riang don't dismiss it entirely. Key locations: Lunaya, Soratai Village, Kiyosa, The Faded Islands."
+      "excerpt": "The ancient moors of Riang have been said to be the oldest in the world. A hundred and fifty million years ago, the land split off from its original Eastern continent, drifting towards the Dominion. Now, it is a neighbouring la...",
+      "content": "The ancient moors of Riang have been said to be the oldest in the world. A hundred and fifty million years ago, the land split off from its original Eastern continent, drifting towards the Dominion. Now, it is a neighbouring landmass of moss, fog, and swamp, surrounded by ocean. Its environment is abundant in trees and plants, making it a vital hub for textiles, grain, and other kinds of exports. Riang was the slowest to adopt technology within its society due to the citizens’ unwavering loyalty to their environment. The concept of living with cyber and relying on technology took decades for the Riangnese to tolerate; some are still against it. The threat of neighbouring nations possibly overpowering them technologically convinced them to allow new technology to settle in. Riang continues to have a strong grasp on its environmental connection while modernizing itself. In its long and mysterious history, a popular myth has rumoured a secret power source that can only be found on Riang. It is said to be so powerful that it surpasses all cybernetic advancements that will ever be made and all magic that exists. Though the mainland believes it to be impossible, the people of Riang don’t dismiss it. Key locations: Ikkion, Kiyosa, Oriza, Marotan, Lunaya, Soratai Village, The Faded Islands."
     },
     {
       "id": "sateen-lanes",
@@ -3145,8 +3145,8 @@ window.CS_DATA = {
       "type": "Region",
       "category": "The Dominion",
       "color": "#f4a65c",
-      "excerpt": "This cavernous underground city spans miles to the west, splitting off into countless tunnels in every direction. Dubbed \"Haggler's County\", Sateen Lanes has earned its reputation from the Main Lane, the most...",
-      "content": "This cavernous underground city spans miles to the west, splitting off into countless tunnels in every direction. Dubbed \"Haggler's County\", Sateen Lanes has earned its reputation from the Main Lane, the most spontaneous marketplace in the Dominion. Are you looking to trade an old radiator for a cyberbot from the first Mecha-Clash game ever recorded? Use the right words, and you might have shot! Despite the city's reach bringing in endless goods, the tunnels carry a great danger if you wander too far. Several of the tunnels lead to Harkin Square, where dangerous criminals reside and trade illegal items and substances. They even house an illegal battle ring for both humans and cybers. Think of it as a more lethal version of Mecha-Clash. Sateen Lanes already carries risk without the shadow market; the deeper in the tunnels you go, the chances of you coming out decrease. Not exactly traveller-friendly, but at least the people are funny! Aside from the criminals, the residents of Sateen Lanes are said to be the funniest people in the Dominion. However, associating their humour with kindness wouldn't be wise. Key locations: The Lanes, The Main Lane, Alaphada, Harkin Square."
+      "excerpt": "This cavernous underground city spans miles to the west, splitting off into countless tunnels in every direction. Dubbed “Haggler’s County”, Sateen Lanes has earned its reputation from the Main Lane, the most spontaneous market...",
+      "content": "This cavernous underground city spans miles to the west, splitting off into countless tunnels in every direction. Dubbed “Haggler’s County”, Sateen Lanes has earned its reputation from the Main Lane, the most spontaneous marketplace in the Dominion. Are you looking to trade an old radiator for a cyberbot from the first Mecha-Clash game ever recorded? Use the right words, and you might have shot! Despite the city’s reach bringing in endless goods, the tunnels carry a great danger if you wander too far. Several of the tunnels lead to Harkin Square, where dangerous criminals reside and trade illegal items and substances. They even house an illegal battle ring for both humans and cybersm like a more lethal version of Mecha-Clash. Sateen Lanes already carries risk without the shadow market; the deeper in the tunnels you go, the chances of you coming out decrease. Not exactly traveller-friendly, but at least the people are funny! Aside from the criminals, the residents of Sateen Lanes are said to be the funniest people in the Dominion. However, associating their humour with kindness wouldn’t be wise. Key locations: Ruhatra, Tunneltown, Tahkari, Alaphada, The Main Lane, Harkin Square, The Larenki Desert."
     },
     {
       "id": "pristal",
@@ -3154,8 +3154,8 @@ window.CS_DATA = {
       "type": "Region",
       "category": "The Dominion",
       "color": "#f0d9a1",
-      "excerpt": "Inspired by the classic era of humanity, Pristal has embraced its suburban aesthetic and preserved hundreds of human cultures. In relation, Pristal inhabits the largest human population in the Dominion at 64%....",
-      "content": "Inspired by the classic era of humanity, Pristal has embraced its suburban aesthetic and preserved hundreds of human cultures. In relation, Pristal inhabits the largest human population in the Dominion at 64%. The tranquillity of Pristal has made it a perfect home for raising youth, beginning retirement, and starting a new chapter independently. Before its creation, Pristal was a bloody battleground between the humans and the cybers. Like all wars, both sides endured tremendous losses. After the tragedy, some humans banded together to create a utopia, where humans and cybers could live together in harmony. Remnants of the battle, such as abandoned ships and prisoner camps, have even been repurposed into functional recreational and residential spaces. Some Pristalians have even started a social movement called the \"Intertwine Movement\". It calls for all of the Dominion to dissolve their independence under one new nation: The United Dominion. Therefore, \"Intertwining\" everyone into one people. However, the initiative hasn't gained much traction for many reasons. The biggest one being that the initiative is seen as unnecessary or negative by the other nations. Despite the lack of progress, Pristal holds out hope for a United Dominion. Key locations: Cashelbury, Paintersfield, Harlow."
+      "excerpt": "Inspired by the classic era of humanity, Pristal has embraced its suburban aesthetic and preserved hundreds of human cultures. In relation, Pristal inhabits the largest human population in the Dominion at 64%. The tranquillity...",
+      "content": "Inspired by the classic era of humanity, Pristal has embraced its suburban aesthetic and preserved hundreds of human cultures. In relation, Pristal inhabits the largest human population in the Dominion at 64%. The tranquillity of Pristal has made it a perfect home for raising youth, beginning retirement, and starting new chapters. Before its creation, Pristal was a bloody battleground between the humans and the cybers. Like all wars, both sides endured tremendous losses. After the tragedy, some humans banded together to create a utopia, where humans and cybers could live together in quiet peace. Remnants of the battle, such as abandoned ships and prisoner camps, have even been repurposed into functional recreational and residential spaces. Some Pristalians have even started a social movement called the “Intertwine Movement”. It calls for all of the Dominion to dissolve their independence under one new nation: The United Dominion. Therefore, “Intertwining” everyone into one people. However, the initiative hasn’t gained much traction for many reasons. The biggest one being that the initiative is seen as unnecessary or negative by the other nations. Despite the lack of progress, Pristal holds out hope for a United Dominion. Key locations: Swalindt, Cashelbury, Harlow, Baxterside, Paintersfield, Patch’s Patch-Up Shop."
     },
     {
       "id": "spiro",
@@ -3163,8 +3163,8 @@ window.CS_DATA = {
       "type": "Region",
       "category": "The Dominion",
       "color": "#8db5ff",
-      "excerpt": "Spiro has been taking the lead in the global technology race with no competitors or threats in sight. Its innovative environment has cultivated the most formidable soldiers and cerebral engineers of the era....",
-      "content": "Spiro has been taking the lead in the global technology race with no competitors or threats in sight. Its innovative environment has cultivated the most formidable soldiers and cerebral engineers of the era. The gigantic floating nation resides in the skies of the grasslands, becoming Pristal's closest neighbour. On the ground, several ports are stationed to await arrival and descent between Spiro and the ground. Spiro consists of two halves: Spiro City and its military. Spiro City is the home of Empyrean University, an infamous school known for creating big names in technology, science, magic, and even politics. The success of the school has grabbed attention from everywhere, becoming the number one choice of education among scholars. As a university town, the residents consist of high-level educators, researchers, students, and occasional military personnel. The Spiro Military Academy is located on the left side of the foundation, opposite the city. At the academy, humans and cybers train with instructors of great expertise. Mandatory course subjects include flight training, opponent strategy, magic wielding, medical training, and more. The Spiri believe in justice, using its power to maintain peace neutrally throughout the Dominion. Military squadrons are deployed to different nations, collaborating with governments to create safety and security for their people. However, trust in Spiro's soldiers has faltered over the years. Some soldiers have been acting greedily and unprofessionally, serving the higher-ups rather than the citizens. Unfortunately, most of Spiro remain unaware of their misused resources . Key locations: Spiro City, Empyrean University, Spiro Military Academy."
+      "excerpt": "Spiro has been taking the lead in the global technology race with no competitors or threats in sight. Its innovative environment has cultivated the most formidable soldiers and cerebral engineers of the era. The gigantic floati...",
+      "content": "Spiro has been taking the lead in the global technology race with no competitors or threats in sight. Its innovative environment has cultivated the most formidable soldiers and cerebral engineers of the era. The gigantic floating nation resides in the skies of the grasslands, becoming Pristal’s closest neighbour. On the ground, several ports are stationed to oversee the arrival and descent between Spiro and the ground. Spiro consists of two halves: Spiro City and its military. Spiro City is home to Empyrean University, an infamous school known for creating big names in technology, science, magic, and even politics. The school’s success has drawn attention from everywhere, becoming the number one choice of education among scholars. As a university town, the residents consists of high-level educators, researchers, students, and occasional military personnel. The Spiro Military Academy is located on the left side of the foundation, opposite the city. At the academy, humans and cybers train with instructors of great expertise. Mandatory course subjects include flight training, opponent strategy, magic wielding, medical training, and more. The Spiri believe in justice, and use their power to maintain peace neutrally throughout the Dominion. Military squadrons are deployed to different nations, collaborating with governments to create safety and security for their people. However, trust in Spiro’s soldiers has faltered over the years. Some soldiers have been acting greedily and unprofessionally, serving the higher-ups rather than the citizens. Unfortunately, most of Spiro remain unaware of the misuse of their resources. Key locations: Sector Cato, Spiro City, Empyrean University, Sector Vallen, Spiro Military Academy."
     },
     {
       "id": "core-four",
@@ -3172,8 +3172,8 @@ window.CS_DATA = {
       "type": "Faction",
       "category": "Peacekeeping Cyber-Series",
       "color": "#7bdcff",
-      "excerpt": "Thirty years after the Human-Cyber War ended, the Dominion continued through intense distrust and strained relations. The Core Four cyber-series was created as a monument to everlasting peace and trust in the...",
-      "content": "Thirty years after the Human-Cyber War ended, the Dominion continued through intense distrust and strained relations. The Core Four cyber-series was created as a monument to everlasting peace and trust in the newfound human-cyber relationship. They travelled between nations, helping those in need and spreading their message of peace. As tensions eased, the Core Four became unpopular and eventually disbanded. All except Tracercore have been confirmed active in the present day. Members: Tracercore, LockCore, FortiCore, CommandCore, Coreweaver."
+      "excerpt": "Thirty years after the war ended, the Dominion continued experiencing an intense period of distrust and strained relations everywhere. The Core Four cyber-series was created as a monument for everlasting peace and trust in the...",
+      "content": "Thirty years after the war ended, the Dominion continued experiencing an intense period of distrust and strained relations everywhere. The Core Four cyber-series was created as a monument for everlasting peace and trust in the newfound human-cyber relationship. The cybers travelled together between nations, helping those in need and spreading their message of peace. Eventually, the Core Four became unpopular as tensions eased. Among other reasons, they later disbanded and went their separate ways. All except Tracercore have been confirmed to be active to this day. Members: Tracercore, LockCore, FortiCore, CommandCore, Coreweaver."
     },
     {
       "id": "ebony-clan",
@@ -3181,8 +3181,8 @@ window.CS_DATA = {
       "type": "Faction",
       "category": "Riang Assassin Group",
       "color": "#8d67ff",
-      "excerpt": "A malicious group of assassins banded together to seize total control of Riang. They hope to turn it into a criminal empire where they can live like royalty. They are fairly new to Riang's criminal underworld,...",
-      "content": "A malicious group of assassins banded together to seize total control of Riang. They hope to turn it into a criminal empire where they can live like royalty. They are fairly new to Riang's criminal underworld, but their reputation is growing quickly. Members: Sanguinox, Consume-OS, Hypershot, Sightline, K4GE."
+      "excerpt": "A malicious group of assassins banded together to strive for total control of Riang, in hopes of turning it into their own criminal empire where they could live like royalty. They are fairly new to Riang’s criminal underworld,...",
+      "content": "A malicious group of assassins banded together to strive for total control of Riang, in hopes of turning it into their own criminal empire where they could live like royalty. They are fairly new to Riang’s criminal underworld, but their reputation grows fast. Members: Sanguinox, Consume-OS, Hypershot, Sightline, K4GE."
     },
     {
       "id": "motorland",
@@ -3190,8 +3190,8 @@ window.CS_DATA = {
       "type": "Faction",
       "category": "Racing Entertainment Organization",
       "color": "#ffb86b",
-      "excerpt": "After the success of Mecha-Clash, Ecsthea City created Motorland Racing to continue its economic momentum. Inspired by the thrill of old car races, the organization provides racing entertainment and events...",
-      "content": "After the success of Mecha-Clash, Ecsthea City created Motorland Racing to continue its economic momentum. Inspired by the thrill of old car races, the organization provides racing entertainment and events across the Dominion. Members: SteelRunner."
+      "excerpt": "After the success of Mecha-Clash, Ecsthea City wanted to keep up the economic boost by creating more entertainment. Inspired by the thrill of old car races, the city created Motorland Racing, an organization that provides racin...",
+      "content": "After the success of Mecha-Clash, Ecsthea City wanted to keep up the economic boost by creating more entertainment. Inspired by the thrill of old car races, the city created Motorland Racing, an organization that provides racing entertainment and events for the Dominion. Members: SteelRunner."
     },
     {
       "id": "burnbytes-circus",
@@ -3199,8 +3199,8 @@ window.CS_DATA = {
       "type": "Faction",
       "category": "Nomadic Performance Troupe",
       "color": "#ff718b",
-      "excerpt": "In his eighth year, BurnByte travelled alone to find the most entertaining cybers he could and offered them a nomadic life of adventure and fulfilment. Two years later, BurnByte's Travelling Circus became...",
-      "content": "In his eighth year, BurnByte travelled alone to find the most entertaining cybers he could and offered them a nomadic life of adventure and fulfilment. Two years later, BurnByte's Travelling Circus became successful after tours through Pristal, Sateen Lanes, and Spiro. Its Ecsthea City shows were well received despite difficult advertising, while Lunaya was the only Riang city to offer strong support. The circus remains active, though BurnByte limits performances in Ecsthea City and Riang. Members: BurnByte, IronVeil, Rotora, Coreweaver, SocraTech, RNGine."
+      "excerpt": "In his 8th year, BurnByte went on a solo expedition to round up the most entertaining cybers he could find. When he found the right candidates, he offered them a nomadic lifestyle of adventure and fulfillment through entertaini...",
+      "content": "In his 8th year, BurnByte went on a solo expedition to round up the most entertaining cybers he could find. When he found the right candidates, he offered them a nomadic lifestyle of adventure and fulfillment through entertaining the citizens of the Dominion. Two years later, BurnByte’s Travelling Circus finally took off after completing successful tours in Pristal, Sateen Lanes, and Spiro. Their Ecsthea City shows were also well-received, but advertising was especially hard there due to the city’s vast entertainment options. As for Riang, Lunaya was the only city to show the most support during the show. Other places in Riang were either indifferent or unenthusiastic. The circus continues to be active and successful, though BurnByte tries to limit performing shows in Ecsthea City and Riang for the previous reasons. Members: BurnByte, IronVeil, Rotora, Coreweaver, SocraTech, RNGine."
     },
     {
       "id": "elite-cyber-crimes-unit",
@@ -3208,8 +3208,8 @@ window.CS_DATA = {
       "type": "Faction",
       "category": "Special Response Force",
       "color": "#ff5e5e",
-      "excerpt": "After the SplitShine attack, a specialized group of soldiers was created and stationed across the Dominion. The unit responds to high-stakes situations in hopes of preventing or limiting another attack of that...",
-      "content": "After the SplitShine attack, a specialized group of soldiers was created and stationed across the Dominion. The unit responds to high-stakes situations in hopes of preventing or limiting another attack of that scale. Members: Fireline."
+      "excerpt": "After the SplitShine attack in Year 298, a specialized group of soldiers was created. Soldiers were stationed across the Dominion to respond to potential high-stakes situations, in hopes that it would prevent or mitigate anothe...",
+      "content": "After the SplitShine attack in Year 298, a specialized group of soldiers was created. Soldiers were stationed across the Dominion to respond to potential high-stakes situations, in hopes that it would prevent or mitigate another attack like this. Members: Fireline."
     },
     {
       "id": "spiro-military-council",
@@ -3217,8 +3217,8 @@ window.CS_DATA = {
       "type": "Faction",
       "category": "Military Leadership Council",
       "color": "#8db5ff",
-      "excerpt": "After the Human-Cyber War ended, Spiro created a military council of humans and cybers to make unanimous decisions about academy leadership and formats. Its decisions influence military patrols, procedures,...",
-      "content": "After the Human-Cyber War ended, Spiro created a military council of humans and cybers to make unanimous decisions about academy leadership and formats. Its decisions influence military patrols, procedures, policy oversight, and civilian integration. Members: OverStrike, Exodium."
+      "excerpt": "After the Human-Cyber War ended in Year 200, Spiro created a military council of both human and cyber that would create unanimous decisions on the academy’s leadership and formats. Their decisions would also influence military...",
+      "content": "After the Human-Cyber War ended in Year 200, Spiro created a military council of both human and cyber that would create unanimous decisions on the academy’s leadership and formats. Their decisions would also influence military patrols, procedures, policy oversight, and civilian integration. Members: OverStrike, Exodium."
     },
     {
       "id": "year-zero-the-dominion-is-formed",
@@ -3226,8 +3226,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year Zero",
       "color": "#c9a84c",
-      "excerpt": "The nations of the continent form the Dominion and begin their shared modern era.",
-      "content": "The nations of the continent form the Dominion and begin their shared modern era."
+      "excerpt": "The Dominion is formed",
+      "content": "The Dominion is formed"
     },
     {
       "id": "year-80-180-human-cyber-tensions-rise",
@@ -3235,8 +3235,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 80-180",
       "color": "#c9a84c",
-      "excerpt": "Tensions between humans and cybers rise throughout the Dominion.",
-      "content": "Tensions between humans and cybers rise throughout the Dominion."
+      "excerpt": "Tensions between Humans and Cybers rise",
+      "content": "Tensions between Humans and Cybers rise"
     },
     {
       "id": "year-186-human-cyber-war-begins",
@@ -3244,8 +3244,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 186",
       "color": "#c9a84c",
-      "excerpt": "The growing conflict between humans and cybers erupts into open war.",
-      "content": "The growing conflict between humans and cybers erupts into open war."
+      "excerpt": "Humans and Cybers go to war.",
+      "content": "Humans and Cybers go to war."
     },
     {
       "id": "year-191-dr-boost-medical-bay-is-destroyed",
@@ -3253,8 +3253,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 191",
       "color": "#c9a84c",
-      "excerpt": "Dr. Boost and his medical bay are blown up during the Human-Cyber War.",
-      "content": "Dr. Boost and his medical bay are blown up during the Human-Cyber War."
+      "excerpt": "Dr. Boost and his medical bay are blown up.",
+      "content": "Dr. Boost and his medical bay are blown up."
     },
     {
       "id": "year-200-human-cyber-war-ends",
@@ -3262,8 +3262,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 200",
       "color": "#c9a84c",
-      "excerpt": "The war ends, leaving ruins, distrust, and new institutions behind.",
-      "content": "The war ends, leaving ruins, distrust, and new institutions behind."
+      "excerpt": "Human-Cyber War ends.",
+      "content": "Human-Cyber War ends."
     },
     {
       "id": "year-201-spiro-military-council-is-formed",
@@ -3271,8 +3271,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 201",
       "color": "#c9a84c",
-      "excerpt": "Spiro forms its Military Council with an entirely human membership.",
-      "content": "Spiro forms its Military Council with an entirely human membership."
+      "excerpt": "Spiro Military Council is formed, but only humans are on it. The mysterious cyber-being is named Zitronix, and a religion is formed under his name. He is dubbed “The Bringer of Change” as several deities start to appear after him.",
+      "content": "Spiro Military Council is formed, but only humans are on it. The mysterious cyber-being is named Zitronix, and a religion is formed under his name. He is dubbed “The Bringer of Change” as several deities start to appear after him."
     },
     {
       "id": "year-230-the-core-four-is-formed",
@@ -3280,8 +3280,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 230",
       "color": "#c9a84c",
-      "excerpt": "The Core Four is created as a monument to peace and trust in the new human-cyber relationship.",
-      "content": "The Core Four is created as a monument to peace and trust in the new human-cyber relationship."
+      "excerpt": "The Core Four is formed.",
+      "content": "The Core Four is formed."
     },
     {
       "id": "year-237-tracercore-is-decommissioned",
@@ -3289,8 +3289,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 237",
       "color": "#c9a84c",
-      "excerpt": "Tracercore is permanently decommissioned, and Coreweaver is created as her replacement in the Core Four.",
-      "content": "Tracercore is permanently decommissioned, and Coreweaver is created as her replacement in the Core Four."
+      "excerpt": "Tracercore is decommissioned permanently. Coreweaver is created as a fourth member replacement.",
+      "content": "Tracercore is decommissioned permanently. Coreweaver is created as a fourth member replacement."
     },
     {
       "id": "year-253-the-core-four-disband",
@@ -3298,8 +3298,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 253",
       "color": "#c9a84c",
-      "excerpt": "The Core Four disband and go their separate ways.",
-      "content": "The Core Four disband and go their separate ways."
+      "excerpt": "The Core Four disband.",
+      "content": "The Core Four disband."
     },
     {
       "id": "year-261-the-main-lane-operation-begins",
@@ -3307,8 +3307,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 261",
       "color": "#c9a84c",
-      "excerpt": "PlungeDrill leads an operation to create the largest lane in Sateen Lanes.",
-      "content": "PlungeDrill leads an operation to create the largest lane in Sateen Lanes."
+      "excerpt": "PlungeDrill leads an operation to create the biggest lane in Sateen Lanes.",
+      "content": "PlungeDrill leads an operation to create the biggest lane in Sateen Lanes."
     },
     {
       "id": "year-262-the-main-lane-is-completed",
@@ -3325,8 +3325,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 298",
       "color": "#c9a84c",
-      "excerpt": "SplitShine leads an army into Ecsthea City, causing mass destruction before being banished to the Faded Islands. Relations between Ecsthea City and Riang become tense.",
-      "content": "SplitShine leads an army into Ecsthea City, causing mass destruction before being banished to the Faded Islands. Relations between Ecsthea City and Riang become tense."
+      "excerpt": "SplitShine leads an army into Escthea City, causing mass havoc. He’s banished to the Faded Islands. Escthea City and Riang relations become tense. The Elite Cyber Crimes Unit is created, immediately creating new bases and deploying soldiers across the Dominion.",
+      "content": "SplitShine leads an army into Escthea City, causing mass havoc. He’s banished to the Faded Islands. Escthea City and Riang relations become tense. The Elite Cyber Crimes Unit is created, immediately creating new bases and deploying soldiers across the Dominion."
     },
     {
       "id": "year-298-305-ecsthea-city-economic-drought",
@@ -3334,8 +3334,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 298-305",
       "color": "#c9a84c",
-      "excerpt": "Ecsthea City suffers an economic drought following the SplitShine attack.",
-      "content": "Ecsthea City suffers an economic drought following the SplitShine attack."
+      "excerpt": "Escthea City Economic Drought follows after the SplitShine attack.",
+      "content": "Escthea City Economic Drought follows after the SplitShine attack."
     },
     {
       "id": "year-303-overstrike-joins-the-spiro-military-council",
@@ -3343,8 +3343,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 303",
       "color": "#c9a84c",
-      "excerpt": "OverStrike becomes the first cyber on the council after helping Ecsthea City.",
-      "content": "OverStrike becomes the first cyber on the council after helping Ecsthea City."
+      "excerpt": "OverStrike becomes the first cyber to join the Spiro Military Council. He’s offered a seat for his help in Ecsthea City.",
+      "content": "OverStrike becomes the first cyber to join the Spiro Military Council. He’s offered a seat for his help in Ecsthea City."
     },
     {
       "id": "year-305-exodium-joins-the-spiro-military-council",
@@ -3352,8 +3352,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 305",
       "color": "#c9a84c",
-      "excerpt": "Exodium joins the council two years after OverStrike.",
-      "content": "Exodium joins the council two years after OverStrike."
+      "excerpt": "Exodium joins the Spiro Military Council two years later.",
+      "content": "Exodium joins the Spiro Military Council two years later."
     },
     {
       "id": "year-311-mecha-clash-is-formed",
@@ -3361,8 +3361,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 311",
       "color": "#c9a84c",
-      "excerpt": "The sport draws enormous crowds and wealth, beginning a new era of entertainment and media.",
-      "content": "The sport draws enormous crowds and wealth, beginning a new era of entertainment and media."
+      "excerpt": "Mecha-Clash is formed. It draws in crowds and lots of money. The sport sparks an era of entertainment and media.",
+      "content": "Mecha-Clash is formed. It draws in crowds and lots of money. The sport sparks an era of entertainment and media."
     },
     {
       "id": "year-311-316-prime-time-era-of-mecha-clash",
@@ -3370,8 +3370,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 311-316",
       "color": "#c9a84c",
-      "excerpt": "Mecha-Clash experiences rapid global popularity and prosperity.",
-      "content": "Mecha-Clash experiences rapid global popularity and prosperity."
+      "excerpt": "Called the “Prime Time Era” of Mecha-Clash due to its fast-growing global popularity and prosperity.",
+      "content": "Called the “Prime Time Era” of Mecha-Clash due to its fast-growing global popularity and prosperity."
     },
     {
       "id": "year-313-motorland-racing-is-formed",
@@ -3379,8 +3379,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 313",
       "color": "#c9a84c",
-      "excerpt": "Motorland Racing is created to expand Ecsthea City's entertainment economy.",
-      "content": "Motorland Racing is created to expand Ecsthea City's entertainment economy."
+      "excerpt": "Motorland Racing is formed.",
+      "content": "Motorland Racing is formed."
     },
     {
       "id": "year-316-baseball-returns",
@@ -3388,8 +3388,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 316",
       "color": "#c9a84c",
-      "excerpt": "Baseball is revived and becomes a major hit.",
-      "content": "Baseball is revived and becomes a major hit."
+      "excerpt": "Baseball is brought back from the dead. It became a big hit.",
+      "content": "Baseball is brought back from the dead. It became a big hit."
     },
     {
       "id": "year-319-basketball-returns",
@@ -3397,8 +3397,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 319",
       "color": "#c9a84c",
-      "excerpt": "Basketball is revived and becomes a major hit.",
-      "content": "Basketball is revived and becomes a major hit."
+      "excerpt": "Basketball is brought back from the dead. It became a big hit.",
+      "content": "Basketball is brought back from the dead. It became a big hit."
     },
     {
       "id": "year-328-knox-retires-from-mecha-clash",
@@ -3415,8 +3415,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 330",
       "color": "#c9a84c",
-      "excerpt": "The Archon begins searching for members, while B.O.P. is created and becomes important to bomb-defence research.",
-      "content": "The Archon begins searching for members, while B.O.P. is created and becomes important to bomb-defence research."
+      "excerpt": "The Archon starts the search for members. B.O.P is created, becoming a key individual in bomb defence research.",
+      "content": "The Archon starts the search for members. B.O.P is created, becoming a key individual in bomb defence research."
     },
     {
       "id": "year-335-hypershot-joins-the-ebony-clan",
@@ -3424,8 +3424,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 335",
       "color": "#c9a84c",
-      "excerpt": "Hypershot joins the Ebony Clan. Haymaker and Servant begin serving the president of Sateen Lanes.",
-      "content": "Hypershot joins the Ebony Clan. Haymaker and Servant begin serving the president of Sateen Lanes."
+      "excerpt": "Hypershot joins the Ebony Clan. Haymaker and Servant begins to serve the President of Sateen Lanes",
+      "content": "Hypershot joins the Ebony Clan. Haymaker and Servant begins to serve the President of Sateen Lanes"
     },
     {
       "id": "year-336-skydrive-quits-mecha-clash",
@@ -3433,8 +3433,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 336",
       "color": "#c9a84c",
-      "excerpt": "SkyDrive is cancelled and leaves Mecha-Clash.",
-      "content": "SkyDrive is cancelled and leaves Mecha-Clash."
+      "excerpt": "SkyDrive gets cancelled and quits Mecha-Clash.",
+      "content": "SkyDrive gets cancelled and quits Mecha-Clash."
     },
     {
       "id": "year-360-burnbyte-searches-for-circus-members",
@@ -3442,8 +3442,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 360",
       "color": "#c9a84c",
-      "excerpt": "BurnByte searches across the Dominion for circus members, while Prototype V leaves construction to become an assassin.",
-      "content": "BurnByte searches across the Dominion for circus members, while Prototype V leaves construction to become an assassin."
+      "excerpt": "BurnByte starts the search for his circus members around the Dominion. Prototype V quits his construction job to become an assassin.",
+      "content": "BurnByte starts the search for his circus members around the Dominion. Prototype V quits his construction job to become an assassin."
     },
     {
       "id": "year-363-burnbytes-travelling-circus-takes-off",
@@ -3451,8 +3451,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 363",
       "color": "#c9a84c",
-      "excerpt": "BurnByte's Travelling Circus becomes a hit in small towns across the Dominion.",
-      "content": "BurnByte's Travelling Circus becomes a hit in small towns across the Dominion."
+      "excerpt": "BurnByte’s Travelling Circus becomes a hit in small towns across the land.",
+      "content": "BurnByte’s Travelling Circus becomes a hit in small towns across the land."
     },
     {
       "id": "year-366-kobolt-and-shackbyte-retire",
@@ -3460,8 +3460,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 366",
       "color": "#c9a84c",
-      "excerpt": "Kobolt and ShackByte retire from basketball, saddening Ecsthea City.",
-      "content": "Kobolt and ShackByte retire from basketball, saddening Ecsthea City."
+      "excerpt": "Kobolt and ShackByte retire from basketball, it makes the whole city sad.",
+      "content": "Kobolt and ShackByte retire from basketball, it makes the whole city sad."
     },
     {
       "id": "year-373-servoswing-retires",
@@ -3469,8 +3469,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 373",
       "color": "#c9a84c",
-      "excerpt": "ServoSwing retires from baseball and begins a quiet life in Pristal.",
-      "content": "ServoSwing retires from baseball and begins a quiet life in Pristal."
+      "excerpt": "ServoSwing retires from baseball, and begins a quiet life in Pristal.",
+      "content": "ServoSwing retires from baseball, and begins a quiet life in Pristal."
     },
     {
       "id": "year-384-the-ebony-clan-appears",
@@ -3478,8 +3478,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 384",
       "color": "#c9a84c",
-      "excerpt": "The Ebony Clan makes its first appearance and quickly rises in prominence.",
-      "content": "The Ebony Clan makes its first appearance and quickly rises in prominence."
+      "excerpt": "The Ebony Clan makes their first appearance, quickly rising up.",
+      "content": "The Ebony Clan makes their first appearance, quickly rising up."
     },
     {
       "id": "year-397-dr-boost-returns-and-edge-x-appears",
@@ -3487,8 +3487,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 397",
       "color": "#c9a84c",
-      "excerpt": "Dr. Boost is reassembled after 206 years. Edge-X begins a seven-month murder streak in Harlow before disappearing among its citizens.",
-      "content": "Dr. Boost is reassembled after 206 years. Edge-X begins a seven-month murder streak in Harlow before disappearing among its citizens."
+      "excerpt": "Dr. Boost reassembled after 206 years. Edge-X begins his murder streak in Baxterside, Harlow. He stops after 7 months of killing. It is believed he lives among the citizens to this day.",
+      "content": "Dr. Boost reassembled after 206 years. Edge-X begins his murder streak in Baxterside, Harlow. He stops after 7 months of killing. It is believed he lives among the citizens to this day."
     },
     {
       "id": "year-400-present-day",
@@ -3496,8 +3496,8 @@ window.CS_DATA = {
       "type": "Timeline Event",
       "category": "Year 400",
       "color": "#c9a84c",
-      "excerpt": "The Dominion stands between cybernetic spectacle, old magic, political strain, and faction conflict.",
-      "content": "The Dominion stands between cybernetic spectacle, old magic, political strain, and faction conflict."
+      "excerpt": "Present day",
+      "content": "Present day"
     },
     {
       "id": "unit-needlebot",
@@ -3506,8 +3506,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "NeedleBot",
       "color": "#6cd0ff",
-      "excerpt": "Needlebot invigorates the crowd in every Mecha-Clash match with his piercing needles. His notoriety in Mecha-Clash isn't as strong as others'; his humbly shy personality doesn't leave an effective impact on the...",
-      "content": "Needlebot invigorates the crowd in every Mecha-Clash match with his piercing needles. His notoriety in Mecha-Clash isn't as strong as others'; his humbly shy personality doesn't leave an effective impact on the audience, and he entered the sport later in his activity. Despite the challenges, Needlebot has made use of his sharpshooting skills and put on some decent shows for the crowd. Created from several scrapped parts from several different cybers, Needlebot is determined to make a name for himself in this world."
+      "excerpt": "Needlebot is a timid and impressionable soldier for the ECCU, who's still learning how to get the hang of their talents. Despite the years of experience, most of Needlebot’s days consisted of boring lookouts and meaningless per...",
+      "content": "Needlebot is a timid and impressionable soldier for the ECCU, who's still learning how to get the hang of their talents. Despite the years of experience, most of Needlebot’s days consisted of boring lookouts and meaningless perimeter checks around the city. It was the disappearance of a fellow soldier that finally put him on the field, forcing him to use skills he hasn’t used in decades. Assigned a real mission for the first time, gathering the confidence and mastering his needle technique is just the beginning."
     },
     {
       "id": "unit-knox",
@@ -3516,18 +3516,18 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "KNOX",
       "color": "#6cd0ff",
-      "excerpt": "KNOX is a strategic fighter with a stern nature and great vigour. Originally one of Mecha-Clash's earliest stars, he's now been reprogrammed to train the cadets of the Spiro Military Academy. His teaching...",
-      "content": "KNOX is a strategic fighter with a stern nature and great vigour. Originally one of Mecha-Clash's earliest stars, he's now been reprogrammed to train the cadets of the Spiro Military Academy. His teaching expertise is close combat, and his common teaching method is sparring with students without holding back. Despite discussions of him being \"outdated\", he's become one of the most popular instructors due to effective improvement in students resulting from his classes. Whether it's a practice session or a real battle, KNOX is always ready to teach a lesson to whoever challenges him."
+      "excerpt": "KNOX is a strategic fighter with a stern nature and great vigour. Originally one of Mecha-Clash’s earliest stars, he’s now been reprogrammed to train the cadets of the Spiro Military Academy. His teaching expertise is close com...",
+      "content": "KNOX is a strategic fighter with a stern nature and great vigour. Originally one of Mecha-Clash’s earliest stars, he’s now been reprogrammed to train the cadets of the Spiro Military Academy. His teaching expertise is close combat, and his common teaching method is sparring with students without holding back. Despite discussions of him being “outdated”, he’s become one of the most popular instructors due to effective improvement in students resulting from his classes. Whether it’s a practice session or a real battle, KNOX is always ready to teach a lesson to whoever challenges him."
     },
     {
       "id": "unit-tracercore",
       "title": "Tracercore",
       "type": "Unit Lore",
-      "category": "Riang (Reassembled)",
+      "category": "Spiro",
       "unit": "Tracercore",
       "color": "#6cd0ff",
-      "excerpt": "Tracercore is one of the deadliest assassins in Riang. Originally a part of the Core Four, she washed ashore on Riang in pieces after being dumped from the mainland. Her memory chip turned out to be functional...",
-      "content": "Tracercore is one of the deadliest assassins in Riang. Originally a part of the Core Four, she washed ashore on Riang in pieces after being dumped from the mainland. Her memory chip turned out to be functional after reassembly, which brought back haunting memories. Her resentment made her rebel from her moral code and into the dark world of assassins-for-hire. Her appearances are limited, often travelling alone through shadows or at night."
+      "excerpt": "Under a new identity, Tracercore is one of the deadliest assassins in Riang. Originally a part of the Core Four, she washed ashore on Riang in pieces after being dumped from the mainland. Her memory chip turned out to be functi...",
+      "content": "Under a new identity, Tracercore is one of the deadliest assassins in Riang. Originally a part of the Core Four, she washed ashore on Riang in pieces after being dumped from the mainland. Her memory chip turned out to be functional after reassembly, which brought back haunting memories. Her resentment caused her to rebel from her moral code and fall into the dark world of assassins-for-hire. Her appearances are limited, often travelling alone through shadows or at night."
     },
     {
       "id": "unit-steelguard",
@@ -3536,8 +3536,8 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "SteelGuard",
       "color": "#6cd0ff",
-      "excerpt": "Spending most of his days in the tunnels, SteelGuard maintains peace by protecting citizens and disciplining anyone who's causing trouble. His kindness even extends to escorting travellers as a guide and...",
-      "content": "Spending most of his days in the tunnels, SteelGuard maintains peace by protecting citizens and disciplining anyone who's causing trouble. His kindness even extends to escorting travellers as a guide and bodyguard if needed. A boxing accident in the deeper lanes convinced him to leave his shady lifestyle behind. As a result, he's dedicated the rest of his life to justice and order as a way of redemption. SteelGuard may lead with a heart of steel, but it'll open up to anyone in need."
+      "excerpt": "Spending most of his days in the tunnels, SteelGuard maintains peace by protecting citizens and disciplining anyone who’s causing trouble. His kindness even extends to escorting travellers through the tunnels as a guide and bod...",
+      "content": "Spending most of his days in the tunnels, SteelGuard maintains peace by protecting citizens and disciplining anyone who’s causing trouble. His kindness even extends to escorting travellers through the tunnels as a guide and bodyguard if needed. A boxing accident in the deeper lanes convinced him to leave his shady lifestyle behind. As a result, he’s dedicated the rest of his life to justice and order as a way of redemption. SteelGuard may lead with a heart of steel, but it’ll open up to anyone in need."
     },
     {
       "id": "unit-backslash",
@@ -3546,8 +3546,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "BackSlash",
       "color": "#6cd0ff",
-      "excerpt": "BackSlash took the Mecha-Clash world by storm after participating in just three matches. Her agility paired with her impressive blade proved to be a lethal combination; it was even enough to gain her a fanbase...",
-      "content": "BackSlash took the Mecha-Clash world by storm after participating in just three matches. Her agility paired with her impressive blade proved to be a lethal combination; it was even enough to gain her a fanbase overnight. Her humble beginning starts in one of the city's many alleyways, where a human boy first discovered her. After some light repairs and upgrades, the two swore to rise to the top by whatever means necessary. So far, it's going according to plan as BackSlash is now one of the fastest-growing Mecha-Clash stars to ever grace the arena."
+      "excerpt": "BackSlash took the Mecha-Clash world by storm after participating in just three matches. Her agility paired with her impressive blade proved to be a lethal combination; it was even enough to gain her a fanbase overnight. Her hu...",
+      "content": "BackSlash took the Mecha-Clash world by storm after participating in just three matches. Her agility paired with her impressive blade proved to be a lethal combination; it was even enough to gain her a fanbase overnight. Her humble beginning starts in one of the city’s many alleyways, where a human boy first discovered her. After some light repairs and upgrades, the two swore to rise to the top by whatever means necessary. So far, it’s going according to plan as BackSlash is now one of the fastest-growing Mecha-Clash stars to ever grace the arena."
     },
     {
       "id": "unit-patch",
@@ -3556,8 +3556,8 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "Patch",
       "color": "#6cd0ff",
-      "excerpt": "Known mostly for repairing mechanical and electronic equipment, Patch is beloved by his community and praised for being the quickest handyman in all of Paintersfield. His nimble feet, small size, and incredible...",
-      "content": "Known mostly for repairing mechanical and electronic equipment, Patch is beloved by his community and praised for being the quickest handyman in all of Paintersfield. His nimble feet, small size, and incredible eyesight allow him to examine big and small problems. The longest he's ever taken for a repair was ten minutes, and that was for a blown head gasket. If you're ever in need of a fixer, Patch is the one to call."
+      "excerpt": "Known mostly for repairing mechanical and electronic equipment, Patch is beloved by his community and praised for being the quickest handyman in all of Paintersfield. His nimble feet, small size, and incredible eyesight allow h...",
+      "content": "Known mostly for repairing mechanical and electronic equipment, Patch is beloved by his community and praised for being the quickest handyman in all of Paintersfield. His nimble feet, small size, and incredible eyesight allow him to examine big and small problems. The longest he’s ever taken for a repair was ten minutes, and that was for a blown head gasket. If you’re ever in need of a fixer, Patch is the one to call."
     },
     {
       "id": "unit-steelshade",
@@ -3566,8 +3566,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "SteelShade",
       "color": "#6cd0ff",
-      "excerpt": "SteelShade is the black sheep among the other Mecha-Clash stars; their \"slow and steady wins the race\" approach isn't as captivating to watch in an action-packed sport. However, the energy they save up for the...",
-      "content": "SteelShade is the black sheep among the other Mecha-Clash stars; their \"slow and steady wins the race\" approach isn't as captivating to watch in an action-packed sport. However, the energy they save up for the last few minutes is when audiences start leaning in. Their wildcard move involves running laps at high speed, summoning clones that'll throw off other opponents. Amidst the chaos, their cloaking ability helps them discreetly move to the top without anyone spotting them. They seem to prioritize privacy in and out of the arena; once their match is over, you won't see them till the next one."
+      "excerpt": "SteelShade is the black sheep among the other Mecha-Clash stars; their “slow and steady wins the race” approach isn’t as captivating to watch in an action-packed sport. However, the energy they save up for the last few minutes...",
+      "content": "SteelShade is the black sheep among the other Mecha-Clash stars; their “slow and steady wins the race” approach isn’t as captivating to watch in an action-packed sport. However, the energy they save up for the last few minutes is when audiences start leaning in. Their wildcard move involves running laps at high speed, summoning clones that’ll throw off other opponents. Amidst the chaos, their cloaking ability helps them discreetly move to the top without anyone spotting them. They seem to prioritize privacy in and out of the arena; once their match is over, you won’t see them till the next one."
     },
     {
       "id": "unit-overturn",
@@ -3576,8 +3576,8 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "Overturn",
       "color": "#6cd0ff",
-      "excerpt": "Stationed somewhere in the Main Lane, Overturn challenges any passersby to a friendly wrestling match. At first glance, beating someone like him seems possible and pretty easy. However, engaging with him in the...",
-      "content": "Stationed somewhere in the Main Lane, Overturn challenges any passersby to a friendly wrestling match. At first glance, beating someone like him seems possible and pretty easy. However, engaging with him in the ring is a whole other level. Using grappling techniques, Overturn either subdues his opponent or puts them into submission till they forfeit. He's taken some wins and losses, but if it means becoming the best boxer in Sateen Lanes, he'll never stop."
+      "excerpt": "Stationed somewhere in the Main Lane, Overturn challenges any passersby to a friendly wrestling match. At first glance, beating someone like him seems possible and pretty easy. However, engaging with him in the ring is a whole...",
+      "content": "Stationed somewhere in the Main Lane, Overturn challenges any passersby to a friendly wrestling match. At first glance, beating someone like him seems possible and pretty easy. However, engaging with him in the ring is a whole other level. Using grappling techniques, Overturn either subdues his opponent or puts them into submission till they forfeit. He’s taken some wins and losses, but if it means becoming the best boxer in Sateen Lanes, he’ll never stop."
     },
     {
       "id": "unit-dreadline",
@@ -3586,8 +3586,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "DreadLine",
       "color": "#6cd0ff",
-      "excerpt": "The ruthlessness of his fire beam attacks paralyze all who oppose him with an overwhelming dread. Having the highest kill count on Riang has earned him the utmost respect and fear from everyone. Even the...",
-      "content": "The ruthlessness of his fire beam attacks paralyze all who oppose him with an overwhelming dread. Having the highest kill count on Riang has earned him the utmost respect and fear from everyone. Even the bloodthirsty Ebony Clan tries not to interact with him if possible. However, his astounding record as an assassin only scratches the surface. Not only is he one of the few to have seen Tracercore, but he's also the only one to have ever worked alongside her."
+      "excerpt": "The ruthlessness of his fire beam attacks paralyzes all who oppose him with an overwhelming dread. Having the highest kill count among Riang has earned him the utmost respect and fear from everyone. Even the bloodthirsty Ebony...",
+      "content": "The ruthlessness of his fire beam attacks paralyzes all who oppose him with an overwhelming dread. Having the highest kill count among Riang has earned him the utmost respect and fear from everyone. Even the bloodthirsty Ebony Clan tries not to interact with him if possible. However, his astounding record as an assassin only scratches the surface. Not only is he one of the few to have seen Tracercore, but he’s also the only one to have ever worked alongside her."
     },
     {
       "id": "unit-frontpoint",
@@ -3596,8 +3596,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "FrontPoint",
       "color": "#6cd0ff",
-      "excerpt": "Strictly following Riang's traditional values, FrontPoint approaches his work differently from his fellow assassins. As a child, he lost his family and his arms in a tragic forest fire. The only thing he has...",
-      "content": "Strictly following Riang's traditional values, FrontPoint approaches his work differently from his fellow assassins. As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family's fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins."
+      "excerpt": "Strictly following Riang’s traditional values, FrontPoint approaches his work differently from his fellow assassins. As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family...",
+      "content": "Strictly following Riang’s traditional values, FrontPoint approaches his work differently from his fellow assassins. As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family’s fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins."
     },
     {
       "id": "unit-consume-os",
@@ -3606,8 +3606,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "Consume-OS",
       "color": "#6cd0ff",
-      "excerpt": "Out of all the Ebony Clan members, Consume-OS is the most unhinged and vicious of them all. Their unpredictable movements and rapid speed allow them to get the jump on opponents by literally jumping and...",
-      "content": "Out of all the Ebony Clan members, Consume-OS is the most unhinged and vicious of them all. Their unpredictable movements and rapid speed allow them to get the jump on opponents by literally jumping and crashing down on them with a overwhelming force. Their spontaneity proves to be a challenge within the Ebony Clan as well, challenging to the point that the clan's archon is the only one who can control the beast. Any encounter with Consume-OS is guaranteed to end in a bloodbath."
+      "excerpt": "Out of all the Ebony Clan members, Consume-OS is the most unhinged and vicious of them all. Their unpredictable movements and rapid speed allow them to get the jump on opponents by literally jumping and crashing down on them wi...",
+      "content": "Out of all the Ebony Clan members, Consume-OS is the most unhinged and vicious of them all. Their unpredictable movements and rapid speed allow them to get the jump on opponents by literally jumping and crashing down on them with overwhelming force. Their spontaneity proves to be a challenge within the Ebony Clan as well, challenging to the point that the clan’s archon is the only one who can control the beast. Any encounter with Consume-OS is guaranteed to end in a bloodbath."
     },
     {
       "id": "unit-dr-boost",
@@ -3616,17 +3616,17 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "Dr. Boost",
       "color": "#6cd0ff",
-      "excerpt": "Specializing in medicine, Dr. Boost knows hundreds of ways to heal and upgrade his allies. After he was blown up during the human-cyber war, he remained inactive for decades until some curious Pristilians found...",
-      "content": "Specializing in medicine, Dr. Boost knows hundreds of ways to heal and upgrade his allies. After he was blown up during the human-cyber war, he remained inactive for decades until some curious Pristilians found and reassembled him. The only setback was that his memory chip was lost, forcing him to relearn old methods and adopt new ones. It's not all that bad, though; Dr. Boost has been letting his curiosity run wild in Pristal. Excited to explore the rest of this new world, he hopes to find solutions to heal any problem in the Dominion."
+      "excerpt": "Specializing in medicine, Dr. Boost knows hundreds of ways to heal and upgrade his allies. After he was blown up during the human-cyber war, he remained inactive for decades until some curious Pristilians reassembled him. The o...",
+      "content": "Specializing in medicine, Dr. Boost knows hundreds of ways to heal and upgrade his allies. After he was blown up during the human-cyber war, he remained inactive for decades until some curious Pristilians reassembled him. The only setback was that his memory chip was lost, forcing him to relearn old methods and adopt new ones. It’s not all that bad, though; Dr. Boost has been letting his curiosity run wild. Excited to explore the rest of this new world, he hopes to find solutions to heal any problem in the Dominion."
     },
     {
       "id": "unit-lockcore",
       "title": "LockCore",
       "type": "Unit Lore",
-      "category": "Sateen Lanes",
+      "category": "Spiro",
       "unit": "LockCore",
       "color": "#6cd0ff",
-      "excerpt": "Ever since retiring from the Core Four, LockCore has honed his magic capabilities independently in the west. Back then, his magical orbs would be used to fend off raiders and heal the sick. Now, he mostly uses...",
+      "excerpt": "Ever since retiring from the Core Four, LockCore has honed his magic capabilities independently in the west. Back then, his magical orbs would be used to fend off raiders and heal the sick. Now, he mostly uses them to entertain...",
       "content": "Ever since retiring from the Core Four, LockCore has honed his magic capabilities independently in the west. Back then, his magical orbs would be used to fend off raiders and heal the sick. Now, he mostly uses them to entertain others. His most recent uses include doing light shows in Alaphada at the end of every month. Living a calm life in Sateen Lanes, LockCore lives every day in quiet atonement."
     },
     {
@@ -3636,8 +3636,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "AutoShot",
       "color": "#6cd0ff",
-      "excerpt": "Combining her deadly aim and natural talent for tinkering, AutoShot's got a kind of firepower that'll knock your socks off! Watching Mecha-Clash growing up has inspired her biggest dream: becoming the first...",
-      "content": "Combining her deadly aim and natural talent for tinkering, AutoShot's got a kind of firepower that'll knock your socks off! Watching Mecha-Clash growing up has inspired her biggest dream: becoming the first human Mecha-Clash star ever. At the age of 15, she successfully created her own Gatling gun from the comfort of her own home! She's been training every day since then, successfully piercing every target she lays her eyes on."
+      "excerpt": "Combining her deadly aim and natural talent for tinkering, AutoShot’s got a kind of firepower that’ll knock your socks off! Watching Mecha-Clash growing up has inspired her biggest dream: becoming the first human Mecha-Clash st...",
+      "content": "Combining her deadly aim and natural talent for tinkering, AutoShot’s got a kind of firepower that’ll knock your socks off! Watching Mecha-Clash growing up has inspired her biggest dream: becoming the first human Mecha-Clash star ever. At the age of 15, she successfully created her own Gatling gun from the comfort of her own home! She’s been training every day since then, successfully piercing every target she lays her eyes on."
     },
     {
       "id": "unit-loadbearer",
@@ -3646,8 +3646,8 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "LoadBearer",
       "color": "#6cd0ff",
-      "excerpt": "LoadBearer is an adaptable and athletic being with a destructive throw. Their appearance often fools those who judge too quickly; their big stature means nothing to the fact that they can leap across ponds and...",
-      "content": "LoadBearer is an adaptable and athletic being with a destructive throw. Their appearance often fools those who judge too quickly; their big stature means nothing to the fact that they can leap across ponds and medium-sized rivers. They've had several career changes over the years, including construction cyberworker and Prime Time Mecha-Clash celebrity. Their path has now led them back to Sateen Lanes, where they have yet to discover their next purpose."
+      "excerpt": "LoadBearer is an adaptable and athletic being with a destructive throw. Their appearance often fools those who judge too quickly; their big stature means nothing to the fact that they can leap across ponds and medium-sized rive...",
+      "content": "LoadBearer is an adaptable and athletic being with a destructive throw. Their appearance often fools those who judge too quickly; their big stature means nothing to the fact that they can leap across ponds and medium-sized rivers. They’ve had several career changes over the years, including construction cyberworker and Prime Time Mecha-Clash celebrity. Their path has now led them back to Sateen Lanes, where they have yet to discover their next purpose."
     },
     {
       "id": "unit-hull",
@@ -3656,8 +3656,8 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "Hull",
       "color": "#6cd0ff",
-      "excerpt": "The darkest corners at the edge of Sateen Lanes are where you can find Hull. His origins remain a mystery to the locals; the giant stronghold itself doesn't even seem to know how he ended up here or what his...",
-      "content": "The darkest corners at the edge of Sateen Lanes are where you can find Hull. His origins remain a mystery to the locals; the giant stronghold itself doesn't even seem to know how he ended up here or what his programmed purpose was. Whatever the case, Hull is unbreakable like no other. Tales of encounters with him conclude with Hull as the victor, always mentioning his sturdy resistance against physical force and magic."
+      "excerpt": "The darkest corners at the edge of Sateen Lanes are where you can find Hull. His origins remain a mystery to the locals; the giant stronghold itself doesn’t even seem to know how he ended up here or what his programmed purpose...",
+      "content": "The darkest corners at the edge of Sateen Lanes are where you can find Hull. His origins remain a mystery to the locals; the giant stronghold itself doesn’t even seem to know how he ended up here or what his programmed purpose was. Whatever the case, Hull is unbreakable like no other. Tales of encounters with him conclude with Hull as the victor, always mentioning his sturdy resistance against physical force and magic."
     },
     {
       "id": "unit-acolyte",
@@ -3666,8 +3666,8 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "Acolyte",
       "color": "#6cd0ff",
-      "excerpt": "As a curious boy from Harlow, Acolyte naturally began an imaginative obsession with cybers. Most of the time, he's even dressed up as one! His costume includes a homemade mask, thigh-high boots, and gloves that...",
-      "content": "As a curious boy from Harlow, Acolyte naturally began an imaginative obsession with cybers. Most of the time, he's even dressed up as one! His costume includes a homemade mask, thigh-high boots, and gloves that shoot laser balls. He's always dreamt of going to Spiro to train at the academy. However, he fears their strict admission requirements for human cadets may hinder his chances. His dreams lie in his hands and in his mentor's care."
+      "excerpt": "As a curious boy from Baxterside, Acolyte naturally began an imaginative obsession with cybers. Most of the time, he’s even dressed up as one! His costume includes a homemade mask, thigh-high boots, and gloves that shoot laser...",
+      "content": "As a curious boy from Baxterside, Acolyte naturally began an imaginative obsession with cybers. Most of the time, he’s even dressed up as one! His costume includes a homemade mask, thigh-high boots, and gloves that shoot laser balls. He’s always dreamt of going to Spiro to train at the academy. However, he fears their strict admission requirements for human cadets may hinder his chances. His dreams lie in his hands and in his mentor’s care."
     },
     {
       "id": "unit-slicenode",
@@ -3676,8 +3676,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "SliceNode",
       "color": "#6cd0ff",
-      "excerpt": "After years of studying Riangnese swordsmanship at Soratai Village, SliceNode wields a resilient, swift blade that's ready to spill blood if necessary. After the mysterious death of his father, the tragedy set...",
-      "content": "After years of studying Riangnese swordsmanship at Soratai Village, SliceNode wields a resilient, swift blade that's ready to spill blood if necessary. After the mysterious death of his father, the tragedy set him on a path for answers and possibly revenge. With his only lead connecting him to the criminal underworld of Ecsthea City, SliceNode is ready to flip that city upside down in search of his father's killer."
+      "excerpt": "After years of studying swordsmanship at Soratai Village, SliceNode wields a resilient, swift blade that’s ready to spill blood if necessary. The mysterious death of his father set him on a path for answers and possibly revenge...",
+      "content": "After years of studying swordsmanship at Soratai Village, SliceNode wields a resilient, swift blade that’s ready to spill blood if necessary. The mysterious death of his father set him on a path for answers and possibly revenge. With his only lead connecting him to the criminal underworld of Ecsthea City, SliceNode is ready to flip that city upside down in search of his father’s killer."
     },
     {
       "id": "unit-b-o-p",
@@ -3686,8 +3686,8 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "B.O.P.",
       "color": "#6cd0ff",
-      "excerpt": "Inspired by missile paratrooper units from the war, B.O.P was created to withstand the mightiest bomb attacks with a prioritization for mitigating civilian casualties. Stemming from an assignment at Empyrean...",
-      "content": "Inspired by missile paratrooper units from the war, B.O.P was created to withstand the mightiest bomb attacks with a prioritization for mitigating civilian casualties. Stemming from an assignment at Empyrean University, B.O.P presented his creator's engineering class with an impressive showcase. After resisting the full force of five different missiles, as well as successfully protecting every test dummy behind him, B.O.P was immediately transferred to the school's Mechanical Defence Research department. He proves to be a vital aspect in the trials and errors of defence innovations at the school."
+      "excerpt": "Inspired by shield units from the war, B.O.P was created to withstand the mightiest bomb attacks with a prioritization for mitigating civilian casualties. Born from an assignment, B.O.P presented his creator’s engineering class...",
+      "content": "Inspired by shield units from the war, B.O.P was created to withstand the mightiest bomb attacks with a prioritization for mitigating civilian casualties. Born from an assignment, B.O.P presented his creator’s engineering class with an impressive showcase. After resisting the full force of five different missiles, as well as protecting every test dummy behind him, B.O.P was immediately transferred to the school’s Mechanical Defence Research department. He proved to be a vital part in improving defence innovations at the school."
     },
     {
       "id": "unit-kuromushado",
@@ -3696,8 +3696,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "Kurōmushadō",
       "color": "#6cd0ff",
-      "excerpt": "As one of Mecha-Clash's newest stars, Kurōmushadō enters the arena with a bold attitude that shines in his acrobatic flair. He isn't afraid to go all in once a match starts; he'll bounce and maneuver off...",
-      "content": "As one of Mecha-Clash's newest stars, Kurōmushadō enters the arena with a bold attitude that shines in his acrobatic flair. He isn't afraid to go all in once a match starts; he'll bounce and maneuver off platforms in record-breaking time while jump-kicking anyone in his way. Though his energetic approach is engaging to watch, some find his fast-paced demeanour to be \"too overconfident\". SteelShade, his fellow Mecha-Clash star, feels this way especially. Regardless of the varying opinions on him, an appearance from Kurōmushadō in the arena locks the audience in for an unforgettable match."
+      "excerpt": "As one of Mecha-Clash’s newest stars, Kurōmushadō enters the arena with a bold attitude that shines in his acrobatic flair. He’ll bounce and maneuver off platforms in record-breaking time while jump-kicking anyone in his way. T...",
+      "content": "As one of Mecha-Clash’s newest stars, Kurōmushadō enters the arena with a bold attitude that shines in his acrobatic flair. He’ll bounce and maneuver off platforms in record-breaking time while jump-kicking anyone in his way. Though his energetic approach is engaging to watch, some find his fast-paced demeanour to be “too overconfident”. SteelShade, his fellow Mecha-Clash star, feels this way especially. Regardless of the varying opinions on him, an appearance from Kurōmushadō in the arena locks the audience in for an unforgettable match."
     },
     {
       "id": "unit-splitshine",
@@ -3706,18 +3706,18 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "SplitShine",
       "color": "#6cd0ff",
-      "excerpt": "Previously Riang's sole protector, SplitShine ushered the entire archipelago into a time of peace for ten years. Programmed with almost all of Riang's fighting styles and history, he used the land to his...",
-      "content": "Previously Riang's sole protector, SplitShine ushered the entire archipelago into a time of peace for ten years. Programmed with almost all of Riang's fighting styles and history, he used the land to his advantage when battling against opponents with his razor sharp Sai technique. He grew to believe that Riang would never be safe as long as the mainland existed, seeing their complete eradication as the only solution. After he initiated a calamitous attack on Ecsthea, he was banished to the Faded Islands. Somewhere, SplitShine lurks in the jungles with seething hate, waiting to enact his day of reckoning once more."
+      "excerpt": "Previously Riang’s sole protector, SplitShine ushered the land into a time of peace for ten years. Programmed with almost all of Riang’s fighting styles and history, he used the land to his advantage when battling against oppon...",
+      "content": "Previously Riang’s sole protector, SplitShine ushered the land into a time of peace for ten years. Programmed with almost all of Riang’s fighting styles and history, he used the land to his advantage when battling against opponents. He grew to believe that Riang would never be safe as long as the mainland existed, seeing their complete eradication as the only solution. After he initiated a calamitous attack on Ecsthea City, he was banished to the Faded Islands. Somewhere, SplitShine lurks in the jungles with seething hate, waiting to enact his day of reckoning once more."
     },
     {
       "id": "unit-forticore",
       "title": "FortiCore",
       "type": "Unit Lore",
-      "category": "Ecsthea City",
+      "category": "Spiro",
       "unit": "FortiCore",
       "color": "#6cd0ff",
-      "excerpt": "Skulking around Ecsthea City, FortiCore maintains a steady career as a city guard in the Grim Row. She moved around a lot after leaving Spiro, looking for a new purpose to fulfill her code. Since settling down,...",
-      "content": "Skulking around Ecsthea City, FortiCore maintains a steady career as a city guard in the Grim Row. She moved around a lot after leaving Spiro, looking for a new purpose to fulfill her code. Since settling down, most of her days include cracking down on the city's criminal network. Her most recent accomplishment was leading a raid on one of Irondon's dens; the warehouse was almost demolished from the strength of her expandable shield. Desperate to reinvent herself, FortiCore tries to right injustices day and night."
+      "excerpt": "Skulking around Ecsthea City, FortiCore maintains a steady career as a city guard in the Grim Row. She moved around a lot after leaving Spiro, looking for a new purpose to keep her busy. Most of her days include cracking down o...",
+      "content": "Skulking around Ecsthea City, FortiCore maintains a steady career as a city guard in the Grim Row. She moved around a lot after leaving Spiro, looking for a new purpose to keep her busy. Most of her days include cracking down on the city’s criminal network. Her most recent accomplishment was leading a raid on one of Irondon’s dens; the warehouse was almost demolished from the strength of her expandable shield. Desperate to reinvent herself, FortiCore tries to right injustices day and night."
     },
     {
       "id": "unit-commandcore",
@@ -3726,8 +3726,8 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "CommandCore",
       "color": "#6cd0ff",
-      "excerpt": "Serving as a lieutenant in Spiro's military, CommandCore leads several squadrons through combat drills, flight practices, magic training, and other daily routines. There's no doubt that he's a crucial member of...",
-      "content": "Serving as a lieutenant in Spiro's military, CommandCore leads several squadrons through combat drills, flight practices, magic training, and other daily routines. There's no doubt that he's a crucial member of Spiro society, but there have been complaints of his leadership being excessively demanding. Unlike his former teammates, he chose to stay on Spiro after the team's disbandment. He often speaks fondly of the times with his team, especially about FortiCore. Nevertheless, CommandCore has a new mission now: continuing to lead Spiro into the future."
+      "excerpt": "Serving as a lieutenant in Spiro’s military, CommandCore leads several squadrons through combat drills, flight practices, magic training, and other daily routines. There's no doubt that he’s a crucial member of Spiro society, b...",
+      "content": "Serving as a lieutenant in Spiro’s military, CommandCore leads several squadrons through combat drills, flight practices, magic training, and other daily routines. There's no doubt that he’s a crucial member of Spiro society, but there have been complaints of his leadership being excessively demanding. Unlike his former teammates, he chose to stay on Spiro after the team’s disbandment. He often speaks fondly of the times with his team, especially about FortiCore."
     },
     {
       "id": "unit-shardframe",
@@ -3736,8 +3736,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "ShardFrame",
       "color": "#6cd0ff",
-      "excerpt": "An enigmatic local hero in Lunaya, ShardFrame steps up to save the day when the system fails. Tired of loan sharks harassing her family, she finally took the fight to them by pummeling their leader out of town....",
-      "content": "An enigmatic local hero in Lunaya, ShardFrame steps up to save the day when the system fails. Tired of loan sharks harassing her family, she finally took the fight to them by pummeling their leader out of town. Using the enchanted Kunai, blessed by her grandmother, she's able to weaken her enemies with a single cut from her blades. While fighting off mobsters is no easy task, hiding her vigilante identity from her family and the public has been the most stressful part of the job."
+      "excerpt": "An enigmatic local hero in Lunaya, ShardFrame steps up to save the day when the system fails. Tired of loan sharks harassing her family, she finally took the fight to them by singlehandedly driving their leader out of town. Usi...",
+      "content": "An enigmatic local hero in Lunaya, ShardFrame steps up to save the day when the system fails. Tired of loan sharks harassing her family, she finally took the fight to them by singlehandedly driving their leader out of town. Using enchanted Kunai, she’s able to weaken her enemies with a single cut from her blades. While fighting off mobsters is no easy task, hiding her vigilante identity from her family and the public has been the most stressful part of the job."
     },
     {
       "id": "unit-boltjaw",
@@ -3746,8 +3746,8 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "BoltJaw",
       "color": "#6cd0ff",
-      "excerpt": "BoltJaw is a resourceful and humble handyman with a passion for creating anything and everything. Growing up repairing things himself, BoltJaw has become self-taught in reinforcing technology with old or...",
-      "content": "BoltJaw is a resourceful and humble handyman with a passion for creating anything and everything. Growing up repairing things himself, BoltJaw has become self-taught in reinforcing technology with old or recycled parts. As Patch's assistant, he spends most of his time gathering parts for clients or sending fixed items back to their owners after repair is completed. The life he has made in Pristal is delightful, but his end goal is to be a mechanic for Ecsthea City's famous Motorland races. In his hands, BoltJaw can find the value of wrecked parts and make extraordinary use of them."
+      "excerpt": "BoltJaw is a resourceful and humble handyman with a passion for creating anything and everything. Growing up repairing things himself, he has become self-taught in reinforcing technology with old or recycled parts. As Patch’s a...",
+      "content": "BoltJaw is a resourceful and humble handyman with a passion for creating anything and everything. Growing up repairing things himself, he has become self-taught in reinforcing technology with old or recycled parts. As Patch’s assistant, he spends most of his time gathering parts for clients or sending fixed items back to their owners. The life he has made in Pristal is delightful, but his end goal is to be a mechanic for Ecsthea City’s famous Motorland races."
     },
     {
       "id": "unit-burnbyte",
@@ -3756,8 +3756,8 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "BurnByte",
       "color": "#6cd0ff",
-      "excerpt": "Creating his very own circus, BurnByte prioritizes performance and optimizes entertainment for his troupe and his excited audiences. He begins each show with a display of his own talents, releasing cones of...",
-      "content": "Creating his very own circus, BurnByte prioritizes performance and optimizes entertainment for his troupe and his excited audiences. He begins each show with a display of his own talents, releasing cones of fire around the circus tent for the audience to admire. Be sure to keep your hands and feet within your seating box. Getting in the crossfire of his cones isn't a pleasant memory you want to remember from this fantastic circus!"
+      "excerpt": "Creating his very own circus, BurnByte prioritizes performance and optimizes entertainment for his troupe and his excited audiences. He begins each show with a display of his own talents, releasing cones of fire around the circ...",
+      "content": "Creating his very own circus, BurnByte prioritizes performance and optimizes entertainment for his troupe and his excited audiences. He begins each show with a display of his own talents, releasing cones of fire around the circus tent for the audience to admire. Be sure to keep your hands and feet within your seating box. Getting in the crossfire of his cones isn’t a pleasant memory you want to remember from this fantastic circus!"
     },
     {
       "id": "unit-runewall",
@@ -3766,8 +3766,8 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "RuneWall",
       "color": "#6cd0ff",
-      "excerpt": "Roaming around Cashelbury, RuneWall is always looking for missions to keep her wallet flowing with cash and satisfy her battle-hungry soul. Taking on anticipated bounty or component retrieval missions, she...",
-      "content": "Roaming around Cashelbury, RuneWall is always looking for missions to keep her wallet flowing with cash and satisfy her battle-hungry soul. Taking on anticipated bounty or component retrieval missions, she often runs into competing individuals who are disadvantaged by her success. In the event of tensions escalating, RuneWall can summon shields accompanied by fireballs to orbit her perimeter, which can be sent hurdling toward enemies at a fierce speed. It may sound like a rough lifestyle, but this is what she lives for."
+      "excerpt": "Roaming around Cashelbury, RuneWall is always looking for missions to keep her wallet flowing with cash and her battle-hungry soul satisfied. Taking on anticipated bounty or component retrieval missions, she often runs into com...",
+      "content": "Roaming around Cashelbury, RuneWall is always looking for missions to keep her wallet flowing with cash and her battle-hungry soul satisfied. Taking on anticipated bounty or component retrieval missions, she often runs into competing individuals who are disadvantaged by her success. In the event of tensions escalating, RuneWall can summon shields accompanied by fireballs to orbit her perimeter, which can be sent hurdling toward enemies at a fierce speed."
     },
     {
       "id": "unit-widowframe",
@@ -3776,8 +3776,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "WidowFrame",
       "color": "#6cd0ff",
-      "excerpt": "In tune with her arachnid-inspired design, WidowFrame is a formidable and calculated star who excels at navigating Mecha-Clash's challenging arenas. Her arms allow her to travel on all surfaces, which includes...",
-      "content": "In tune with her arachnid-inspired design, WidowFrame is a formidable and calculated star who excels at navigating Mecha-Clash's challenging arenas. Her arms allow her to travel on all surfaces, which includes climbing upside down on ceilings and arena platforms. Her agility also works hand-in-hand with her battle intelligence; WidowFrame can sneak up on opponents from all angles, striking them with a temporary venom that'll give her the upper hand."
+      "excerpt": "In tune with her arachnid-inspired design, WidowFrame is a formidable and calculated star who excels at navigating Mecha-Clash’s challenging arenas. Her arms allow her to travel on all surfaces, which includes climbing upside d...",
+      "content": "In tune with her arachnid-inspired design, WidowFrame is a formidable and calculated star who excels at navigating Mecha-Clash’s challenging arenas. Her arms allow her to travel on all surfaces, which includes climbing upside down on ceilings and arena platforms. Her agility also works hand-in-hand with her battle intelligence; WidowFrame can sneak up on opponents from all angles, striking them with a temporary venom that’ll give her the upper hand."
     },
     {
       "id": "unit-pinpoint",
@@ -3786,8 +3786,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "PinPoint",
       "color": "#6cd0ff",
-      "excerpt": "A notable bounty hunter in Grim Row, PinPoint has known no other life besides tracking down runaway criminals and hauling them over to crime lords. His impeccable aim became a fatal skill when paired with his...",
-      "content": "A notable bounty hunter in Grim Row, PinPoint has known no other life besides tracking down runaway criminals and hauling them over to crime lords. His impeccable aim became a fatal skill when paired with his spear; launching accurate hits into enemies from afar is no sweat for PinPoint. His work helped out several of Grim Row's gangs, earning him respect from each. However, his neutrality has hindered him from gaining trust and allies."
+      "excerpt": "A notable bounty hunter in Grim Row, PinPoint has known no other life besides tracking down runaway criminals and hauling them over to crime lords. His impeccable aim became a fatal skill when paired with his spear; launching a...",
+      "content": "A notable bounty hunter in Grim Row, PinPoint has known no other life besides tracking down runaway criminals and hauling them over to crime lords. His impeccable aim became a fatal skill when paired with his spear; launching accurate hits into enemies from afar is no sweat for PinPoint. His work helped out several of Grim Row’s gangs, earning him respect from each. However, his neutrality has hindered him from gaining trust and allies."
     },
     {
       "id": "unit-biosynth",
@@ -3796,8 +3796,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "BioSynth",
       "color": "#6cd0ff",
-      "excerpt": "Among the celebrities of Ecsthea City, BioSynth has achieved the highest of the high life from her Mecha-Clash and popstar career. Though she openly talks about her enjoyment of being famous, she struggles...",
-      "content": "Among the celebrities of Ecsthea City, BioSynth has achieved the highest of the high life from her Mecha-Clash and popstar career. Though she openly talks about her enjoyment of being famous, she struggles finding balance between participating in matches and performing. On the bright side, her attire and magic ability can be used for both jobs. While her magic is used for special effects in her concerts, BioSynth creates chaotic missiles to knock her opponents out of the arena. Don't let the flashy attire fool you, BioSynth knows how to get it popping wherever she goes."
+      "excerpt": "Among the celebrities of Ecsthea City, BioSynth has achieved the highest of the high life from her Mecha-Clash and popstar career. Though she openly talks about her enjoyment of being famous, she struggles to balance participat...",
+      "content": "Among the celebrities of Ecsthea City, BioSynth has achieved the highest of the high life from her Mecha-Clash and popstar career. Though she openly talks about her enjoyment of being famous, she struggles to balance participating in matches and performing. On the bright side, her attire and magic ability can be used for both jobs. While her magic is used for special effects in her concerts, BioSynth creates chaotic missiles to knock her opponents out of the arena."
     },
     {
       "id": "unit-anchorfire",
@@ -3806,8 +3806,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "AnchorFire",
       "color": "#6cd0ff",
-      "excerpt": "Programmed as the sheriff of Alaphada, AnchorFire is willing to terminate anyone who jeopardizes the safety of his town. Recently, he's only encountered simple raiders and thieves, which he has successfully...",
-      "content": "Programmed as the sheriff of Alaphada, AnchorFire is willing to terminate anyone who jeopardizes the safety of his town. Recently, he's only encountered simple raiders and thieves, which he has successfully stopped from committing more crimes. His dashing speed allows him to dodge bullets and get close enough to his targets for the final shot. He is honoured throughout the town, but his strict and overprotective nature startle some of the citizens."
+      "excerpt": "Programmed as the sheriff of Alaphada, AnchorFire is willing to terminate anyone who jeopardizes the safety of his town. Recently, he’s only encountered simple raiders and thieves, which he has successfully stopped without kill...",
+      "content": "Programmed as the sheriff of Alaphada, AnchorFire is willing to terminate anyone who jeopardizes the safety of his town. Recently, he’s only encountered simple raiders and thieves, which he has successfully stopped without killing them. His dashing speed allows him to dodge bullets and get close enough to his targets for the final shot. He is honoured throughout the town, but his strict and overprotective nature startles some of the citizens."
     },
     {
       "id": "unit-springlock",
@@ -3816,18 +3816,18 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "SpringLock",
       "color": "#6cd0ff",
-      "excerpt": "An overzealous boxer scraping by in Grim Row, SpringLock has participated in every boxing ring that'll take him. He discovered and mastered his unique ability through several matches; pulling opponents from...",
-      "content": "An overzealous boxer scraping by in Grim Row, SpringLock has participated in every boxing ring that'll take him. He discovered and mastered his unique ability through several matches; pulling opponents from afar into his attack range and unleashing a combination of painful punches. He also looks for training opportunities outside of the ring, which includes fighting off rival gangsters for IronDon. If you're ever in the mood for a good fight, SpringLock can guarantee that for you as an opponent."
+      "excerpt": "An overzealous boxer scraping by in Grim Row, SpringLock has participated in every boxing ring that’ll take him. He discovered and mastered his unique ability through several matches, pulling opponents from afar into his attack...",
+      "content": "An overzealous boxer scraping by in Grim Row, SpringLock has participated in every boxing ring that’ll take him. He discovered and mastered his unique ability through several matches, pulling opponents from afar into his attack range and unleashing a combination of painful punches. He also looks for training opportunities outside the ring, including fighting off rival gangsters for IronDon. If you’re ever in the mood for a good fight, SpringLock can guarantee that for you as an opponent."
     },
     {
       "id": "unit-novaburst",
       "title": "NovaBurst",
       "type": "Unit Lore",
-      "category": "Riang",
+      "category": "Ecsthea City",
       "unit": "NovaBurst",
       "color": "#6cd0ff",
-      "excerpt": "NovaBurst is a rebellious and strong-willed shooter that'll do anything to make sure her hits land. Failing to stand out and connect with audiences, she was released from the Mecha-Clash program not long into...",
-      "content": "NovaBurst is a rebellious and strong-willed shooter that'll do anything to make sure her hits land. Failing to stand out and connect with audiences, she was released from the Mecha-Clash program not long into her career. Though the company tried to settle it as civilly as possible, she departed with a very \"destructive\" goodbye. Settling down in Lunaya, NovaBurst searches for a fresh beginning of calm. However, her battle instincts are tempted as she witnesses more and more injustices happen each day."
+      "excerpt": "NovaBurst is a rebellious, strong-willed shooter who’ll do anything to make her shots land. Unpopular with audiences, she was released from the Mecha-Clash program not long into her career. Though the company tried to settle it...",
+      "content": "NovaBurst is a rebellious, strong-willed shooter who’ll do anything to make her shots land. Unpopular with audiences, she was released from the Mecha-Clash program not long into her career. Though the company tried to settle it civilly, she departed with a very “destructive” goodbye. Settling down in Lunaya, NovaBurst searches for a fresh beginning. However, the corrupt instances around the city are giving her more than enough reason to get violent."
     },
     {
       "id": "unit-rocketbott",
@@ -3836,8 +3836,8 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "RocketBott",
       "color": "#6cd0ff",
-      "excerpt": "Explosive in weaponry and personality, RocketBott is the wildest Battleground Training teaching assistant to ever walk in the academy. Enthralled by his own chaos, he enjoys sending a rainfall of missiles upon...",
-      "content": "Explosive in weaponry and personality, RocketBott is the wildest Battleground Training teaching assistant to ever walk in the academy. Enthralled by his own chaos, he enjoys sending a rainfall of missiles upon his students during training, which they find terrifying every time. He also assists in the Mechanical Defence Research experiments with B.O.P, who is the only individual to enjoy and endure his explosive power. Remaining as untamed as ever, RocketBott charges into every situation with his missiles ready to launch."
+      "excerpt": "Explosive in weaponry and personality, RocketBott is the wildest Battleground Training teaching assistant to ever walk the halls. Enthralled by his own chaos, he enjoys raining missiles down on his students during training, whi...",
+      "content": "Explosive in weaponry and personality, RocketBott is the wildest Battleground Training teaching assistant to ever walk the halls. Enthralled by his own chaos, he enjoys raining missiles down on his students during training, which they find terrifying every time. He also assists in the Mechanical Defence Research experiments with B.O.P, who is the only individual to enjoy enduring his explosive power. Remaining as untamed as ever, RocketBott charges into every situation with his missiles ready to launch."
     },
     {
       "id": "unit-magnetrix",
@@ -3846,8 +3846,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "Magnetrix",
       "color": "#6cd0ff",
-      "excerpt": "An orphan living in the backwater alleyways of Lunaya, Magnetrix grew up acclimated to unjust violence and heavily involved in criminal activity. Strangely, several incidents involving lightning striking out of...",
-      "content": "An orphan living in the backwater alleyways of Lunaya, Magnetrix grew up acclimated to unjust violence and heavily involved in criminal activity. Strangely, several incidents involving lightning striking out of nowhere began raising suspicions towards Magnetrix, who just happened to be present every time it occurred. Worried she would cause more harm, she fled to the Faded Islands to tame her powers safely away from society. In her isolation, Magnetrix improved in controlling her powers as she understood the triggers to them. However, she must master them before dark forces close in on her."
+      "excerpt": "An orphan from the backwater alleyways of Lunaya, Magnetrix grew up acclimated to unjust violence. Strangely, several incidents of lightning striking out of nowhere began raising suspicions towards Magnetrix, who just happened...",
+      "content": "An orphan from the backwater alleyways of Lunaya, Magnetrix grew up acclimated to unjust violence. Strangely, several incidents of lightning striking out of nowhere began raising suspicions towards Magnetrix, who just happened to be present every time it occurred. Worried she would become a target, she fled to the Faded Islands to attempt taming her powers safely. In her isolation, Magnetrix improved at controlling her powers as she understood her triggers. However, she must master them before dark forces close in on her."
     },
     {
       "id": "unit-dashblade",
@@ -3856,8 +3856,8 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "DashBlade",
       "color": "#6cd0ff",
-      "excerpt": "DashBlade is a stoic bounty hunter of patience and poise, remaining steady while waiting for the perfect time to strike. Estranged from his family, he has committed the last ten years to hunting down lowlives...",
-      "content": "DashBlade is a stoic bounty hunter of patience and poise, remaining steady while waiting for the perfect time to strike. Estranged from his family, he has committed the last ten years to hunting down lowlives and collecting bounties throughout Harkin Square. During the night, he frequently participates in illegal battles against cybers and other humans. DashBlade always comes out victorious, and sometimes, covered in blood."
+      "excerpt": "DashBlade is a stoic bounty hunter of patience and poise, waiting for the perfect time to strike. Estranged from his family, he has committed the last ten years to hunting down lowlives and collecting bounties throughout Harkin...",
+      "content": "DashBlade is a stoic bounty hunter of patience and poise, waiting for the perfect time to strike. Estranged from his family, he has committed the last ten years to hunting down lowlives and collecting bounties throughout Harkin Square. During the night, he frequently participates in illegal battles against cybers and other humans. DashBlade always comes out victorious, and sometimes, covered in blood."
     },
     {
       "id": "unit-manadrive",
@@ -3866,8 +3866,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "ManaDrive",
       "color": "#6cd0ff",
-      "excerpt": "ManaDrive is a compassionate and vigilant bodyguard for the mayoral family of Kiyosa. Recently, the town experienced frequent and severe attacks from raiders, one of which resulted in putting the mayor's wife...",
-      "content": "ManaDrive is a compassionate and vigilant bodyguard for the mayoral family of Kiyosa. Recently, the town experienced frequent and severe attacks from raiders, one of which resulted in putting the mayor's wife in a coma. Seeing the family in grief, ManaDrive searched everywhere for external help to drive away the raiders for good. After receiving \"experimental\" upgrades, he found his new explosive abilities to be effective in scaring them away and, if needed, wiping them out."
+      "excerpt": "ManaDrive is a compassionate and vigilant bodyguard for Kiyosa’s mayoral family. The town has recently experienced severe attacks from raiders, one of which resulted in putting the mayor’s wife in a coma. Desperate, ManaDrive s...",
+      "content": "ManaDrive is a compassionate and vigilant bodyguard for Kiyosa’s mayoral family. The town has recently experienced severe attacks from raiders, one of which resulted in putting the mayor’s wife in a coma. Desperate, ManaDrive searched everywhere for help to drive away the raiders for good. After receiving “experimental” upgrades, he found his new explosive abilities to be effective in scaring them away and, if needed, wiping them out."
     },
     {
       "id": "unit-headshot",
@@ -3876,8 +3876,8 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "Headshot",
       "color": "#6cd0ff",
-      "excerpt": "Headshot has a natural talent for long-range battle from the moment he was created. Mixed with parts from an old battle cyber and a wrecked fighter jet, he can shoot a devastating laser beam that'll disrupt his...",
-      "content": "Headshot has a natural talent for long-range battle from the moment he was created. Mixed with parts from an old battle cyber and a wrecked fighter jet, he can shoot a devastating laser beam that'll disrupt his enemies and anyone near it with lethal aim. His creators, two humble sisters from Harlow, originally intended for him to become a Mecha-Clash star. However, his heavy set and sizzling power have led them to believe his destiny lies elsewhere. Encouraged by his creators, Headshot travels freely throughout the Dominion to look for his purpose."
+      "excerpt": "Mixed with parts from an old battle cyber and a wrecked fighter jet, Headshot can shoot a devastating laser beam that’ll disrupt his enemies and anyone near it with lethal aim. His creators, two humble sisters from Baxterside,...",
+      "content": "Mixed with parts from an old battle cyber and a wrecked fighter jet, Headshot can shoot a devastating laser beam that’ll disrupt his enemies and anyone near it with lethal aim. His creators, two humble sisters from Baxterside, originally intended for him to become a Mecha-Clash star. However, his heavy set and sizzling power have led them to believe his destiny lies elsewhere. Encouraged by his creators, Headshot travels freely throughout the Dominion to look for his purpose."
     },
     {
       "id": "unit-hypershot",
@@ -3886,8 +3886,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "Hypershot",
       "color": "#6cd0ff",
-      "excerpt": "Right-hand woman to the Ebony Clan's archon, Hypershot carries out orders for the clan with the utmost loyalty and extreme malevolence. Disassembled and trashed somewhere off the coast, the Archon found her and...",
-      "content": "Right-hand woman to the Ebony Clan's archon, Hypershot carries out orders for the clan with the utmost loyalty and extreme malevolence. Disassembled and trashed somewhere off the coast, the Archon found her and offered a second chance to enact revenge with all the power she ever wanted. All he asked in return was everlasting loyalty to the clan, which she continues to uphold to this day. Leaving a river of blood everywhere she goes, Hypershot stands proudly beside her clan members and leader for all time."
+      "excerpt": "Right-hand woman to the Ebony Clan’s archon, Hypershot carries out orders for the clan with the utmost loyalty and extreme malevolence. Disassembled and trashed somewhere off the coast, the Archon found her and offered a second...",
+      "content": "Right-hand woman to the Ebony Clan’s archon, Hypershot carries out orders for the clan with the utmost loyalty and extreme malevolence. Disassembled and trashed somewhere off the coast, the Archon found her and offered a second chance to enact revenge with all the power she ever wanted. All he asked in return was everlasting loyalty to the clan, which she continues to uphold to this day. Leaving a river of blood everywhere she goes, Hypershot stands proudly beside her clan for all time."
     },
     {
       "id": "unit-fireline",
@@ -3896,18 +3896,18 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "Fireline",
       "color": "#6cd0ff",
-      "excerpt": "Recruited for the ECCU, Fireline is called in whenever fire needs to be met with a lot more fire. While everyone else was deployed immediately, Fireline was assigned to stay on Spiro for the duration of his...",
-      "content": "Recruited for the ECCU, Fireline is called in whenever fire needs to be met with a lot more fire. While everyone else was deployed immediately, Fireline was assigned to stay on Spiro for the duration of his career unless he was needed elsewhere. His superiors found his Gatling lasers to be a great force for Spiro's defence, but a large risk if unsupervised. Fireline's pride in being a soldier drives him to succeed, but the idea of mission failure isn't an option for him."
+      "excerpt": "Recruited for the ECCU, Fireline is called in whenever fire needs to be met with a lot more fire. He was assigned to stay on Spiro for the duration of his career unless he was needed elsewhere. His superiors found his Gatling f...",
+      "content": "Recruited for the ECCU, Fireline is called in whenever fire needs to be met with a lot more fire. He was assigned to stay on Spiro for the duration of his career unless he was needed elsewhere. His superiors found his Gatling firepower to be a great force for Spiro’s defence, but a large risk if unsupervised. Fireline’s pride in being a soldier drives him to succeed, to the point that mission failure isn’t an option for him."
     },
     {
       "id": "unit-pulsefist",
       "title": "PulseFist",
       "type": "Unit Lore",
-      "category": "Spiro",
+      "category": "Ecsthea City",
       "unit": "PulseFist",
       "color": "#6cd0ff",
-      "excerpt": "The newest combat teacher at Spiro Military Academy, PulseFist, has immediately become a popular topic of discussion amongst students and faculty. His mysterious and sudden recruitment from Ecsthea City sparked...",
-      "content": "The newest combat teacher at Spiro Military Academy, PulseFist, has immediately become a popular topic of discussion amongst students and faculty. His mysterious and sudden recruitment from Ecsthea City sparked rumours of his origins, relating to illegal boxing rings and murder conspiracies. His teaching methods say otherwise about his \"dark\" past; he talks about inner peace as a crucial foundation and encourages students to approach everything with enthusiasm. Visibly lighthearted, PulseFist warns of misleading appearances as he won't hesitate to let his fists do the talking."
+      "excerpt": "The newest combat teacher at Spiro Military Academy, PulseFist, has immediately become a popular topic of discussion amongst students and faculty. His mysterious and sudden recruitment from Ecsthea City sparked rumours of his o...",
+      "content": "The newest combat teacher at Spiro Military Academy, PulseFist, has immediately become a popular topic of discussion amongst students and faculty. His mysterious and sudden recruitment from Ecsthea City sparked rumours of his origins, relating to illegal boxing rings and murder conspiracies. However, he prioritizes inner peace as a crucial foundation and encourages students to approach everything with enthusiasm."
     },
     {
       "id": "unit-stormcoil",
@@ -3916,8 +3916,8 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "StormCoil",
       "color": "#6cd0ff",
-      "excerpt": "StormCoil is a playful and mischievous companion whose study assistance code malfunctioned and turned them into a restless ball of energy. They often made chaos wherever they went; gathering dropped books on...",
-      "content": "StormCoil is a playful and mischievous companion whose study assistance code malfunctioned and turned them into a restless ball of energy. They often made chaos wherever they went; gathering dropped books on the floor and exploding them away in the library was their favourite activity. Regardless of the rebellion from the original code, they successfully guided their creator through school and made exciting memories along the way. Now, StormCoil will have to do it again as their creator's daughter begins her journey at Empyrean University."
+      "excerpt": "StormCoil is a playful and mischievous companion whose study assistance code malfunctioned, turning them into a restless ball of energy. They often made chaos wherever they went; gathering dropped books on the floor and explodi...",
+      "content": "StormCoil is a playful and mischievous companion whose study assistance code malfunctioned, turning them into a restless ball of energy. They often made chaos wherever they went; gathering dropped books on the floor and exploding them away in the library was their favourite activity. Despite the trouble, they successfully guided their creator through school. Now, StormCoil will have to do it again as their creator’s daughter begins her journey at Empyrean University."
     },
     {
       "id": "unit-whirlguard",
@@ -3926,8 +3926,8 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "WhirlGuard",
       "color": "#6cd0ff",
-      "excerpt": "WhirlGuard is the most popular town guard in Cashelbury for his warm-hearted personality and entertaining abilities. He's especially popular with the kids, whom he often allows onto his back before spinning...",
-      "content": "WhirlGuard is the most popular town guard in Cashelbury for his warm-hearted personality and entertaining abilities. He's especially popular with the kids, whom he often allows onto his back before spinning around ecstatically. When he's not a walking playground, WhirlGuard patrols the town daily while enforcing peace if necessary. He doesn't need to use his ability on most days, but when he does, it becomes a whirlwind of a day for anyone nearby."
+      "excerpt": "WhirlGuard is the most popular town guard in Cashelbury for his warm-hearted personality and entertaining abilities. He’s especially popular with the kids, whom he often allows onto his back before spinning around ecstatically....",
+      "content": "WhirlGuard is the most popular town guard in Cashelbury for his warm-hearted personality and entertaining abilities. He’s especially popular with the kids, whom he often allows onto his back before spinning around ecstatically. When he’s not a walking playground, WhirlGuard patrols the town daily while enforcing peace. He doesn’t need to use his ability on most days, but when he does, it becomes a whirlwind of a day for anyone nearby."
     },
     {
       "id": "unit-arcanode",
@@ -3936,8 +3936,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "Arcanode",
       "color": "#6cd0ff",
-      "excerpt": "Thriving in the shadows of Lunaya's dead-end streets, Arcanode waits in the night for any unlucky soul who's willing to take a gamble. His shady hardware store has already become a frequent hub for humans and...",
-      "content": "Thriving in the shadows of Lunaya's dead-end streets, Arcanode waits in the night for any unlucky soul who's willing to take a gamble. His shady hardware store has already become a frequent hub for humans and cyber to get quick off-the-record items and upgrades. The currency he takes doesn't stop at money; he also takes favours. Though it sounds more enticing, favours with Arcanode come with a greater risk than you can imagine."
+      "excerpt": "Thriving in the shadows of Lunaya’s dead-end streets, Arcanode waits in the night for any unlucky soul who’s willing to take a gamble. His shady hardware store has already become a frequent hub for humans and cyber to get quick...",
+      "content": "Thriving in the shadows of Lunaya’s dead-end streets, Arcanode waits in the night for any unlucky soul who’s willing to take a gamble. His shady hardware store has already become a frequent hub for humans and cyber to get quick off-the-record items and upgrades. The currency he takes doesn’t stop at money; he also takes favours. Though it sounds more enticing, favours with Arcanode come with a greater risk than you can imagine."
     },
     {
       "id": "unit-steelrunner",
@@ -3946,18 +3946,18 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "SteelRunner",
       "color": "#6cd0ff",
-      "excerpt": "SteelRunner is an impulsive and ambitious racer, aiming to get first place in every race possible. Starting out in humble street races, they discovered a divine joy in pursuing their irresistible need for...",
-      "content": "SteelRunner is an impulsive and ambitious racer, aiming to get first place in every race possible. Starting out in humble street races, they discovered a divine joy in pursuing their irresistible need for speed. SteelRunner made the most of their Motorland debut, rising to fame after beating notable racers in their first race. Living life in the fast lane, SteelRunner will put pedal to the metal until they reach the top of the world."
+      "excerpt": "SteelRunner is an impulsive and ambitious racer, aiming to get first place in every race possible. Starting in humble street races, they discovered a divine joy in pursuing their irresistible need for speed. SteelRunner made th...",
+      "content": "SteelRunner is an impulsive and ambitious racer, aiming to get first place in every race possible. Starting in humble street races, they discovered a divine joy in pursuing their irresistible need for speed. SteelRunner made the most of their Motorland debut, rising to fame after beating notable racers in their first race. Living life in the fast lane, SteelRunner will put pedal to the metal until they reach the top of the world."
     },
     {
       "id": "unit-sharplink",
       "title": "SharpLink",
       "type": "Unit Lore",
-      "category": "Sateen Lanes",
+      "category": "Pristal",
       "unit": "SharpLink",
       "color": "#6cd0ff",
-      "excerpt": "SharpLink is a rugged assassin of unyielding spirit, using her greatest pain to create her most valued strength. After years of relentless bullying for her respiratory disorder, she ran away from home as a...",
-      "content": "SharpLink is a rugged assassin of unyielding spirit, using her greatest pain to create her most valued strength. After years of relentless bullying for her respiratory disorder, she ran away from home as a teenager in search of power. Arriving in Harkin Square, a crime lord took her under his wing after she pummeled a mugger close to death. From there, she was given cybernetics to help with her breathing and make her fighting style more \"fatal\". Now, SharpLink holds a ruthless power that'll earn her the respect she deserves."
+      "excerpt": "SharpLink is a rugged assassin of unyielding spirit, using her greatest pain to create her most valued strength. After years of relentless bullying for her respiratory disorder, she ran away from home as a teenager in search of...",
+      "content": "SharpLink is a rugged assassin of unyielding spirit, using her greatest pain to create her most valued strength. After years of relentless bullying for her respiratory disorder, she ran away from home as a teenager in search of power. Arriving in Harkin Square, a crime lord took her under his wing after she pummeled a mugger close to death. From there, she was given cybernetics to help with her breathing and make her fighting style more “fatal”. Now, she holds a ruthless power that’ll earn her the respect she deserves."
     },
     {
       "id": "unit-overstrike",
@@ -3966,8 +3966,8 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "OverStrike",
       "color": "#6cd0ff",
-      "excerpt": "One of the Councillors on the Spiro Military Council, OverStrike provides wisdom and encourages peaceful resolution above all else. Following SplitShine's attack on Ecsthea City, he showed incredible initiative...",
-      "content": "One of the Councillors on the Spiro Military Council, OverStrike provides wisdom and encourages peaceful resolution above all else. Following SplitShine's attack on Ecsthea City, he showed incredible initiative in evacuating citizens, cleaning up the aftermath, and maintaining order during the city's darkest years. Soon after, he was offered a seat on the council as his idea of peace could be beneficial in a leadership role. Dedicated to keeping all of the Dominion safe from harm, OverStrike will do anything to achieve world peace."
+      "excerpt": "Lead Councillor on the Spiro Military Council, OverStrike provides wisdom and encourages peaceful resolution above all else. Following SplitShine’s attack on Ecsthea City, he showed incredible initiative in evacuating citizens,...",
+      "content": "Lead Councillor on the Spiro Military Council, OverStrike provides wisdom and encourages peaceful resolution above all else. Following SplitShine’s attack on Ecsthea City, he showed incredible initiative in evacuating citizens, cleaning up the aftermath, and maintaining order during the city’s darkest years. Soon after, he was offered a seat on the council as his idea of peace could be beneficial in a leadership role. Dedicated to keeping all of the Dominion safe from harm, OverStrike will do anything to achieve world peace."
     },
     {
       "id": "unit-starstruck",
@@ -3976,8 +3976,8 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "StarStruck",
       "color": "#6cd0ff",
-      "excerpt": "StarStruck knows everything about astrology and geology while having a passion for teaching those topics. Created to mimic meteor landings on a miniature scale, he surprised his homeroom class when he sent a...",
-      "content": "StarStruck knows everything about astrology and geology while having a passion for teaching those topics. Created to mimic meteor landings on a miniature scale, he surprised his homeroom class when he sent a giant asteroid crashing into the school field. After some angry lectures from the school board and expensive repairs to the field, StarStruck wouldn't be allowed to use his ability for teaching purposes anymore. However, that hasn't stopped him from being the best teaching assistant ever!"
+      "excerpt": "StarStruck knows everything about astrology and geology while having a passion for teaching. Created to mimic meteor landings on a miniature scale, he surprised his homeroom class when he sent a giant asteroid crashing into the...",
+      "content": "StarStruck knows everything about astrology and geology while having a passion for teaching. Created to mimic meteor landings on a miniature scale, he surprised his homeroom class when he sent a giant asteroid crashing into the school field. After some angry lectures from the school board and expensive repairs, StarStruck wouldn’t be allowed to use his ability for teaching purposes anymore. However, that hasn’t stopped him from being the best teaching assistant ever!"
     },
     {
       "id": "unit-mechsoon",
@@ -3986,8 +3986,8 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "MechSoon",
       "color": "#6cd0ff",
-      "excerpt": "Living life by all wayward means, MechSoon always finds creative ways to cause chaos throughout Sateen Lanes daily. With his memory chip and code corrupted, he's turned out to be a complete whackjob left with...",
-      "content": "Living life by all wayward means, MechSoon always finds creative ways to cause chaos throughout Sateen Lanes daily. With his memory chip and code corrupted, he's turned out to be a complete whackjob left with an unsolvable mystery of his creator. Thankfully, MechSoon doesn't seem bothered or overwhelmed about that as long as he stirs up trouble, which is often the messiest part of SteelGuard's day. Thanks to his agile limbs, getting away with the crime is just as easy as taking candy from a baby, which he has done several times."
+      "excerpt": "Living life by all wayward means, MechSoon always finds creative ways to cause chaos throughout Sateen Lanes daily. With his memory chip and code corrupted, he’s turned out to be a complete whackjob left with an unsolvable myst...",
+      "content": "Living life by all wayward means, MechSoon always finds creative ways to cause chaos throughout Sateen Lanes daily. With his memory chip and code corrupted, he’s turned out to be a complete whackjob left with an unsolvable mystery of his creator. Thankfully, MechSoon doesn’t seem bothered about that as long as he stirs up trouble. Thanks to his agile limbs, getting away with the crime is just as easy as taking candy from a baby, which he has done several times."
     },
     {
       "id": "unit-sister-aegis",
@@ -3996,8 +3996,8 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "Sister Aegis",
       "color": "#6cd0ff",
-      "excerpt": "Silence as her strength, Sister Aegis commands others without ever having to say a word. As the warden of Spiro's correctional facility, she believes that forgiveness and rehabilitation are possible for anyone...",
-      "content": "Silence as her strength, Sister Aegis commands others without ever having to say a word. As the warden of Spiro's correctional facility, she believes that forgiveness and rehabilitation are possible for anyone who seeks it. Sister Aegis hammers the importance of discipline and hard work into her inmates, metaphorically and literally if necessary. Her experience with the redeemed and the irredeemable has only strengthened her role as an enforcer; she is the answer when redemption is not."
+      "excerpt": "Silence is her strength; Sister Aegis commands others without ever having to say a word. As the warden of Spiro’s biggest correctional facility, Sister Aegis hammers the importance of discipline and hard work into her inmates,...",
+      "content": "Silence is her strength; Sister Aegis commands others without ever having to say a word. As the warden of Spiro’s biggest correctional facility, Sister Aegis hammers the importance of discipline and hard work into her inmates, metaphorically and literally if necessary. Her experience with the redeemed and the irredeemable has only strengthened her role as an enforcer; she is the answer when redemption is not."
     },
     {
       "id": "unit-hookflail",
@@ -4006,7 +4006,7 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "HookFlail",
       "color": "#6cd0ff",
-      "excerpt": "A reimagined museum artifact come to life, HookFlail denies his fate and aspires to create his own destiny. After being illegally assembled, he was forced to live in hiding as the authorities searched the city...",
+      "excerpt": "A reimagined museum artifact come to life, HookFlail denies his fate and aspires to create his own destiny. After being illegally assembled, he was forced to live in hiding as the authorities searched the city for him. Seeking...",
       "content": "A reimagined museum artifact come to life, HookFlail denies his fate and aspires to create his own destiny. After being illegally assembled, he was forced to live in hiding as the authorities searched the city for him. Seeking refuge in the Grim Row, he befriended a poor human family that had kept hidden for years. Eternally grateful, HookFlail vows to keep his family safe from any threats, even if it means compromising himself."
     },
     {
@@ -4016,8 +4016,8 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "Exodium",
       "color": "#6cd0ff",
-      "excerpt": "Exodium is one of the more pessimistic and assertive members of the Spiro Military Council, as he believes violence will always be necessary to achieve order. Witnessing Ecsthea City's tragedy in his first year...",
-      "content": "Exodium is one of the more pessimistic and assertive members of the Spiro Military Council, as he believes violence will always be necessary to achieve order. Witnessing Ecsthea City's tragedy in his first year of activity, he was convinced that peace would never be achieved, certainly not through treaties and alliances. His beliefs often create arguments between himself and OverStrike, his optimistic counterpart on the council. If the situation ever calls for his force, Exodium will gladly decimate any army in his way."
+      "excerpt": "Exodium is one of the more pessimistic and assertive members of the Spiro Military Council, as he believes violence will always be necessary to achieve order. Witnessing Ecsthea City’s tragedy in his first year of activity, he...",
+      "content": "Exodium is one of the more pessimistic and assertive members of the Spiro Military Council, as he believes violence will always be necessary to achieve order. Witnessing Ecsthea City’s tragedy in his first year of activity, he was convinced that peace would never be achieved, certainly not through treaties and alliances. His beliefs often create arguments between himself and OverStrike, his optimistic counterpart on the council. If the situation ever calls for his force, Exodium will gladly decimate any army in his way."
     },
     {
       "id": "unit-swiftframe",
@@ -4026,8 +4026,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "Swiftframe",
       "color": "#6cd0ff",
-      "excerpt": "Led by his fixation for nature and its creatures, Swiftframe explores uninhabited areas of Riang to understand the land's ancient circle of life. Unshaken by things others would consider \"gross\" or \"savage\", he...",
-      "content": "Led by his fixation for nature and its creatures, Swiftframe explores uninhabited areas of Riang to understand the land's ancient circle of life. Unshaken by things others would consider \"gross\" or \"savage\", he keeps an open mind and prefers to form his own opinions from solid evidence. Assisted by his cybernetic examination suit, Swiftframe can safely collect and analyze all sorts of samples. However, in his thrill for the unknown, he can sometimes forget about safety measures as he jumps ahead too quickly."
+      "excerpt": "Led by his fixation for nature and its creatures, Swiftframe explores uninhabited areas of Riang to understand the land’s ancient circle of life. Unshaken by things others would consider “gross” or “savage”, he keeps an open mi...",
+      "content": "Led by his fixation for nature and its creatures, Swiftframe explores uninhabited areas of Riang to understand the land’s ancient circle of life. Unshaken by things others would consider “gross” or “savage”, he keeps an open mind and prefers to form his own opinions from solid evidence. Assisted by his cybernetic examination suit, Swiftframe can safely collect and analyze all sorts of samples. However, in his thrill for the unknown, he can sometimes forget about safety measures as he jumps ahead too quickly."
     },
     {
       "id": "unit-killswitch",
@@ -4036,8 +4036,8 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "KillSwitch",
       "color": "#6cd0ff",
-      "excerpt": "The wildcard of Sateen assassins, KillSwitch has made a name for himself through his unnecessarily violent kills. The gruesome result of his killings isn't the most disturbing part; he always presents a happy...",
-      "content": "The wildcard of Sateen assassins, KillSwitch has made a name for himself through his unnecessarily violent kills. The gruesome result of his killings isn't the most disturbing part; he always presents a happy and unbothered attitude while carrying dead bodies and completing tasks. His real identity is unknown as he uses many names, though Calvin seems to be a frequent one. His desensitized nature has even concerned other assassins, making KillSwitch one of a kind in his madness."
+      "excerpt": "The wildcard of Sateen assassins, KillSwitch has made a name for himself through his unnecessarily violent kills. The gruesome result of his killings isn’t the most disturbing part; he always presents a happy and unbothered att...",
+      "content": "The wildcard of Sateen assassins, KillSwitch has made a name for himself through his unnecessarily violent kills. The gruesome result of his killings isn’t the most disturbing part; he always presents a happy and unbothered attitude while carrying dead bodies and completing tasks. His real identity is unknown, though Calvin seems to be a frequent name he uses. His desensitized nature has even concerned other assassins, making KillSwitch one of a kind in his madness."
     },
     {
       "id": "unit-ironveil",
@@ -4046,8 +4046,8 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "IronVeil",
       "color": "#6cd0ff",
-      "excerpt": "IronVeil is a karate teacher-turned-acrobat who combines his fighting skills with his circus routine. Replaced by a faster and more modern karate education unit, he was tossed aside with nothing but feelings of...",
-      "content": "IronVeil is a karate teacher-turned-acrobat who combines his fighting skills with his circus routine. Replaced by a faster and more modern karate education unit, he was tossed aside with nothing but feelings of shame. Luckily, he received an offer from BurnByte, who was looking for new circus recruits at the time. Hesitant about his new life on the road, he accepted this career change with a concerned outlook. He didn't have to worry, though; IronVeil's clone acrobatic act is now one of the most popular parts in the circus."
+      "excerpt": "IronVeil is a karate teacher-turned-acrobat who combines his fighting skills with his circus routine. Replaced by a faster and more modern karate education unit, he was tossed aside like garbage. Luckily, he soon received an of...",
+      "content": "IronVeil is a karate teacher-turned-acrobat who combines his fighting skills with his circus routine. Replaced by a faster and more modern karate education unit, he was tossed aside like garbage. Luckily, he soon received an offer from BurnByte, who was looking for new circus recruits at the time. Hesitant about his new life on the road, he accepted this career change with a concerned outlook. He didn’t have to worry, though; IronVeil’s clone acrobatic act is now one of the most popular parts in the circus."
     },
     {
       "id": "unit-cobaltine",
@@ -4056,8 +4056,8 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "Cobaltine",
       "color": "#6cd0ff",
-      "excerpt": "Powered by admiration from their worshippers, Cobaltine basks in nationwide fame for simply existing. Their charming personality on social media turned them into a popular \"digital creator\", gaining fans from...",
-      "content": "Powered by admiration from their worshippers, Cobaltine basks in nationwide fame for simply existing. Their charming personality on social media turned them into a popular \"digital creator\", gaining fans from all over the Dominion. Though they conduct routine aerial perimeter checks for Spiro, Cobaltine would rather spend their days socializing and relaxing with citizens. To their military superiors, they're a pain in the ass. To their fans, Cobaltine is the trendy leader of the digital world."
+      "excerpt": "Powered by admiration from their worshippers, Cobaltine basks in nationwide fame for simply existing. Their charming personality on social media turned them into a popular “digital creator”, gaining fans from all over the Domin...",
+      "content": "Powered by admiration from their worshippers, Cobaltine basks in nationwide fame for simply existing. Their charming personality on social media turned them into a popular “digital creator”, gaining fans from all over the Dominion. Though they conduct routine aerial perimeter checks for Spiro, Cobaltine would rather spend their days socializing and relaxing with citizens. To their military superiors, they’re a pain in the ass. To their fans, Cobaltine is the trendy leader of the digital world."
     },
     {
       "id": "unit-sightline",
@@ -4066,7 +4066,7 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "Sightline",
       "color": "#6cd0ff",
-      "excerpt": "A snarky sharpshooter whose aim transcends space and time, Sightline has the skills that can validate his bold attitude. Raised by cyber assassins, he honed his archery skills to utter perfection. Spotted by...",
+      "excerpt": "A snarky sharpshooter whose aim transcends space and time, Sightline has the skills that can validate his bold attitude. Raised by cyber assassins, he honed his archery skills to utter perfection. Spotted by the Ebony Clan, he...",
       "content": "A snarky sharpshooter whose aim transcends space and time, Sightline has the skills that can validate his bold attitude. Raised by cyber assassins, he honed his archery skills to utter perfection. Spotted by the Ebony Clan, he was given a portaling ability in exchange for joining them, using it to rain down hell on his opponents with a fury of lasers. Now, Sightline walks among fearless killers that complement the power he holds."
     },
     {
@@ -4076,7 +4076,7 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "Bedrock",
       "color": "#6cd0ff",
-      "excerpt": "Since his creation, Bedrock has dreamt of a heroic life full of fame and riches. In his small town of Alaphada, he achieves recognition for his actions less admirably than he hoped. Being extremely untrained...",
+      "excerpt": "Since his creation, Bedrock has dreamt of a heroic life full of fame and riches. In his small town of Alaphada, he achieves recognition for his actions less admirably than he hoped. Being extremely untrained and clumsy with his...",
       "content": "Since his creation, Bedrock has dreamt of a heroic life full of fame and riches. In his small town of Alaphada, he achieves recognition for his actions less admirably than he hoped. Being extremely untrained and clumsy with his fireballs, unintentional property damage often follows after his attempts at heroism. However, with the help of his friend Anchorfire, Bedrock gets closer every day to becoming a true hero."
     },
     {
@@ -4086,8 +4086,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "DuskBlade",
       "color": "#6cd0ff",
-      "excerpt": "DuskBlade is an awkward, sincere boy whose current challenge is figuring out where he fits in the world. Coming from a cold household, silence and solitude have become part of his colourless lifestyle....",
-      "content": "DuskBlade is an awkward, sincere boy whose current challenge is figuring out where he fits in the world. Coming from a cold household, silence and solitude have become part of his colourless lifestyle. Everything changes when he discovers an innate talent for the mysterious chakrams from his basement; he ricochets them off surfaces and hits targets with precise aim without even knowing what they are. As if his identity crisis isn't enough, DuskBlade is now left with questions about his family's history."
+      "excerpt": "DuskBlade is an awkward, sincere boy whose current challenge is figuring out where he fits in the world. Coming from a cold household, silence and solitude have become part of his colourless lifestyle. Everything changes when h...",
+      "content": "DuskBlade is an awkward, sincere boy whose current challenge is figuring out where he fits in the world. Coming from a cold household, silence and solitude have become part of his colourless lifestyle. Everything changes when he discovers an innate talent for the mysterious chakrams from his basement; he ricochets them off surfaces and hits targets with precise aim without even knowing what they are. As if his identity crisis isn’t enough, DuskBlade is now left with questions about his family’s history."
     },
     {
       "id": "unit-litanynode",
@@ -4096,28 +4096,28 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "LitanyNode",
       "color": "#6cd0ff",
-      "excerpt": "LitanyNode guides people with an unbreakable faith in good persevering over evil. Compared to Sister Aegis, her rehabilitation methods are much gentler and her outlook on the inmates are more optimistic....",
-      "content": "LitanyNode guides people with an unbreakable faith in good persevering over evil. Compared to Sister Aegis, her rehabilitation methods are much gentler and her outlook on the inmates are more optimistic. Disliking the ideas of punishment and force altogether, she leads several lighthearted activities every week for inmates to participate if they wish. Whether its group praying or book club, LitanyNode keeps the flames of hope ablaze."
+      "excerpt": "LitanyNode guides people with an unbreakable faith in the power of good persevering over evil. Compared to Sister Aegis, her rehabilitation methods are much gentler, and her outlook on inmates is more optimistic. Disliking the...",
+      "content": "LitanyNode guides people with an unbreakable faith in the power of good persevering over evil. Compared to Sister Aegis, her rehabilitation methods are much gentler, and her outlook on inmates is more optimistic. Disliking the ideas of punishment and force altogether, she leads several lighthearted activities every week for inmates to participate if they wish. Whether it's group praying or book club, LitanyNode keeps the flames of hope ablaze."
     },
     {
       "id": "unit-servoswing",
       "title": "ServoSwing",
       "type": "Unit Lore",
-      "category": "Pristal",
+      "category": "Ecsthea City",
       "unit": "ServoSwing",
       "color": "#6cd0ff",
-      "excerpt": "The iconic face of baseball for 50 years, ServoSwing is known throughout the Dominion as the eternal king of baseball. After dominating baseball for the first few decades of its recreation, he stepped away to...",
-      "content": "The iconic face of baseball for 50 years, ServoSwing is known throughout the Dominion as the eternal king of baseball. After dominating baseball for the first few decades of its recreation, he stepped away to live a simple life away from the public eye. Thankfully, he found a way to keep his passion for the sport alive through coaching local teams of all ages. From big shot celebrity to hometown hero, ServoSwing continues to reign his legendary status."
+      "excerpt": "The iconic face of baseball for 50 years, ServoSwing is known throughout the Dominion as the eternal king of baseball. After dominating baseball for the first few decades of its recreation, he stepped away to live a simple life...",
+      "content": "The iconic face of baseball for 50 years, ServoSwing is known throughout the Dominion as the eternal king of baseball. After dominating baseball for the first few decades of its recreation, he stepped away to live a simple life away from the public eye. Thankfully, he found a way to keep his passion for the sport alive through coaching local teams of all ages. From big shot celebrity to hometown hero, ServoSwing continues to reign in his legendary status."
     },
     {
       "id": "unit-skydrive",
       "title": "SkyDrive",
       "type": "Unit Lore",
-      "category": "Spiro",
+      "category": "Ecsthea City",
       "unit": "SkyDrive",
       "color": "#6cd0ff",
-      "excerpt": "SkyDrive is a bad-tempered and intimidating machine whose past has caused him years of grinding his gears. An alarming scandal of his creator sparked a public outcry that disapproved of his status as a...",
-      "content": "SkyDrive is a bad-tempered and intimidating machine whose past has caused him years of grinding his gears. An alarming scandal of his creator sparked a public outcry that disapproved of his status as a Mecha-Clash star. The ongoing negativity and lack of opportunity afterward pushed SkyDrive to flee the city with nothing but shattered dreams. He now lives up in the sky, wondering if a scandal is all he'll ever be."
+      "excerpt": "SkyDrive is a bad-tempered and intimidating machine whose past has caused him years of grinding his gears. An alarming scandal involving his creator sparked a public outcry that disapproved of his status as a Mecha-Clash star....",
+      "content": "SkyDrive is a bad-tempered and intimidating machine whose past has caused him years of grinding his gears. An alarming scandal involving his creator sparked a public outcry that disapproved of his status as a Mecha-Clash star. The ongoing negativity and lack of opportunity afterward pushed SkyDrive to flee the city with nothing but shattered dreams. He now lives up in the sky, wondering if a disgrace is all he’ll ever be."
     },
     {
       "id": "unit-thunk",
@@ -4126,8 +4126,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "Thunk",
       "color": "#6cd0ff",
-      "excerpt": "Curling up into a big ball of destruction, Thunk paints the ground with the blood and bodies of his enemies. Resulting as a failed prototype from the war, he was immediately deactivated and discontinued. Years...",
-      "content": "Curling up into a big ball of destruction, Thunk paints the ground with the blood and bodies of his enemies. Resulting as a failed prototype from the war, he was immediately deactivated and discontinued. Years later, he was reactivated by a couple kids who stumbled upon his body in a junkyard. With the guidance of the children, Thunk must readapt his code from the world he was programmed for to the world he's in now."
+      "excerpt": "Curling up into a big ball of destruction, Thunk paints the ground with the blood and bodies of his enemies. Resulting from a failed prototype from the war, he was immediately deactivated and discontinued. Years later, he was r...",
+      "content": "Curling up into a big ball of destruction, Thunk paints the ground with the blood and bodies of his enemies. Resulting from a failed prototype from the war, he was immediately deactivated and discontinued. Years later, he was reactivated by a couple of kids who stumbled upon his body in a junkyard. With the guidance of the children, Thunk must readapt his code from the world he was programmed for to the world he’s in now."
     },
     {
       "id": "unit-rotora",
@@ -4136,8 +4136,8 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "Rotora",
       "color": "#6cd0ff",
-      "excerpt": "Rotora is a beautiful and kind dancer who graces the land with her captivating performances. Made to teach ballet to the daughter of a rich Pristalian family, she spent a year collecting dust only a few months...",
-      "content": "Rotora is a beautiful and kind dancer who graces the land with her captivating performances. Made to teach ballet to the daughter of a rich Pristalian family, she spent a year collecting dust only a few months after her creation. When BurnByte came around, looking for any cyber to join his circus, Rotora leaped at the chance to put her ballerina skills to use. Mastering her aerial dancing act, she learned how to draw in a crowd in with her infamous dance."
+      "excerpt": "Rotora is a beautiful and kind dancer who graces the others with her captivating performances. Made to teach ballet to the daughter of a rich Pristalian family, she spent a year collecting dust only a few months after her creat...",
+      "content": "Rotora is a beautiful and kind dancer who graces the others with her captivating performances. Made to teach ballet to the daughter of a rich Pristalian family, she spent a year collecting dust only a few months after her creation. When BurnByte came around, looking for any cyber to join his circus, Rotora leaped at the chance to finally put her ballerina skills to use. Mastering her aerial dancing act, she learned how to draw in a crowd with her infamous dance."
     },
     {
       "id": "unit-plungedrill",
@@ -4146,8 +4146,8 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "PlungeDrill",
       "color": "#6cd0ff",
-      "excerpt": "PlungeDrill is an orderly and efficient director of public works in Sateen Lanes, ensuring proper maintenance of the tunnels and oversight of new infrastructure plans. Partly responsible for the creation of the...",
-      "content": "PlungeDrill is an orderly and efficient director of public works in Sateen Lanes, ensuring proper maintenance of the tunnels and oversight of new infrastructure plans. Partly responsible for the creation of the Main Lane, his drilling contributions earned him a spot on the city's construction council. Continuing to be an integral part of the city's evolution, PlungeDrill has become the voice of reason in times of structural obstacles and setbacks."
+      "excerpt": "PlungeDrill is an orderly and efficient director of public works in Sateen Lanes, ensuring proper maintenance of the tunnels and oversight of new infrastructure plans. Partly responsible for the creation of the Main Lane, his d...",
+      "content": "PlungeDrill is an orderly and efficient director of public works in Sateen Lanes, ensuring proper maintenance of the tunnels and oversight of new infrastructure plans. Partly responsible for the creation of the Main Lane, his drilling contributions earned him a spot on the city’s construction council. Continuing to be an integral part of the city’s evolution, PlungeDrill has become the voice of reason in times of structural obstacles and setbacks."
     },
     {
       "id": "unit-mechclock",
@@ -4156,28 +4156,28 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "MechClock",
       "color": "#6cd0ff",
-      "excerpt": "A creatively foul-mouthed private investigator, MechClock finds joy in stirring trouble for any amateur hoodlum or alleyway scumbag without a care in the world. He knows all there is about reading body language...",
-      "content": "A creatively foul-mouthed private investigator, MechClock finds joy in stirring trouble for any amateur hoodlum or alleyway scumbag without a care in the world. He knows all there is about reading body language and detecting lies, which combined with his habit of talking back, makes him a punchable guy to most people. Having his childhood dreams crushed by Grim Row poverty, MechClock lives paycheck to paycheck with no ambitions of changing his lifestyle."
+      "excerpt": "A creatively foul-mouthed private investigator, MechClock finds joy in stirring trouble for any alleyway scumbag without a care in the world. He knows all there is about reading body language and detecting lies, which combined...",
+      "content": "A creatively foul-mouthed private investigator, MechClock finds joy in stirring trouble for any alleyway scumbag without a care in the world. He knows all there is about reading body language and detecting lies, which combined with his habit of talking back, makes him a punchable guy to most people. Having his childhood dreams crushed by Grim Row poverty, MechClock lives paycheck to paycheck with no ambitions of changing his lifestyle."
     },
     {
       "id": "unit-sanguinox",
       "title": "Sanguinox",
       "type": "Unit Lore",
-      "category": "Riang",
+      "category": "Unknown",
       "unit": "Sanguinox",
       "color": "#6cd0ff",
-      "excerpt": "Perhaps the most mysterious being on Riang, the existence of Sanguinox mirrors that of an old legend or a childhood story. Known as \"The Archon\", he leads his horsemen to kill and execute orders without...",
-      "content": "Perhaps the most mysterious being on Riang, the existence of Sanguinox mirrors that of an old legend or a childhood story. Known as \"The Archon\", he leads his horsemen to kill and execute orders without outsiders ever discovering his real name. Even to his own clan members, his identity is questioned. Though, it's said there's a way to sense his presence. Goosebumps. Breathing difficulty. Feeling all the blood in your body run cold. That's when he may be near."
+      "excerpt": "Perhaps the most mysterious being on Riang, the existence of Sanguinox mirrors that of an old legend or a childhood story. Known as “The Archon”, he leads his horsemen to kill and execute orders without outsiders ever discoveri...",
+      "content": "Perhaps the most mysterious being on Riang, the existence of Sanguinox mirrors that of an old legend or a childhood story. Known as “The Archon”, he leads his horsemen to kill and execute orders without outsiders ever discovering his real name. Even to his own clan members, his identity is questioned. Though it’s said there’s a way to sense his presence. Goosebumps. Breathing difficulty. Feeling all the blood in your body run cold. That’s when he may be near."
     },
     {
       "id": "unit-prime-78",
       "title": "Prime-78",
       "type": "Unit Lore",
-      "category": "Pristal",
+      "category": "Spiro",
       "unit": "Prime-78",
       "color": "#6cd0ff",
-      "excerpt": "The newest addition to Cashelbury's defence, Prime-78 soars the skies as a valiant protector of the capital. Seeing the nation's pride for preserving history, Spiro gifted this vintage replica soldier as a way...",
-      "content": "The newest addition to Cashelbury's defence, Prime-78 soars the skies as a valiant protector of the capital. Seeing the nation's pride for preserving history, Spiro gifted this vintage replica soldier as a way to strengthen relations with Pristal. The townspeople welcomed him with open arms, and he became a good friend to WhirlGuard. Loving his new home more than anything in the world, Prime-78 stands ready at the helm with his mighty sword raised high."
+      "excerpt": "The newest addition to Cashelbury’s defence, Prime-78 soars the skies as a valiant protector of the capital. Seeing the nation’s pride for preserving history, Spiro gifted this vintage replica soldier as a way to strengthen rel...",
+      "content": "The newest addition to Cashelbury’s defence, Prime-78 soars the skies as a valiant protector of the capital. Seeing the nation’s pride for preserving history, Spiro gifted this vintage replica soldier as a way to strengthen relations with Pristal. The townspeople welcomed him with open arms, and he became a great friend to WhirlGuard. Loving his new home more than anything in the world, Prime-78 stands ready at the helm with his mighty sword raised high."
     },
     {
       "id": "unit-satellite-titan",
@@ -4186,28 +4186,28 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "Satellite-Titan",
       "color": "#6cd0ff",
-      "excerpt": "Satellite-Titan is the oldest engineer of Spiro's Platform Maintenance workers, whose contributions throughout the years have now earned her the position of Electrical Utilities Director. Highly aware of the...",
-      "content": "Satellite-Titan is the oldest engineer of Spiro's Platform Maintenance workers, whose contributions throughout the years have now earned her the position of Electrical Utilities Director. Highly aware of the citizens and the planet's health, she wanted to power the city through sustainable means that would be safe for all. Thanks to her proposal of using satellites and solar panels, Spiro has thrived off her leadership and has been successfully powered by the sun for years."
+      "excerpt": "Satellite-Titan is the oldest engineer of Spiro’s Platform Maintenance workers, whose contributions throughout the years have now earned her the position of Electrical Utilities Director. Highly aware of the citizens and the pl...",
+      "content": "Satellite-Titan is the oldest engineer of Spiro’s Platform Maintenance workers, whose contributions throughout the years have now earned her the position of Electrical Utilities Director. Highly aware of the citizens and the planet’s health, she wanted to power the city through means that would be safe for all. Thanks to her proposal of using satellites and solar panels, Spiro has thrived under her direction and has been successfully powered by the sun for years."
     },
     {
       "id": "unit-edge-x",
       "title": "Edge-X",
       "type": "Unit Lore",
-      "category": "Pristal",
+      "category": "Unknown",
       "unit": "Edge-X",
       "color": "#6cd0ff",
-      "excerpt": "Becoming Harlow's first serial killer in over a hundred years, Edge-X has terrorised the town through its grizzly murders. He made his first kills on the night of his arrival; stabbing two drunken men and...",
-      "content": "Becoming Harlow's first serial killer in over a hundred years, Edge-X has terrorised the town through its grizzly murders. He made his first kills on the night of his arrival; stabbing two drunken men and leaving his daggers in their bodies. His targets share the same physical pattern; middle-aged men who wander the streets at night. Nobody has figured out his motive or his identity, but after a few months of gruesome killing, he seems to have stopped. Though, a swift figure has been reported to be jumping from rooftop to rooftop, searching for something…or someone."
+      "excerpt": "Becoming Baxterside’s first serial killer in over a hundred years, Edge-X has terrorized the town through its grizzly murders. He made his first kills on the night of his arrival, stabbing two drunken men and leaving his dagger...",
+      "content": "Becoming Baxterside’s first serial killer in over a hundred years, Edge-X has terrorized the town through its grizzly murders. He made his first kills on the night of his arrival, stabbing two drunken men and leaving his daggers in their bodies. His targets share the same physical pattern: middle-aged men who wander the streets at night. Nobody has figured out his motive or his identity, but after a few months of gruesome killing, he seems to have stopped. Though a swift figure has been reported to be jumping from rooftop to rooftop, searching for something…or someone."
     },
     {
       "id": "unit-coreweaver",
       "title": "Coreweaver",
       "type": "Unit Lore",
-      "category": "Sateen Lanes",
+      "category": "Spiro",
       "unit": "Coreweaver",
       "color": "#6cd0ff",
-      "excerpt": "Coreweaver is a whimsical entertainer with an elemental gift of fire and ice. As the later addition to the Core Four, they always felt out of place in the group. Made to mitigate challenging environmental...",
-      "content": "Coreweaver is a whimsical entertainer with an elemental gift of fire and ice. As the later addition to the Core Four, they always felt out of place in the group. Made to mitigate challenging environmental situations, Coreweaver believed their abilities to be more beneficial in entertainment. After the Core Four disbanded, they travelled around the Dominion to fulfill their true calling. To this day, Coreweaver has been putting on fun solo shows wherever they can, though they're still open to finding a group to call their own."
+      "excerpt": "Coreweaver is a whimsical entertainer with an elemental gift of fire and ice. As the later addition to the Core Four, they always felt out of place in the group. Made to mitigate challenging environmental situations, Coreweaver...",
+      "content": "Coreweaver is a whimsical entertainer with an elemental gift of fire and ice. As the later addition to the Core Four, they always felt out of place in the group. Made to mitigate challenging environmental situations, Coreweaver believed their abilities to be more beneficial in entertainment. After the Core Four disbanded, they travelled around the Dominion to fulfill their true calling. To this day, Coreweaver has been putting on fun solo shows wherever they can, though they’re still open to finding a group to call their own."
     },
     {
       "id": "unit-munch-r",
@@ -4216,8 +4216,8 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "MUNCH-R",
       "color": "#6cd0ff",
-      "excerpt": "Surprisingly cuddly and constantly hungry, MUNCH-R easily makes new friends every time they look for their next meal. Similar to garbage compactors, they were designed to get rid of waste through digestion and...",
-      "content": "Surprisingly cuddly and constantly hungry, MUNCH-R easily makes new friends every time they look for their next meal. Similar to garbage compactors, they were designed to get rid of waste through digestion and excretion. Their adorable appearance often attracts individuals to interact with them. Besides collecting garbage, this social butterfly also enjoys going on patrol with SteelGuard. When it comes to the community, MUNCH-R wants to help in any way they can."
+      "excerpt": "Surprisingly cuddly and constantly hungry, MUNCH-R easily makes new friends every time they look for their next meal. Inspired by garbage compactors, they were designed to get rid of waste through sustainable digestion and excr...",
+      "content": "Surprisingly cuddly and constantly hungry, MUNCH-R easily makes new friends every time they look for their next meal. Inspired by garbage compactors, they were designed to get rid of waste through sustainable digestion and excretion. Besides collecting garbage, this social butterfly also enjoys going on patrol with SteelGuard. When it comes to the community, MUNCH-R wants to help in any way they can."
     },
     {
       "id": "unit-haymaker",
@@ -4226,17 +4226,17 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "Haymaker",
       "color": "#6cd0ff",
-      "excerpt": "Haymaker is a loyal and trusted guard to the presidential family of Sateen Lanes, keeping them safe for two generations. His duties expand past physical defence; he actually spends more time organizing events...",
+      "excerpt": "Haymaker is a loyal and trusted guard to the presidential family of Sateen Lanes, keeping them safe for two generations. His duties expand past physical defence; he actually spends more time organizing events for the president,...",
       "content": "Haymaker is a loyal and trusted guard to the presidential family of Sateen Lanes, keeping them safe for two generations. His duties expand past physical defence; he actually spends more time organizing events for the president, cooking for the family, and cleaning the mansion. With the authority to summon and lead other servants, Haymaker mastered the core values of leadership and understands how to be an effective leader for all tasks."
     },
     {
       "id": "unit-stylet",
       "title": "Stylet",
       "type": "Unit Lore",
-      "category": "Ecsthea City",
+      "category": "Spiro",
       "unit": "Stylet",
       "color": "#6cd0ff",
-      "excerpt": "A brilliant mind paired with a reckless work ethic, Stylet stops at nothing to achieve more knowledge and skill. Previously enrolled at Empyrean University, a laboratory incident landed her in hot water,...",
+      "excerpt": "A brilliant mind paired with a reckless work ethic, Stylet stops at nothing to achieve more knowledge and skill. Previously enrolled at Empyrean University, a laboratory incident landed her in hot water, leading to her immediat...",
       "content": "A brilliant mind paired with a reckless work ethic, Stylet stops at nothing to achieve more knowledge and skill. Previously enrolled at Empyrean University, a laboratory incident landed her in hot water, leading to her immediate expulsion. Stylet promptly moved away to continue her engineering and medical studies. To her surprise, the city has taught her a lot more than what she anticipated: the teachings of new knowledge and skill, but also the means to weaponize it."
     },
     {
@@ -4246,8 +4246,8 @@ window.CS_DATA = {
       "category": "Spiro",
       "unit": "Aetherion",
       "color": "#6cd0ff",
-      "excerpt": "Aetherion soars the skies with mastery in her assortment of maces, prepared to take down all sorts of aerial enemies. Her battle program weighs heavy in her performance; the ideas of new and powerful enemies...",
-      "content": "Aetherion soars the skies with mastery in her assortment of maces, prepared to take down all sorts of aerial enemies. Her battle program weighs heavy in her performance; the ideas of new and powerful enemies striking from above always loom in her mind. However, patrolling with Cobaltine has effectively pulled her away from overthinking. With a clear mind and some confidence, Aetherion's chances of winning any battle are much higher than she'd think."
+      "excerpt": "Aetherion soars the skies with mastery in her assortment of maces, prepared to take down all sorts of aerial enemies. Her battle program weighs heavily in her performance; the idea of new and powerful enemies striking from abov...",
+      "content": "Aetherion soars the skies with mastery in her assortment of maces, prepared to take down all sorts of aerial enemies. Her battle program weighs heavily in her performance; the idea of new and powerful enemies striking from above always looms in her mind. However, patrolling with Cobaltine has effectively pulled her away from her overthinking. With a clear mind and some confidence, Aetherion’s chances of winning any battle are much higher than she’d think."
     },
     {
       "id": "unit-k4ge",
@@ -4256,8 +4256,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "K4GE",
       "color": "#6cd0ff",
-      "excerpt": "An unknown soul risen from the dead, K4GE plans to make big moves in his second try at life. Brought back by the Archon, he was given his life back and was offered a newfound power if he swore allegiance....",
-      "content": "An unknown soul risen from the dead, K4GE plans to make big moves in his second try at life. Brought back by the Archon, he was given his life back and was offered a newfound power if he swore allegiance. Becoming an agent of chaos, K4GE was a tenacious natural with his new shuriken ability. His quick delivery on orders and missions makes him a valuable member of the clan. The only thing holding him back is his remnants of memory from his life before death."
+      "excerpt": "An unknown soul risen from the dead, K4GE plans to make big moves in his second try at life. Brought back to life by the Archon, he was offered a newfound power if he swore allegiance. Becoming an agent of chaos, K4GE was a ten...",
+      "content": "An unknown soul risen from the dead, K4GE plans to make big moves in his second try at life. Brought back to life by the Archon, he was offered a newfound power if he swore allegiance. Becoming an agent of chaos, K4GE was a tenacious natural with his new shuriken ability. His quick delivery on orders and missions makes him a valuable member of the clan. The only thing holding him back is the remnants of memory from his life before death."
     },
     {
       "id": "unit-soulsync",
@@ -4266,8 +4266,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "SoulSync",
       "color": "#6cd0ff",
-      "excerpt": "Owning the liveliest disco club in the city, SoulSync makes every night a memorable one with his groovy hits. The club was created in partnership with his creator, who handles the business side of things while...",
-      "content": "Owning the liveliest disco club in the city, SoulSync makes every night a memorable one with his groovy hits. The club was created in partnership with his creator, who handles the business side of things while SoulSync pumps up the crowd. Programmed with authorized synchronisation to all technology in the club, he can manipulate dance floors, strobe lights, and more to his will! You'll never see a room of mellow dancers as long as SoulSync is around."
+      "excerpt": "Owning the liveliest disco club in the city, SoulSync makes every night a memorable one with his groovy hits. The club was created in partnership with his creator, who handles the business side of things while SoulSync pumps up...",
+      "content": "Owning the liveliest disco club in the city, SoulSync makes every night a memorable one with his groovy hits. The club was created in partnership with his creator, who handles the business side of things while SoulSync pumps up the crowd. Programmed with authorized synchronization to all technology in the club, he can manipulate dance floors, strobe lights, and more to his will! You’ll never see a room of mellow dancers as long as SoulSync is around."
     },
     {
       "id": "unit-gravemarch",
@@ -4276,28 +4276,28 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "GraveMarch",
       "color": "#6cd0ff",
-      "excerpt": "A commander of great exponential growth, GraveMarch has risen up the ranks faster than any other soldier in his brigade. With abilities as versatile as his, he could be placed in any position and squadron...",
+      "excerpt": "A commander of great exponential growth, GraveMarch has risen up the ranks faster than any other soldier in his brigade. With abilities as versatile as his, he could be placed in any position and squadron without hindering perf...",
       "content": "A commander of great exponential growth, GraveMarch has risen up the ranks faster than any other soldier in his brigade. With abilities as versatile as his, he could be placed in any position and squadron without hindering performance. In fact, he often improved it. GraveMarch was eventually promoted to commander, effectively leading others to achieve great improvement like him."
     },
     {
       "id": "unit-starbreaker",
       "title": "StarBreaker",
       "type": "Unit Lore",
-      "category": "Unknown",
+      "category": "Spiro",
       "unit": "StarBreaker",
       "color": "#6cd0ff",
-      "excerpt": "Once an honourable engineer of technology and science, StarBreaker has turned away from the light and given in to dark beliefs. After his parents were killed in an accident, his grief put the cybers to blame...",
-      "content": "Once an honourable engineer of technology and science, StarBreaker has turned away from the light and given in to dark beliefs. After his parents were killed in an accident, his grief put the cybers to blame for their deaths. His hatred for the cyber beings engulfed him, leading him to build a suit of total destruction. Now, he ventures out to spread word of his mission, and hopefully, recruit an army to help lead his vision of the future."
+      "excerpt": "Once an honourable engineer of technology and science, StarBreaker has turned away from the light and given in to dangerous beliefs. After his parents were killed in an accident, his grief put the cyber beings to blame for thei...",
+      "content": "Once an honourable engineer of technology and science, StarBreaker has turned away from the light and given in to dangerous beliefs. After his parents were killed in an accident, his grief put the cyber beings to blame for their deaths. His hatred for the cyber beings engulfed him, leading him to build a suit of destruction. Now, he ventures out to spread the word of his mission, and hopefully, recruit an army to help lead his vision of the future."
     },
     {
       "id": "unit-master-prime",
       "title": "Master Prime",
       "type": "Unit Lore",
-      "category": "Pristal",
+      "category": "Ecsthea City",
       "unit": "Master Prime",
       "color": "#6cd0ff",
-      "excerpt": "Encountering trouble back in the city, Master Prime has retreated to the countryside, hoping to wait out the wrath that awaits him back home. He soon learns that karma can be just as tricky as him; the...",
-      "content": "Encountering trouble back in the city, Master Prime has retreated to the countryside, hoping to wait out the wrath that awaits him back home. He soon learns that karma can be just as tricky as him; the appearance of a human teenager has flipped his world upside down. It results in Master Prime agreeing to train the kid in exchange for a place to stay. With a new protege in his care, he'll have to guide him down a moral path while adjusting to his new role."
+      "excerpt": "Encountering trouble back in the city, Master Prime has retreated to the countryside, hoping to wait out the wrath that awaits him back home. He soon learns that karma can be just as tricky as him; the appearance of a human tee...",
+      "content": "Encountering trouble back in the city, Master Prime has retreated to the countryside, hoping to wait out the wrath that awaits him back home. He soon learns that karma can be just as tricky as him; the appearance of a human teenager has flipped his world upside down. With a new protege in his care, he’ll have to guide him down a moral path while adjusting to his new role."
     },
     {
       "id": "unit-irondon-goons",
@@ -4306,7 +4306,7 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "IronDon & Goons",
       "color": "#6cd0ff",
-      "excerpt": "IronDon is a pragmatic and ruthless mafia boss, whose leadership has led his gang to be one of the most dominant criminal groups in Grim Row. In his first year of activity, he led a rebellion that overthrew the...",
+      "excerpt": "IronDon is a pragmatic and ruthless mafia boss, whose leadership has led his gang to be one of the most dominant criminal groups in Grim Row. In his first year of activity, he led a rebellion that overthrew the human mafia resp...",
       "content": "IronDon is a pragmatic and ruthless mafia boss, whose leadership has led his gang to be one of the most dominant criminal groups in Grim Row. In his first year of activity, he led a rebellion that overthrew the human mafia responsible for creating him. He now runs his own criminal empire, powered by drug and weaponry smuggling operations. His influence remains solid, though his vulgar attitude has become a big turn-off for potential workers and partners."
     },
     {
@@ -4316,8 +4316,8 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "Kobolt & Shackbyte",
       "color": "#6cd0ff",
-      "excerpt": "Kobolt and ShackByte are the most exceptional basketball players in the sport, notable for their daredevil skills and admirable sportsmanship. Brought on during the surge of entertainment, the two players...",
-      "content": "Kobolt and ShackByte are the most exceptional basketball players in the sport, notable for their daredevil skills and admirable sportsmanship. Brought on during the surge of entertainment, the two players captured the hearts of everyone in the city with their court coordination and synergy. Retiring from the sport disheartened everyone, but it didn't mean the end of basketball for Kobolt and ShackByte. The dynamic duo continues to play basketball throughout the city, offering local fun and training to whoever needs it."
+      "excerpt": "Kobolt and ShackByte are the most exceptional basketball players in the sport, notable for their daredevil skills and admirable sportsmanship. Brought on during the surge of entertainment, the two players captured the hearts of...",
+      "content": "Kobolt and ShackByte are the most exceptional basketball players in the sport, notable for their daredevil skills and admirable sportsmanship. Brought on during the surge of entertainment, the two players captured the hearts of everyone in the city with their court coordination and synergy. Retiring from the sport disheartened everyone, but it didn’t mean the end of basketball for Kobolt and ShackByte. The dynamic duo continues to play basketball throughout the city, offering local fun and training to whoever needs it."
     },
     {
       "id": "unit-prototype-v",
@@ -4326,7 +4326,7 @@ window.CS_DATA = {
       "category": "Sateen Lanes",
       "unit": "Prototype V",
       "color": "#6cd0ff",
-      "excerpt": "A sharp-edged hazard for construction and all forms of life, Prototype V has redeemed past shortcomings by gaining a painful skillset. His most overlooked accomplishment was the creation of the Main Lane,...",
+      "excerpt": "A sharp-edged hazard for construction and all forms of life, Prototype V has redeemed past shortcomings by gaining a painful skillset. His most overlooked accomplishment was the creation of the Main Lane, which, despite his mis...",
       "content": "A sharp-edged hazard for construction and all forms of life, Prototype V has redeemed past shortcomings by gaining a painful skillset. His most overlooked accomplishment was the creation of the Main Lane, which, despite his mistakes made during that project, did contribute to its existence. That fact, along with a hundred years of unappreciated work, led him to change career paths. His life as an assassin has offered him something his previous job could not: a chance to build himself up instead of others."
     },
     {
@@ -4336,8 +4336,8 @@ window.CS_DATA = {
       "category": "Pristal",
       "unit": "SocraTech",
       "color": "#6cd0ff",
-      "excerpt": "From his many years of activity, SocraTech has questioned every aspect of human and cyber life there is. In his hometown of Paintersfield, he was known for bothering the townspeople daily with his deep...",
-      "content": "From his many years of activity, SocraTech has questioned every aspect of human and cyber life there is. In his hometown of Paintersfield, he was known for bothering the townspeople daily with his deep questions and rants. However, BurnByte saw a talent in him nobody else could see. Curious to discover a lifestyle he hadn't experienced, SocraTech joined the circus as a comedy act. Despite the occasional tomatoes thrown and boos shouted at him, he found fulfillment in bringing out laughs, even if it means they are laughing at him."
+      "excerpt": "From his many years of activity, SocraTech has questioned every aspect of human and cyber life there is. In his hometown of Paintersfield, he was known for bothering the townspeople daily with his deep questions and rants. Howe...",
+      "content": "From his many years of activity, SocraTech has questioned every aspect of human and cyber life there is. In his hometown of Paintersfield, he was known for bothering the townspeople daily with his deep questions and rants. However, BurnByte saw a talent in him nobody else could see. Curious to discover a lifestyle he hadn’t experienced, SocraTech joined the circus as a comedy act. Despite the occasional tomatoes thrown and boos shouted at him, he found fulfillment in bringing out laughs, even if it means they are laughing at him."
     },
     {
       "id": "unit-rngine",
@@ -4346,8 +4346,53 @@ window.CS_DATA = {
       "category": "Ecsthea City",
       "unit": "RNGine",
       "color": "#6cd0ff",
-      "excerpt": "RNGine is a quick-witted and energetic master at card tricks and illusions, entertaining audiences by messing with their perception. She has a less-than-ideal start for a career, subjected to pickpocketing and...",
-      "content": "RNGine is a quick-witted and energetic master at card tricks and illusions, entertaining audiences by messing with their perception. She has a less-than-ideal start for a career, subjected to pickpocketing and scamming to make ends meet. It wasn't until she heard of BurnByte's travelling circus that she decided to leave the city for the first time. Her successful audition in Tunneltown got her a job right on the spot, instantly becoming the new illusionist act. Combined with her charisma, the audiences would never dare to look away during her performances."
+      "excerpt": "RNGine is a quick-witted and energetic master at card tricks and illusions, entertaining audiences by messing with their perception. She had a less-than-ideal start, relying on pickpocketing and scamming to make ends meet. It w...",
+      "content": "RNGine is a quick-witted and energetic master at card tricks and illusions, entertaining audiences by messing with their perception. She had a less-than-ideal start, relying on pickpocketing and scamming to make ends meet. It wasn’t until she heard of BurnByte’s travelling circus that she decided to leave the city for the first time. Her successful audition in Tunneltown got her the job, becoming the circus’ new illusionist act. Combined with her charisma, the audiences would never dare to look away during her performances."
+    },
+    {
+      "id": "timeline-year196-visionsanddreamsofacyberbeingarereported",
+      "title": "Visions and dreams of a cyber-being are reported",
+      "type": "Timeline Event",
+      "category": "Year 196",
+      "color": "#c9a84c",
+      "excerpt": "Visions and dreams of a cyber-being are reported across the Dominion.",
+      "content": "Visions and dreams of a cyber-being are reported across the Dominion."
+    },
+    {
+      "id": "timeline-year198-theequalizingbegins",
+      "title": "The Equalizing begins",
+      "type": "Timeline Event",
+      "category": "Year 198",
+      "color": "#c9a84c",
+      "excerpt": "The Equalizing begins. Landscapes change, new lifeforms appear, and cybers are granted life and powers slowly over the course of two years. This remarkable change is one of the reasons the war ends.",
+      "content": "The Equalizing begins. Landscapes change, new lifeforms appear, and cybers are granted life and powers slowly over the course of two years. This remarkable change is one of the reasons the war ends."
+    },
+    {
+      "id": "aerina",
+      "title": "Aerina",
+      "type": "World",
+      "category": "Spiro / Pristal",
+      "color": "#8db5ff",
+      "excerpt": "The Goddess of the Skies and the protector believed to watch over Spiro from above.",
+      "content": "When Spiro ascended to the sky, many citizens struggled living with the new altitude. They were also worried that their position made them a vulnerable target to any attacks. However, a cloudy figure of a human woman in the sky emerged on one of Spiro’s earliest sunrises. Her appearance was followed by strong breezes of air and a warm sun. It brought hope and security, believing this to be their protector from above. She’s had several appearances for the last couple of decades, often appearing rarely or days after a tragedy. From there, the figure was known as Aerina, The Goddess of the Skies. Worshipped by mostly Spiri and some Pristalians, praying and faithful actions to the environment (ex: choosing to not smoke, reducing waste, etc) are the most common ways to honour her. LitanyNode is a notable follower of this religion; she gently integrates her beliefs into her job, such as hosting group praying and gardening sessions for inmates."
+    },
+    {
+      "id": "zitronix",
+      "title": "Zitronix",
+      "type": "World",
+      "category": "The Dominion",
+      "color": "#c9a84c",
+      "excerpt": "The Bringer of Change, remembered by a religion built around the Equalizing.",
+      "content": "Four years before the war ended, there were countless reports of a cyber-like being visiting the minds of humans across the continent. Through dreams and visions, the being reportedly spoke of a great change coming, hoping for all humans and cybers to be present when it happens. There was no specific pattern of the individuals affected, but the most specific encounters came from soldiers who had near-death experiences or distraught civilians affected by the war. It was passed off as trauma responses, until the Equalizing occurred. After the war ended, the newly sentient cybers began a religion in the being’s name, honouring the assumed being for giving them human life. The being came to be known as Zitronix, a name given by their cyber followers. The religion’s core beliefs centered around the phenomenon it caused: seeing humans and cybers as equal beings, both deserving love and peace from one another. However, the religion was initially criticized by a majority of humans as many of them were ruined by the war. As tensions eased and decades passed, Zitronism became practiced by more humans, but its cyber population still outnumbers them."
+    },
+    {
+      "id": "danasi-marro",
+      "title": "Danasi Marro",
+      "type": "World",
+      "category": "Riang / Marotan",
+      "color": "#65e087",
+      "excerpt": "The Protector of Innocence, whose sacrifice became a core story of Risahkism.",
+      "content": "The leader of the five is Danasi, a young woman whose sacrifice turned her into a goddess. Under attack by a Northern clan, Danasi became the sole survivor of her tribe. The last thing she heard was the cries of her family, screaming for her to run as they were slaughtered. She would spend the next ten years learning magic from an elderly warlock, deep in the jungle. One night, she received a vision of a nearby town, who would soon suffer the same fate as her family. Despite her mastery being incomplete, she bid farewell to her elder and headed towards the town. She was able to stop the Northern clan for good, but it came at the cost of her own life. Her sacrifice saved the town’s entire population, so much so that Riang would name an entire province in her honour. Present day, Marotan is the home to most of the Risahk. Many provide offerings in her name, pray for her protection, and build shrines for her. Her story makes up one of the core values of Risahkism: choice. It reminds the Risahk to commit to choices; there is no neutral side in violence, and one must choose to fight against it."
     }
   ],
   "regions": [
@@ -4356,10 +4401,11 @@ window.CS_DATA = {
       "name": "Ecsthea City",
       "atmosphere": "Bustling, Diverse, Cybernetic",
       "tagline": "The City of Tomorrow",
-      "description": "Located in the center of The Dominion, Ecsthea City is a thriving metropolis that acts as the middle ground for all communities to gather and collaborate. Often known as \"The City of Tomorrow\", the city's bright atmosphere of entertainment and fame is the ideal place to keep up the hustle and make it big! After an economic crash, Ecstheans found their saviour in the cybers. Once mainly used as servants or service workers, cybers have now been popularized to celebrity status through a new cyber-only sport: Mecha-Clash! A competitive sport of battle, parkour, and intellect. The sport has generated an unbelievable wealth for the city, single-handedly funding its technological research and development sector alone. With the marketing and media promotions of Mecha-Clash, Ecsthea City created dedicated fan bases across the world, who are willing to invest their love and wallets into keeping this modern culture alive.",
+      "description": "Located in the center of The Dominion, Ecsthea City is a thriving metropolis that serves as a central hub for all communities to gather and collaborate. Often known as “The Dominion’s Second Sun”, the city’s bright atmosphere of entertainment and fame has been a beacon of hope for people to follow their dreams! After an economic crash, Ecstheans found their saviour in the cybers. Once mainly used as servants or service workers, cybers have now been popularized to celebrity status through a new cyber-only sport: Mecha-Clash! A competitive sport of battle, parkour, and intellect. The sport has generated an unbelievable wealth for the city, single-handedly funding its technological research and development sector alone. With the marketing and media promotions of Mecha-Clash, Ecsthea City created dedicated fan bases across the world, who are willing to invest their love and wallets into keeping this modern culture alive.",
       "locations": [
         "Ecsthea City",
-        "Grim Row"
+        "Grim Row",
+        "Stallard Stadium"
       ],
       "color": "#54d7ff"
     },
@@ -4368,11 +4414,14 @@ window.CS_DATA = {
       "name": "Riang",
       "atmosphere": "Green, Traditional, Spiritual",
       "tagline": "The old moors and the hidden myth",
-      "description": "The ancient moors of Riang have been said to be the oldest in all the lands. Away from the mainland, Riang is a distant archipelago of moss, fog, and swamp. Its environment is abundant in trees and plants, making it a vital hub for textile, grain, and other kinds of exports. Riang was the slowest in accepting technology into its society due to the citizens' unwavering loyalty to their environment. The concept of living with cyber and relying on technology took decades for the Riangnese to even tolerate; some are still against it. The threat of neighbouring nations possibly overpowering them finally convinced the people to finally allow new technology to settle. Riang continues to have a strong grasp on its environmental connection while modernizing itself. In its long and mysterious history, a popular myth has rumoured a secret power that can only be found on Riang. It is said to be so powerful that it surpasses all cybernetic advancements that have been or will ever be made. Though the mainland believes it to be impossible, the people of Riang don't dismiss it entirely.",
+      "description": "The ancient moors of Riang have been said to be the oldest in the world. A hundred and fifty million years ago, the land split off from its original Eastern continent, drifting towards the Dominion. Now, it is a neighbouring landmass of moss, fog, and swamp, surrounded by ocean. Its environment is abundant in trees and plants, making it a vital hub for textiles, grain, and other kinds of exports. Riang was the slowest to adopt technology within its society due to the citizens’ unwavering loyalty to their environment. The concept of living with cyber and relying on technology took decades for the Riangnese to tolerate; some are still against it. The threat of neighbouring nations possibly overpowering them technologically convinced them to allow new technology to settle in. Riang continues to have a strong grasp on its environmental connection while modernizing itself. In its long and mysterious history, a popular myth has rumoured a secret power source that can only be found on Riang. It is said to be so powerful that it surpasses all cybernetic advancements that will ever be made and all magic that exists. Though the mainland believes it to be impossible, the people of Riang don’t dismiss it.",
       "locations": [
+        "Ikkion",
+        "Kiyosa",
+        "Oriza",
+        "Marotan",
         "Lunaya",
         "Soratai Village",
-        "Kiyosa",
         "The Faded Islands"
       ],
       "color": "#65e087"
@@ -4382,12 +4431,15 @@ window.CS_DATA = {
       "name": "Sateen Lanes",
       "atmosphere": "Sandy, Risky, Humid",
       "tagline": "Haggler’s County beneath the Dominion",
-      "description": "This cavernous underground city spans miles to the west, splitting off into countless tunnels in every direction. Dubbed \"Haggler's County\", Sateen Lanes has earned its reputation from the Main Lane, the most spontaneous marketplace in the Dominion. Are you looking to trade an old radiator for a cyberbot from the first Mecha-Clash game ever recorded? Use the right words, and you might have shot! Despite the city's reach bringing in endless goods, the tunnels carry a great danger if you wander too far. Several of the tunnels lead to Harkin Square, where dangerous criminals reside and trade illegal items and substances. They even house an illegal battle ring for both humans and cybers. Think of it as a more lethal version of Mecha-Clash. Sateen Lanes already carries risk without the shadow market; the deeper in the tunnels you go, the chances of you coming out decrease. Not exactly traveller-friendly, but at least the people are funny! Aside from the criminals, the residents of Sateen Lanes are said to be the funniest people in the Dominion. However, associating their humour with kindness wouldn't be wise.",
+      "description": "This cavernous underground city spans miles to the west, splitting off into countless tunnels in every direction. Dubbed “Haggler’s County”, Sateen Lanes has earned its reputation from the Main Lane, the most spontaneous marketplace in the Dominion. Are you looking to trade an old radiator for a cyberbot from the first Mecha-Clash game ever recorded? Use the right words, and you might have shot! Despite the city’s reach bringing in endless goods, the tunnels carry a great danger if you wander too far. Several of the tunnels lead to Harkin Square, where dangerous criminals reside and trade illegal items and substances. They even house an illegal battle ring for both humans and cybersm like a more lethal version of Mecha-Clash. Sateen Lanes already carries risk without the shadow market; the deeper in the tunnels you go, the chances of you coming out decrease. Not exactly traveller-friendly, but at least the people are funny! Aside from the criminals, the residents of Sateen Lanes are said to be the funniest people in the Dominion. However, associating their humour with kindness wouldn’t be wise.",
       "locations": [
-        "The Lanes",
-        "The Main Lane",
+        "Ruhatra",
+        "Tunneltown",
+        "Tahkari",
         "Alaphada",
-        "Harkin Square"
+        "The Main Lane",
+        "Harkin Square",
+        "The Larenki Desert"
       ],
       "color": "#f4a65c"
     },
@@ -4396,11 +4448,14 @@ window.CS_DATA = {
       "name": "Pristal",
       "atmosphere": "Calm (Boring), Historical, Quaint",
       "tagline": "A preserved human refuge",
-      "description": "Inspired by the classic era of humanity, Pristal has embraced its suburban aesthetic and preserved hundreds of human cultures. In relation, Pristal inhabits the largest human population in the Dominion at 64%. The tranquillity of Pristal has made it a perfect home for raising youth, beginning retirement, and starting a new chapter independently. Before its creation, Pristal was a bloody battleground between the humans and the cybers. Like all wars, both sides endured tremendous losses. After the tragedy, some humans banded together to create a utopia, where humans and cybers could live together in harmony. Remnants of the battle, such as abandoned ships and prisoner camps, have even been repurposed into functional recreational and residential spaces. Some Pristalians have even started a social movement called the \"Intertwine Movement\". It calls for all of the Dominion to dissolve their independence under one new nation: The United Dominion. Therefore, \"Intertwining\" everyone into one people. However, the initiative hasn't gained much traction for many reasons. The biggest one being that the initiative is seen as unnecessary or negative by the other nations. Despite the lack of progress, Pristal holds out hope for a United Dominion.",
+      "description": "Inspired by the classic era of humanity, Pristal has embraced its suburban aesthetic and preserved hundreds of human cultures. In relation, Pristal inhabits the largest human population in the Dominion at 64%. The tranquillity of Pristal has made it a perfect home for raising youth, beginning retirement, and starting new chapters. Before its creation, Pristal was a bloody battleground between the humans and the cybers. Like all wars, both sides endured tremendous losses. After the tragedy, some humans banded together to create a utopia, where humans and cybers could live together in quiet peace. Remnants of the battle, such as abandoned ships and prisoner camps, have even been repurposed into functional recreational and residential spaces. Some Pristalians have even started a social movement called the “Intertwine Movement”. It calls for all of the Dominion to dissolve their independence under one new nation: The United Dominion. Therefore, “Intertwining” everyone into one people. However, the initiative hasn’t gained much traction for many reasons. The biggest one being that the initiative is seen as unnecessary or negative by the other nations. Despite the lack of progress, Pristal holds out hope for a United Dominion.",
       "locations": [
+        "Swalindt",
         "Cashelbury",
+        "Harlow",
+        "Baxterside",
         "Paintersfield",
-        "Harlow"
+        "Patch’s Patch-Up Shop"
       ],
       "color": "#f0d9a1"
     },
@@ -4409,10 +4464,12 @@ window.CS_DATA = {
       "name": "Spiro",
       "atmosphere": "Intensive, Groundbreaking, Bright",
       "tagline": "The floating nation of military science",
-      "description": "Spiro has been taking the lead in the global technology race with no competitors or threats in sight. Its innovative environment has cultivated the most formidable soldiers and cerebral engineers of the era. The gigantic floating nation resides in the skies of the grasslands, becoming Pristal's closest neighbour. On the ground, several ports are stationed to await arrival and descent between Spiro and the ground. Spiro consists of two halves: Spiro City and its military. Spiro City is the home of Empyrean University, an infamous school known for creating big names in technology, science, magic, and even politics. The success of the school has grabbed attention from everywhere, becoming the number one choice of education among scholars. As a university town, the residents consist of high-level educators, researchers, students, and occasional military personnel. The Spiro Military Academy is located on the left side of the foundation, opposite the city. At the academy, humans and cybers train with instructors of great expertise. Mandatory course subjects include flight training, opponent strategy, magic wielding, medical training, and more. The Spiri believe in justice, using its power to maintain peace neutrally throughout the Dominion. Military squadrons are deployed to different nations, collaborating with governments to create safety and security for their people. However, trust in Spiro's soldiers has faltered over the years. Some soldiers have been acting greedily and unprofessionally, serving the higher-ups rather than the citizens. Unfortunately, most of Spiro remain unaware of their misused resources .",
+      "description": "Spiro has been taking the lead in the global technology race with no competitors or threats in sight. Its innovative environment has cultivated the most formidable soldiers and cerebral engineers of the era. The gigantic floating nation resides in the skies of the grasslands, becoming Pristal’s closest neighbour. On the ground, several ports are stationed to oversee the arrival and descent between Spiro and the ground. Spiro consists of two halves: Spiro City and its military. Spiro City is home to Empyrean University, an infamous school known for creating big names in technology, science, magic, and even politics. The school’s success has drawn attention from everywhere, becoming the number one choice of education among scholars. As a university town, the residents consists of high-level educators, researchers, students, and occasional military personnel. The Spiro Military Academy is located on the left side of the foundation, opposite the city. At the academy, humans and cybers train with instructors of great expertise. Mandatory course subjects include flight training, opponent strategy, magic wielding, medical training, and more. The Spiri believe in justice, and use their power to maintain peace neutrally throughout the Dominion. Military squadrons are deployed to different nations, collaborating with governments to create safety and security for their people. However, trust in Spiro’s soldiers has faltered over the years. Some soldiers have been acting greedily and unprofessionally, serving the higher-ups rather than the citizens. Unfortunately, most of Spiro remain unaware of the misuse of their resources.",
       "locations": [
+        "Sector Cato",
         "Spiro City",
         "Empyrean University",
+        "Sector Vallen",
         "Spiro Military Academy"
       ],
       "color": "#8db5ff"
@@ -4430,7 +4487,7 @@ window.CS_DATA = {
         "CommandCore",
         "Coreweaver"
       ],
-      "description": "Thirty years after the Human-Cyber War ended, the Dominion continued through intense distrust and strained relations. The Core Four cyber-series was created as a monument to everlasting peace and trust in the newfound human-cyber relationship. They travelled between nations, helping those in need and spreading their message of peace. As tensions eased, the Core Four became unpopular and eventually disbanded. All except Tracercore have been confirmed active in the present day.",
+      "description": "Thirty years after the war ended, the Dominion continued experiencing an intense period of distrust and strained relations everywhere. The Core Four cyber-series was created as a monument for everlasting peace and trust in the newfound human-cyber relationship. The cybers travelled together between nations, helping those in need and spreading their message of peace. Eventually, the Core Four became unpopular as tensions eased. Among other reasons, they later disbanded and went their separate ways. All except Tracercore have been confirmed to be active to this day.",
       "color": "#7bdcff"
     },
     {
@@ -4444,7 +4501,7 @@ window.CS_DATA = {
         "Sightline",
         "K4GE"
       ],
-      "description": "A malicious group of assassins banded together to seize total control of Riang. They hope to turn it into a criminal empire where they can live like royalty. They are fairly new to Riang's criminal underworld, but their reputation is growing quickly.",
+      "description": "A malicious group of assassins banded together to strive for total control of Riang, in hopes of turning it into their own criminal empire where they could live like royalty. They are fairly new to Riang’s criminal underworld, but their reputation grows fast.",
       "color": "#8d67ff"
     },
     {
@@ -4454,7 +4511,7 @@ window.CS_DATA = {
       "members": [
         "SteelRunner"
       ],
-      "description": "After the success of Mecha-Clash, Ecsthea City created Motorland Racing to continue its economic momentum. Inspired by the thrill of old car races, the organization provides racing entertainment and events across the Dominion.",
+      "description": "After the success of Mecha-Clash, Ecsthea City wanted to keep up the economic boost by creating more entertainment. Inspired by the thrill of old car races, the city created Motorland Racing, an organization that provides racing entertainment and events for the Dominion.",
       "color": "#ffb86b"
     },
     {
@@ -4469,7 +4526,7 @@ window.CS_DATA = {
         "SocraTech",
         "RNGine"
       ],
-      "description": "In his eighth year, BurnByte travelled alone to find the most entertaining cybers he could and offered them a nomadic life of adventure and fulfilment. Two years later, BurnByte's Travelling Circus became successful after tours through Pristal, Sateen Lanes, and Spiro. Its Ecsthea City shows were well received despite difficult advertising, while Lunaya was the only Riang city to offer strong support. The circus remains active, though BurnByte limits performances in Ecsthea City and Riang.",
+      "description": "In his 8th year, BurnByte went on a solo expedition to round up the most entertaining cybers he could find. When he found the right candidates, he offered them a nomadic lifestyle of adventure and fulfillment through entertaining the citizens of the Dominion. Two years later, BurnByte’s Travelling Circus finally took off after completing successful tours in Pristal, Sateen Lanes, and Spiro. Their Ecsthea City shows were also well-received, but advertising was especially hard there due to the city’s vast entertainment options. As for Riang, Lunaya was the only city to show the most support during the show. Other places in Riang were either indifferent or unenthusiastic. The circus continues to be active and successful, though BurnByte tries to limit performing shows in Ecsthea City and Riang for the previous reasons.",
       "color": "#ff718b"
     },
     {
@@ -4479,7 +4536,7 @@ window.CS_DATA = {
       "members": [
         "Fireline"
       ],
-      "description": "After the SplitShine attack, a specialized group of soldiers was created and stationed across the Dominion. The unit responds to high-stakes situations in hopes of preventing or limiting another attack of that scale.",
+      "description": "After the SplitShine attack in Year 298, a specialized group of soldiers was created. Soldiers were stationed across the Dominion to respond to potential high-stakes situations, in hopes that it would prevent or mitigate another attack like this.",
       "color": "#ff5e5e"
     },
     {
@@ -4490,7 +4547,7 @@ window.CS_DATA = {
         "OverStrike",
         "Exodium"
       ],
-      "description": "After the Human-Cyber War ended, Spiro created a military council of humans and cybers to make unanimous decisions about academy leadership and formats. Its decisions influence military patrols, procedures, policy oversight, and civilian integration.",
+      "description": "After the Human-Cyber War ended in Year 200, Spiro created a military council of both human and cyber that would create unanimous decisions on the academy’s leadership and formats. Their decisions would also influence military patrols, procedures, policy oversight, and civilian integration.",
       "color": "#8db5ff"
     }
   ],
@@ -4498,52 +4555,62 @@ window.CS_DATA = {
     {
       "year": "Year Zero",
       "title": "The Dominion is formed",
-      "description": "The nations of the continent form the Dominion and begin their shared modern era."
+      "description": "The Dominion is formed"
     },
     {
       "year": "Year 80-180",
       "title": "Human-cyber tensions rise",
-      "description": "Tensions between humans and cybers rise throughout the Dominion."
+      "description": "Tensions between Humans and Cybers rise"
     },
     {
       "year": "Year 186",
       "title": "Human-Cyber War begins",
-      "description": "The growing conflict between humans and cybers erupts into open war."
+      "description": "Humans and Cybers go to war."
     },
     {
       "year": "Year 191",
       "title": "Dr. Boost medical bay is destroyed",
-      "description": "Dr. Boost and his medical bay are blown up during the Human-Cyber War."
+      "description": "Dr. Boost and his medical bay are blown up."
+    },
+    {
+      "year": "Year 196",
+      "title": "Visions and dreams of a cyber-being are reported",
+      "description": "Visions and dreams of a cyber-being are reported across the Dominion."
+    },
+    {
+      "year": "Year 198",
+      "title": "The Equalizing begins",
+      "description": "The Equalizing begins. Landscapes change, new lifeforms appear, and cybers are granted life and powers slowly over the course of two years. This remarkable change is one of the reasons the war ends."
     },
     {
       "year": "Year 200",
       "title": "Human-Cyber War ends",
-      "description": "The war ends, leaving ruins, distrust, and new institutions behind."
+      "description": "Human-Cyber War ends."
     },
     {
       "year": "Year 201",
       "title": "Spiro Military Council is formed",
-      "description": "Spiro forms its Military Council with an entirely human membership."
+      "description": "Spiro Military Council is formed, but only humans are on it. The mysterious cyber-being is named Zitronix, and a religion is formed under his name. He is dubbed “The Bringer of Change” as several deities start to appear after him."
     },
     {
       "year": "Year 230",
       "title": "The Core Four is formed",
-      "description": "The Core Four is created as a monument to peace and trust in the new human-cyber relationship."
+      "description": "The Core Four is formed."
     },
     {
       "year": "Year 237",
       "title": "Tracercore is decommissioned",
-      "description": "Tracercore is permanently decommissioned, and Coreweaver is created as her replacement in the Core Four."
+      "description": "Tracercore is decommissioned permanently. Coreweaver is created as a fourth member replacement."
     },
     {
       "year": "Year 253",
       "title": "The Core Four disband",
-      "description": "The Core Four disband and go their separate ways."
+      "description": "The Core Four disband."
     },
     {
       "year": "Year 261",
       "title": "The Main Lane operation begins",
-      "description": "PlungeDrill leads an operation to create the largest lane in Sateen Lanes."
+      "description": "PlungeDrill leads an operation to create the biggest lane in Sateen Lanes."
     },
     {
       "year": "Year 262",
@@ -4553,47 +4620,47 @@ window.CS_DATA = {
     {
       "year": "Year 298",
       "title": "SplitShine attacks Ecsthea City",
-      "description": "SplitShine leads an army into Ecsthea City, causing mass destruction before being banished to the Faded Islands. Relations between Ecsthea City and Riang become tense."
+      "description": "SplitShine leads an army into Escthea City, causing mass havoc. He’s banished to the Faded Islands. Escthea City and Riang relations become tense. The Elite Cyber Crimes Unit is created, immediately creating new bases and deploying soldiers across the Dominion."
     },
     {
       "year": "Year 298-305",
       "title": "Ecsthea City Economic Drought",
-      "description": "Ecsthea City suffers an economic drought following the SplitShine attack."
+      "description": "Escthea City Economic Drought follows after the SplitShine attack."
     },
     {
       "year": "Year 303",
       "title": "OverStrike joins the Spiro Military Council",
-      "description": "OverStrike becomes the first cyber on the council after helping Ecsthea City."
+      "description": "OverStrike becomes the first cyber to join the Spiro Military Council. He’s offered a seat for his help in Ecsthea City."
     },
     {
       "year": "Year 305",
       "title": "Exodium joins the Spiro Military Council",
-      "description": "Exodium joins the council two years after OverStrike."
+      "description": "Exodium joins the Spiro Military Council two years later."
     },
     {
       "year": "Year 311",
       "title": "Mecha-Clash is formed",
-      "description": "The sport draws enormous crowds and wealth, beginning a new era of entertainment and media."
+      "description": "Mecha-Clash is formed. It draws in crowds and lots of money. The sport sparks an era of entertainment and media."
     },
     {
       "year": "Year 311-316",
       "title": "Prime Time Era of Mecha-Clash",
-      "description": "Mecha-Clash experiences rapid global popularity and prosperity."
+      "description": "Called the “Prime Time Era” of Mecha-Clash due to its fast-growing global popularity and prosperity."
     },
     {
       "year": "Year 313",
       "title": "Motorland Racing is formed",
-      "description": "Motorland Racing is created to expand Ecsthea City's entertainment economy."
+      "description": "Motorland Racing is formed."
     },
     {
       "year": "Year 316",
       "title": "Baseball returns",
-      "description": "Baseball is revived and becomes a major hit."
+      "description": "Baseball is brought back from the dead. It became a big hit."
     },
     {
       "year": "Year 319",
       "title": "Basketball returns",
-      "description": "Basketball is revived and becomes a major hit."
+      "description": "Basketball is brought back from the dead. It became a big hit."
     },
     {
       "year": "Year 328",
@@ -4603,52 +4670,52 @@ window.CS_DATA = {
     {
       "year": "Year 330",
       "title": "The Archon begins recruiting",
-      "description": "The Archon begins searching for members, while B.O.P. is created and becomes important to bomb-defence research."
+      "description": "The Archon starts the search for members. B.O.P is created, becoming a key individual in bomb defence research."
     },
     {
       "year": "Year 335",
       "title": "Hypershot joins the Ebony Clan",
-      "description": "Hypershot joins the Ebony Clan. Haymaker and Servant begin serving the president of Sateen Lanes."
+      "description": "Hypershot joins the Ebony Clan. Haymaker and Servant begins to serve the President of Sateen Lanes"
     },
     {
       "year": "Year 336",
       "title": "SkyDrive quits Mecha-Clash",
-      "description": "SkyDrive is cancelled and leaves Mecha-Clash."
+      "description": "SkyDrive gets cancelled and quits Mecha-Clash."
     },
     {
       "year": "Year 360",
       "title": "BurnByte searches for circus members",
-      "description": "BurnByte searches across the Dominion for circus members, while Prototype V leaves construction to become an assassin."
+      "description": "BurnByte starts the search for his circus members around the Dominion. Prototype V quits his construction job to become an assassin."
     },
     {
       "year": "Year 363",
       "title": "BurnByte's Travelling Circus takes off",
-      "description": "BurnByte's Travelling Circus becomes a hit in small towns across the Dominion."
+      "description": "BurnByte’s Travelling Circus becomes a hit in small towns across the land."
     },
     {
       "year": "Year 366",
       "title": "Kobolt and ShackByte retire",
-      "description": "Kobolt and ShackByte retire from basketball, saddening Ecsthea City."
+      "description": "Kobolt and ShackByte retire from basketball, it makes the whole city sad."
     },
     {
       "year": "Year 373",
       "title": "ServoSwing retires",
-      "description": "ServoSwing retires from baseball and begins a quiet life in Pristal."
+      "description": "ServoSwing retires from baseball, and begins a quiet life in Pristal."
     },
     {
       "year": "Year 384",
       "title": "The Ebony Clan appears",
-      "description": "The Ebony Clan makes its first appearance and quickly rises in prominence."
+      "description": "The Ebony Clan makes their first appearance, quickly rising up."
     },
     {
       "year": "Year 397",
       "title": "Dr. Boost returns and Edge-X appears",
-      "description": "Dr. Boost is reassembled after 206 years. Edge-X begins a seven-month murder streak in Harlow before disappearing among its citizens."
+      "description": "Dr. Boost reassembled after 206 years. Edge-X begins his murder streak in Baxterside, Harlow. He stops after 7 months of killing. It is believed he lives among the citizens to this day."
     },
     {
       "year": "Year 400",
       "title": "Present day",
-      "description": "The Dominion stands between cybernetic spectacle, old magic, political strain, and faction conflict."
+      "description": "Present day"
     }
   ]
 };

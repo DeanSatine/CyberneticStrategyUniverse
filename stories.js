@@ -433,7 +433,6 @@
     refs.article.innerHTML = `
       <p class="story-article__label">${escapeHtml(articleLabel(story))}</p>
       ${paragraphs.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join('')}
-      <div class="story-article__credit">Written by Chloe Lee Wong</div>
     `;
     refs.dossier.innerHTML = renderDossier(story, relations);
     refs.related.innerHTML = renderRelatedStories(story, relations);

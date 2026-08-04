@@ -1170,17 +1170,6 @@
   margin-top: 2.2rem;
 }
 
-.story-article__credit {
-  margin-top: 4.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border-dim);
-  color: var(--reader-color, var(--gold));
-  font-family: var(--font-mono);
-  font-size: 1.15rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .story-article p:first-of-type::first-letter {
   float: left;
   margin: 0.12em 0.12em 0 0;
