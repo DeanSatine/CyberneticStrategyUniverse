@@ -156,10 +156,11 @@
 
     /* -- UNIT BIO FOCAL DOSSIER ------------------ */
     .bio-panel {
-      position: fixed;
-      top: 50%; left: 50%;
+      position: absolute;
+      top: 3rem; left: 50%;
       width: min(1280px, calc(100vw - 6rem));
-      height: min(820px, calc(100vh - 6rem));
+      min-height: min(820px, calc(100vh - 6rem));
+      height: auto;
       z-index: 300;
       background: var(--bg-dark);
       border: 1px solid var(--border);
@@ -168,14 +169,14 @@
       grid-template-columns: minmax(380px, 0.9fr) minmax(0, 1.1fr);
       opacity: 0;
       pointer-events: none;
-      transform: translate(-50%, -46%) scale(0.96);
+      transform: translateX(-50%) scale(0.96);
       transition: opacity 0.25s ease, transform 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
-      overflow: hidden;
+      overflow: visible;
     }
     .bio-panel.open {
       opacity: 1;
       pointer-events: auto;
-      transform: translate(-50%, -50%) scale(1);
+      transform: translateX(-50%) scale(1);
     }
 
     .bio-panel__backdrop {
@@ -266,11 +267,11 @@
       letter-spacing: 0.1em; text-transform: uppercase;
     }
 
-    /* Scrollable body */
+    /* The dossier grows with its content; the document handles page scrolling. */
     .bio-panel__body {
       min-width: 0;
-      height: 100%;
-      overflow-y: auto;
+      height: auto;
+      overflow: visible;
       padding: 4rem;
       scrollbar-width: thin;
       scrollbar-color: var(--border) transparent;
@@ -441,6 +442,82 @@
       color: var(--text-mid); line-height: 1.7;
     }
 
+    .bio-panel__ability {
+      margin-bottom: 3rem;
+      padding: 1.5rem;
+      background: rgba(10,14,34,0.72);
+      border: 1px solid var(--border-dim);
+      border-radius: 4px;
+    }
+    .bio-panel__ability-media {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      background: #050711;
+      border: 1px solid var(--border-dim);
+      border-radius: 3px;
+    }
+    .bio-panel__ability-media video,
+    .bio-panel__ability-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .bio-panel__ability-media-fallback {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .bio-panel__ability-copy {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    .bio-panel__ability-icon {
+      width: 76px;
+      height: 76px;
+      flex: 0 0 76px;
+      object-fit: cover;
+      border: 1px solid var(--gold-dim);
+      border-radius: 4px;
+    }
+    .bio-panel__ability-icon-fallback {
+      display: grid;
+      place-items: center;
+      width: 76px;
+      height: 76px;
+      flex: 0 0 76px;
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      background: rgba(201,168,76,0.08);
+      border: 1px solid var(--gold-dim);
+      border-radius: 4px;
+    }
+    .bio-panel__ability-description {
+      min-width: 0;
+      color: var(--text-mid);
+      font-family: var(--font-body);
+      font-size: 1.7rem;
+      line-height: 1.65;
+    }
+    .bio-panel__ability-description strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      color: var(--text-bright);
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
     /* Trait detail in bio */
     .bio-panel__traits-detail { display: flex; flex-direction: column; gap: 1rem; }
     .bio-panel__trait-block {
@@ -469,9 +546,10 @@
     @media (max-width: 900px) {
       .bio-panel {
         width: calc(100vw - 2rem);
-        height: calc(100vh - 2rem);
+        min-height: calc(100vh - 2rem);
+        height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(280px, 42vh) minmax(0, 1fr);
+        grid-template-rows: minmax(280px, 42vh) auto;
       }
       .bio-panel__portrait {
         height: 100%;
@@ -489,7 +567,9 @@
     @media (max-width: 520px) {
       .bio-panel {
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
+        top: 0;
         border: 0;
         border-radius: 0;
       }
@@ -498,6 +578,10 @@
       .bio-panel__placeholder-text { font-size: 1.55rem; }
       .bio-panel__context-grid,
       .bio-panel__related-grid { grid-template-columns: 1fr; }
+      .bio-panel__ability-copy { gap: 1rem; }
+      .bio-panel__ability-icon,
+      .bio-panel__ability-icon-fallback { width: 60px; height: 60px; flex-basis: 60px; }
+      .bio-panel__ability-description { font-size: 1.45rem; }
     }
   </style>
 </head>
@@ -727,6 +811,27 @@
           </span>
         </button>
       `;
+    }
+
+    function abilityAssetPath(value, directory) {
+      const asset = String(value || '').trim();
+      if (!asset) return '';
+      if (/^(https?:)?\/\//i.test(asset) || asset.startsWith('./') || asset.startsWith('../') || asset.startsWith('/')) return asset;
+      return `./images/${directory}/${asset}`;
+    }
+
+    function cleanAbilityDescription(summary) {
+      let text = String(summary || '').trim();
+      if (!text) return '';
+      text = text.replace(/^-?AbilityActive:\s*/i, 'Active: ');
+      text = text.replace(/\b(?:Damage|Shield|Heal|Healing|Health Gain|AD Gain|MR Reduction|Armour Reduction|Stun|Bonus Damage|Passive Damage|Ability Damage|Target Damage|Overkill Damage)\s*:\s*[^.]+/gi, '');
+      text = text.replace(/\b\d+(?:\.\d+)?(?:\s*\/\s*\d+(?:\.\d+)?)+(?:\s*\+\s*[\d.%/\sA-Za-z]+)?\s*(?=(?:damage|shield|health|healing|armour|magic resist|attack speed|AD|AP)\b)/gi, '');
+      text = text.replace(/\b\d+(?:\.\d+)?\s*(?:%\s*)?(?=(?:damage|shield|health|healing|armour|magic resist|attack speed|AD|AP)\b)/gi, '');
+      (CS_DATA.units || []).slice().sort((a, b) => String(b.name).length - String(a.name).length).forEach(candidate => {
+        const escaped = String(candidate.name || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        text = text.replace(new RegExp(`\\s+${escaped}$`, 'i'), '');
+      });
+      return text.replace(/\s{2,}/g, ' ').replace(/\s+([,.])/g, '$1').trim();
     }
 
     const COST_COLORS_PAGE = { 1:"#888", 2:"#3a9940", 3:"#3a60c0", 4:"#8830c0", 5:"#c9a84c" };
@@ -974,8 +1079,33 @@
           ${archiveContext.related.map(renderRelatedUnit).join("")}
         </div>
       ` : "";
-      const detailsEntries = unit.details ? Object.entries(unit.details) : [];
-      const abilityEntries = unit.ability ? Object.entries(unit.ability) : [];
+      const abilityDescription = String(unit.abilityDescription || '').trim() || cleanAbilityDescription(unit.abilitySummary);
+      const abilityIcon = abilityAssetPath(unit.abilityIcon || unit.abilityIconName, 'abilities');
+      const abilityVideo = abilityAssetPath(unit.abilityVideo || unit.abilityVideoPath, 'abilities');
+      const abilityGif = abilityAssetPath(unit.abilityGif || unit.abilityGifPath, 'abilities');
+      const abilityMedia = abilityVideo || abilityGif ? `
+        <div class="bio-panel__ability-media">
+          ${abilityVideo ? `<video src="${escapeHtml(abilityVideo)}" autoplay muted loop playsinline preload="metadata" onerror="this.style.display='none';${abilityGif ? "this.nextElementSibling.style.display='block';" : "this.nextElementSibling.nextElementSibling.style.display='grid';"}"></video>` : ''}
+          ${abilityGif ? `<img src="${escapeHtml(abilityGif)}" alt="${escapeHtml(unit.name)} ability demonstration" ${abilityVideo ? 'style="display:none"' : ''} onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" />` : ''}
+          <span class="bio-panel__ability-media-fallback" style="display:${abilityVideo || abilityGif ? 'none' : 'grid'}">Ability demonstration coming soon</span>
+        </div>
+      ` : '';
+      const abilityIconHTML = abilityIcon
+        ? `<img class="bio-panel__ability-icon" src="${escapeHtml(abilityIcon)}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" /><span class="bio-panel__ability-icon-fallback" style="display:none">ABILITY</span>`
+        : '<span class="bio-panel__ability-icon-fallback">ABILITY</span>';
+      const abilityHTML = abilityDescription || abilityIcon || abilityVideo || abilityGif ? `
+        <div class="bio-panel__section-label">Ability</div>
+        <div class="bio-panel__ability">
+          ${abilityMedia}
+          <div class="bio-panel__ability-copy">
+            ${abilityIconHTML}
+            <div class="bio-panel__ability-description">
+              <strong>${escapeHtml(unit.name)} ability</strong>
+              ${escapeHtml(abilityDescription || 'Ability description will be added here.')}
+            </div>
+          </div>
+        </div>
+      ` : '';
       document.getElementById("bioPanelBody").innerHTML = `
         <div class="bio-panel__section-label">Archive context</div>
         <div class="bio-panel__context-grid">${identityHTML}</div>
@@ -988,17 +1118,14 @@
             ${unit.lore ? escapeHtml(unit.lore) : `No biography entry has been added for ${escapeHtml(unit.name)} yet.`}
           </div>
         </div>
-
-        ${abilityEntries.length ? `<div class="bio-panel__section-label">Ability Notes</div><div class="bio-panel__traits-detail">${abilityEntries.map(([label, value]) => `<div class="bio-panel__trait-block"><div class="bio-panel__trait-block-info"><div class="bio-panel__trait-block-name">${label.charAt(0).toUpperCase() + label.slice(1)}</div><div class="bio-panel__trait-block-type">${value}</div></div></div>`).join("")}</div>` : ""}
-
-        ${detailsEntries.length ? `<div class="bio-panel__section-label">Combat Data</div><div class="bio-panel__traits-detail">${detailsEntries.map(([label, value]) => `<div class="bio-panel__trait-block"><div class="bio-panel__trait-block-info"><div class="bio-panel__trait-block-name">${label.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase())}</div><div class="bio-panel__trait-block-type">${value}</div></div></div>`).join("")}</div>` : ""}
+        ${abilityHTML}
       `;
 
       // Open panel
       document.getElementById("bioPanel").classList.add("open");
       document.getElementById("bioPanel").setAttribute("aria-hidden", "false");
       document.getElementById("bioBackdrop").classList.add("open");
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "";
     }
 
     function closeBioPanel() {

@@ -26,7 +26,8 @@ window.CS_DATA = {
       "abilitySummary": "-AbilityActive: Rapidly throw 3 needles split between the nearest 2 enemies, each dealing 45/65/95 damage. Every 10 needles shot, increase the needle count by 1 permanently.",
       "subtitle": "The Underdog",
       "cardImageName": "NeedlebotCard",
-      "iconImageName": "NeedlebotIcon"
+      "iconImageName": "NeedlebotIcon",
+      "abilityDescription": "(+) / needles to next bonus Rapidly throw needles split between the nearest  enemies within hexes, each dealing physical damage.   Needle Damage: / / + % AD   Every  needles thrown increases needle count by  permanently."
     },
     {
       "id": "knox",
@@ -54,7 +55,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: KNOX permanently gain 1.5% Attack Damage when he kills an enemy champion Active: 1-2 Combo the enemy, dealing physical damage and knocking them up for 0.5 seconds. Tracercore",
       "subtitle": "The Hard Knox Life",
       "cardImageName": "KNOXCard",
-      "iconImageName": "KnoxIcon"
+      "iconImageName": "KnoxIcon",
+      "abilityDescription": "Passive: KNOX permanently gains Attack Damage when he kills an enemy champion.  Bonus AD: +   Active: - Combo the enemy, dealing physical damage and knocking them up for s.   Damage = Hit  (% AD) + Hit  (% AD)"
     },
     {
       "id": "tracercore",
@@ -83,7 +85,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Attacks deal bonus magic damage and every 10 attacks shoot a bolt at the farthest enemy instead, dealing magic damage. Bolt Damage: 175 / 240 / 400 + 50% AP SteelGuard",
       "subtitle": "The Shadow Mother",
       "cardImageName": "TracerCoreCard",
-      "iconImageName": "TracerCoreIcon"
+      "iconImageName": "TracerCoreIcon",
+      "abilityDescription": "Passive: Attacks deal bonus magic damage.   Every attacks, shoot a bolt at the farthest enemy dealing magic damage to the first enemy hit.   Passive = + % AP  Bolt = + % AP"
     },
     {
       "id": "steelguard",
@@ -112,7 +115,8 @@ window.CS_DATA = {
       "abilitySummary": "Active: Start roaring, gaining a 190/240/350 + 280/350/420% shield. If the shield is still active after 4 seconds, refresh the shield at 75% effectiveness. Shield: 190/240/400 + 280/350/420% AP BackSlash",
       "subtitle": "The Shield of Sateen",
       "cardImageName": "SteelGuardCard",
-      "iconImageName": "Steelguardicon"
+      "iconImageName": "Steelguardicon",
+      "abilityDescription": "Start roaring, gaining a shield. If the shield is still active after seconds, gain max health for the rest of combat.   Health = / / + % AP  Shield = / / + % / % / % AP"
     },
     {
       "id": "backslash",
@@ -141,7 +145,8 @@ window.CS_DATA = {
       "abilitySummary": "Active: Slash 1 hex in front of Backslash, dealing damage. Every 3rd cast, slam down, dealing more damage in a 2 hex radius. Patch",
       "subtitle": "The Prodigy",
       "cardImageName": "BackSlashCard",
-      "iconImageName": "BackSlashIcon"
+      "iconImageName": "BackSlashIcon",
+      "abilityDescription": "Slash  hex in front of BackSlash, dealing magic damage.   Every 3rd cast, slam down dealing magic damage in a hex radius.   Slash = % AP  Slam = % AP"
     },
     {
       "id": "patch",
@@ -170,7 +175,8 @@ window.CS_DATA = {
       "abilitySummary": "Patch hurls a wrench at the highest health enemy, dealing 220/340/550 damage and stunning them for 0.75/1.5/2 seconds. The wrench bounces to the closest enemy, dealing 50% damage and stunning for 50% of the duration. SteelShade",
       "subtitle": "The Handiest Little Man",
       "cardImageName": "PatchCard",
-      "iconImageName": "PatchIcon"
+      "iconImageName": "PatchIcon",
+      "abilityDescription": "Hurl a wrench at the target, dealing magic damage and stu ing them for seconds.   The wrench bounces twice on the target and once at the highest health enemy, dealing magic damage and stu ing them for seconds each.   Wrench = % AP  Bounce = % AP"
     },
     {
       "id": "steelshade",
@@ -199,7 +205,8 @@ window.CS_DATA = {
       "abilitySummary": "Gain 15%/25%/35% damage reduction for 3 seconds and deal physical damage to the target. (100 hp per 1% bonus damage reduction) (damage = 35% of max health) Overturn",
       "subtitle": "The Invisible Speedster",
       "cardImageName": "SteelShadeCard",
-      "iconImageName": "SteelShadeIcon"
+      "iconImageName": "SteelShadeIcon",
+      "abilityDescription": "Gain % damage reduction for seconds. Deal physical damage to the target.   Damage Reduction: +% per bonus health  Damage: % of max health"
     },
     {
       "id": "overturn",
@@ -228,7 +235,8 @@ window.CS_DATA = {
       "abilitySummary": "Heal health. Toss the current target behind Overturn, causing them to take 5/10/20% increased damage for the rest of combat. Heal: 50/75/150 10% HP + 50% AP Increased damage: every 20 bonus armour or MR = 1% extra damage increase DreadLine",
       "subtitle": "The Driven Boxer",
       "cardImageName": "OverturnCard",
-      "iconImageName": "OverturnIcon"
+      "iconImageName": "OverturnIcon",
+      "abilityDescription": "Heal health. Toss the current target behind Overturn, causing them to take increased damage for the rest of combat. Heal health. Toss the current target behind Overturn, causing them to take % increased damage for the rest of combat.   Heal = + % max HP + % AP  Damage Vulnerability = % + % per armor/MR  Current Bonus: +% from defense"
     },
     {
       "id": "dreadline",
@@ -257,7 +265,8 @@ window.CS_DATA = {
       "abilitySummary": "Fire a beam at the target, dealing magic damage. Every other cast adds +1 ricochet to the nearest enemy, dealing 70% damage. FrontPoint",
       "subtitle": "The Riang Reaper",
       "cardImageName": "DreadLineCard",
-      "iconImageName": "DreadLineIcon"
+      "iconImageName": "DreadLineIcon",
+      "abilityDescription": "Fire a beam at the target, dealing magic damage.   Every other cast adds + ricochet to the nearest enemy, dealing physical damage.   Beam = + % AD + 80% AP"
     },
     {
       "id": "frontpoint",
@@ -287,7 +296,8 @@ window.CS_DATA = {
       "abilitySummary": "Active: Stab the target, dealing 80/120/170 physical damage. Gain 15% / 20% / 30% attack speed and 10 / 15 / 25 bonus AD for the rest of combat. Consume-OS",
       "subtitle": "The Son Who Remains",
       "cardImageName": "FrontpointCard",
-      "iconImageName": "FrontpointICon"
+      "iconImageName": "FrontpointICon",
+      "abilityDescription": "Stab the target, dealing physical damage. Gain attack speed and bonus AD for the rest of combat.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤  Current Stacks: (+ AD, +% AS) Deal physical damage to the target. Gain % attack speed and bonus AD for the rest of combat.   Damage = + % AD"
     },
     {
       "id": "consume-os",
@@ -316,7 +326,8 @@ window.CS_DATA = {
       "abilitySummary": "Gain max % health for 5 seconds and jump up and crash down, dealing magic damage. If this kills, gain health permanently Health Gain: 17% / 24% / 33% + 5% AP Health gain: 15 / 20 / 40 Dr. Boost",
       "subtitle": "Death From Above",
       "cardImageName": "ConsumeOSCard",
-      "iconImageName": "ConsumeOSIcon"
+      "iconImageName": "ConsumeOSIcon",
+      "abilityDescription": "Jump up and crash down on the nearest enemy, gaining max health for s and dealing magic damage to all enemies on landing. Enemies killed grant permanent health.   Health bonus: %/%/% max HP + % AP  Damage: % max health + %/%/% AP  Health gain on kill: //"
     },
     {
       "id": "dr-boost",
@@ -345,7 +356,8 @@ window.CS_DATA = {
       "abilitySummary": "Dr Boost injects himself, gaining Damage reduction and attack speed for 3 seconds. Subsequent casts then inject the furthest ally. LockCore",
       "subtitle": "Doctor Grandpa",
       "cardImageName": "DrBoostCard",
-      "iconImageName": "DrBoostIcon"
+      "iconImageName": "DrBoostIcon",
+      "abilityDescription": "Dr. Boost injects himself, gaining % damage reduction and +% attack speed for seconds. Subsequent casts inject himself and an increasing number of the furthest allies.   Damage Reduction: % + % AP  Attack Speed: % + % AP"
     },
     {
       "id": "lockcore",
@@ -374,7 +386,8 @@ window.CS_DATA = {
       "abilitySummary": "LockCore lobs magical orbs at the target and the nearest ally, dealing magic damage and stunning for 1/1.5/2 seconds to the target and healing the ally for health. Heal: 100 / 160 / 220 + 40 % AP scaling AutoShot",
       "subtitle": "Brother Nature",
       "cardImageName": "LockCoreCard",
-      "iconImageName": "LockCoreIcon"
+      "iconImageName": "LockCoreIcon",
+      "abilityDescription": "Lob magical orbs at the target and the lowest health ally. Deal magic damage and stun for seconds. Heal ally for health.   Damage = + % AP  Healing = + % AP  Stun = seconds"
     },
     {
       "id": "autoshot",
@@ -403,7 +416,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Attacks are replaced with gatling bullets that shoot 3 bullets. Each bullet does physical damage Bullets = 90% AD Workshop Upgrade: Bullets pierce, hitting enemies in a line 2 hexes behind the target. LoadBearer",
       "subtitle": "The Deadeye",
       "cardImageName": "AutoShotCard",
-      "iconImageName": "AutoShotIcon"
+      "iconImageName": "AutoShotIcon",
+      "abilityDescription": "Passive: Attacks are replaced with a gatling burst of bullets, each dealing physical damage.   [Workshop Upgrade!] Attacks hit adjacent enemies for % damage.   Damage per bullet = % AD"
     },
     {
       "id": "loadbearer",
@@ -432,7 +446,8 @@ window.CS_DATA = {
       "abilitySummary": "Throw a pillar at the target, dealing physical damage and reducing armour, if their armour is already reduced, gain 10 mana Armour Reduction: 10 / 15 / 20 Hull",
       "subtitle": "The Titan",
       "cardImageName": "LoadBearerCard",
-      "iconImageName": "LoadBearerIcon"
+      "iconImageName": "LoadBearerIcon",
+      "abilityDescription": "Throw a pillar at the target, dealing physical damage and reducing armor by . If their armor is already reduced, gain mana.   Damage = + % AD"
     },
     {
       "id": "hull",
@@ -462,7 +477,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Gain Magic Resist every second Active: Gain Armour for the rest of combat. Passive gain: 2 / 3 / 4 Magic Resist Active gain: 10 / 12 / 20 + 50% AP Acolyte",
       "subtitle": "The Cave Beast",
       "cardImageName": "HullCard",
-      "iconImageName": "HullIcon"
+      "iconImageName": "HullIcon",
+      "abilityDescription": "Passive: Gain Magic Resist every second.  Active: Gain Armor for the rest of combat.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤ Jump on the enemy times. Each jump deals physical damage and grants Armour and Magic Resist.   Damage: / / + % Armour + % AD  AR/MR Gain: / / + % AP"
     },
     {
       "id": "acolyte",
@@ -492,7 +508,8 @@ window.CS_DATA = {
       "abilitySummary": "Shoot a laser ball at the target dealing physical damage. Student & Master Upgrade: The laser ball beams a giant beam of energy that fires in a 2 hex width line, and on cast, summons a ghost of Master that fires a secondary beam that deals 30% of the damage. *Idea for this one - person pretending to be a robot and gets mentored by Master Prime SliceNode",
       "subtitle": "The Cyber-in-Training",
       "cardImageName": "AcolyteCard",
-      "iconImageName": "AcolyteIcon"
+      "iconImageName": "AcolyteIcon",
+      "abilityDescription": "Shoot a laser ball at the target dealing physical damage.   Damage: / / + % AD   [Student & Master Upgrade!] The laser ball erupts into a giant beam firing in a -hex wide line (u range), dealing physical damage. A ghost of Master fires a secondary beam dealing physical damage (%)."
     },
     {
       "id": "slicenode",
@@ -521,7 +538,8 @@ window.CS_DATA = {
       "abilitySummary": "Dash an optimal hex and slice down in a 2 hex line, dealing magic damage and gaining a shield for 2 seconds. Shield: 90 / 110 / 130 + 20% AP (Origin) Student & Master Builder & Mechanic gain stats, and a bonus when they are reunited! (1) 25% Attack Speed (2) AND Abilities gain a boost! 2-Cost Units B.O.P.",
       "subtitle": "The Avenger",
       "cardImageName": "SliceNodeCard",
-      "iconImageName": "SliceNodeIcon"
+      "iconImageName": "SliceNodeIcon",
+      "abilityDescription": "Dash to an optimal hex and slice down in a -hex line, dealing magic damage to all enemies hit and gaining a shield for seconds.   Damage: + % AP  Shield: + % AP"
     },
     {
       "id": "b-o-p",
@@ -549,7 +567,8 @@ window.CS_DATA = {
       "abilitySummary": "Goal: Create a unit that has a minor gimmick which is easily comprehensible but gives it a fun identity and synergies with its traits to create a unique unit. B.O.P. pounds its chest, granting itself +10/12/15% max health. Then bonk the target, dealing 20% of B.O.P.’s max health + Attack Kurōmushadō",
       "subtitle": "The Ultimate Bomb Defence",
       "cardImageName": "BOPCard",
-      "iconImageName": "BOPIcon"
+      "iconImageName": "BOPIcon",
+      "abilityDescription": "Chest Pound, gaining + max health, then BONK the target for physical damage.   Health Gain: % Max HP  Bonk Damage: % Max HP +"
     },
     {
       "id": "kuromushado",
@@ -579,7 +598,8 @@ window.CS_DATA = {
       "abilitySummary": "Unleash a waltz of shadow kicks from random directions onto the target. Each kick deals physical damage and knocks the enemy back 3 hexes. Kicks: 3 + 1 per 25% bonus attack speed. Jump Kick Damage: 210/315/720 + 70% AD SplitShine",
       "subtitle": "The Silver Showoff",
       "cardImageName": "KuromushadoCard",
-      "iconImageName": "KuromushadoIcon"
+      "iconImageName": "KuromushadoIcon",
+      "abilityDescription": "Unleash a waltz of shadow kicks from random directions onto the target. Each kick deals physical damage and knocks the enemy back hexes.   Kicks = + 1 per % bonus AS  Jump Kick = + % AD"
     },
     {
       "id": "splitshine",
@@ -609,7 +629,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Attacks throw a spinning Sai that pierce through a nearby target and deal bonus magic damage. Active: Launch a Sai at the target, dealing magic damage. Throw an additional Sai every 3 casts of this ability permanently. Bonus damage: 50/75/115 + 25% AP Active Damage: 150 / 225 / 300 + 40% AP FortiCore",
       "subtitle": "The Fallen Grace",
       "cardImageName": "SplitShineCard",
-      "iconImageName": "SplitShineIcon"
+      "iconImageName": "SplitShineIcon",
+      "abilityDescription": "Passive: Takedowns grant mana.   Active: Slash in a circle, dealing magic damage to all enemies within hexes. Every casts, increase the radius by hexes.   Next increase: cast(s) -> hexes   Damage: / / + % AP"
     },
     {
       "id": "forticore",
@@ -638,7 +659,8 @@ window.CS_DATA = {
       "abilitySummary": "Forticore expands her shield for 5 seconds and gains 30/33/45 combined armour/mr as magic damage in a cone. CommandCore",
       "subtitle": "The Fortress",
       "cardImageName": "ForticoreCard",
-      "iconImageName": "Forticoreicon"
+      "iconImageName": "Forticoreicon",
+      "abilityDescription": "Expand shield for seconds, gaining Armour/MR and Attack Speed. Auto attacks deal magic damage in a cone based on combined defenses.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤ Active: Expand shield for s, gaining + Armour & MR and +% Attack Speed.   While active, auto attacks deal magic damage in a cone.   Cone = % of combined Armour + MR + % AP"
     },
     {
       "id": "commandcore",
@@ -667,7 +689,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Allies Adjacent to CommandCore gain a shield on combat start, blocking the next instance of damage by 300/500/700 Active: Salute, gaining 20%/25%/30% damage reduction for 4 seconds. ShardFrame",
       "subtitle": "The Bossypants",
       "cardImageName": "CommandCoreCard",
-      "iconImageName": "CommandCoreIcon"
+      "iconImageName": "CommandCoreIcon",
+      "abilityDescription": "Passive: Allies to the left and right of CommandCore gain % damage reduction decaying over seconds at the start of combat.   Active: Salute, gaining % damage reduction for seconds.   Ally Damage Reduction: % + % AP  Damage Reduction: % + % AP"
     },
     {
       "id": "shardframe",
@@ -696,7 +719,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Enemies struck with Kunai are Sharded, losing 10 magic resist for the rest of combat. Throw a Kunai at the nearest non Sharded enemy, dealing 400/600/1000 (+ 55% AP) magic damage over 6/7/8 seconds. BoltJaw",
       "subtitle": "The Bladed Girl",
       "cardImageName": "ShardFrameCard",
-      "iconImageName": "Shardframeicon"
+      "iconImageName": "Shardframeicon",
+      "abilityDescription": "Throw a Kunai at the nearest non-Sharded enemy, dealing magic damage over s and reducing their Magic Resist by for the rest of combat.   Damage = % AP"
     },
     {
       "id": "boltjaw",
@@ -725,7 +749,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Shields on BoltJaw are 50% more effective. Split a 1000 / 1200 / 1600 / HP shield split among all allies. BurnByte",
       "subtitle": "The Clever Mechanic",
       "cardImageName": "BoltJawCard",
-      "iconImageName": "BoltJawIcon"
+      "iconImageName": "BoltJawIcon",
+      "abilityDescription": "[Workshop Upgrade!] Passive: Shields on BoltJaw are % more effective.   Active: Distribute a shield split evenly among all allies for seconds.   Shield = + % AP"
     },
     {
       "id": "burnbyte",
@@ -754,7 +779,8 @@ window.CS_DATA = {
       "abilitySummary": "Spew a cone of fire at the current target for duration, dealing magic damage every second and dealing 50% of the damage to adjacent enemies. Duration: 1s per 40% attack speed RuneWall",
       "subtitle": "The Ringleader of Fire",
       "cardImageName": "BurnByteCard",
-      "iconImageName": "BurnByteIcon"
+      "iconImageName": "BurnByteIcon",
+      "abilityDescription": "Cha el a cone of fire for seconds, dealing magic damage per second to the primary target. Adjacent enemies take % damage.   Base DPS = + % AP  Duration = 1s per % Attack Speed"
     },
     {
       "id": "runewall",
@@ -784,7 +810,8 @@ window.CS_DATA = {
       "abilitySummary": "Gain a shield and summon 3 magic orbiting orbs around RuneWall for 5 seconds. Orbs deal 50/65/80 magic damage to enemies hit and grant an additional 30/35/50 shield for 2 seconds. Orb Speed increases with Ability Power. Shield: 200/250/350 + 100/120/200% AP WidowFrame",
       "subtitle": "The Feisty Fireball",
       "cardImageName": "RuneWallCard",
-      "iconImageName": "RuneWallIcon"
+      "iconImageName": "RuneWallIcon",
+      "abilityDescription": "Gain a shield and summon magic orbs for seconds. Orbs deal magic damage to enemies hit and grant an additional shield for s per hit. Orb speed increases with Ability Power.   Shield: + % AP  Orb Damage: (magic)  Hit Shield:"
     },
     {
       "id": "widowframe",
@@ -813,7 +840,8 @@ window.CS_DATA = {
       "abilitySummary": "Zip up the ceiling and land on the furthest unpoisonened enemy, striking them and poisoning them for magic damage over 6 seconds. PinPoint",
       "subtitle": "The Poisonous Spider",
       "cardImageName": "WidowFrameCard",
-      "iconImageName": "WidowFrameIcon"
+      "iconImageName": "WidowFrameIcon",
+      "abilityDescription": "Zip up the ceiling and land on the furthest unpoisoned enemy, striking them and poisoning them for magic damage over seconds.   Damage: + % AP"
     },
     {
       "id": "pinpoint",
@@ -842,7 +870,8 @@ window.CS_DATA = {
       "abilitySummary": "Throw a spear at the farthest enemy, dealing physical damage, increased by 100% for every hex travelled. Overkill damage bounces to the highest health enemy, dealing 200% of Overkill damage. BioSynth",
       "subtitle": "The Spear Soldier",
       "cardImageName": "PinPointCard",
-      "iconImageName": "PinPointIcon"
+      "iconImageName": "PinPointIcon",
+      "abilityDescription": "Throw a spear at the farthest enemy, dealing physical damage, increased by % for every hex travelled. % of Overkill damage bounces to the highest health enemy.   Damage: + % AD"
     },
     {
       "id": "biosynth",
@@ -871,7 +900,8 @@ window.CS_DATA = {
       "abilitySummary": "Fire a magic missile at the target. The missile then travels in a line to the opposite side of the board, damaging adjacent enemies and shielding adjacent allies. This effect is reduced by 50% per target hit. Shield: 60/80/110 + 95% / 115% / 135% AP Target Damage: 100/150/250 + 310% / 465% / 700% AP AnchorFire",
       "subtitle": "The Sparkly Star",
       "cardImageName": "BiosynthCard",
-      "iconImageName": "BiosynthIcon"
+      "iconImageName": "BiosynthIcon",
+      "abilityDescription": "Fire a missile that travels  hexes, dealing magic damage to enemies and granting a shield to allies for s. Effectiveness reduced by 50% for every target hit.   Damage = + % AP  Shield = + % AP"
     },
     {
       "id": "anchorfire",
@@ -900,7 +930,8 @@ window.CS_DATA = {
       "abilitySummary": "Dash to a nearby hex and fire a shot at the 2 nearest targets that do physical damage and grant AnchorFire AD for the rest of combat. AD gain: 10 / 15 / 20 SpringLock",
       "subtitle": "The Lawful Gunslinger",
       "cardImageName": "AnchorFireCard",
-      "iconImageName": "AnchorFireIcon"
+      "iconImageName": "AnchorFireIcon",
+      "abilityDescription": "Dash to a nearby hex and fire a shot at the  nearest targets that do physical damage and grant AnchorFire + AD for the rest of combat.   Damage per shot: + % AD  AD gain:"
     },
     {
       "id": "springlock",
@@ -929,7 +960,8 @@ window.CS_DATA = {
       "abilitySummary": "Steal 1 range from the farthest enemy. The next cast pulls the farthest enemy within attack range to SpringLock and grants SpringLock a shield for 4 seconds. Shield: 5% hp + 175/225/320 + 200% AP NovaBurst",
       "subtitle": "The Scrapper",
       "cardImageName": "SpringLockCard",
-      "iconImageName": "SpringLockIcon"
+      "iconImageName": "SpringLockIcon",
+      "abilityDescription": "Steal 1 range from the farthest enemy. The next cast pulls the farthest enemy within attack range to SpringLock and grants SpringLock a shield for seconds.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤ First Cast: Steal 1 range from the farthest enemy.   Second Cast: Pull the farthest enemy within attack range to SpringLock and gain a shield for seconds.   Shield = + % Max HP + % AP"
     },
     {
       "id": "novaburst",
@@ -958,7 +990,8 @@ window.CS_DATA = {
       "abilitySummary": "For 3 seconds gain Attack Speed, Infinite Range, and attacks deal % of targets max hp and bounce 3 times, each bounce deals physical damage. % HP: 2% / 4% / 8% Bounce Damage: 40% / 40% / 50% of AD RocketBott",
       "subtitle": "The Hothead",
       "cardImageName": "NovaBurstCard",
-      "iconImageName": "NovaBurstIcon"
+      "iconImageName": "NovaBurstIcon",
+      "abilityDescription": "For s gain % Attack Speed, Infinite Range, and attacks deal % of target's max HP and fire additional projectiles at the nearest enemies that deal physical damage.   % HP Damage: % / % / %  Projectile Damage: % / % / % of AD  Projectiles:   Attack Speed: % / % / %  Duration: s"
     },
     {
       "id": "rocketbott",
@@ -987,7 +1020,8 @@ window.CS_DATA = {
       "abilitySummary": "Spin and fire 7 missiles at the target, Each missile deals magic damage and heals Rocketbott. Missiles are increased for every trait active. Heal per missile: 45 / 60 / 80 Bonus Missile per trait: 1 / 1 / 2 Magnetrix",
       "subtitle": "The Rocketman",
       "cardImageName": "RocketBottCard",
-      "iconImageName": "RocketBottIcon"
+      "iconImageName": "RocketBottIcon",
+      "abilityDescription": "Spin and fire missiles at the target, each dealing magic damage and healing RocketBott for HP. Missiles are increased for every active trait.   Base missiles: + per active trait  Active traits: | Bonus missiles:"
     },
     {
       "id": "magnetrix",
@@ -1016,7 +1050,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: When any enemy is knocked down or stunned, electrify them, dealing magic damage. Active: Summon a lightning strike on the target, dealing magic damage and stunning them for 1 second. Passive Damage: 160 / 240 / 400 + 70% AP Ability Damage: 130 / 210 / 370 + 60% AP DashBlade",
       "subtitle": "The Island Witch",
       "cardImageName": "MagnetrixCard",
-      "iconImageName": "MagnetrixIcon"
+      "iconImageName": "MagnetrixIcon",
+      "abilityDescription": "Passive: When any enemy is knocked up or stu ed, electrify them dealing magic damage.   Active: Summon a lightning strike on the target, dealing magic damage and stu ing them for s.   Passive: / / + % AP  Active: / / + % AP"
     },
     {
       "id": "dashblade",
@@ -1045,7 +1080,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: On attack, summon an afterimage that repeats 70/80/90% damage as magic damage. On kill, dash to the next target and increase Phantom Drive bonuses by 50% (Phantom Drive) Active: Gain Attack Speed and Healing for 5 seconds. Active Bonuses: 50% Attack Speed, 5% Healing / 55% AttacK Speed, 6% healing / 65% Attack Speed, 8% Healing 3-Cost Units",
       "subtitle": "The Patience",
       "cardImageName": "DashBladeCard",
-      "iconImageName": "DashBladeIcon"
+      "iconImageName": "DashBladeIcon",
+      "abilityDescription": "Passive: On attack, summon an afterimage that repeats % damage as magic damage. On kill, dash to the next target and increase the next Phantom Drive bonuses by %.   Active: Gain % Attack Speed and % Healing for s.   Afterimage Damage: % / % / % AD  Attack Speed: % / % / %  Healing: % / % / %"
     },
     {
       "id": "manadrive",
@@ -1073,7 +1109,8 @@ window.CS_DATA = {
       "abilitySummary": "Hurl a massive bomb towards the largest group of enemies, dealing 200/250/350 damage. If the bomb kills a target, Manadrive gains 0.3 attack speed for the rest of combat and casts again, at 75% effectiveness. Headshot",
       "subtitle": "The Willing Guard",
       "cardImageName": "ManaDriveCard",
-      "iconImageName": "ManaDriveIcon"
+      "iconImageName": "ManaDriveIcon",
+      "abilityDescription": "Hurl a massive bomb towards the largest group of enemies, dealing magic damage.   If the bomb kills a target, ManaDrive gains % attack speed for the rest of combat and casts again at % effectiveness.   Bomb = 100% AP"
     },
     {
       "id": "headshot",
@@ -1102,7 +1139,8 @@ window.CS_DATA = {
       "abilitySummary": "Active: Shoot a swiveling laser beam across the board, dealing physical damage and healing per target hit, reduced by 20% per hex from Headshot. Replace the next 6 attacks with a smash that deals bonus damage & knock up an enemy the first time hitting them. Laser Damage: 200 / 230 / 500 + 45% AD + 20% Armour Heal: 150 / 180 / 250 + 25% Armour Bonus...",
       "subtitle": "The Wanderer",
       "cardImageName": "Headshotcard",
-      "iconImageName": "Headshoticon"
+      "iconImageName": "Headshoticon",
+      "abilityDescription": "Shoot a massive sweeping laser beam, dealing damage and healing per target hit.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤ Shoot a swiveling laser beam across the board, dealing physical damage and healing per target hit, reduced by % per hex from Headshot.   Replace the next attacks with a smash that deals bonus physical damage and knocks up each enemy the first time they are hit.   Laser Damage = + % AD + % Armour  Heal = + % Armour  Bonus Damage = % Armour + % AD"
     },
     {
       "id": "hypershot",
@@ -1131,7 +1169,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Every 3rd attack sends out arms that deal magic damage to all enemies in a 3 hex radius. Active: Gain 40% attack speed for 10 seconds, this effect stacks! Fireline",
       "subtitle": "The Lieutenant",
       "cardImageName": "HyperShotCard",
-      "iconImageName": "HyperShotIcon"
+      "iconImageName": "HyperShotIcon",
+      "abilityDescription": "Passive: Every rd attack sends out mechanical arms that deal magic damage to all enemies in a hex radius.    Active: For seconds, gain % stacking attack speed. The next passive attack sends out  more arms at the current target that deal % damage.   Arms = + 100% AP"
     },
     {
       "id": "fireline",
@@ -1160,7 +1199,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Every 10% bonus attack speed is converted to 1 AD. Fire a gatling laser at the target, dealing physical damage, increasing by every second. Damage resets on new targets. Initial Damage: 60% AD Scaling Damage: 25% AD PulseFist",
       "subtitle": "The Wildfire",
       "cardImageName": "FirelineCard",
-      "iconImageName": "FirelineIcon"
+      "iconImageName": "FirelineIcon",
+      "abilityDescription": "Passive: Every bonus attack speed is converted to + AD.   Active: Fire a gatling laser at the target, dealing physical damage, increasing by every second. Damage resets on new targets.   Initial: + % AD | Ramp: + % AD / s"
     },
     {
       "id": "pulsefist",
@@ -1190,7 +1230,8 @@ window.CS_DATA = {
       "abilitySummary": "Unleash a fury of 16/18/20 strikes on the target. Each punch deals 30/32/36 physical damage and reduces the target's armour by 1/1/2. If the target has 0 armour, continuously strike the target until they die. 20% bonus attack speed = 1 extra punch) StormCoil",
       "subtitle": "The Master of the Punch",
       "cardImageName": "PulseFistCard",
-      "iconImageName": "PulseFistIcon"
+      "iconImageName": "PulseFistIcon",
+      "abilityDescription": "Unleash a fury of strikes on the target. Each strike deals physical damage and reduces armour. If the target's armour reaches 0, strike them continuously until they die.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤ (+ from AS) Unleash a fury of strikes on the target. Each strike deals physical damage and reduces armour by .   If the target has armor, continuously strike them until they die.   Damage = + % AD  Bonus Strikes = Every % bonus AS"
     },
     {
       "id": "stormcoil",
@@ -1220,7 +1261,8 @@ window.CS_DATA = {
       "abilitySummary": "Hover into the air, gaining a shield for 5 seconds and attracting all projectiles towards Stormcoil. After the duration, explode, dealing magic damage to all enemies within 2 hexes and stunning them. Shield: 600/700/900 + 2% Max HP + 35% AP Stun: 1/1/1.5 seconds WhirlGuard",
       "subtitle": "The Wild Storm",
       "cardImageName": "StormCoilCard",
-      "iconImageName": "StormCoilIcon"
+      "iconImageName": "StormCoilIcon",
+      "abilityDescription": "Hover into the air and release electric pulses, hitting enemies within hexes. Each pulse grants a shield, deals magic damage, and stuns enemies for s.   Pulse Shield: / / + % Max HP + % AP  Pulse Damage: / / + % AP  Pulse Stun: / / s"
     },
     {
       "id": "whirlguard",
@@ -1250,7 +1292,8 @@ window.CS_DATA = {
       "abilitySummary": "Spin 3 times (1 extra spin per 10% bonus attack speed) Each spin heals Whirlguard for 80/110/150 (+ 20% of max hp) health and deals 40/55/75 physical damage to the target. Arcanode",
       "subtitle": "The Tornado",
       "cardImageName": "WhirlGuardCard",
-      "iconImageName": "WhirlGuardIcon"
+      "iconImageName": "WhirlGuardIcon",
+      "abilityDescription": "Ability data not found. Spin times, each spin heals health and deals physical damage to the target.   Gains 1 extra spin per bonus attack speed.   Heal = + 50% Bonus HP"
     },
     {
       "id": "arcanode",
@@ -1278,7 +1321,8 @@ window.CS_DATA = {
       "abilitySummary": "fires a barrage of 8 beams that hit random enemies or allies that either Deals magic damage to the target, Deals damage & Heals an ally for health, or Knocks up the enemy and deals magic damage Knock up Damage: 80 / 140 / 275 + 50% AP Heal: 125 / 180 / 300 + 70% AP Heal Mode Damage: 45 / 75 / 120 + 40% AP SteelRunner",
       "subtitle": "The Devil in the Tophat",
       "cardImageName": "ArcanodeCard",
-      "iconImageName": "ArcanodeIcon"
+      "iconImageName": "ArcanodeIcon",
+      "abilityDescription": "Fires a barrage of  beams that hit random enemies or allies that either deal magic damage to the target, deal magic damage & heal an ally for health, or knock up the enemy and deal magic damage.   Damage: / / + % AP  Knock Up Damage: / / + % AP  Heal: / / + % AP  Heal Mode Damage: / / + % AP"
     },
     {
       "id": "steelrunner",
@@ -1306,7 +1350,8 @@ window.CS_DATA = {
       "abilitySummary": "Call a vehicle and drive in a line with the most enemies, dealing 70/105/170 physical damage and knocking them up and gaining damage reduction per unit hit for the rest of combat. SharpLink",
       "subtitle": "The Godspeed Racer",
       "cardImageName": "SteelRunnerCard",
-      "iconImageName": "SteelRunnerIcon"
+      "iconImageName": "SteelRunnerIcon",
+      "abilityDescription": "Call a vehicle and drive in a line with the most enemies, dealing physical damage and knocking them up. Gains damage reduction per unit hit for the rest of combat.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤ Call a vehicle and drive in  lines with the most enemies, dealing physical damage and knocking them up. Gain % damage reduction per unit hit for the rest of combat.   Damage = + % AD"
     },
     {
       "id": "sharplink",
@@ -1335,7 +1380,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Every 2 attacks throws out a spinning disc near the target, dealing physical damage to them. Active: Shoot all spinning discs forward 10 hexes, dealing physical damage to all enemies it passes through, reduced by 25% per target. Passive Disc Damage: 130 / 160 / 215 + 45% AD OverStrike",
       "subtitle": "The Brunt",
       "cardImageName": "SharpLinkCard",
-      "iconImageName": "SharpLinkIcon"
+      "iconImageName": "SharpLinkIcon",
+      "abilityDescription": "Passive: Every attacks, throws a spi ing disc near the target dealing physical damage.   Active: Launch all orbiting discs inward at the target, then forward  hexes, dealing physical damage to all enemies pierced, reduced by % per target.   Passive Disc Damage: / / + % AD  Launch Damage: / / + % AD"
     },
     {
       "id": "overstrike",
@@ -1363,7 +1409,8 @@ window.CS_DATA = {
       "abilitySummary": "Grow in size and gain healing for the rest of combat. Stab through the target, dealing magic damage and reducing their magic resist, then leap up and slam the ground (scaling with size), dealing magic damage. Passive Healing: 6/7/9% Stab Damage: 170 / 210 / 300 + 70% AP MR Reduction: 25% / 27% / 30% Slam Damage: 140 / 160 / 200 + 65% AP StarStruck",
       "subtitle": "The Peaceful Beholder",
       "cardImageName": "OverStrikeCard",
-      "iconImageName": "OverStrikeIcon"
+      "iconImageName": "OverStrikeIcon",
+      "abilityDescription": "Grows in size on every cast and gains % healing per cast for the rest of combat. Stabs through the target dealing magic damage and reducing their magic resist by %, then leaps and slams the ground dealing magic damage in an area (scaling with size).   Healing per Cast: % / % / %  Stab Damage: / / + % AP  MR Reduction: % / % / %  Slam Damage: / / + % AP"
     },
     {
       "id": "starstruck",
@@ -1391,7 +1438,8 @@ window.CS_DATA = {
       "abilitySummary": "Channelling energy into a meteor. After 1.5 seconds, lob it toward the highest health enemy, dealing physical damage to all enemies in a 2 hex radius. MechSoon",
       "subtitle": "Mr. Meteor",
       "cardImageName": "StarStruckCard",
-      "iconImageName": "StarStruckIcon"
+      "iconImageName": "StarStruckIcon",
+      "abilityDescription": "Cha el energy into a meteor. After seconds, lob it toward the current target, dealing physical damage to all enemies in a  hex radius, and dealing physical damage to all other enemies.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤ Cha el energy into a meteor for seconds. Lob it toward the current target, dealing physical damage to all enemies in a hex radius. Deals physical damage to all other enemies.   Splash: + % AD + % AP | Other: + % AD + % AP"
     },
     {
       "id": "mechsoon",
@@ -1420,7 +1468,8 @@ window.CS_DATA = {
       "abilitySummary": "Gain max health. Crawl all over the nearest 2 enemies for 5 seconds, knocking them down initially. Deal magic damage and heal every second. Initial health gain: 400 / 510 / 700 + 25% AP Magic damage: 25 / 30 / 50 + 45% AP Heal: 35/45/70 + 65% AP Sister Aegis",
       "subtitle": "The Wacky Troublemaker",
       "cardImageName": "MechSoonCard",
-      "iconImageName": "MechSoonIcon"
+      "iconImageName": "MechSoonIcon",
+      "abilityDescription": "Active: Gain max health and crawl over the nearest 2 enemies for s, knocking them up. Deal magic damage and heal every second.   Health Gain: / / + % AP  Magic Damage: / / + % AP  Heal: / / + % AP"
     },
     {
       "id": "sister-aegis",
@@ -1448,7 +1497,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Every instance of damage Sister Aegis takes grants them max health for the rest of combat. Active: Slam a hammer on the target, dealing magic damage. Gain armour, magic resist and damage amp for the rest of combat. Passive health gain: 5/6/8 HookFlail",
       "subtitle": "The Heavenly Enforcer",
       "cardImageName": "SisterAegisCard",
-      "iconImageName": "SisterAegisIcon"
+      "iconImageName": "SisterAegisIcon",
+      "abilityDescription": "Passive: Every instance of damage taken grants + max health for the rest of combat.   Active: Slam a hammer on the target, dealing magic damage. Gain + armor, + magic resist, and +% damage amplification for the rest of combat.   Passive HP Gain: //  Damage: // + % AP  Armor/MR: //  Damage Amp: %/%/%"
     },
     {
       "id": "hookflail",
@@ -1476,7 +1526,8 @@ window.CS_DATA = {
       "abilitySummary": "Launch a hurricane of Flails split between the target and the nearest enemy. They each alternate between dealing physical and magical damage and reduce attack speed by 1% for 10 seconds. 50% AD Flail Count: 21 + 1 per 20% bonus AS Exodium",
       "subtitle": "The Denier of Fate",
       "cardImageName": "HookFlailCard",
-      "iconImageName": "HookFlailIcon"
+      "iconImageName": "HookFlailIcon",
+      "abilityDescription": "(+ from bonus AP) Launch a hurricane of flails split between the target and the nearest enemy.   Flails alternate between Physical and Magic damage, each reducing the target's attack speed by % for seconds.   Each flail deals damage ( + % AP + % AD).   Damage: / /   AP Ratio: % / % / %  AD Ratio: % / % / %  + flail per bonus AP above base"
     },
     {
       "id": "exodium",
@@ -1503,7 +1554,8 @@ window.CS_DATA = {
       "abilitySummary": "Adaptier: When Placed, Exodium can choose to become a Bulkhead, Unbreakable, Deflector or Uplink. Exodium gains a unique secondary effect to their ability based on the Class chosen. Passive: Attacks hit twice, granting bonus mana, then healing Exodium. Active: Sweep all adjacent enemies for magic damage, then strike the target, dealing magic damage and...",
       "subtitle": "The Brute out of Hell",
       "cardImageName": "ExodiumCard",
-      "iconImageName": "ExodiumIcon"
+      "iconImageName": "ExodiumIcon",
+      "abilityDescription": "Passive: Each attack hits twice. The first hit deals damage and grants + bonus mana. The second hit heals Exodium for HP.   Active [BULKHEAD]: Spins, dealing magic damage to nearby enemies, then strikes the target for magic damage. Bulkhead: Grows in size and gains + max HP for s.   Sweep: + % AP | Strike: + % AP Active [DEFLECTOR]: Spins, dealing magic damage to nearby enemies, Deflector: Gains a shield for s and shares with the lowest-HP ally.   Shield: + % AP Active [UPLINK]: Spins, dealing magic damage to nearby enemies, Uplink: Heals Exodium and nearby allies for HP.   Heal: + % AP Active [UNBREAKABLE]: Spins, dealing magic damage to nearby enemies, Unbreakable: Gains + Armor & MR per enemy hit for s.   Resist/hit: + % AP Active: Spins, dealing magic damage to nearby enemies, Field Exodium to choose an Adaptier class for a secondary effect."
     },
     {
       "id": "swiftframe",
@@ -1532,7 +1584,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: When an enemy reaches below 50/55/90% health, absorb a portion of their attack speed for the rest of combat. Active: Gain 100% attack speed and 10/15/80% healing for 5 seconds. Attacks deal (250/250%/800% AD) bonus damage to all adjacent enemies during this time. KillSwitch Passive: Every attack lowers the target’s magic resist by 3. When...",
       "subtitle": "The Ecologist",
       "cardImageName": "SwiftFrameCard",
-      "iconImageName": "SwiftFrameIcon"
+      "iconImageName": "SwiftFrameIcon",
+      "abilityDescription": "When an enemy reaches below health threshold, absorb their attack speed. Activate frenzy mode to gain attack speed and healing.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤ Passive: When an enemy reaches below % health, jump to them and slash them, absorbing % of their attack speed before returning.   Active: Gain % attack speed and % healing for seconds. Attacks deal bonus physical damage to all adjacent enemies during this time.   Bonus Damage: % AD"
     },
     {
       "id": "ironveil",
@@ -1591,7 +1644,8 @@ window.CS_DATA = {
       "abilitySummary": "Cast portals over the 3 highest armour & magic resist enemies for 5 seconds, stealing armour and magic resist every second over the duration. Afterwards, Cobaltine's next attack deals a percentage of the stolen stats during the duration as magic damage. Steal: 4/6/20 armour/mr Damnage: 120% / 175% / 500% + 50% AP Sightline",
       "subtitle": "The Flying Blue",
       "cardImageName": "CobaltineCard",
-      "iconImageName": "CobaltineIcon"
+      "iconImageName": "CobaltineIcon",
+      "abilityDescription": "Passive: Continuously cha el a portal of darkness that cloaks enemies in darkness, draining Health, Armour, and Magic Resist from enemies within its radius every second. Generate Mana each second (+bonus Mana per % Attack Speed). Cobaltine does not attack.   Active: Grow in size, dealing % of the stolen stat value + % AP as magic damage to the nearest enemy. Increase the portal radius by 1 hex.   Steal Per Second:  Armour & MR: / /   Health: / /   Damage: % / % / % of Stolen Stat Value + % AP"
     },
     {
       "id": "sightline",
@@ -1620,7 +1674,8 @@ window.CS_DATA = {
       "abilitySummary": "Active: Summon a portal that shoots piercing lasers dealing physical damage every second for duration. Shoot an additional arrow that deals 50% damage for every portal active. Subsequent casts summon 1 additional portal at 90% effectiveness. Bedrock",
       "subtitle": "The Dimensional Archer",
       "cardImageName": "SightlineCard",
-      "iconImageName": "SightlineIcon"
+      "iconImageName": "SightlineIcon",
+      "abilityDescription": "(Currently active) Summon a laser portal that fires a piercing laser dealing physical damage per second and transform attacks into a flurry that deals physical damage for s.   Subsequent casts summon another portal.   Laser DPS = + % AD | Flurry = + % AD"
     },
     {
       "id": "bedrock",
@@ -1649,7 +1704,8 @@ window.CS_DATA = {
       "abilitySummary": "Cast 3 fireballs then throw all fireballs at the target each dealing magic damage to the first enemy hit. Subsequent casts add another fireball. Base damage: 100/180/500 AP scaling (+ 90% / 95% / 105% AP) DuskBlade",
       "subtitle": "The Glorychaser",
       "cardImageName": "BedrockCard",
-      "iconImageName": "BedrockIcon"
+      "iconImageName": "BedrockIcon",
+      "abilityDescription": "Cast  fireballs then throw all fireballs at the target each dealing magic damage to the first enemy hit. Subsequent casts add another fireball.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤ (Currently: ) Cast fireballs then throw all fireballs at the target each dealing magic damage to the first enemy hit. Subsequent casts add another fireball.   AP scaling: +% AP"
     },
     {
       "id": "duskblade",
@@ -1678,7 +1734,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Alternate between 2 chakram attacks: Chakrams ricochet from the target and split to the nearest 3 enemies, dealing (50% of current AD) physical damage. Chakrams swerve around the current target and deal (3x of current AD) physical damage Active: Shoot (base 17/18/30 + 1 extra per every 5 bonus attack speed) chakrams. Each chakram deals (42/46/70...",
       "subtitle": "The Second Chance",
       "cardImageName": "DuskBladeCard",
-      "iconImageName": "DuskBladeIcon"
+      "iconImageName": "DuskBladeIcon",
+      "abilityDescription": "(+ from AS) Passive: Alternate between  chakram attacks:   ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Chakrams ricochet from the target and split to the nearest enemies, dealing physical damage.   ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Chakrams swerve around the current target and deal physical damage.   Active: Shoot chakrams. Each chakram deals physical damage and applies passive effects. Chakrams shot return to DuskBlade, granting % bonus attack speed per Chakram.   Chakram Damage = + % AD  Ricochet = % AD  Swerve = x AD  Extra Chakrams: + per % bonus AS"
     },
     {
       "id": "litanynode",
@@ -1707,7 +1764,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Every 15 mana spent, summon a ritual circle at the nearest cluster of enemies, dealing magic damage every second. Active: Pray to the gods and move all circles to the nearest enemy, then explode all ritual circles, each dealing magic damage in a 2 hex radius. Ritual Circle Orbit Damage Per second: 80 / 120 / 300 + 65% AP Explosion Damage: 180 /...",
       "subtitle": "The Forgiving Counsellor",
       "cardImageName": "LitanyNodeCard",
-      "iconImageName": "LitanyNodeIcon"
+      "iconImageName": "LitanyNodeIcon",
+      "abilityDescription": "Passive: Every seconds, summon a Ritual Orb behind LitanyNode, granting her AP.   Active: Pray to the gods and summon all Ritual Orbs into attack formation. Each orb contributes a strike dealing magic damage to the target. Excess damage strikes the nearest enemy again with the overkill damage.   Ritual Orb AP:   Ritual Strike Damage: + % AP"
     },
     {
       "id": "servoswing",
@@ -1736,7 +1794,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Attacks mark the nearest 3 enemies, dealing 5 physical damage every second for 8 seconds. (Ball bounces on enemies head) (if attacking an enemy and their nearest ally changes and theyre unmarked, mark them too) Active: Slide to the farthest safe hex and detonate all balls, dealing 100/120/180 + 35/50/500 magic damage per ball Passive Damage: +...",
       "subtitle": "The King of Baseball",
       "cardImageName": "ServoSwingCard",
-      "iconImageName": "ServoSwingIcon"
+      "iconImageName": "ServoSwingIcon",
+      "abilityDescription": "Passive: On attack, throw a baseball that bounces to the target and nearest enemies, marking them for seconds. Each mark deals physical damage per second.   Active: Slide to the farthest safe hex within attack range and detonate all baseballs, dealing + per baseball magic damage to all marked enemies.   Passive Damage = + % AD + % AP  Base Damage = + % AD + % AP  Ball Damage = + % AD + % AP per ball"
     },
     {
       "id": "skydrive",
@@ -1765,7 +1824,8 @@ window.CS_DATA = {
       "abilitySummary": "Dive up and fly around the board 3/3/5 times. Each trip fires 15/15/30 missiles split between the 3 nearest enemies, each missile deals 50/75/180 physical damage and reduces damage reduction by 1%. Thunk",
       "subtitle": "The Disgraced Prince",
       "cardImageName": "SkyDriveCard",
-      "iconImageName": "SkyDriveIcon"
+      "iconImageName": "SkyDriveIcon",
+      "abilityDescription": "Fire a flurry of missiles split between the target and the nearest enemies, each dealing physical damage.   Then dive up and fly around the board for s, gaining Armour. Calls an airstrike, dropping bombs on the largest cluster of enemies, each dealing physical damage in a -hex radius and lowering their damage reduction by %.   Missile Damage: / / + % AD  Bomb Damage: / / + % AD  Armour Gain: / /"
     },
     {
       "id": "thunk",
@@ -1795,7 +1855,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Attacks deal 5/8/30 + 20% HP bonus magic damage & grant Thunk a 30/45/90 + 5% HP + 100% AP shield for 4 seconds. Active: Roll over the current target, dealing magic damage and stunning them for 1 second. Gain 35/40/100% attack speed for 5 seconds. Rotora",
       "subtitle": "The Changed Warrior",
       "cardImageName": "ThunkCard",
-      "iconImageName": "ThunkIcon"
+      "iconImageName": "ThunkIcon",
+      "abilityDescription": "Passive: Attacks deal magic damage and grant Thunk a shield for seconds.   Active: Roll over the current target, dealing magic damage and stu ing them for second. Gain % attack speed for seconds.   Passive Damage = + % max HP  Passive Shield = + % max HP + % AP  Roll Damage = + % AD"
     },
     {
       "id": "rotora",
@@ -1825,7 +1886,8 @@ window.CS_DATA = {
       "abilitySummary": "Active: Backflip spin in a circle for 6 times, healing for health and dealing physical damage to enemies hit in the circle. Then jump up and spin in a circle for 4 seconds, healing and dealing damage per second to all adjacent enemies. Backflip heal: 90/140/200 + 15% HP + 5% AD Backflip damage: 60/90/960 + 25% AD Spin Heal: 450 / 600 / 2000 + 20% HP +...",
       "subtitle": "The Spinning Beauty",
       "cardImageName": "RotoraCard",
-      "iconImageName": "RotoraIcon"
+      "iconImageName": "RotoraIcon",
+      "abilityDescription": "Backflip spin in a circle times, healing for health and dealing physical damage to enemies hit in the circle.   Then jump to the middle of the circle and spin for seconds, healing for health and dealing physical damage to all adjacent enemies over the duration.   Backflip Heal: / / + % HP + % AD  Backflip Damage: / / + % AD  Spin Heal: / / + % HP + % AP  Spin Damage: / / + % HP + % AD"
     },
     {
       "id": "plungedrill",
@@ -1854,7 +1916,8 @@ window.CS_DATA = {
       "abilitySummary": "Gain a shield for 4 seconds and grab the nearest 3 enemies, stunning them and dealing magic damage. If less than 3 enemies are grabbed, the stun duration is increased by 50%. Shield: 15% of hp + 400/500/1500 + 20% AP Stun: 1.5/1.75/10 seconds MechClock",
       "subtitle": "The Builder of Paths",
       "cardImageName": "PlungeDrillCard",
-      "iconImageName": "PlungeDrillIcon"
+      "iconImageName": "PlungeDrillIcon",
+      "abilityDescription": "Gain a shield for seconds and grab the nearest enemies, dealing magic damage and stu ing them for seconds.   If less than enemies are grabbed, the stun duration increases to seconds.   Shield = + % max HP + % AP  Damage = + % AP"
     },
     {
       "id": "mechclock",
@@ -1883,7 +1946,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: AD is converted to AP and Every 1% attack speed is converted to 1 AP & Attacks are locked to (set) attack speed. Every attack deals 10% stacking bonus damage up to 4 stacks. Every bonus stack fires an additional shot. Every 5th attack deals 200% bonus damage and resets the stacks. (Will have VFX play for every different attack 10%, 20% 30, 40%...",
       "subtitle": "The Detective",
       "cardImageName": "MechClockCard",
-      "iconImageName": "MechClockIcon"
+      "iconImageName": "MechClockIcon",
+      "abilityDescription": "Passive:  Attacks are locked to attack speed, AD is converted to AP, and every attack speed is converted to 1 AP.   Attacks deal magic damage, stacking % bonus damage per attack, up to attacks. The th attack deals % bonus damage and resets the stacks."
     },
     {
       "id": "sanguinox",
@@ -1912,7 +1976,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: 200% of healing is also granted as AP Active: Suck the souls of all enemies in a 6 hex radius gaining 2% healing per enemy sucked, then seep into a pool of blood, becoming immune to auto attacks and move toward all sucked enemies, unleashing blood magic and dealing magic damage to them. Afterwards, return to initial position and unleash blood...",
       "subtitle": "The Archon",
       "cardImageName": "SanguinoxCard",
-      "iconImageName": "SanguinoxIcon"
+      "iconImageName": "SanguinoxIcon",
+      "abilityDescription": "Passive: 200% of healing is granted as AP.   Active: Suck the souls of all enemies in a hex radius gaining healing per enemy sucked, then seep into a pool of blood, becoming immune to auto attacks and move toward all sucked enemies, unleashing blood magic and dealing magic damage to them. Afterwards, unleash blood magic to all enemies for magic damage.   Damage: / / + % AP  Secondary Damage: / / + % AP"
     },
     {
       "id": "prime-78",
@@ -1941,7 +2006,8 @@ window.CS_DATA = {
       "abilitySummary": "Prime-78 dashes to an ideal hex and charges their sword to hit the most enemies in a 4 hex line for physical damage and knocking all enemies up. Then fly into the air, and slam down in a 2 hex radius, dealing physical damage and knocking up all enemies Slam Damage 250 / 325 / 750 + 100% AD Satellite-Titan",
       "subtitle": "The Protector From the Past",
       "cardImageName": "Prime78Card",
-      "iconImageName": "Prime78Icon"
+      "iconImageName": "Prime78Icon",
+      "abilityDescription": "Dash to the optimal position and charge forward, slamming a line for physical damage and knocking enemies up for s.   Then launch into the air and slam down in a square, dealing knocking all enemies up for s.   Phase 1: / / + % AD  Phase 2: / / + % AD"
     },
     {
       "id": "satellite-titan",
@@ -1970,7 +2036,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Grant your team armour & magic resist Active: Call down a planet that strikes the entire board. Dealing magic damage to all enemies and lowering their armour and magic resist for the rest of combat. Grant your team armour and magic resist for the rest of combat. Passive Grant: 9 / 20 / 100 Edge-X",
       "subtitle": "The Earth Angel",
       "cardImageName": "SatelliteTitanCard",
-      "iconImageName": "SatelliteTitanIcon"
+      "iconImageName": "SatelliteTitanIcon",
+      "abilityDescription": "Passive: Grant your team + Armor & Magic Resist while Satellite-Titan is fielded.   Active: Call down a planet that strikes the entire board, dealing magic damage to all enemies and reducing their Armor & Magic Resist by for the rest of combat.  Grant all allies + Armor & Magic Resist for the rest of combat.   Passive Grant: / /   Damage: / / + % AP  Armor/MR Lower: / /   Armor/MR Gain: / /"
     },
     {
       "id": "edge-x",
@@ -1999,7 +2066,8 @@ window.CS_DATA = {
       "abilitySummary": "Lashing Assassination: Jump up and throw 2 knives at the lowest armour & lowest magic resist targets, dealing magic damage. The knives then connect them together as Edge-X jumps and slams them into the largest cluster of enemies, dealing physical damage and knocking up all enemies hit. Physical Damage: 175 / 220 / 400 + 50% AD Magic Damage: 125 / 180 /...",
       "subtitle": "The Mad Dagger",
       "cardImageName": "EdgeXCard",
-      "iconImageName": "EdgeXIcon"
+      "iconImageName": "EdgeXIcon",
+      "abilityDescription": "Throw knives at the lowest Armor and lowest Magic Resist enemies, dealing magic damage per knife. The knives chain their targets as Edge-X jumps to the largest enemy cluster and slams down, dealing physical damage and knocking up enemies hit.   Physical Damage: / / + % AD  Magic Damage: / / + % AP"
     },
     {
       "id": "coreweaver",
@@ -2028,7 +2096,8 @@ window.CS_DATA = {
       "abilitySummary": "The Overmind: Coreweaver does not auto attack or move, but generates 5 mana every second. Convert every 0.5 attack speed to 1 mana regenerated. Active (Ice & Fire): Summon a wall of fire around the arena, dealing magic damage to all enemies over 3 seconds. Then unleash an energy beam that fires along the line with the most enemies, dealing magic damage...",
       "subtitle": "The Odd One Out",
       "cardImageName": "CoreweaverCard",
-      "iconImageName": "CoreweaverIcon"
+      "iconImageName": "CoreweaverIcon",
+      "abilityDescription": "Passive ÃƒÂ¢Ã¢â€šÂ¬-Å“ The Overmind: Does not move or auto-attack. Generates mana per second.   Active ÃƒÂ¢Ã¢â€šÂ¬-Å“ Ice & Fire:  Fire Wall: Summons a wall of fire, dealing magic damage to all enemies over s.  Energy Beam: Fires along the line with the most enemies, dealing magic damage to all hit.  Ice Age: Freezes the arena for s, dealing magic damage and slowing attack speed by %.   Fire Wall +% AP ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Beam +% AP ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Ice Age +% AP"
     },
     {
       "id": "munch-r",
@@ -2058,7 +2127,8 @@ window.CS_DATA = {
       "abilitySummary": "H.U.N.G.E.R: When any unit dies, MUNCH-R has a chance to roll to them and eat the target, granting MUNCH-R permanent health. Chance 25% + 1% for every 100 bonus health. Gain a 15/20/50% max health Shield for 4 seconds. Jump onto the current target and bounce on them, stunning them and dealing magic damage. Rapidly roll towards the nearest edge and bounce...",
       "subtitle": "The Lovable Trash-Chomper",
       "cardImageName": "MUNCHRCard",
-      "iconImageName": "MUNCH-RIcon"
+      "iconImageName": "MUNCH-RIcon",
+      "abilityDescription": "Gain a shield for seconds. Jump onto the current target, dealing magic damage and stu ing them for seconds.   Then rapidly roll to the nearest edge and bounce around the arena, healing health over the duration, dealing magic damage, and knocking up enemies hit. Every 3rd jump drops metal chunks on all enemies for magic damage.   Jump Damage = + % max HP  Roll Damage = + % max HP + % AP  Roll Healing = + % AP  Chunk Damage = % max HP  Health Gain = + % AP"
     },
     {
       "id": "haymaker",
@@ -2088,7 +2158,8 @@ window.CS_DATA = {
       "abilitySummary": "Kings Call: Haymaker spawns a loyal servant when fielded. The servant has 25% of all of Haymakers stats. It absorbs the souls of all units permanently gains 1 AD, AP & HP for every 5 units killed. When Haymaker dies, if the servant is alive, the servant sacrifices themself (kills themself) to revive Haymaker. Passive: Haymakers Attacks and Abilities hit...",
       "subtitle": "The Family Guardian",
       "cardImageName": "HaymakerCard",
-      "iconImageName": "HayMakerIcon"
+      "iconImageName": "HayMakerIcon",
+      "abilityDescription": "Passive: Haymaker's attacks and abilities also hit all other enemies adjacent to Haymaker for % damage.   Active: Unleash a -hit sword combo, each dealing physical damage, with the third hit knocking up. Then dash and sweep through a nearby hex for physical damage, before jumping onto the target and slamming down for another physical damage and knockup. Finally, dash back to the target and unleash a -hit combo, each dealing physical damage. The third hit knocks up and the fourth deals additional damage equal to % of the target's max health.   Combo 1 (per hit): / / + % AD  Combo 2: / / + % AD  Combo 3 (per hit): / / + % AD"
     },
     {
       "id": "stylet",
@@ -2117,7 +2188,8 @@ window.CS_DATA = {
       "abilitySummary": "On combat start, mark all enemies. The first time Stylet attacks a marked enemy, uppercut them and deal physical damage. Attacks dash through enemies and steal stacking attack speed. The active dashes through the four nearest enemies twenty times, then returns to the initial target for an aerial knock-up attack.",
       "subtitle": "The Rogue",
       "cardImageName": "StyletCard",
-      "iconImageName": "StyletIcon"
+      "iconImageName": "StyletIcon",
+      "abilityDescription": "Passive: Attacks dash through enemies and steal % Attack Speed, stacking for the rest of combat.   Active: Dash to and rapidly dash through the nearest enemies times, dealing physical damage per hit. Stylet then dashes back to the initial target and performs an aerial attack, dealing physical damage and knocking them up.   Uppercut: / / + % AD  Stab: / / + % AD  Aerial: / / + % AD"
     },
     {
       "id": "aetherion",
@@ -2147,7 +2219,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Aetherion will gain Ability & Stat Upgrades after fulfilling requirements during combat. (A model will for every unlock achieved) After performing 50 attacks, Aetherion will flip over the first target after casting and smacks the farthest enemy for physical damage. Every 25 attacks after grant Aetherion 1% permanent attack speed. (This will...",
       "subtitle": "The Mace in the Sky",
       "cardImageName": "AetherionCard",
-      "iconImageName": "AetherionIcon"
+      "iconImageName": "AetherionIcon",
+      "abilityDescription": "Passive: Attacks grant mana.   Active: Throw out a wheel of spi ing maces centered on the target, dealing magic damage in a hex radius. The wheel then breaks apart into maces, each flying outward and dealing magic damage to enemies hit.   Every casts adds another mace to the wheel.   Wheel Damage: / / + % AP  Mace Damage: / / + % AP Passive: Attacks dash to the target and mark them. Attacking marked enemies heals Aetherion based on his healing stat.   Active: Dash to the target, dealing physical damage, then uppercut them for magic damage and knock them up.   Every kills adds an extra mid-air knockup. Current extra knockups: .   Dash Damage: / / + % AD + % AP  Uppercut Damage: / / + % AP + % AD Passive: Attacks throw a boomerang mace through enemies in a cone, dealing physical damage and returning to Aetherion before he can attack again.   Active: Throw boomerang maces around the arena for seconds, dealing physical damage to enemies hit. The final hit hooks, stuns, and pulls the enemy to Aetherion before he strikes them for physical damage and sends them back.   Every attacks adds another boomerang.   Boomerang Mace Damage: / / + % AD  Strike Damage: % AD Passive: Aetherion follows the first path completed.  Barbarian: / attacks  Sorcery: / casts  Warrior: / healing   Active: Rapidly attack the target times, each dealing physical damage. Then lunge to them, dealing magic damage, healing for , and returning to the starting position.   Highest bonus stat changes the base ability: AP refunds half the mana cost, attack speed doubles the rapid hits, and healing doubles the heal.   Rapid Attack Damage: % AD  Lunge Damage: / / + % AP  Heal: / /"
     },
     {
       "id": "k4ge",
@@ -2176,7 +2249,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: Every 2 seconds, steal 2 mana from all enemies. Grant all allies 1 mana. Active: Ascend into the air and channel, draining 10 mana per second summoning a wave of magical shurikens every second that fly to and strike the largest cluster of enemies, dealing magic damage. Every 4th wave, the shurikens target the highest target enemy instead,...",
       "subtitle": "The Revived",
       "cardImageName": "K4GECard",
-      "iconImageName": "K4GEIcon"
+      "iconImageName": "K4GEIcon",
+      "abilityDescription": "Passive: Every 2s, steal mana from all enemies.   Active: Ascend up and cha el, draining mana every second. Every second, summon a wave of magical shurikens from the sides of the arena that fly toward the largest enemy cluster, dealing magic damage. Every 4th wave targets the highest-HP enemy for true damage.  ÃƒÂ£-Â¦Ã‚Â¤ // Passive: Every s, steal mana from every enemy on the board & grant all allies mana.   Active: Ascend up and cha el, draining mana every second. Every second, summon a wave of magical shurikens that fly toward the largest enemy cluster, dealing magic damage each. Every 4th wave targets the highest-HP enemy for true damage.   Magic: (+% AP) | True: (+% AP)"
     },
     {
       "id": "soulsync",
@@ -2206,7 +2280,8 @@ window.CS_DATA = {
       "abilitySummary": "Boogie Wonderland: Every 5th cast, SoulSync turns the battlefield into a dance floor, causing all allies & enemies to uncontrollably dance for 5 seconds. Spin and strike a pose. Spawning a disco wave at the largest clump of enemies. The wave deals magic damage every second to enemies inside and grants allies inside stacking attack speed. Subsequent casts...",
       "subtitle": "The Groovy Gentleman",
       "cardImageName": "SoulSyncCard",
-      "iconImageName": "SoulSyncIcon"
+      "iconImageName": "SoulSyncIcon",
+      "abilityDescription": "Spin and strike a pose, spawning a disco wave at the largest enemy clump. The wave deals magic damage every second to enemies inside and grants allies inside stacking % attack speed.   Subsequent casts move the wave to a better position and throw a rotating disco ball near a random enemy for seconds. Enemies hit by a  hex beam take magic damage.   Every 3rd cast, rapidly pose times, sending out a disco ball that lasts for seconds with each pose.   Wave Damage: / / + % AP  Wave Attack Speed: % / % / %  Disco Ball Beam Damage: / / + % AP"
     },
     {
       "id": "gravemarch",
@@ -2235,7 +2310,8 @@ window.CS_DATA = {
       "abilitySummary": "Worlds Strongest: GraveMarch becomes an Attack Tank when placed in the front row, or an Attack Fighter when placed in any other row, with their own unique abilities Passive: On death, GraveMarch finds the lowest health enemy within a 3 hex radius and suplexes them out of the arena, killing them. Attack Fighter: Freeze time for 2 seconds. Teleport around...",
       "subtitle": "The Adaptable Strength",
       "cardImageName": "GraveMarchCard",
-      "iconImageName": "GraveMarchIcon"
+      "iconImageName": "GraveMarchIcon",
+      "abilityDescription": "GraveMarch: Dual-mode fighter that switches between Tank and Fighter based on position. Passive: On death, GraveMarch finds the lowest health enemy within a 3 hex radius and suplexes them out of the arena, killing them.   ROAD ROLLER FINISHER: Freeze time across the entire board, leap clear of the battlefield, then summon a giant road roller overhead. Slam it down across the arena, executing every enemy on the board. Freeze time for seconds. Teleport around the arena throwing piercing knives around the battlefield. When time freeze ends, the knives travel across the board, each dealing physical damage. Gain % attack speed and replace attacks with a barrage that deals bonus damage for seconds.   Knife Damage: / / + % AD  Barrage Bonus: / / + % AD Heal HP over seconds. Grabs enemies within  hexes and knocks them up, then punches for physical damage in a straight line. Gains a shield for seconds.   Heal: / / + % Max HP + % AD  Punch Damage: / / + % AD + % Max HP  Shield: / / + % AD"
     },
     {
       "id": "starbreaker",
@@ -2264,7 +2340,8 @@ window.CS_DATA = {
       "abilitySummary": "Call 4 planets on each corner of the arena for 10 seconds. They each fire laser beams in an X formation that deal magic damage and reduce enemies' attack speed by 20% for 4 seconds. Beam Damage (per tick every second): 140 / 180 / 3000 + 120% AP Idea for this one - a universal evil overlord like Darth Vader Master Prime",
       "subtitle": "The Herald of the End",
       "cardImageName": "StarBreakerCard",
-      "iconImageName": "StarBreakerIcon"
+      "iconImageName": "StarBreakerIcon",
+      "abilityDescription": "Call a ring of planets around the arena. They fire beams across to the planet directly opposite, covering the entire arena. The ring slowly spins, sweeping beams across all enemies for seconds. All enemies hit take physical damage per second and have their attack speed reduced by % for seconds.   Damage: + % AD per second  Attack Speed Slow: %  Duration: s Call  planets to each corner of the arena for seconds. They fire 2 beams in an X formation. Each beam deals physical damage per second. Enemies caught by both beams take the full physical damage per second. All enemies hit have their attack speed reduced by % for seconds.   Damage per beam: / / + % AD  Both beams: / / + % AD"
     },
     {
       "id": "master-prime",
@@ -2293,7 +2370,8 @@ window.CS_DATA = {
       "abilitySummary": "Passive: When any unit dies, Master Prime Powers up, granting your team 1% damage reduction for the rest of combat. Active: Enter a defensive stance for 4 seconds, gaining 50% for 25% of their damage. Then fire a large beam in a line with the most enemies, dealing physical damage. Student & Master Upgrade: Teleport to the unit that has dealt the most...",
       "subtitle": "The Teacher",
       "cardImageName": "MasterPrimeCard",
-      "iconImageName": "MasterPrimeIcon"
+      "iconImageName": "MasterPrimeIcon",
+      "abilityDescription": "Passive: Allies gain 1% DR per unit death.  Active: Defensive stance ÃƒÂ¢Ã¢â€šÂ¬-Â 50% DR, deflects all attacks back at 15%. Then fires a beam.  ÃƒÂ£-Â¦Ã‚Â¤ Passive: When any unit dies, all allies gain +% Damage Reduction for the rest of combat.   Active: Enter a defensive stance for s, gaining % Damage Reduction and deflecting all attacks & abilities back at the dealer for % of their damage.   Then fires a large beam in the line with the most enemies, dealing physical damage.  Beam Damage: + % AD   [Student & Master Upgrade!] Teleports to the highest-damage dealer and fires a second beam for physical damage, slowing their Attack Speed by % (decays over s).  Upgrade Beam Damage: + % AD"
     },
     {
       "id": "irondon-goons",
@@ -2322,7 +2400,8 @@ window.CS_DATA = {
       "abilitySummary": "Big Gear Tony: IronDon summons 2 placeable Goon units. Every 3rd attack from IronDon causes the Goons to shoot at the target, dealing physical damage. Goons die when IronDon dies. Passive: IronDon has The Van on standby. The Van picks up units IronDon kills to leave without a trace, granting IronDon Attack speed per kill for the rest of combat. IronDon’s...",
       "subtitle": "The Crime Lord",
       "cardImageName": "IronDonGoonsCard",
-      "iconImageName": "IronDon&GoonsIcon"
+      "iconImageName": "IronDon&GoonsIcon",
+      "abilityDescription": "IronDon has The Van on standby. Call The Van to abduct enemies inside for damage.  ÃƒÂ£-Â¦Ã‚Â¤ ÃƒÂ£-Â¦Ã‚Â¤ Passive: IronDon has The Van on standby. The Van picks up units IronDon kills, granting IronDon % attack speed per kill for the rest of combat. IronDon's attack speed is doubled whenever The Van is active.   Active: Call The Van and command Goons to push the target into the Van. The unit takes physical damage every second while in the Van as long as  Goon is alive.   Goon Damage: % AD AS per Kill: %"
     },
     {
       "id": "kobolt-shackbyte",
@@ -2350,7 +2429,8 @@ window.CS_DATA = {
       "abilitySummary": "Ballin’: Kobolt & Shackbyte work together and share a health bar, stats and items. When 1 dies, both units die. Kobolt Passive: Every 3rd attack marks enemies and bounce off of enemies and leave a ball on the ground near the target. Shackbyte Passive: Whenever Shackbyte is within 2 hexes of Kobolt’s basketball, he will grab it midair and dunk on the...",
       "subtitle": "The Baller Twins",
       "cardImageName": "KoboltShackByteCard",
-      "iconImageName": "KoboltShackbyteIcon"
+      "iconImageName": "KoboltShackbyteIcon",
+      "abilityDescription": "Passive: Every attack bounces a basketball off its target, leaving the ball on the ground nearby for Shackbyte to grab.   Active: Launch one massive alley-oop basketball high over the arena. Shackbyte always prioritizes catching it on the descent, then slams it down in a 2 hex radius, marking every enemy hit.   Alley-oop damage uses Shackbyte's Dunk Damage.\n\nPassive: At combat start, jump to and dunk the first target. When within  hexes of a basketball, Shackbyte grabs it and dunks a random nearby enemy, dealing magic damage and knocking them up. Marked targets take double damage.   Alley-Oop: Shackbyte always catches Kobolt's active ball first, then dunks it in a 2 hex radius, damaging, knocking up, and marking every enemy hit.   Active: Gain a shield for s. Pick up every ball on the battlefield and dunk a random nearby enemy for each one, dealing Dunk Damage: / / + % AP  Shield: / / + % AP + % Max HP"
     },
     {
       "id": "prototype-v",
@@ -2380,7 +2460,8 @@ window.CS_DATA = {
       "abilitySummary": "Robot Hunter: Whenever an enemy has 4 or more nails inside of them, immediately cast Dance of the Hunter on them. Passive: Attacks throw out nails which deal bonus magic damage and stick into the target. Dealing ability damage to these enemies consumes their nails and deals bonus magic damage, increased by 20% per stack. Active (Dance of the Hunter):...",
       "subtitle": "The Nailgun",
       "cardImageName": "PrototypeVCard",
-      "iconImageName": "PrototypeVIcon"
+      "iconImageName": "PrototypeVIcon",
+      "abilityDescription": "Passive: Attacks throw out nails, dealing magic damage and sticking into the target. Ability damage consumes those nails, dealing magic damage, increased by % per stack.   Active: Dash to a nearby hex and throw nails at the nearest enemies. Then dash directly into the enemy with the most nails, dealing magic damage and consuming their nails. Dash to a safe side hex and plunge nails into the nearest enemy.   Nail Bonus Damage: / / + % AP  Nail Stack Damage: / / + % AP  Dash Damage: / / + % AP"
     },
     {
       "id": "socratech",
@@ -2409,7 +2490,8 @@ window.CS_DATA = {
       "abilitySummary": "All Wise: SocraTech summons 2 placeable Thinking Statues that have a special effect based on the Philosopher path. Wealth: Statues regenerate 10% of their health every 2 seconds. Power: Statues emanate an aura, dealing physical damage to all adjacent enemies every 1.5 seconds. Fame: Statues emanate an aura, healing allies and granting them stacking...",
       "subtitle": "The Philosophical Buffoon",
       "cardImageName": "SocraTechCard",
-      "iconImageName": "SocraTechIcon"
+      "iconImageName": "SocraTechIcon",
+      "abilityDescription": "Rolling statues lower Armor by 40% for seconds and restore 50% of each Thinking Statue's health. Rolling statues briefly knock up enemies hit and restore 25% of each Thinking Statue's health. Rolling statues split on impact into  smaller statues that deal damage. Active: SocraTech calls in 6 alternate versions of himself around the board. Each throws a rolling statue that travels  hexes, dealing physical damage to enemies hit.   :    Thinking Statue:  base Health +  per SocraTech star, Armor/MR +  per star, no AD/AP/AS/Mana  Power Statue Damage:  /  /  + % AD  Fame Statue Heal:  /  /  + % AP  Wealth Statue Health Regen: % + % Max HP  Active Damage: / / + % AD WEALTH / / ÃƒÂ¢Ã¢â€šÂ¬-Â Passive: Statues regenerate % of their max HP every seconds.  Statue HP: Active: Summons  clones, each throwing a rolling statue for physical damage. Enemies hit have their Armor lowered by 40% for 6 s. Each Thinking Statue regains 50% HP.  Clone Damage: / / + % AD POWER Passive: Statues pulse, dealing physical damage to adjacent enemies every .5 s.  Pulse: / / + % AD Enemies hit are knocked up. Each Thinking Statue regains 25% HP.  FAME Passive: Statues heal nearby allies for HP and grant stacking Attack Speed every 2 s.  Heal: / / + % AP On impact, statues split into  smaller statues dealing damage."
     },
     {
       "id": "rngine",
@@ -2438,7 +2520,8 @@ window.CS_DATA = {
       "abilitySummary": "Gambling: On ability cast, roll a dice and gain a secondary effect to RNGine’s ability based on the number rolled: 2 - Each card deals an additional 1%/2%/10% of the target’s max % hp. 3 - Shield all allies for 15% of AD for 4 seconds. 4 - Each Card bounces on top of their target 4 additional times dealing 50% current AD as damage and the final bounce...",
       "subtitle": "The Impossible Magician",
       "cardImageName": "RNGineCard",
-      "iconImageName": "RNGineIcon"
+      "iconImageName": "RNGineIcon",
+      "abilityDescription": "Roll  dice, then randomly cast  of  spells:   Card Flurry: Fire cards into the current target, each dealing physical damage.   Card Show: Perform card shows around the largest enemy clusters, dealing physical damage every second for seconds.   Card Wave: Shoot out waves of cards across the board. Enemies are knocked up the first time they are hit and each card deals physical damage. The cards then close in on the highest health enemy, each dealing physical damage.   Show Damage: / / + % AD  Barrage Damage: / / + % AD  Wave Damage: / / + % AD  Wave Final Damage: / / + % AD"
     },
     {
       "id": "killswitch",
@@ -2468,7 +2551,8 @@ window.CS_DATA = {
         "Range": "1 hex"
       },
       "abilitySummary": "Every attack lowers the target’s magic resist. When attacking a new target, KillSwitch kicks them for magic damage. Active: heal, leap to the farthest enemy within 3 hexes, slam them, and gain attack speed.",
-      "subtitle": "The Joyful Killer"
+      "subtitle": "The Joyful Killer",
+      "abilityDescription": "Passive: Every attack lowers the target's magic resist by . When attacking a new target, kick them for magic damage.   Active: Heal health. Leap to the farthest enemy within  hexes and slam them for magic damage. Grant KillSwitch % attack speed for seconds.   Heal = + % HP + % AP  Slam = + % AP  Kick = + % AP"
     }
   ],
   "traits": [

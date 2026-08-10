@@ -38,6 +38,10 @@
         { key: 'iconImageName', label: 'Icon image filename', type: 'text', hint: 'Do not include .png.' },
         { key: 'lore', label: 'Unit lore', type: 'textarea', wide: true, required: true },
         { key: 'abilitySummary', label: 'Ability summary', type: 'textarea', wide: true },
+        { key: 'abilityDescription', label: 'Ability description (no damage values)', type: 'textareaLong', wide: true, hint: 'Displayed in the unit popup. Leave blank to derive a damage-free description from the ability summary.' },
+        { key: 'abilityIconName', label: 'Ability icon path or filename', type: 'text', hint: 'Example: AnchorFireAbility.webp inside images/abilities, or enter a full relative path.' },
+        { key: 'abilityVideo', label: 'Ability video path or filename', type: 'text', hint: 'Preferred media: .webm or .mp4 inside images/abilities.' },
+        { key: 'abilityGif', label: 'Ability GIF path or filename', type: 'text', hint: 'Optional fallback animation inside images/abilities.' },
         { key: 'stats', label: 'Stats', type: 'json', wide: true, hint: 'Advanced: keep the labels and values inside the braces.' },
         { key: 'ability', label: 'Ability details', type: 'json', wide: true, optional: true },
         { key: 'details', label: 'Additional details', type: 'json', wide: true, optional: true }
@@ -477,7 +481,7 @@
       units: {
         id: uniqueId(`new-unit-${number}`, section), name: `New Unit ${number}`, imageName: '', role: 'Attack Fighter', cost: 1,
         traits: [], origin: '', species: '', yearsActive: '', currentResidence: '', fullName: '', lore: '', stats: {},
-        abilitySummary: '', subtitle: 'Subtitle', cardImageName: '', iconImageName: ''
+        abilitySummary: '', abilityDescription: '', abilityIconName: '', abilityVideo: '', abilityGif: '', subtitle: 'Subtitle', cardImageName: '', iconImageName: ''
       },
       stories: {
         id: uniqueId(`new-story-${number}`, section), title: `New Story ${number}`, type: 'Short Story', category: 'Archive',
