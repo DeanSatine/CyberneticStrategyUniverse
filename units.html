@@ -156,11 +156,10 @@
 
     /* -- UNIT BIO FOCAL DOSSIER ------------------ */
     .bio-panel {
-      position: absolute;
-      top: 3rem; left: 50%;
+      position: fixed;
+      top: 50%; left: 50%;
       width: min(1280px, calc(100vw - 6rem));
-      min-height: min(820px, calc(100vh - 6rem));
-      height: auto;
+      height: min(820px, calc(100vh - 6rem));
       z-index: 300;
       background: var(--bg-dark);
       border: 1px solid var(--border);
@@ -169,14 +168,14 @@
       grid-template-columns: minmax(380px, 0.9fr) minmax(0, 1.1fr);
       opacity: 0;
       pointer-events: none;
-      transform: translateX(-50%) scale(0.96);
+      transform: translate(-50%, -46%) scale(0.96);
       transition: opacity 0.25s ease, transform 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
-      overflow: visible;
+      overflow: hidden;
     }
     .bio-panel.open {
       opacity: 1;
       pointer-events: auto;
-      transform: translateX(-50%) scale(1);
+      transform: translate(-50%, -50%) scale(1);
     }
 
     .bio-panel__backdrop {
@@ -267,11 +266,11 @@
       letter-spacing: 0.1em; text-transform: uppercase;
     }
 
-    /* The dossier grows with its content; the document handles page scrolling. */
+    /* Keep long dossiers inside the fixed modal while the page behind it stays locked. */
     .bio-panel__body {
       min-width: 0;
-      height: auto;
-      overflow: visible;
+      height: 100%;
+      overflow-y: auto;
       padding: 4rem;
       scrollbar-width: thin;
       scrollbar-color: var(--border) transparent;
@@ -546,10 +545,9 @@
     @media (max-width: 900px) {
       .bio-panel {
         width: calc(100vw - 2rem);
-        min-height: calc(100vh - 2rem);
-        height: auto;
+        height: calc(100vh - 2rem);
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(280px, 42vh) auto;
+        grid-template-rows: minmax(280px, 42vh) minmax(0, 1fr);
       }
       .bio-panel__portrait {
         height: 100%;
@@ -567,9 +565,7 @@
     @media (max-width: 520px) {
       .bio-panel {
         width: 100vw;
-        min-height: 100vh;
-        height: auto;
-        top: 0;
+        height: 100vh;
         border: 0;
         border-radius: 0;
       }
@@ -1125,7 +1121,7 @@
       document.getElementById("bioPanel").classList.add("open");
       document.getElementById("bioPanel").setAttribute("aria-hidden", "false");
       document.getElementById("bioBackdrop").classList.add("open");
-      document.body.style.overflow = "";
+      document.body.style.overflow = "hidden";
     }
 
     function closeBioPanel() {
