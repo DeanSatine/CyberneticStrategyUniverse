@@ -108,6 +108,29 @@
         { key: 'description', label: 'Description', type: 'textareaLong', wide: true, required: true }
       ]
     },
+    comps: {
+      label: 'Comps',
+      singular: 'Composition',
+      titleKey: 'name',
+      meta: item => [item.tier ? `Tier ${item.tier}` : '', item.style].filter(Boolean).join(' / '),
+      fields: [
+        { key: 'name', label: 'Composition name', type: 'text', required: true },
+        { key: 'id', label: 'ID', type: 'slug', required: true },
+        { key: 'tier', label: 'Tier', type: 'text' },
+        { key: 'style', label: 'Comp style', type: 'text' },
+        { key: 'difficulty', label: 'Difficulty', type: 'text' },
+        { key: 'patch', label: 'Patch or archive label', type: 'text' },
+        { key: 'carry', label: 'Primary carry', type: 'text' },
+        { key: 'traits', label: 'Core traits', type: 'list', wide: true, hint: 'Enter one trait per line.' },
+        { key: 'units', label: 'Board roster', type: 'unitChecks', wide: true, hint: 'Select the units in this composition.' },
+        { key: 'carrySpotlight', label: 'Unit spotlight', type: 'json', wide: true, hint: 'Use an array of objects with unit, role, and items fields.' },
+        { key: 'itemRecommendations', label: 'Tiered item recommendations', type: 'json', wide: true, hint: 'Use tier, carries, and items fields for each recommendation group.' },
+        { key: 'items', label: 'Recommended item types', type: 'list', wide: true, hint: 'Enter one item type per line.' },
+        { key: 'opening', label: 'Opening plan', type: 'textarea', wide: true },
+        { key: 'leveling', label: 'Leveling plan', type: 'textarea', wide: true },
+        { key: 'items', label: 'Item direction', type: 'textarea', wide: true }
+      ]
+    },
     timeline: {
       label: 'Timeline',
       singular: 'Timeline entry',
@@ -498,6 +521,10 @@
       factions: {
         id: uniqueId(`new-faction-${number}`, section), name: `New Faction ${number}`, type: '', members: [],
         description: '', color: '#62d8ff'
+      },
+      comps: {
+        id: uniqueId(`new-comp-${number}`, section), name: `New Composition ${number}`, tier: 'A', style: 'Standard', difficulty: 'Open', patch: 'Launch archive',
+        carry: '', traits: [], units: [], carrySpotlight: [], itemRecommendations: [], items: [], opening: '', leveling: ''
       },
       timeline: { year: 'Unknown era', title: `New Event ${number}`, description: '' }
     };

@@ -56,6 +56,39 @@
     const traits = Array.isArray(source.traits) ? source.traits.slice() : [];
     const stories = Array.isArray(source.stories) ? source.stories.slice() : [];
 
+    const defaultComps = [{
+      id: 'pulsefire-shot',
+      name: 'PulseFire Shot',
+      tier: 'A',
+      style: 'Reroll',
+      difficulty: 'Reroll',
+      patch: 'Launch archive',
+      carry: 'Fireline / PulseFist',
+      traits: ['Unbreakable 2', 'Bulkhead 2', 'Eradicator 3', 'Hacker 2', 'Clobbertron 3', 'Alloyed 2'],
+      units: ['Fireline', 'Headshot', 'PulseFist', 'Overturn', 'B.O.P.', 'WhirlGuard', 'RocketBott'],
+      positions: { Fireline: '1-5', PulseFist: '1-2', Headshot: '2-1', Overturn: '3-1', 'B.O.P.': '4-1', WhirlGuard: '5-1', RocketBott: '6-1' },
+      carrySpotlight: [
+        { unit: 'Fireline', role: 'Primary carry', items: ['Speed Coil', 'Metal Chunk', 'Rotating Drill', 'RAM Module', 'Triple Cleavers', 'Mechanical Minigun', 'Ricocheting Crossbow', 'Excessive Battery', 'Oversized Bazooka', 'Super Sharp Rifle', 'Divine Sniper Rifle'] },
+        { unit: 'Headshot', role: 'Tank', items: [] },
+        { unit: 'PulseFist', role: 'Frontline carry', items: ['Speed Coil', 'Metal Chunk', 'Healing Staff', 'Rotating Drill', 'Immunity Goggles', 'Counts Cloak', 'Recourse', 'Augmented Revolver', 'Triple Cleavers', 'Mechanical Minigun', 'Vampire Tooth', 'Lifeline Circuit', 'Soft Blanket', 'Jesters Trickery', 'Oiled Up Cogs', 'Healing Pod', 'Assassins Journey', '5K Track Shoes', 'Swig Of Elixir'] }
+      ],
+      itemRecommendations: [
+        { tier: 'T0', carries: ['Fireline', 'PulseFist'], items: ['Speed Coil', 'Metal Chunk'] },
+        { tier: 'T0', carries: ['PulseFist'], items: ['Healing Staff'] },
+        { tier: 'T1', carries: ['Fireline', 'PulseFist'], items: ['Rotating Drill'] },
+        { tier: 'T1', carries: ['Fireline'], items: ['RAM Module'] },
+        { tier: 'T1', carries: ['PulseFist'], items: ['Immunity Goggles', 'Counts Cloak', 'Recourse', 'Augmented Revolver'] },
+        { tier: 'T2', carries: ['Fireline', 'PulseFist'], items: ['Triple Cleavers', 'Mechanical Minigun'] },
+        { tier: 'T2', carries: ['PulseFist'], items: ['Vampire Tooth', 'Lifeline Circuit', 'Soft Blanket'] },
+        { tier: 'T2', carries: ['Fireline'], items: ['Ricocheting Crossbow'] },
+        { tier: 'T3', carries: ['Fireline'], items: ['Excessive Battery', 'Oversized Bazooka', 'Super Sharp Rifle', 'Divine Sniper Rifle'] },
+        { tier: 'T3', carries: ['PulseFist'], items: ['Jesters Trickery', 'Oiled Up Cogs', 'Healing Pod', 'Assassins Journey', '5K Track Shoes', 'Swig Of Elixir'] }
+      ],
+      items: ['Speed Coil', 'Metal Chunk', 'Healing Staff', 'Rotating Drill', 'RAM Module', 'Immunity Goggles', 'Counts Cloak', 'Recourse', 'Augmented Revolver', 'Triple Cleavers', 'Mechanical Minigun', 'Vampire Tooth', 'Lifeline Circuit', 'Soft Blanket', 'Ricocheting Crossbow', 'Excessive Battery', 'Oversized Bazooka', 'Super Sharp Rifle', 'Divine Sniper Rifle', 'Jesters Trickery', 'Oiled Up Cogs', 'Healing Pod', 'Assassins Journey', '5K Track Shoes', 'Swig Of Elixir'],
+      opening: 'Reroll around the three carries and keep Overturn, B.O.P., and WhirlGuard as the frontline shell.',
+      leveling: 'Hold the core copies early, stabilize on the reroll level, then add RocketBott for the completed board.'
+    }];
+
     // Normalize units.
     const normalizedUnits = units.map((unit, index) => {
       const name = String(unit.name || '').trim() || `Unit ${index + 1}`;
@@ -197,7 +230,8 @@
       ...source,
       units: normalizedUnits,
       traits: normalizedTraits,
-      stories: normalizedStories
+      stories: normalizedStories,
+      comps: Array.isArray(source.comps) && source.comps.length ? source.comps : defaultComps
     };
   }
 
