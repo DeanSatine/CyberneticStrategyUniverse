@@ -1779,6 +1779,16 @@ body::after {
   .stories-featured { grid-template-columns: 1fr; }
 }
 
+/* Keep the primary navigation available on narrow screens without forcing it into a cramped wrap. */
+@media (max-width: 600px) {
+  .nav__inner { align-items: stretch; gap: .8rem; }
+  .nav__brand { min-width: 0; }
+  .nav__brand-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 1rem; letter-spacing: .14em; }
+  .nav__links { justify-content: flex-start; flex-wrap: nowrap; gap: .35rem; margin: 0 -1rem; padding: 0 1rem .2rem; overflow-x: auto; scrollbar-width: none; }
+  .nav__links::-webkit-scrollbar { display: none; }
+  .nav__link { flex: 0 0 auto; padding: .7rem .85rem; font-size: .78rem; letter-spacing: .1em; }
+}
+
 
 /* -- REGION / FACTION CARDS -------------------------------- */
 .regions-grid {

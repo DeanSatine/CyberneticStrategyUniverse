@@ -129,3 +129,54 @@
 .comp-token:hover + .comp-token__tooltip, .comp-token:focus-visible + .comp-token__tooltip { opacity: 1; transform: translate(-50%, 0); }
 @media (max-width: 1050px) { .comp-detail { inset: 1rem; padding: 3rem 2rem; } .comp-detail-layout { grid-template-columns: 230px minmax(0, 1fr); } .comp-detail__rail { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 700px) { .comp-detail { inset: 0; padding: 4rem 1rem 2rem; border-radius: 0; } .comp-detail-layout { display: flex; flex-direction: column; } .comp-detail__identity { min-height: 300px; } .comp-detail__rail { display: flex; } .comp-board--interactive, .detail-positioning .comp-board--interactive { grid-template-columns: repeat(5, 42px); grid-template-rows: repeat(5, 42px); min-height: 230px; } .comp-board--interactive .comp-cell { width: 39px; height: 39px; } .comp-board--interactive .comp-cell--offset { transform: translateX(22px); } .comp-board--interactive .comp-token { width: 39px; height: 39px; } .comp-board--interactive .comp-token img { width: 32px; height: 32px; } }
+
+/* Mobile layout: preserve the full eight-column board while keeping every control in view. */
+@media (max-width: 900px) {
+  .comps-page { padding-top: 2rem; }
+  .comps-masthead { padding: 5rem 0 3rem; }
+  .comps-toolbar { gap: 1.2rem; padding: 1.2rem; }
+  .comps-filter-group { width: 100%; }
+  .comps-editor-link { width: 100%; margin-left: 0; text-align: center; }
+}
+
+@media (max-width: 700px) {
+  .comps-title { font-size: 3.8rem; letter-spacing: .06em; }
+  .comps-results-head { flex-wrap: wrap; gap: .6rem; margin-top: 2rem; font-size: .9rem; }
+  .comp-tier-row { grid-template-columns: 42px minmax(0, 1fr); }
+  .comp-tier-label { font-size: 1.8rem; }
+  .comp-tier-cards { gap: .7rem; padding: .7rem; }
+  .comp-card { padding: 1rem; }
+  .comp-card h2 { font-size: 1.7rem; overflow-wrap: anywhere; }
+  .comp-card__footer { flex-direction: column; gap: .5rem; font-size: .82rem; }
+  .comp-detail { padding: 4.5rem .75rem 1.25rem; }
+  .comp-detail__identity { padding: 1.4rem; min-height: 0; }
+  .comp-detail__identity h2 { font-size: 2.6rem; overflow-wrap: anywhere; }
+  .detail-block { padding: 1rem; }
+  .detail-block h3 { font-size: 1.3rem; }
+  .detail-board-heading { align-items: flex-start; }
+  .detail-board-heading h3 { text-align: left; }
+  .detail-positioning .comp-board--interactive,
+  .comp-board--interactive { grid-template-columns: repeat(8, 28px); grid-template-rows: repeat(5, 28px); min-height: 165px; gap: 3px; padding: .4rem; }
+  .detail-positioning .comp-board--interactive .comp-cell,
+  .comp-board--interactive .comp-cell { width: 26px; height: 26px; }
+  .detail-positioning .comp-board--interactive .comp-cell--offset,
+  .comp-board--interactive .comp-cell--offset { transform: translateX(14px); }
+  .comp-board--interactive .comp-token { width: 26px; height: 26px; }
+  .comp-board--interactive .comp-token img { width: 22px; height: 22px; }
+  .comp-token__tooltip { width: min(280px, calc(100vw - 2rem)); padding: .8rem; }
+  .comp-token__tooltip strong { font-size: 1.15rem; }
+  .comp-token__tooltip > span { font-size: 1.05rem; }
+  .detail-unit { min-width: 0; font-size: 1.1rem; }
+  .detail-unit span { overflow-wrap: anywhere; }
+  .item-chip { min-width: 0; max-width: 100%; font-size: .9rem; }
+  .item-chip span { overflow-wrap: anywhere; }
+  .detail-recommendation-tier { grid-template-columns: 26px minmax(0, 1fr); }
+  .board-help { font-size: .82rem; line-height: 1.45; }
+}
+
+@media (max-width: 380px) {
+  .comps-page .container { padding-left: 1rem; padding-right: 1rem; }
+  .comps-title { font-size: 3.2rem; }
+  .comp-filter { flex: 1 1 calc(50% - .7rem); padding-left: .6rem; padding-right: .6rem; }
+  .comp-detail__identity h2 { font-size: 2.25rem; }
+}
