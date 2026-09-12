@@ -819,14 +819,20 @@
       let text = String(summary || '').trim();
       if (!text) return '';
       text = text.replace(/^-?AbilityActive:\s*/i, 'Active: ');
-      text = text.replace(/\b(?:Damage|Shield|Heal|Healing|Health Gain|AD Gain|MR Reduction|Armour Reduction|Stun|Bonus Damage|Passive Damage|Ability Damage|Target Damage|Overkill Damage)\s*:\s*[^.]+/gi, '');
+      text = text.replace(/\b(?:Damage|Bonus Damage|Passive Damage|Ability Damage|Target Damage|Overkill Damage)\s*(?::|=)\s*[^.]+/gi, '');
+      text = text.replace(/\s*\([^)]*(?:damage|%\s*(?:AD|AP)|(?:AD|AP)\s*ratio)[^)]*\)/gi, '');
+      text = text.replace(/\s*,?\s*(?:increased|reduced) by\s+[^,.]+(?:\s+damage)?/gi, '');
+      text = text.replace(/(\b(?:damage|dealing|deals|deal)[^.]{0,120})\s+(?:based on|scaling with)\s+[^.]+/gi, '$1');
+      text = text.replace(/\b[A-Za-z][A-Za-z ]{0,30}\s*=\s*[^.]+/g, '');
+      text = text.replace(/\b\d+(?:\.\d+)?(?:\s*\/\s*\d+(?:\.\d+)?)+(?:\s*\+\s*[\d.%/\sA-Za-z]+)?\s*(?=damage\b)/gi, '');
+      text = text.replace(/\b\d+(?:\.\d+)?\s*%?\s*(?=damage\b)/gi, '');
       text = text.replace(/\b\d+(?:\.\d+)?(?:\s*\/\s*\d+(?:\.\d+)?)+(?:\s*\+\s*[\d.%/\sA-Za-z]+)?\s*(?=(?:damage|shield|health|healing|armour|magic resist|attack speed|AD|AP)\b)/gi, '');
       text = text.replace(/\b\d+(?:\.\d+)?\s*(?:%\s*)?(?=(?:damage|shield|health|healing|armour|magic resist|attack speed|AD|AP)\b)/gi, '');
       (CS_DATA.units || []).slice().sort((a, b) => String(b.name).length - String(a.name).length).forEach(candidate => {
         const escaped = String(candidate.name || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         text = text.replace(new RegExp(`\\s+${escaped}$`, 'i'), '');
       });
-      return text.replace(/\s{2,}/g, ' ').replace(/\s+([,.])/g, '$1').trim();
+      return text.replace(/\s{2,}/g, ' ').replace(/\s+([,.])/g, '$1').replace(/\s+\./g, '.').trim();
     }
 
     const COST_COLORS_PAGE = { 1:"#888", 2:"#3a9940", 3:"#3a60c0", 4:"#8830c0", 5:"#c9a84c" };
@@ -1074,7 +1080,7 @@
           ${archiveContext.related.map(renderRelatedUnit).join("")}
         </div>
       ` : "";
-      const abilityDescription = String(unit.abilityDescription || '').trim() || cleanAbilityDescription(unit.abilitySummary);
+      const abilityDescription = cleanAbilityDescription(unit.abilityDescription || unit.abilitySummary);
       const abilityIcon = abilityAssetPath(unit.abilityIcon || unit.abilityIconName, 'abilities');
       const abilityVideo = abilityAssetPath(unit.abilityVideo || unit.abilityVideoPath, 'abilities');
       const abilityGif = abilityAssetPath(unit.abilityGif || unit.abilityGifPath, 'abilities');
