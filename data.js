@@ -284,7 +284,7 @@ window.CS_DATA = {
       "yearsActive": "37",
       "currentResidence": "",
       "fullName": "Nori Eisaku",
-      "lore": "Strictly following Riang’s traditional values, FrontPoint approaches his work differently from his fellow assassins. As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family’s fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins.",
+       "lore": "As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family’s fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins.",
       "stats": {
         "HP": "650/1150/2100",
         "Damage": "40/60/90",
@@ -3680,8 +3680,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "FrontPoint",
       "color": "#6cd0ff",
-      "excerpt": "Strictly following Riang’s traditional values, FrontPoint approaches his work differently from his fellow assassins. As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family...",
-      "content": "Strictly following Riang’s traditional values, FrontPoint approaches his work differently from his fellow assassins. As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family’s fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins."
+       "excerpt": "As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family...",
+       "content": "As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family’s fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins."
     },
     {
       "id": "unit-consume-os",
