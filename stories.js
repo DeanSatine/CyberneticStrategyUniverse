@@ -165,6 +165,7 @@
 
   function renderFeatured() {
     const story = storyById.get('the-dominion') || data.stories.find(item => item.type === 'World');
+    if (story?.coverImage) refs.featured.style.setProperty('--featured-image', `url("${story.coverImage}")`);
     refs.featuredExcerpt.textContent = story?.excerpt || '';
     const names = ['CommandCore', 'Tracercore', 'Coreweaver'];
     refs.featuredPortraits.innerHTML = names.map(name => unitByName.get(normalize(name)))
@@ -253,8 +254,8 @@
           <div class="overview-index-list">${regionLinks}</div>
         </section>
 
-        <button class="overview-world-feature" type="button" data-story-id="${escapeAttribute(worldStory?.id || 'the-dominion')}">
-          <img src="images/optimized/units/CommandCoreCard.webp" alt="" decoding="async" />
+       <button class="overview-world-feature" type="button" data-story-id="${escapeAttribute(worldStory?.id || 'the-dominion')}">
+         <img src="${escapeAttribute(worldStory?.coverImage || 'images/optimized/units/CommandCoreCard.webp')}" alt="Map of The Dominion" decoding="async" />
           <span class="overview-world-feature__shade"></span>
           <span class="overview-world-feature__copy">
             <small>World overview</small>
@@ -347,7 +348,7 @@
       <article class="archive-story-card" style="--story-color:${escapeAttribute(color)}">
         <button class="archive-story-card__button" type="button" data-story-id="${escapeAttribute(story.id)}">
           <span class="archive-story-card__visual">
-            ${coverUnit ? `<img src="${unitImage(coverUnit, 'card')}" alt="" loading="lazy" decoding="async" />` : ''}
+             ${story.coverImage ? `<img src="${escapeAttribute(story.coverImage)}" alt="Map of ${escapeAttribute(story.title)}" loading="lazy" decoding="async" />` : coverUnit ? `<img src="${unitImage(coverUnit, 'card')}" alt="" loading="lazy" decoding="async" />` : ''}
             <span class="archive-story-card__mark">${escapeHtml(initials(story.title, 'CS'))}</span>
           </span>
           <span class="archive-story-card__body">
@@ -423,7 +424,7 @@
     refs.reader.style.setProperty('--reader-color', color);
     refs.readerBarTitle.textContent = story.title;
     refs.readerHero.innerHTML = `
-      ${coverUnit ? `<img class="story-reader__hero-image" src="${unitImage(coverUnit, 'card')}" alt="" decoding="async" />` : ''}
+      ${story.coverImage ? `<img class="story-reader__hero-image" src="${escapeAttribute(story.coverImage)}" alt="Map of ${escapeAttribute(story.title)}" decoding="async" />` : coverUnit ? `<img class="story-reader__hero-image" src="${unitImage(coverUnit, 'card')}" alt="" decoding="async" />` : ''}
       <div class="story-reader__hero-content">
         <p class="story-reader__meta">${escapeHtml(story.type || 'Archive')}${story.category ? ` / ${escapeHtml(story.category)}` : ''}</p>
         <h1 class="story-reader__title">${escapeHtml(story.title)}</h1>
