@@ -1417,27 +1417,13 @@ body::after {
 .nav__brand-mark {
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(116,204,255,0.75);
-  border-radius: 50%;
   display: inline-block;
-  position: relative;
-  box-shadow: 0 0 24px rgba(69,216,255,0.26), inset 0 0 18px rgba(123,92,255,0.24);
+  flex: 0 0 auto;
+  background: url("images/brand/cybernetic-mark.png") center / contain no-repeat;
 }
 .nav__brand-mark::before,
 .nav__brand-mark::after {
-  content: '';
-  position: absolute;
-  inset: 5px;
-  border: 1px solid rgba(243,201,105,0.72);
-  border-radius: 50%;
-  transform: rotate(-24deg) scaleX(1.55);
-}
-.nav__brand-mark::after {
-  inset: 12px;
-  background: var(--gold);
-  border: 0;
-  transform: none;
-  box-shadow: 0 0 18px var(--gold-glow);
+  display: none;
 }
 .nav__brand-text { font-size: 1.28rem; letter-spacing: 0.26em; }
 .nav__brand-sub { color: var(--nebula-cyan); font-weight: 700; }
@@ -2487,6 +2473,10 @@ body::after {
   .home-page .spotlight-nav__btn--prev,
   .home-page .spotlight-nav__btn--next {
     top: -350px;
+  }
+
+  .home-page .spotlight-nav__btn--prev {
+    left: max(0px, calc(50% - 770px));
   }
 }
 
