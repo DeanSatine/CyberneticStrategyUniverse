@@ -1419,7 +1419,7 @@ body::after {
   height: 30px;
   display: inline-block;
   flex: 0 0 auto;
-  background: url("images/brand/cybernetic-mark.svg?v=2") center / contain no-repeat;
+  background: url("images/brand/cybernetic-mark-cropped.png?v=4") center / contain no-repeat;
 }
 .nav__brand-mark::before,
 .nav__brand-mark::after {
