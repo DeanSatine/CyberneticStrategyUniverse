@@ -952,14 +952,29 @@
     }
 
     // Build trait icon HTML. If a custom image is missing, use a short text code.
+    function tryNextTraitIcon(img) {
+      const paths = String(img.dataset.iconCandidates || '').split('|').filter(Boolean);
+      const nextIndex = Number(img.dataset.iconIndex || 0) + 1;
+      if (nextIndex < paths.length) {
+        img.dataset.iconIndex = String(nextIndex);
+        img.src = paths[nextIndex];
+        return;
+      }
+      img.style.display = 'none';
+      if (img.nextElementSibling) img.nextElementSibling.style.display = 'flex';
+    }
+
     function traitIconHTML(traitName, size = 20) {
       const safeName = imageSafeName(traitName);
-      const imgPath = `./images/optimized/traits/${safeName}Icon.webp`;
+      const imgCandidates = [
+        `./images/optimized/traits/${safeName}Icon.webp`,
+        `./images/traits/${safeName}Icon.png`
+      ];
       const mark = traitMark(traitName);
       return `
         <div class="ucf__trait-icon" title="${traitName}" style="width:${size}px;height:${size}px">
-          <img src="${imgPath}" alt="${traitName}" loading="lazy" decoding="async"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+          <img src="${imgCandidates[0]}" data-icon-candidates="${imgCandidates.join('|')}" alt="${traitName}" loading="lazy" decoding="async"
+               onerror="tryNextTraitIcon(this)"
                style="width:100%;height:100%;object-fit:cover;display:block" />
           <span class="ucf__trait-icon-fallback" style="display:none">${mark}</span>
         </div>

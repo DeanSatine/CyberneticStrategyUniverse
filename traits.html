@@ -41,7 +41,8 @@
       background: var(--bg-hover);
     }
     .traits-sidebar__item.active { border-left: 3px solid var(--trait-active-color, var(--gold)); }
-    .traits-sidebar__icon { font-size: 1.8rem; }
+    .traits-sidebar__icon { display: grid; width: 2rem; height: 2rem; place-items: center; font-size: 1.8rem; }
+    .traits-sidebar__icon-img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
     .traits-sidebar__name {
       font-family: var(--font-display); font-size: 1.2rem;
       letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-bright);
@@ -73,7 +74,8 @@
     .trait-detail__icon-row {
       display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;
     }
-    .trait-detail__icon { font-size: 6rem; line-height: 1; }
+    .trait-detail__icon { display: grid; width: 6rem; height: 6rem; place-items: center; font-size: 6rem; line-height: 1; }
+    .trait-detail__icon-img { width: 100%; height: 100%; object-fit: contain; border-radius: 10px; }
     .trait-detail__title-group {}
     .trait-detail__type-tag {
       font-family: var(--font-mono); font-size: 1rem; letter-spacing: 0.3em;
@@ -236,6 +238,38 @@
       return source.slice(0, 2).toUpperCase();
     }
     function traitMark(traitName) { return getInitialMark(traitName, "TR"); }
+    function cleanTraitDescription(description) {
+      let text = String(description || '').trim();
+      if (!text) return '';
+      text = text
+        .replace(/\b(?:final|next|each|every)\s+breakpoints?\b/gi, '')
+        .replace(/\bbreakpoints?\b/gi, '')
+        .replace(/\b\d+(?:\.\d+)?(?:\s*\/\s*\d+(?:\.\d+)?)+\s*%?/g, '')
+        .replace(/\b\d+(?:\.\d+)?\s*%?/g, '')
+        .replace(/\s*\([^)]*\)/g, '')
+        .replace(/\s{2,}/g, ' ')
+        .replace(/\s+([,.])/g, '$1')
+        .trim();
+      return text;
+    }
+    function traitIconHTML(traitName, className) {
+      const safeName = imageSafeName(traitName);
+      const candidates = [
+        `images/optimized/traits/${safeName}Icon.webp`,
+        `images/traits/${safeName}Icon.png`
+      ];
+      return `<img class="${className}" src="${candidates[0]}" data-icon-candidates="${candidates.join('|')}" alt="" aria-hidden="true" onerror="tryNextTraitIcon(this)" />`;
+    }
+    function tryNextTraitIcon(img) {
+      const paths = String(img.dataset.iconCandidates || '').split('|').filter(Boolean);
+      const nextIndex = Number(img.dataset.iconIndex || 0) + 1;
+      if (nextIndex < paths.length) {
+        img.dataset.iconIndex = String(nextIndex);
+        img.src = paths[nextIndex];
+        return;
+      }
+      img.style.display = 'none';
+    }
     function unitMark(unit) { return getInitialMark(unit && unit.name, "UN"); }
     function imageSafeName(value) {
       return String(value || "")
@@ -292,7 +326,7 @@
         <li class="traits-sidebar__item" data-id="${trait.id}"
             style="--trait-active-color:${trait.color}"
             onclick="showTrait('${trait.id}')">
-          <span class="traits-sidebar__icon">${traitMark(trait.name)}</span>
+          <span class="traits-sidebar__icon">${traitIconHTML(trait.name, 'traits-sidebar__icon-img')}</span>
           <span class="traits-sidebar__name">${trait.name}</span>
           <span class="traits-sidebar__type" style="color:${trait.color}">
             ${trait.type === "origin" ? "O" : "C"}
@@ -358,19 +392,19 @@
                style="background:radial-gradient(ellipse at top right,${trait.color},transparent 70%)"></div>
           <div class="trait-detail__hero-content">
             <div class="trait-detail__icon-row">
-              <span class="trait-detail__icon">${traitMark(trait.name)}</span>
+              <span class="trait-detail__icon">${traitIconHTML(trait.name, 'trait-detail__icon-img')}</span>
               <div class="trait-detail__title-group">
                 <span class="trait-detail__type-tag" style="color:${trait.color}">
                   ${trait.type === "origin" ? "Origin" : "Class"}
                 </span>
                 <h2 class="trait-detail__name">${trait.name}</h2>
-                <p class="trait-detail__tagline">${trait.tagline}</p>
+                <p class="trait-detail__tagline">${cleanTraitDescription(trait.description)}</p>
               </div>
             </div>
           </div>
         </div>
         <div class="trait-detail__body" style="--current-trait-color:${trait.color}">
-          <blockquote class="trait-detail__desc">${trait.description}</blockquote>
+          <blockquote class="trait-detail__desc">${cleanTraitDescription(trait.description)}</blockquote>
 
           ${traitUnits.length > 0 ? `
             <p class="trait-detail__section-label">
