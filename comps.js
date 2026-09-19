@@ -147,8 +147,7 @@ const POSITION_KEY = 'cybernetic-strategy-comp-positions-v2';
       </section>
       <section class="comp-detail__main">
         <div class="detail-block"><h3>Core units</h3><div class="detail-roster">${(comp.units || []).map(detailUnitMarkup).join('')}</div></div>
-        <div class="detail-block detail-positioning"><div class="detail-board-heading"><h3>Positioning board</h3><button class="detail-reset-button" id="resetBoard" type="button">Reset</button></div>${boardMarkup(comp.units, comp)}<p class="board-help">Drag a unit to another hex. Drop on an occupied hex to swap positions.</p></div>
-        <div class="detail-block"><h3>Opening plan</h3><p class="detail-copy">${escapeHtml(comp.opening || '')}</p><h3>Leveling</h3><p class="detail-copy">${escapeHtml(comp.leveling || '')}</p></div>
+        <div class="detail-block detail-positioning"><div class="detail-board-heading"><h3>Positioning board</h3><button class="detail-reset-button" id="resetBoard" type="button">Reset</button></div>${boardMarkup(comp.units, comp)}<div class="detail-plan"><div><h3>Opening plan</h3><p class="detail-copy">${escapeHtml(comp.opening || '')}</p></div><div><h3>Leveling</h3><p class="detail-copy">${escapeHtml(comp.leveling || '')}</p></div></div></div>
       </section>
       <aside class="comp-detail__rail">
         <div class="detail-block"><h3>Recommended items</h3><div class="detail-recommendations">${recommendationMarkup(comp)}</div></div>

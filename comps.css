@@ -101,11 +101,13 @@
 .detail-positioning .comp-board { min-height: 330px; grid-template-columns: repeat(7, 54px); grid-template-rows: repeat(5, 54px); gap: 5px; align-content: center; }
 .detail-positioning .comp-hex { width: 51px; height: 51px; }
 .detail-positioning .comp-hex img { width: 42px; height: 42px; }
+.detail-plan { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-dim); }
+.detail-plan h3 { margin-bottom: .7rem; }
+.detail-plan .detail-copy { margin: 0; }
 .comp-detail__rail { display: flex; flex-direction: column; gap: 1.5rem; }
 .comp-detail__rail .detail-block { height: fit-content; }
 .comp-detail__rail .detail-block h3 { font-size: 1.5rem; }
 .detail-copy { color: var(--text-mid); font-size: 1.55rem; line-height: 1.5; }
-.board-help { margin-top: .9rem; color: var(--text-dim); font: 1rem var(--font-mono); letter-spacing: .04em; text-align: center; }
 .comp-board--interactive { grid-template-columns: repeat(8, 54px); grid-template-rows: repeat(5, 54px); min-height: 330px; align-content: center; gap: 5px; touch-action: none; }
 .detail-positioning .comp-board--interactive { grid-template-columns: repeat(8, 54px); grid-template-rows: repeat(5, 54px); min-height: 330px; }
 .comp-cell { display: grid; place-items: center; grid-column: var(--hex-column); grid-row: var(--hex-row); width: 51px; height: 51px; background: rgba(39,48,77,.3); border: 1px solid rgba(98,217,237,.18); clip-path: polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0 50%); transition: background .15s ease, border-color .15s ease; }
@@ -128,7 +130,7 @@
 .comp-token__tooltip > span { max-height: 150px; overflow: hidden; color: var(--text-mid); font: 1.3rem var(--font-body); line-height: 1.4; }
 .comp-token:hover + .comp-token__tooltip, .comp-token:focus-visible + .comp-token__tooltip { opacity: 1; transform: translate(-50%, 0); }
 @media (max-width: 1050px) { .comp-detail { inset: 1rem; padding: 3rem 2rem; } .comp-detail-layout { grid-template-columns: 230px minmax(0, 1fr); } .comp-detail__rail { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 700px) { .comp-detail { inset: 0; padding: 4rem 1rem 2rem; border-radius: 0; } .comp-detail-layout { display: flex; flex-direction: column; } .comp-detail__identity { min-height: 300px; } .comp-detail__rail { display: flex; } .comp-board--interactive, .detail-positioning .comp-board--interactive { grid-template-columns: repeat(5, 42px); grid-template-rows: repeat(5, 42px); min-height: 230px; } .comp-board--interactive .comp-cell { width: 39px; height: 39px; } .comp-board--interactive .comp-cell--offset { transform: translateX(22px); } .comp-board--interactive .comp-token { width: 39px; height: 39px; } .comp-board--interactive .comp-token img { width: 32px; height: 32px; } }
+@media (max-width: 700px) { .comp-detail { inset: 0; padding: 4rem 1rem 2rem; border-radius: 0; } .comp-detail-layout { display: flex; flex-direction: column; } .comp-detail__identity { min-height: 300px; } .comp-detail__rail { display: flex; } .comp-board--interactive, .detail-positioning .comp-board--interactive { grid-template-columns: repeat(5, 42px); grid-template-rows: repeat(5, 42px); min-height: 230px; } .comp-board--interactive .comp-cell { width: 39px; height: 39px; } .comp-board--interactive .comp-cell--offset { transform: translateX(22px); } .comp-board--interactive .comp-token { width: 39px; height: 39px; } .comp-board--interactive .comp-token img { width: 32px; height: 32px; } .detail-plan { grid-template-columns: 1fr; gap: 1.2rem; } }
 
 /* Mobile layout: preserve the full eight-column board while keeping every control in view. */
 @media (max-width: 900px) {
@@ -171,7 +173,6 @@
   .item-chip { min-width: 0; max-width: 100%; font-size: .9rem; }
   .item-chip span { overflow-wrap: anywhere; }
   .detail-recommendation-tier { grid-template-columns: 26px minmax(0, 1fr); }
-  .board-help { font-size: .82rem; line-height: 1.45; }
 }
 
 @media (max-width: 380px) {

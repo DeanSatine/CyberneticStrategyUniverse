@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="images/brand/cybernetic-mark-cropped.png?v=4" />
+  <link rel="icon" type="image/png" sizes="64x64" href="images/brand/cybernetic-mark-cropped.png?v=5" />
+  <link rel="shortcut icon" type="image/png" href="images/brand/cybernetic-mark-cropped.png?v=5" />
   <title>Units - Cybernetic Strategy Galaxy Archive</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -819,6 +820,13 @@
     function cleanAbilityDescription(summary) {
       let text = String(summary || '').trim();
       if (!text) return '';
+      // Normalize the mojibake separators that came from imported ability text.
+      text = text
+        .replace(/ÃƒÂ£-Â¦Ã‚Â¤/g, ' ')
+        .replace(/ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢/g, ' ')
+        .replace(/ÃƒÂ¢Ã¢â€šÂ¬-(?:Å“|Â)/g, ': ')
+        .replace(/(?:Ãƒ|Ã‚|Â|â€š|â€|Å)[^A-Za-z0-9\s]*/g, ' ')
+        .replace(/[�]/g, ' ');
       text = text.replace(/^-?AbilityActive:\s*/i, 'Active: ');
       text = text.replace(/\b(?:Damage|Bonus Damage|Passive Damage|Ability Damage|Target Damage|Overkill Damage)\s*(?::|=)\s*[^.]+/gi, '');
       text = text.replace(/\s*\([^)]*(?:damage|%\s*(?:AD|AP)|(?:AD|AP)\s*ratio)[^)]*\)/gi, '');
