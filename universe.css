@@ -1280,6 +1280,17 @@ img { display: block; max-width: 100%; }
   font-size: 0.9rem;
 }
 .footer__portfolio a { color: var(--gold); }
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin: 1rem 0 0;
+}
+.legal-links a {
+  color: var(--text-mid);
+  font: 1rem var(--font-mono);
+}
+.legal-links a:hover { color: var(--gold); }
 
 /* -- UNIT ROLE PALETTES ------------------------------------ */
 /* Used as portrait backgrounds by role */
