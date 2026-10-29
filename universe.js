@@ -113,9 +113,35 @@
     if (img.nextElementSibling) img.nextElementSibling.style.display = 'flex';
   }
 
-  function traitImagePath(name) {
+  function traitImageCandidates(name) {
     const safeName = imageSafeName(name);
-    return `./images/optimized/traits/${safeName}Icon.webp`;
+    return [
+      `./images/optimized/traits/${safeName}Icon.webp`,
+      `./images/traits/${safeName}Icon.png`,
+      `./images/traits/${safeName}Icon.PNG`
+    ];
+  }
+
+  function tryNextTraitImage(img) {
+    const paths = String(img.dataset.imageCandidates || '').split('|').filter(Boolean);
+    const nextIndex = Number(img.dataset.imageIndex || 0) + 1;
+    if (nextIndex < paths.length) {
+      img.dataset.imageIndex = String(nextIndex);
+      img.src = paths[nextIndex];
+      return;
+    }
+    img.style.display = 'none';
+    if (img.nextElementSibling) img.nextElementSibling.style.display = 'grid';
+  }
+
+  function traitIconMarkup(trait, imageClass) {
+    const paths = traitImageCandidates(trait && trait.name);
+    return `
+      <img class="${imageClass}" src="${paths[0]}" alt="" loading="lazy" decoding="async"
+           data-image-index="0" data-image-candidates="${paths.join('|')}"
+           onerror="window.tryNextTraitImage(this)" />
+      <span class="trait-icon-fallback">${escapeHtml(traitMark(trait))}</span>
+    `;
   }
 
   function escapeHtml(value) {
@@ -174,19 +200,7 @@
     `;
   }
 
-  function randomSpotlightIndex(excludeIndex = null) {
-    const units = data().units || [];
-    if (!units.length) return 0;
-    if (units.length === 1) return 0;
-    let nextIndex = Math.floor(Math.random() * units.length);
-    const current = excludeIndex === null ? null : Number(excludeIndex);
-    while (nextIndex === current) {
-      nextIndex = Math.floor(Math.random() * units.length);
-    }
-    return nextIndex;
-  }
-
-  function renderSpotlight(index = randomSpotlightIndex()) {
+  function renderSpotlight(index = 0) {
     const root = document.getElementById('spotlight');
     if (!root) return;
     const units = data().units || [];
@@ -215,16 +229,14 @@
 
     const dots = document.getElementById('spotlightDots');
     if (dots) {
-      dots.innerHTML = Array.from({ length: 5 }, (_, i) =>
-        `<span class="spotlight-nav__dot ${i === 2 ? 'active' : ''}"></span>`
-      ).join('');
+      dots.innerHTML = `<span class="spotlight-nav__position">${safeIndex + 1} / ${pool.length}</span>`;
     }
   }
 
-  function renderRandomSpotlight() {
+  function advanceSpotlight(step) {
     const root = document.getElementById('spotlight');
-    const current = root ? Number(root.dataset.index || 0) : null;
-    renderSpotlight(randomSpotlightIndex(current));
+    const current = root ? Number(root.dataset.index || 0) : 0;
+    renderSpotlight(current + Number(step || 0));
   }
 
   function renderTraitGrid(filter = 'all') {
@@ -233,7 +245,7 @@
     const traits = (data().traits || []).filter(t => filter === 'all' || t.type === filter);
     grid.innerHTML = traits.map(trait => `
       <article class="trait-card" onclick="openTraitModal('${escapeHtml(trait.id)}')" style="--trait-color:${escapeHtml(trait.color || '#45d8ff')}">
-        <div class="trait-card__icon">${escapeHtml(traitMark(trait))}</div>
+        <div class="trait-card__icon">${traitIconMarkup(trait, 'trait-card__icon-image')}</div>
         <div class="trait-card__type" style="color:${escapeHtml(trait.color || '#45d8ff')}">${escapeHtml(trait.type || 'trait')}</div>
         <h3 class="trait-card__name">${escapeHtml(trait.name)}</h3>
         <p class="trait-card__tagline">${escapeHtml(trait.tagline || '')}</p>
@@ -344,7 +356,7 @@
     const units = Array.isArray(trait.units) ? trait.units : [];
     openModal(`
       <div class="modal__trait">
-        <div class="trait-detail__icon" style="color:${escapeHtml(trait.color || '#45d8ff')}">${escapeHtml(traitMark(trait))}</div>
+        <div class="trait-detail__icon" style="color:${escapeHtml(trait.color || '#45d8ff')}">${traitIconMarkup(trait, 'trait-detail__icon-image')}</div>
         <h2 class="modal__trait-name">${escapeHtml(trait.name)}</h2>
         <p class="modal__role">${escapeHtml(trait.type || 'Trait')}</p>
         <p class="modal__trait-desc">${escapeHtml(trait.description || trait.tagline || '')}</p>
@@ -401,8 +413,8 @@
     });
     const prev = document.getElementById('spotlightPrev');
     const next = document.getElementById('spotlightNext');
-    if (prev) prev.addEventListener('click', renderRandomSpotlight);
-    if (next) next.addEventListener('click', renderRandomSpotlight);
+    if (prev) prev.addEventListener('click', () => advanceSpotlight(-1));
+    if (next) next.addEventListener('click', () => advanceSpotlight(1));
   }
 
   function wireModal() {
@@ -480,6 +492,7 @@
   window.CS_THEME = { getInitialMark, unitMark, traitMark, storyMark };
   window.COST_COLORS = COST_COLORS;
   window.tryNextUnitCardImage = tryNextUnitCardImage;
+  window.tryNextTraitImage = tryNextTraitImage;
   window.unitCardImageCandidates = unitCardImageCandidates;
   window.unitIconImageCandidates = unitIconImageCandidates;
   window.openUnitModal = openUnitModal;
@@ -488,7 +501,6 @@
   window.openUnitModalByName = openUnitModalByName;
   window.openStoryModal = openStoryModal;
   window.renderSpotlight = renderSpotlight;
-  window.renderRandomSpotlight = renderRandomSpotlight;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

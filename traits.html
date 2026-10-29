@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="64x64" href="images/brand/cybernetic-mark-cropped.png?v=6" />
-  <link rel="shortcut icon" type="image/png" href="images/brand/cybernetic-mark-cropped.png?v=6" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/brand/steam-icon.png?v=1" />
+  <link rel="shortcut icon" type="image/png" href="images/brand/steam-icon.png?v=1" />
+  <link rel="apple-touch-icon" href="images/brand/steam-icon.png?v=1" />
   <title>Traits - Cybernetic Strategy Galaxy Archive</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -161,6 +162,40 @@
       .traits-sidebar { position: static; }
       .traits-sidebar__list { max-height: 200px; }
     }
+
+    .traits-page > .container > div:first-child { text-align: left !important; margin-bottom: 3rem !important; }
+    .traits-sidebar,
+    .trait-detail,
+    .trait-unit-card {
+      background: #0b0e19;
+      border-color: rgba(255,255,255,0.1);
+      border-radius: 3px;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+    .traits-sidebar__header,
+    .traits-sidebar__section,
+    .trait-detail__type-tag,
+    .trait-detail__section-label,
+    .trait-unit-card__name,
+    .trait-detail__name,
+    .traits-sidebar__name { letter-spacing: 0; }
+    .traits-sidebar__item,
+    .trait-detail__type-tag,
+    .trait-unit-card__name,
+    .trait-detail__name,
+    .traits-sidebar__name { text-transform: none; }
+    .trait-detail__name {
+      font-size: clamp(2.8rem, 4vw, 4.2rem);
+      font-weight: 500;
+    }
+    .trait-detail__tagline,
+    .trait-detail__desc { font-style: normal; }
+    .trait-detail__hero-bg { opacity: 0.025; }
+    .trait-unit-card__portrait {
+      background: #080b14 !important;
+    }
+    .trait-unit-card__portrait::before { display: none; }
   </style>
 </head>
 <body>
@@ -171,7 +206,18 @@
     <div class="ambient__scanlines"></div>
   </div>
 
+  <div class="site-space-bg" aria-hidden="true">
+    <video class="site-space-bg__video" autoplay muted loop playsinline preload="metadata" poster="images/video/space-background-poster.jpg">
+      <source src="images/video/space-background.mp4" type="video/mp4" media="(min-width: 701px) and (prefers-reduced-motion: no-preference)" />
+    </video>
+  </div>
+
   <nav class="nav" id="nav">
+    <div class="nav__space-media" aria-hidden="true">
+      <video class="nav__space-video" autoplay muted loop playsinline preload="metadata" poster="images/video/space-band-poster.jpg">
+        <source src="images/video/space-band.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="nav__inner">
       <a href="index.html" class="nav__brand">
         <span class="nav__brand-mark" aria-hidden="true"></span>
@@ -191,7 +237,6 @@
   <main class="traits-page">
     <div class="container">
       <div style="margin-bottom:5rem;text-align:center">
-        <span class="section-tag">Factions &amp; Classes</span>
         <h1 class="section-title">Traits</h1>
         <p class="section-desc">Every Origin and Class that defines the Cybernetic Universe.</p>
       </div>

@@ -12,9 +12,9 @@
   margin: 1rem 0 1.5rem;
   color: var(--text-bright);
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 7vw, 7rem);
-  font-weight: 400;
-  letter-spacing: .06em;
+  font-size: clamp(3.5rem, 6vw, 6rem);
+  font-weight: 500;
+  letter-spacing: 0;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -29,9 +29,11 @@
 .legal-content {
   max-width: 920px;
   padding: clamp(2rem, 5vw, 4rem);
-  background: rgba(8, 11, 26, .78);
-  border: 1px solid var(--border);
-  border-radius: 6px;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
 }
 
 .legal-content h2 {
@@ -40,8 +42,8 @@
   font-family: var(--font-display);
   font-size: clamp(1.6rem, 2.4vw, 2.4rem);
   font-weight: 500;
-  letter-spacing: .05em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 .legal-content h2:first-child { margin-top: 0; }

@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="64x64" href="images/brand/cybernetic-mark-cropped.png?v=6" />
-  <link rel="shortcut icon" type="image/png" href="images/brand/cybernetic-mark-cropped.png?v=6" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/brand/steam-icon.png?v=1" />
+  <link rel="shortcut icon" type="image/png" href="images/brand/steam-icon.png?v=1" />
+  <link rel="apple-touch-icon" href="images/brand/steam-icon.png?v=1" />
   <title>Units - Cybernetic Strategy Galaxy Archive</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -581,6 +582,72 @@
       .bio-panel__ability-icon-fallback { width: 60px; height: 60px; flex-basis: 60px; }
       .bio-panel__ability-description { font-size: 1.45rem; }
     }
+
+    /* Quiet roster UI: the card art carries the personality. */
+    .units-page > .container > div:first-child { text-align: left !important; margin-bottom: 3rem !important; }
+    .filters-bar {
+      padding: 2rem 0;
+      background: transparent;
+      border: 0;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      border-radius: 0;
+    }
+    .filters-bar__label,
+    .units-count,
+    .ucf__name,
+    .ucf__subtitle { letter-spacing: 0; }
+    .filters-bar__label { color: #aeb7cc; text-transform: none; }
+    .filter-btn {
+      border-radius: 3px;
+      font-family: var(--font-body);
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+    .filter-btn.active {
+      color: #fff;
+      background: #151a28;
+      border-color: rgba(255,255,255,0.32);
+    }
+    .ucf {
+      background: #0b0e19;
+      border-color: rgba(255,255,255,0.1);
+      border-radius: 3px;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+    .ucf:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,0.3);
+      box-shadow: none;
+    }
+    .ucf__portrait { background: #080b14 !important; }
+    .ucf__portrait::before { display: none; }
+    .ucf__info { background: #0b0e19; }
+    .ucf__name { text-transform: none; }
+    .ucf__subtitle { text-transform: none; }
+    .bio-panel {
+      background: #080b14;
+      border-color: rgba(255,255,255,0.16);
+      border-radius: 4px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.65);
+      backdrop-filter: none;
+    }
+    .bio-panel__section-label,
+    .bio-panel__context-label,
+    .bio-panel__name,
+    .bio-panel__role { letter-spacing: 0; }
+    .bio-panel__section-label::after { background: rgba(255,255,255,0.12); }
+    .bio-panel__context-item,
+    .bio-panel__related-unit,
+    .bio-panel__lore,
+    .bio-panel__ability,
+    .bio-panel__trait-block {
+      background: transparent;
+      border-color: rgba(255,255,255,0.1);
+      border-radius: 3px;
+    }
   </style>
 </head>
 <body>
@@ -592,7 +659,18 @@
     <div class="ambient__scanlines"></div>
   </div>
 
+  <div class="site-space-bg" aria-hidden="true">
+    <video class="site-space-bg__video" autoplay muted loop playsinline preload="metadata" poster="images/video/space-background-poster.jpg">
+      <source src="images/video/space-background.mp4" type="video/mp4" media="(min-width: 701px) and (prefers-reduced-motion: no-preference)" />
+    </video>
+  </div>
+
   <nav class="nav" id="nav">
+    <div class="nav__space-media" aria-hidden="true">
+      <video class="nav__space-video" autoplay muted loop playsinline preload="metadata" poster="images/video/space-band-poster.jpg">
+        <source src="images/video/space-band.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="nav__inner">
       <a href="index.html" class="nav__brand">
         <span class="nav__brand-mark" aria-hidden="true"></span>
@@ -613,7 +691,6 @@
     <div class="container">
 
       <div style="margin-bottom:5rem;text-align:center">
-        <span class="section-tag">Roster Map</span>
         <h1 class="section-title">Units</h1>
       </div>
 
@@ -670,7 +747,7 @@
     <button class="bio-panel__close" id="bioPanelClose">Close</button>
     <div class="bio-panel__portrait" id="bioPanelPortrait">
       <div class="bio-panel__portrait-fallback" id="bioPanelFallback"></div>
-      <img id="bioPanelImg" src="" alt="" decoding="async" onerror="tryNextUnitCardImage(this)" />
+      <img id="bioPanelImg" alt="" decoding="async" onerror="tryNextUnitCardImage(this)" />
       <div class="bio-panel__portrait-shade"></div>
       <div class="bio-panel__header">
         <div class="bio-panel__cost-row">
@@ -757,6 +834,7 @@
       }
       if (img.nextElementSibling) img.nextElementSibling.style.display = "flex";
     }
+    window.tryNextUnitCardImage = tryNextUnitCardImage;
 
     function escapeHtml(value) {
       return String(value ?? "")
@@ -971,6 +1049,7 @@
       img.style.display = 'none';
       if (img.nextElementSibling) img.nextElementSibling.style.display = 'flex';
     }
+    window.tryNextTraitIcon = tryNextTraitIcon;
 
     function traitIconHTML(traitName, size = 20) {
       const safeName = imageSafeName(traitName);

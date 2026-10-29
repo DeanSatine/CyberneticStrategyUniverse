@@ -56,6 +56,30 @@
     const traits = Array.isArray(source.traits) ? source.traits.slice() : [];
     const stories = Array.isArray(source.stories) ? source.stories.slice() : [];
 
+    // Unity's ability assets use several legacy and punctuation-heavy names.
+    // Keep the mapping explicit so each biography shows the intended art.
+    const abilityIconByUnit = {
+      'acolyte': 'AcolyteAbilityIcon1.png',
+      'b.o.p.': 'B.O.P.Ability.PNG',
+      'dashblade': 'DashBladeAbilityIcon.png',
+      'duskblade': 'DuskbladeAbilityIcon.png',
+      'edge-x': 'Edge-XAbilityIcon.png',
+      'haymaker': 'HaymakerActive.PNG',
+      'ironveil': 'IronVeilAbilityIcon.png',
+      'k4ge': 'K4GEAbilityIcon.png',
+      'killswitch': 'KillswitchActive.PNG',
+      'kobolt & shackbyte': 'Kobolt&ShackByteAbilityIcon.png',
+      'loadbearer': 'LoadBearerAbilityIcon.png',
+      'manadrive': 'ManadriveAbility.PNG',
+      'munch-r': 'Munch-RAbilityIcon.png',
+      'needlebot': 'NeedleBotAbility.PNG',
+      'pulsefist': 'PulseFistAbilityIcon.png',
+      'rngine': 'RNGineAbilityIcon.png',
+      'sightline': 'SightlineAbilityIcon.png',
+      'soulsync': 'SoulSyncAbilityIcon.png',
+      'starbreaker': 'StarBreakerAbilityIcon.png'
+    };
+
     const defaultComps = [{
       id: 'pulsefire-shot',
       name: 'PulseFire Shot',
@@ -103,7 +127,8 @@
         subtitle: unit.subtitle || 'Subtitle',
         cost: Number(unit.cost) || 1,
         traits: traitsList,
-        lore: unit.lore || unit.bio || ''
+        lore: unit.lore || unit.bio || '',
+        abilityIconName: unit.abilityIconName || abilityIconByUnit[name.toLowerCase()] || ''
       };
     });
 

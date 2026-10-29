@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="64x64" href="images/brand/cybernetic-mark-cropped.png?v=6" />
-  <link rel="shortcut icon" type="image/png" href="images/brand/cybernetic-mark-cropped.png?v=6" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/brand/steam-icon.png?v=1" />
+  <link rel="shortcut icon" type="image/png" href="images/brand/steam-icon.png?v=1" />
+  <link rel="apple-touch-icon" href="images/brand/steam-icon.png?v=1" />
   <title>Cybernetic Strategy Universe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -22,8 +23,19 @@
     <div class="ambient__scanlines"></div>
   </div>
 
+  <div class="site-space-bg" aria-hidden="true">
+    <video class="site-space-bg__video" autoplay muted loop playsinline preload="metadata" poster="images/video/space-background-poster.jpg">
+      <source src="images/video/space-background.mp4" type="video/mp4" media="(min-width: 701px) and (prefers-reduced-motion: no-preference)" />
+    </video>
+  </div>
+
   <!-- NAV -->
   <nav class="nav" id="nav">
+    <div class="nav__space-media" aria-hidden="true">
+      <video class="nav__space-video" autoplay muted loop playsinline preload="metadata" poster="images/video/space-band-poster.jpg">
+        <source src="images/video/space-band.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="nav__inner">
       <a href="index.html" class="nav__brand">
         <span class="nav__brand-mark" aria-hidden="true"></span>
@@ -76,16 +88,15 @@
     <section class="section spotlight-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Featured</span>
           <h2 class="section-title">Unit Spotlight</h2>
         </div>
         <div class="spotlight" id="spotlight">
           <!-- Populated by JS -->
         </div>
         <div class="spotlight-nav">
-          <button class="spotlight-nav__btn spotlight-nav__btn--prev" id="spotlightPrev" aria-label="Previous random spotlight">‹</button>
-          <div class="spotlight-nav__dots" id="spotlightDots" aria-hidden="true"></div>
-          <button class="spotlight-nav__btn spotlight-nav__btn--next" id="spotlightNext" aria-label="Next random spotlight">›</button>
+          <button class="spotlight-nav__btn spotlight-nav__btn--prev" id="spotlightPrev" aria-label="Previous unit spotlight">‹</button>
+          <div class="spotlight-nav__dots" id="spotlightDots" aria-live="polite" aria-label="Spotlight position"></div>
+          <button class="spotlight-nav__btn spotlight-nav__btn--next" id="spotlightNext" aria-label="Next unit spotlight">›</button>
         </div>
       </div>
     </section>
@@ -94,7 +105,6 @@
     <section class="section stories-section stories-section--home">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Lore</span>
           <h2 class="section-title">Stories</h2>
           <p class="section-desc">Faction records, unit biographies, and timeline fragments from the Cybernetic Strategy setting.</p>
         </div>
@@ -109,7 +119,6 @@
     <section class="section regions-section home-directory-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">World</span>
           <h2 class="section-title">The Dominion</h2>
         </div>
         <a class="dominion-map-link" href="stories.html?story=the-dominion">
@@ -124,7 +133,6 @@
     <section class="section factions-section home-directory-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Organizations</span>
           <h2 class="section-title">Factions</h2>
         </div>
         <div class="factions-grid" id="factionsGrid"></div>
@@ -135,7 +143,6 @@
     <section class="section traits-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Factions &amp; Classes</span>
           <h2 class="section-title">Traits</h2>
           <p class="section-desc">Origins and Classes define the board. Stack them to unlock trait thresholds and team-wide power spikes.</p>
         </div>

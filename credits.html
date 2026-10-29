@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="64x64" href="images/brand/cybernetic-mark-cropped.png?v=6" />
-  <link rel="shortcut icon" type="image/png" href="images/brand/cybernetic-mark-cropped.png?v=6" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/brand/steam-icon.png?v=1" />
+  <link rel="shortcut icon" type="image/png" href="images/brand/steam-icon.png?v=1" />
+  <link rel="apple-touch-icon" href="images/brand/steam-icon.png?v=1" />
   <title>Credits - Cybernetic Strategy Universe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -19,7 +20,18 @@
     <div class="ambient__scanlines"></div>
   </div>
 
+  <div class="site-space-bg" aria-hidden="true">
+    <video class="site-space-bg__video" autoplay muted loop playsinline preload="metadata" poster="images/video/space-background-poster.jpg">
+      <source src="images/video/space-background.mp4" type="video/mp4" media="(min-width: 701px) and (prefers-reduced-motion: no-preference)" />
+    </video>
+  </div>
+
   <nav class="nav" id="nav">
+    <div class="nav__space-media" aria-hidden="true">
+      <video class="nav__space-video" autoplay muted loop playsinline preload="metadata" poster="images/video/space-band-poster.jpg">
+        <source src="images/video/space-band.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="nav__inner">
       <a href="index.html" class="nav__brand">
         <span class="nav__brand-mark" aria-hidden="true"></span>
@@ -39,7 +51,6 @@
   <main class="credits-page">
     <section class="credits-hero">
       <div class="container">
-        <p class="section-tag">Archive Attribution</p>
         <h1 class="credits-title">Credits</h1>
         <p class="credits-intro">The people behind Cybernetic Strategy!</p>
       </div>

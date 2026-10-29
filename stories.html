@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="64x64" href="images/brand/cybernetic-mark-cropped.png?v=6" />
-  <link rel="shortcut icon" type="image/png" href="images/brand/cybernetic-mark-cropped.png?v=6" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/brand/steam-icon.png?v=1" />
+  <link rel="shortcut icon" type="image/png" href="images/brand/steam-icon.png?v=1" />
+  <link rel="apple-touch-icon" href="images/brand/steam-icon.png?v=1" />
   <title>Stories - Cybernetic Strategy Universe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -19,7 +20,18 @@
     <div class="ambient__scanlines"></div>
   </div>
 
+  <div class="site-space-bg" aria-hidden="true">
+    <video class="site-space-bg__video" autoplay muted loop playsinline preload="metadata" poster="images/video/space-background-poster.jpg">
+      <source src="images/video/space-background.mp4" type="video/mp4" media="(min-width: 701px) and (prefers-reduced-motion: no-preference)" />
+    </video>
+  </div>
+
   <nav class="nav" id="nav">
+    <div class="nav__space-media" aria-hidden="true">
+      <video class="nav__space-video" autoplay muted loop playsinline preload="metadata" poster="images/video/space-band-poster.jpg">
+        <source src="images/video/space-band.mp4" type="video/mp4" />
+      </video>
+    </div>
     <div class="nav__inner">
       <a href="index.html" class="nav__brand">
         <span class="nav__brand-mark" aria-hidden="true"></span>
@@ -40,7 +52,6 @@
     <header class="lore-masthead">
       <div class="container lore-masthead__inner">
         <div class="lore-masthead__copy">
-          <p class="section-tag">Dominion Archive</p>
           <h1 class="lore-masthead__title">Stories</h1>
           <p class="lore-masthead__intro">Lives, conflicts, places, and alliances from a world where cybernetic spectacle meets old magic.</p>
           <div class="lore-stats" id="loreStats" aria-label="Archive totals"></div>
@@ -59,7 +70,6 @@
       <div class="container">
         <div class="lore-section-heading">
           <div>
-            <p class="section-tag">Archive Index</p>
             <h2 id="directoryTitle">Explore the records</h2>
           </div>
           <p id="storyResultCount" class="lore-result-count"></p>
@@ -99,7 +109,6 @@
       <div class="container">
         <div class="lore-section-heading">
           <div>
-            <p class="section-tag">World Index</p>
             <h2 id="worldIndexTitle">People and powers</h2>
           </div>
         </div>
@@ -130,7 +139,17 @@
   </footer>
 
   <aside class="story-reader" id="storyReader" aria-hidden="true">
+    <div class="story-reader__space-bg" aria-hidden="true">
+      <video class="story-reader__space-bg-video" muted loop playsinline preload="metadata" poster="images/video/space-background-poster.jpg">
+        <source src="images/video/space-background.mp4" type="video/mp4" media="(min-width: 701px) and (prefers-reduced-motion: no-preference)" />
+      </video>
+    </div>
     <div class="story-reader__bar">
+      <div class="story-reader__bar-media" aria-hidden="true">
+        <video class="story-reader__bar-video" muted loop playsinline preload="metadata" poster="images/video/space-band-poster.jpg">
+          <source src="images/video/space-band.mp4" type="video/mp4" />
+        </video>
+      </div>
       <button class="story-reader__back" id="storyReaderClose" type="button">Back to archive</button>
       <span class="story-reader__bar-title" id="storyReaderBarTitle"></span>
     </div>
