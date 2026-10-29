@@ -604,7 +604,6 @@
         <li><a href="units.html" class="nav__link nav__link--active">Units</a></li>
         <li><a href="traits.html" class="nav__link">Traits</a></li>
         <li><a href="stories.html" class="nav__link">Stories</a></li>
-        <li><a href="comps.html" class="nav__link">Comps</a></li>
         <li><a href="credits.html" class="nav__link">Credits</a></li>
       </ul>
     </div>
@@ -731,6 +730,15 @@
       stems.forEach(stem => paths.push(`./images/optimized/units/${stem}.webp`));
       stems.forEach(stem => exts.forEach(ext => paths.push(`./images/units/${stem}.${ext}`)));
       return uniqueList(paths);
+    }
+
+    function unitPortraitImageCandidates(unit) {
+      const portraitName = unit && unit.portraitImageName;
+      if (!portraitName) return unitCardImageCandidates(unit);
+      const exts = ["png", "PNG", "jpg", "jpeg", "webp"];
+      const paths = [`./images/optimized/units/${portraitName}.webp`];
+      exts.forEach(ext => paths.push(`./images/units/${portraitName}.${ext}`));
+      return uniqueList(paths.concat(unitCardImageCandidates(unit)));
     }
 
     function tryNextUnitCardImage(img) {
@@ -1045,7 +1053,7 @@
       if (!unit) return;
 
       const costColor = COST_COLORS_PAGE[unit.cost] || "#888";
-      const imageCandidates = unitCardImageCandidates(unit);
+      const imageCandidates = unitPortraitImageCandidates(unit);
       const imgPath = imageCandidates[0] || "";
       const mark = unitMark(unit);
 

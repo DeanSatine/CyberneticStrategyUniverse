@@ -1614,7 +1614,8 @@ window.CS_DATA = {
       "abilitySummary": "Summon 2 clones to the left and right of IronVeil, each with 40% of IronVeils max health. When a clone dies they explode, dealing 50% of hp armour and mr as damage. Cobaltine",
       "subtitle": "Fistfuls of Fury",
       "cardImageName": "IronVeilCard",
-      "iconImageName": "IronVeilIcon"
+      "iconImageName": "IronVeilIcon",
+      "portraitImageName": "IronVeilPortrait"
     },
     {
       "id": "cobaltine",

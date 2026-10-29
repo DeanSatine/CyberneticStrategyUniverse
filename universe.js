@@ -88,6 +88,15 @@
     return uniqueList(paths);
   }
 
+  function unitPortraitImageCandidates(unit) {
+    const portraitName = unit && unit.portraitImageName;
+    if (!portraitName) return unitCardImageCandidates(unit);
+    const exts = ['png', 'PNG', 'jpg', 'jpeg', 'webp'];
+    const paths = [`./images/optimized/units/${portraitName}.webp`];
+    exts.forEach(ext => paths.push(`./images/units/${portraitName}.${ext}`));
+    return uniqueList(paths.concat(unitCardImageCandidates(unit)));
+  }
+
   function unitImagePath(unit) {
     return unitCardImageCandidates(unit)[0] || '';
   }
@@ -136,14 +145,15 @@
 
   function unitPortraitHTML(unit, className = 'unit-card__portrait') {
     const color = costColor(unit.cost);
-    const imgPath = unitImagePath(unit);
+    const imageCandidates = unitPortraitImageCandidates(unit);
+    const imgPath = imageCandidates[0] || '';
     return `
       <div class="${className}" style="background:linear-gradient(160deg,${color}25,#06081099)" data-role="${escapeHtml(getRoleCat(unit.role))}">
         <div class="unit-card__bg"></div>
         <img class="unit-card__portrait-img" src="${imgPath}" alt="${escapeHtml(unit.name)}"
              loading="lazy" decoding="async"
              data-image-index="0"
-             data-image-candidates="${unitCardImageCandidates(unit).map(escapeHtml).join('|')}"
+             data-image-candidates="${imageCandidates.map(escapeHtml).join('|')}"
              onerror="window.tryNextUnitCardImage ? window.tryNextUnitCardImage(this) : (this.style.display='none')" />
         <span class="unit-card__portrait-mark" style="display:none">${escapeHtml(unitMark(unit))}</span>
         <div class="unit-card__overlay"></div>
