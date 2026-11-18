@@ -284,7 +284,7 @@ window.CS_DATA = {
       "yearsActive": "37",
       "currentResidence": "",
       "fullName": "Nori Eisaku",
-       "lore": "As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family’s fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins.",
+      "lore": "As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family’s fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins.",
       "stats": {
         "HP": "650/1150/2100",
         "Damage": "40/60/90",
@@ -2563,8 +2563,17 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#ffe477",
       "tagline": "Mentorship that upgrades ability timing.",
-      "description": "Builder and Mechanic-style partners gain stats and unlock stronger abilities when reunited.",
-      "tiers": [],
+      "description": "Student & Master gain stats, and a bonus when they are reunited!",
+      "tiers": [
+        {
+          "count": "1",
+          "effect": "25% Attack Speed"
+        },
+        {
+          "count": "2",
+          "effect": "AND Abilities gain a boost!"
+        }
+      ],
       "units": [
         "Acolyte",
         "Master Prime"
@@ -2576,8 +2585,25 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#a4b0ff",
       "tagline": "A rotating philosophy changes the game.",
-      "description": "Philosophers roll a different approach each game, scaling through Wealth, Fame, or Power before unlocking the meaning of existence.",
-      "tiers": [],
+      "description": "Philosophers contemplate the meaning of existence. Each game they contemplate the existence of Wealth, Fame or Power.\n\nWealth: Every 2 kills, Philosophers drop 1 gold. Philosophers gain AD and AP for every gold gained from Philosophers.\n\nFame: Philosophers gain health and attack speed. Gain 2% more for every round won. Lost rounds grant damage reduction.\n\nPower: Philosophers steal stats from their current target. On a kill or assist, double the stolen stats for 3 seconds and dash to the next target.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "Wealth: 2 AD/AP per gold · Fame: 40 HP, 3% AS, 1% DR per loss · Power: 8 Armor/MR, 8% AS"
+        },
+        {
+          "count": "4",
+          "effect": "Wealth: 5 AD/AP per gold · Fame: 70 HP, 6% AS, 2% DR per loss · Power: 18 Armor/MR, 18% AS"
+        },
+        {
+          "count": "6",
+          "effect": "Wealth: 8 AD/AP per gold · Fame: 100 HP, 12% AS, 3% DR per loss · Power: 30 Armor/MR, 28% AS"
+        },
+        {
+          "count": "8",
+          "effect": "Wealth: 11 AD/AP per gold · Fame: 130 HP, 15% AS, 5% DR per loss · Power: 40 Armor/MR, 35% AS"
+        }
+      ],
       "units": [
         "FrontPoint",
         "Acolyte",
@@ -2594,8 +2620,25 @@ window.CS_DATA = {
       "type": "class",
       "color": "#b58cff",
       "tagline": "Blinking reposition and Attack Damage growth.",
-      "description": "Phasers gain Attack Damage, blink to ideal hexes after attacks, and build bonus Attack Damage for the rest of combat.",
-      "tiers": [],
+      "description": "Phasers gain Attack Damage.\n\nEvery 8 attacks, Phasers blink to an ideal hex and gain bonus Attack Damage for the rest of combat.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "15 AD, 5 Bonus AD"
+        },
+        {
+          "count": "3",
+          "effect": "20 AD, 10 Bonus AD"
+        },
+        {
+          "count": "4",
+          "effect": "30 AD, 20 Bonus AD"
+        },
+        {
+          "count": "5",
+          "effect": "45 AD, 25 Bonus AD and 20 mana"
+        }
+      ],
       "units": [
         "Acolyte",
         "PinPoint",
@@ -2611,8 +2654,21 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#ff7df2",
       "tagline": "Power past safe limits.",
-      "description": "Overclocked units gain extreme stats and shields, with their final breakpoint turning them into slot-consuming powerhouses.",
-      "tiers": [],
+      "description": "Overlocked units gain immense strength and gain more for every one fielded.",
+      "tiers": [
+        {
+          "count": "1",
+          "effect": "Overclocked units gain 30% bonus health and grow to 110% size."
+        },
+        {
+          "count": "3",
+          "effect": "Overclocked units grow to 120% size, gain 20 AD & AP, and upon reaching 1% health gain a 500 health shield for 4 seconds."
+        },
+        {
+          "count": "4",
+          "effect": "Maximum Power! Overclocked units reach 165% size, take up 2 slots, gain 1000 HP, 20% damage reduction, and 20% damage amp."
+        }
+      ],
       "units": [
         "HookFlail",
         "Prime-78",
@@ -2626,8 +2682,21 @@ window.CS_DATA = {
       "type": "class",
       "color": "#66e6a2",
       "tagline": "Damage, healing, and comeback spikes.",
-      "description": "Hackers grant team healing while gaining Attack Damage and stronger healing after falling below the health threshold.",
-      "tiers": [],
+      "description": "Hackers grant your team Healing.\n\nHackers gain Attack Damage and more Healing. Increase bonus stats after dropping below 60% health.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "5% healing for team, 15 AD, 10% healing, 50% increase!"
+        },
+        {
+          "count": "4",
+          "effect": "8% healing for team, 25 AD, 15% healing for hackers, 100% increase!"
+        },
+        {
+          "count": "6",
+          "effect": "14% healing for team, 40 AD, 25% healing for hackers, 200% increase!"
+        }
+      ],
       "units": [
         "KNOX",
         "Kurōmushadō",
@@ -2644,8 +2713,25 @@ window.CS_DATA = {
       "type": "class",
       "color": "#b4f1ff",
       "tagline": "Ability Power and cast support.",
-      "description": "Technomancers gain Ability Power and grant AP to their nearest ally whenever they cast.",
-      "tiers": [],
+      "description": "Technomancers gain Ability Power. Their attacks grant Ability Power to the strongest Technomancer for the rest of combat.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "25 Ability Power. Attacks grant 1 Ability Power."
+        },
+        {
+          "count": "4",
+          "effect": "50 Ability Power. Attacks grant 2 Ability Power."
+        },
+        {
+          "count": "6",
+          "effect": "75 Ability Power. Attacks grant 3 Ability Power."
+        },
+        {
+          "count": "8",
+          "effect": "100 Ability Power. Attacks grant 5 Ability Power."
+        }
+      ],
       "units": [
         "Patch",
         "BurnByte",
@@ -2663,8 +2749,33 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#d7f76b",
       "tagline": "A summoned god-machine watches the field.",
-      "description": "Mechssiahs empower the team through the Mechssiah, who joins combat after the team loses enough health.",
-      "tiers": [],
+      "description": "Mechssiahs call the Mechssiah.\n\nThe Mechssiah grants your team stats based on the Mechssiahs fielded, Mechssiahs gain more stats! When your team loses 50% of their health the Mechssiah jumps into combat and gains 300% of all bonuses!",
+      "tiers": [
+        {
+          "count": "1",
+          "effect": "100% bonus"
+        },
+        {
+          "count": "2",
+          "effect": "120% bonus"
+        },
+        {
+          "count": "3",
+          "effect": "140% bonus"
+        },
+        {
+          "count": "4",
+          "effect": "160% bonus"
+        },
+        {
+          "count": "5",
+          "effect": "180% bonus"
+        },
+        {
+          "count": "6",
+          "effect": "200% bonus"
+        }
+      ],
       "units": [
         "SteelGuard",
         "BackSlash",
@@ -2680,8 +2791,21 @@ window.CS_DATA = {
       "type": "class",
       "color": "#ffa8e1",
       "tagline": "Bouncing attacks and abilities.",
-      "description": "Repeaters bounce attacks and abilities to nearby enemies for extra magic damage.",
-      "tiers": [],
+      "description": "Repeater’s attacks and abilities bounce to nearby enemies, dealing magic damage.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "1 bounce, 50 damage"
+        },
+        {
+          "count": "3",
+          "effect": "2 bounces, 60 damage"
+        },
+        {
+          "count": "4",
+          "effect": "3 bounces, 70 damage"
+        }
+      ],
       "units": [
         "LoadBearer",
         "AnchorFire",
@@ -2695,8 +2819,25 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#ffb86b",
       "tagline": "Contracts, risk, and delayed rewards.",
-      "description": "Bounty Hunters score contracts from takedowns and choose whether to cash out or extend for greater loot.",
-      "tiers": [],
+      "description": "Pay Bounty Hunters to fill out a contract. They gain points based on unit kills & assists, increased by the tier.\n\nEvery 4 rounds, choose to end the contract, or pay them to extend it. The first contract is free!\n\nBounty hunters gain ability power per contract",
+      "tiers": [
+        {
+          "count": "3",
+          "effect": "1x points, 4 round contract, 7 AP"
+        },
+        {
+          "count": "5",
+          "effect": "2x points, 5 round contract, 10 AP"
+        },
+        {
+          "count": "7",
+          "effect": "4x points, 7 round contract, 15 AP"
+        },
+        {
+          "count": "10",
+          "effect": "16x points, 10 round contract, 100 AP"
+        }
+      ],
       "units": [
         "SliceNode",
         "RuneWall",
@@ -2713,8 +2854,25 @@ window.CS_DATA = {
       "type": "class",
       "color": "#6ce6ff",
       "tagline": "A special hex that stacks team effects.",
-      "description": "PowerNode units summon a special hex with mana, damage amplification, healing, health, and defensive bonuses.",
-      "tiers": [],
+      "description": "PowerNode units summon a special hex on the board, the hex grants unique effects.\n\nPowerNode units benefit 30% more from the effects!",
+      "tiers": [
+        {
+          "count": "1",
+          "effect": "6% damage amp"
+        },
+        {
+          "count": "2",
+          "effect": "AND the unit dashes to new targets, gaining 5 AD/AP per dash"
+        },
+        {
+          "count": "3",
+          "effect": "AND 20% bonus health"
+        },
+        {
+          "count": "4",
+          "effect": "AND the unit revives at 75% health after dying once"
+        }
+      ],
       "units": [
         "BioSynth",
         "Arcanode",
@@ -2728,8 +2886,17 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#7bdcff",
       "tagline": "Tinkerers feeding Clank bolt by bolt.",
-      "description": "Workshop summons Clank and upgrades specific Workshop abilities as the trait grows.",
-      "tiers": [],
+      "description": "Workshop’s summon Clank.\n\nEvery turn, feed Clank bolts based on Workshop units' star levels, increasing Clank’s stats and capabilities.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "Summon Clank!"
+        },
+        {
+          "count": "3",
+          "effect": "Upgrade Workshop units' Abilities!"
+        }
+      ],
       "units": [
         "Patch",
         "AutoShot",
@@ -2742,8 +2909,25 @@ window.CS_DATA = {
       "type": "class",
       "color": "#5ee1ff",
       "tagline": "Attack speed converted into team tempo.",
-      "description": "Hyperdrives gain more attack speed from all sources, burst periodically, and share speed with nearby allies.",
-      "tiers": [],
+      "description": "Hyperdrives gain stacking attack speed on attack, up to 10 stacks.\n\nWhen they reach full stacks, melee units dash through their target towards the farthest enemy & ranged units dash into their current target and dash back, dealing 300% of their attack speed as magic damage.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "4% attack speed per stack"
+        },
+        {
+          "count": "4",
+          "effect": "8% attack speed per stack."
+        },
+        {
+          "count": "6",
+          "effect": "16% attack speed per stack"
+        },
+        {
+          "count": "8",
+          "effect": "32% attack speed per stack, deal 500% of their attack speed as magic damage"
+        }
+      ],
       "units": [
         "BackSlash",
         "AutoShot",
@@ -2761,8 +2945,29 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#71d8ff",
       "tagline": "Prompt-driven combat adaptation.",
-      "description": "Prompters gain stats from generated responses, then unlock mana reduction, shields, bombs, and a final nuke.",
-      "tiers": [],
+      "description": "Prompters prompt an AI every 5 seconds, gaining a buff when it generates a response. every robot prompters have grant 1% damage amp",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "10% max health shield"
+        },
+        {
+          "count": "4",
+          "effect": "AND robots stay on the sidelines, granting 2% attack speed to their prompter every second"
+        },
+        {
+          "count": "6",
+          "effect": "AND 10 AD & AP. reduce max mana by 5 to a minimum of 10"
+        },
+        {
+          "count": "8",
+          "effect": "AND send all robots towards the nearest enemy! Robots throw AI Generated Bombs that deal 100 magic damage."
+        },
+        {
+          "count": "10",
+          "effect": "AND Drop the AI Generated Nuke!"
+        }
+      ],
       "units": [
         "KNOX",
         "DreadLine",
@@ -2780,8 +2985,17 @@ window.CS_DATA = {
       "type": "class",
       "color": "#c47dff",
       "tagline": "AP theft redistributed to casters.",
-      "description": "Overloaders steal Ability Power whenever they cast and split it among allied magic units.",
-      "tiers": [],
+      "description": "Every time an Overloader casts, they steal AP from their target and split it amongst their team",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "10 AP steal"
+        },
+        {
+          "count": "4",
+          "effect": "20 AP steal"
+        }
+      ],
       "units": [
         "ShardFrame",
         "WidowFrame",
@@ -2796,8 +3010,25 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#f3c969",
       "tagline": "Blessed machines channeling the Mech Gods.",
-      "description": "GodCrafted units receive blessings after repeated attacks or hits, empowering themselves and calling meteor strikes.",
-      "tiers": [],
+      "description": "After attacking 8 times or being attacked 25 times, Godcrafted Units receive a blessing from the Mech Gods, empowering them for the rest of combat and dealing damage to all enemies.\n\nEvery 6 meteors dropped, call a meteor shower!",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "Grants 6% Damage Amp & Reduction. Deals 50 true damage to enemies."
+        },
+        {
+          "count": "4",
+          "effect": "Grants 7% Damage Amp & Reduction. Deals 65 true damage to enemies."
+        },
+        {
+          "count": "6",
+          "effect": "Grants 8% Damage Amp & Reduction. Deals 80 true damage to enemies."
+        },
+        {
+          "count": "9",
+          "effect": "Permanent Meteor Shower at 100% effectiveness! 20% Damage Amp & Reduction. Deals 500 true damage to enemies."
+        }
+      ],
       "units": [
         "Consume-OS",
         "LockCore",
@@ -2814,8 +3045,29 @@ window.CS_DATA = {
       "type": "class",
       "color": "#8fffd6",
       "tagline": "Sideline support that persists after death.",
-      "description": "Uplinks cheer the team every few seconds, healing allies and improving the healing once they leave the main fight.",
-      "tiers": [],
+      "description": "Uplinks cheer their team every 2 seconds and heal them for a percentage of their max health. When they die, they run to the sidelines and increase the healing.",
+      "tiers": [
+        {
+          "count": "1",
+          "effect": "1%, 2%"
+        },
+        {
+          "count": "2",
+          "effect": "3%, 4%"
+        },
+        {
+          "count": "3",
+          "effect": "5%, 7%"
+        },
+        {
+          "count": "4",
+          "effect": "7%, 9%"
+        },
+        {
+          "count": "5",
+          "effect": "9%, 12%"
+        }
+      ],
       "units": [
         "Hull",
         "BoltJaw",
@@ -2830,8 +3082,25 @@ window.CS_DATA = {
       "type": "class",
       "color": "#91a4bd",
       "tagline": "Health walls that pass protection onward.",
-      "description": "Bulkheads gain bonus health and transfer part of their max health to nearby allies when they die.",
-      "tiers": [],
+      "description": "Bulkheads gain bonus health.\n\nWhen a Bulkhead dies, grant 50 % of their max health to the nearest ally (prioritizing Bulkheads).",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "20% bonus HP"
+        },
+        {
+          "count": "4",
+          "effect": "35% bonus HP"
+        },
+        {
+          "count": "6",
+          "effect": "60% bonus HP"
+        },
+        {
+          "count": "8",
+          "effect": "100% bonus HP, explode on death, dealing 80% of Bulkheads max health as magic damage."
+        }
+      ],
       "units": [
         "SteelGuard",
         "Consume-OS",
@@ -2848,8 +3117,25 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#f08a4b",
       "tagline": "Armor-built bruisers that crash into clustered enemies.",
-      "description": "Clobbertrons gain armour and Attack Damage, leap on combat start, and trigger a clobbering frenzy at low health.",
-      "tiers": [],
+      "description": "Clobbertrons gain armour & Attack Damage and jump to their target on combat start, dealing 200% of their armour as physical damage.\n\nWhen they reach 50% health, they go on a clobbering frenzy, dealing 200% of their armour as physical damage in a 1 hex radius and doubling their bonus armour & Attack Damage for the rest of combat.",
+      "tiers": [
+        {
+          "count": "3",
+          "effect": "15 Armour, 20 AD"
+        },
+        {
+          "count": "5",
+          "effect": "25 Armour, 40 AD"
+        },
+        {
+          "count": "7",
+          "effect": "40 Armour, 60 AD"
+        },
+        {
+          "count": "9",
+          "effect": "60 Armour, 80 AD"
+        }
+      ],
       "units": [
         "LoadBearer",
         "Hull",
@@ -2867,8 +3153,25 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#ff5e5e",
       "tagline": "Missing-health pressure and execution windows.",
-      "description": "Eradicators gain attack speed as they lose health. Their hydraulic press executes enemies below the health threshold and rewards the team with more attack speed.",
-      "tiers": [],
+      "description": "Eradicators gain attack speed based on their missing health.\n\nSummon a hydraulic press on the board. When an enemy reaches below the health threshold, the press drops on them, executing them and granting Eradicators bonus attack speed",
+      "tiers": [
+        {
+          "count": "3",
+          "effect": "15-30% AS, 12% health execute. 5% AS bonus."
+        },
+        {
+          "count": "5",
+          "effect": "55% - 90% AS, 18% health execute. 8% AS bonus."
+        },
+        {
+          "count": "8",
+          "effect": "100% - 200% AS, 25% health execute. 11% AS bonus."
+        },
+        {
+          "count": "10",
+          "effect": "400% - 1000% AS, 50% health execute. 22% AS bonus."
+        }
+      ],
       "units": [
         "NeedleBot",
         "Overturn",
@@ -2886,8 +3189,29 @@ window.CS_DATA = {
       "type": "class",
       "color": "#d7dce8",
       "tagline": "Teamwide resistances with self-bonus.",
-      "description": "Unbreakables grant Armour and Magic Resist to the team, with a larger bonus for themselves.",
-      "tiers": [],
+      "description": "Unbreakables grant your team Armour & Magic Resist.\n\nThey grant themselves more.",
+      "tiers": [
+        {
+          "count": "1",
+          "effect": "5 Armour & MR, 15 for Unbreakables"
+        },
+        {
+          "count": "2",
+          "effect": "10 Armour & MR, 25 for Unbreakables"
+        },
+        {
+          "count": "3",
+          "effect": "20 Armour & MR, 50 for Unbreakables"
+        },
+        {
+          "count": "4",
+          "effect": "30 Armour & MR, 75 for Unbreakables"
+        },
+        {
+          "count": "5",
+          "effect": "40 Armour & MR, 100 for Unbreakables"
+        }
+      ],
       "units": [
         "Overturn",
         "Dr. Boost",
@@ -2903,8 +3227,29 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#51e58f",
       "tagline": "Bodies shrink, mutate, and surge back larger.",
-      "description": "Bioforge champions gain stacking stats over time, then grow massive and increase the total bonus.",
-      "tiers": [],
+      "description": "Every second all Bioforge champions shrink in size, gaining bonus stats. This effect stacks up to 15 times\n\nAfter reaching full stacks, Bioforge Champions grow massive and increase their total bonus stats!",
+      "tiers": [
+        {
+          "count": "3",
+          "effect": "20 HP, 3 AD/AP, 20% increase"
+        },
+        {
+          "count": "5",
+          "effect": "40 HP, 5 AD/AP, 40% increase"
+        },
+        {
+          "count": "7",
+          "effect": "70 HP, 7 AD/AP, 60% increase"
+        },
+        {
+          "count": "9",
+          "effect": "90 HP, 10 AD/AP, 80% increase"
+        },
+        {
+          "count": "10",
+          "effect": "160 HP, 24 AD/AP, 160% increase"
+        }
+      ],
       "units": [
         "FrontPoint",
         "Dr. Boost",
@@ -2922,8 +3267,29 @@ window.CS_DATA = {
       "type": "class",
       "color": "#89a7ff",
       "tagline": "Shielded reflection.",
-      "description": "Deflectors gain shields and reflect damage back to attackers while shielded.",
-      "tiers": [],
+      "description": "Deflectors gain a 4 second shield at the start of combat and every 8 seconds.\n\nWhen shielded by any source, deflectors reflect all instances of damage dealt to them back to the attacker.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "200 HP shield, 5% damage"
+        },
+        {
+          "count": "3",
+          "effect": "250 HP shield, 7% damage"
+        },
+        {
+          "count": "4",
+          "effect": "300 HP shield, 9% damage"
+        },
+        {
+          "count": "5",
+          "effect": "500 HP shield, 12% damage"
+        },
+        {
+          "count": "6",
+          "effect": "650 HP shield, 15% damage"
+        }
+      ],
       "units": [
         "Hull",
         "CommandCore",
@@ -2938,7 +3304,7 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#6cd0ff",
       "tagline": "Archive classification",
-      "description": "Overmind is a roster classification used in the Cybernetic Strategy universe.",
+      "description": "Coreweaver cannot move or auto attack. Generates mana per second (+1 for every 10% bonus attack speed).",
       "tiers": [],
       "units": [
         "Coreweaver"
@@ -2950,8 +3316,21 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#e86bff",
       "tagline": "Combined-frame transformation.",
-      "description": "Gundams share stats, then allow the strongest frame to absorb the others and become a massive combined unit.",
-      "tiers": [],
+      "description": "",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "Gundams share 30% of their HP, Attack Damage and Ability Power with each other."
+        },
+        {
+          "count": "3",
+          "effect": "At the start of combat, your strongest Gundam absorbs all other Gundams, becoming the Giga Gundam and growing massive. The Giga Gundam gains 100% of absorbed Gundams HP, Attack Damage & Ability Power & benefits from their active traits."
+        },
+        {
+          "count": "4",
+          "effect": "The Giga Gundam gains 120% of absorbed stats!"
+        }
+      ],
       "units": [
         "NovaBurst",
         "DashBlade",
@@ -2965,8 +3344,25 @@ window.CS_DATA = {
       "type": "class",
       "color": "#ff718b",
       "tagline": "Single-target ramping offense.",
-      "description": "Strikebytes gain damage amp and attack speed while attacking the same target, resetting when they switch targets.",
-      "tiers": [],
+      "description": "Strikebytes gain ramping Damage Amp and Attack Speed while attacking a target.\n\nReset when switching targets.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "1% - 10% Damage Amp, 3% - 25% AS"
+        },
+        {
+          "count": "3",
+          "effect": "3% - 20% Damage Amp, 5% - 35% AS"
+        },
+        {
+          "count": "4",
+          "effect": "5% - 30% Damage Amp, 7% - 40% AS"
+        },
+        {
+          "count": "5",
+          "effect": "7% - 40% Damage Amp, 9% - 50% AS"
+        }
+      ],
       "units": [
         "NeedleBot",
         "SplitShine",
@@ -2981,8 +3377,25 @@ window.CS_DATA = {
       "type": "class",
       "color": "#ffd36e",
       "tagline": "Timed double-shot bursts.",
-      "description": "Triggershots attack twice every few seconds or attacks, adding bonus damage to those strikes.",
-      "tiers": [],
+      "description": "Every 3 seconds or every 3 attacks in combat, Triggershots attack twice and those attacks deal bonus damage.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "+75% damage"
+        },
+        {
+          "count": "3",
+          "effect": "+100% damage"
+        },
+        {
+          "count": "4",
+          "effect": "+150% damage"
+        },
+        {
+          "count": "5",
+          "effect": "+200% damage"
+        }
+      ],
       "units": [
         "DreadLine",
         "FrontPoint",
@@ -2997,8 +3410,17 @@ window.CS_DATA = {
       "type": "class",
       "color": "#ffef70",
       "tagline": "Ramping damage amp and end-fight burst.",
-      "description": "Voltage units gain damage amp over time and surge when either side has fewer than three units remaining.",
-      "tiers": [],
+      "description": "Voltage units electrify their abilities, increasing their damage, even more when other voltage units die.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "20% increase, 7% per death"
+        },
+        {
+          "count": "4",
+          "effect": "32% increase, 8% per death"
+        }
+      ],
       "units": [
         "Tracercore",
         "SliceNode",
@@ -3013,7 +3435,7 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#8ee6cf",
       "tagline": "Unstable adaptive systems.",
-      "description": "Adaptier units change around the battlefield state and keep the archive open for future rules.",
+      "description": "When Placed, Exodium can choose to become a Bulkhead, Unbreakable, Deflector or Uplink.\n\nExodium gains a unique secondary effect to their ability based on the Class chosen.",
       "tiers": [],
       "units": [
         "Exodium"
@@ -3025,7 +3447,7 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#6cd0ff",
       "tagline": "Supplemental archive entry",
-      "description": "Worlds Strongest is linked to units in the roster archive.",
+      "description": "GraveMarch becomes an Attack Tank when placed in the front row, or an Attack Fighter when placed in any other row, with their own unique abilities",
       "tiers": [],
       "units": [
         "GraveMarch"
@@ -3037,7 +3459,7 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#6cd0ff",
       "tagline": "Supplemental archive entry",
-      "description": "Kings Call is linked to units in the roster archive.",
+      "description": "Haymaker spawns a loyal servant with 300 health, 15 attack damage, and 0.4 attack speed, plus 25% of Haymaker's stats.\n\nThe servant permanently gains 1 AD, 1% attack speed, and 1 HP for every 5 units that die. If Haymaker dies while the servant is alive, it sacrifices itself to revive Haymaker with its remaining health.",
       "tiers": [],
       "units": [
         "Haymaker"
@@ -3049,8 +3471,29 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#8d67ff",
       "tagline": "Cloaked assassins and shadow clones.",
-      "description": "Shadow Force units blink to safer hexes, summon clones, and gain permanent attack speed and max health from the strike.",
-      "tiers": [],
+      "description": "Every 4 seconds, ShadowForce units become cloaked in shadows, blinking to a safe hex and summoning ninjas around their target.\n\nThe clones then attack, granting Shadow Force units attack speed & max health for the rest of combat.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "3 clones, 35 magic damage, 4% AS and 20 HP per clone"
+        },
+        {
+          "count": "4",
+          "effect": "4 clones, 45 magic damage, 6% AS and 25 HP per clone"
+        },
+        {
+          "count": "6",
+          "effect": "6 clones, 60 magic damage, 8% AS and 30 HP per clone"
+        },
+        {
+          "count": "9",
+          "effect": "10 clones, 80 magic damage, 10% AS and 45 HP per clone"
+        },
+        {
+          "count": "10",
+          "effect": "Awaken the ancient shadow technique!"
+        }
+      ],
       "units": [
         "Tracercore",
         "SteelShade",
@@ -3068,7 +3511,7 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#c7a274",
       "tagline": "Summoned goons and underworld pressure.",
-      "description": "Big Gear Tony support units fight around a central boss unit and create a wider board presence.",
+      "description": "IronDon summons 2 placeable Goon units.\n\nEvery 3rd attack from IronDon causes the Goons to shoot at the target, dealing physical damage. Goons die when IronDon dies.",
       "tiers": [],
       "units": [
         "IronDon & Goons"
@@ -3080,8 +3523,21 @@ window.CS_DATA = {
       "type": "class",
       "color": "#b0b7c5",
       "tagline": "Damage reduction and recovery.",
-      "description": "Alloyed units gain damage reduction and begin healing when they fall below the health threshold.",
-      "tiers": [],
+      "description": "Alloyed Units gain Damage Reduction.\n\nUpon reaching below 50% health, Heal every second.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "10% DR, 50 HP heal"
+        },
+        {
+          "count": "4",
+          "effect": "15% DR, 75 HP heal"
+        },
+        {
+          "count": "6",
+          "effect": "25% DR, 100 HP heal, trigger at below 75% health"
+        }
+      ],
       "units": [
         "SteelShade",
         "RocketBott",
@@ -3097,8 +3553,25 @@ window.CS_DATA = {
       "type": "class",
       "color": "#9bf2c7",
       "tagline": "Mana pulse support.",
-      "description": "Channelers grant team mana every two seconds while alive and receive bonus mana themselves.",
-      "tiers": [],
+      "description": "Channelers gain mana every 2 seconds and funnel a portion of all mana they generate to the closest allied unit.",
+      "tiers": [
+        {
+          "count": "1",
+          "effect": "3 mana, 20% share"
+        },
+        {
+          "count": "2",
+          "effect": "5 mana, 30% share"
+        },
+        {
+          "count": "3",
+          "effect": "6 mana, 40% share"
+        },
+        {
+          "count": "4",
+          "effect": "8 mana, 50% share"
+        }
+      ],
       "units": [
         "LockCore",
         "RuneWall",
@@ -3114,7 +3587,7 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#6cd0ff",
       "tagline": "Archive classification",
-      "description": "H.U.N.G.E.R is a roster classification used in the Cybernetic Strategy universe.",
+      "description": "When any unit dies, MUNCH-R has a 25% chance to roll to them and eat the target, granting MUNCH-R permanent health.\n\nChance: 25% + 1% for every 100 bonus health",
       "tiers": [],
       "units": [
         "MUNCH-R"
@@ -3138,7 +3611,7 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#6cd0ff",
       "tagline": "Supplemental archive entry",
-      "description": "Gambling is linked to units in the roster archive.",
+      "description": "On ability cast, roll a dice and gain a secondary effect to RNGine’s ability based on the number rolled!\n\n2 - Each card deals an additional 1%/2%/10% of the target’s max % hp.\n\n3 - Shield all allies for 15% of AD for 4 seconds.\n\n4 - Each Card bounces on top of their target 4 additional times dealing 20% current AD as damage.\n\n5 - Each Card grants 1 AD for the rest of combat.\n\n6 - Cards reduce armour and magic resist by 3%/4%/100% for 5 seconds\n\n7 - Lower all enemies' armour and magic resist by 10% for the rest of combat.\n\n8 - Permanently grant your team +2% max health.\n\n9 - Cards ricochet to all enemies and return to RNGine, stealing 1% attack speed per card from each enemy.\n\n10 - Cards stick into enemies instead, dealing 150% of AD as damage over the next 5 seconds.\n\n11 - Every 3rd card knocks up the target.\n\n12 - Cast again immediately!",
       "tiers": [],
       "units": [
         "RNGine"
@@ -3150,8 +3623,21 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#78a8ff",
       "tagline": "Battleship support from above.",
-      "description": "Orbital summons the Battleship, granting damage reduction and firing missiles based on active traits.",
-      "tiers": [],
+      "description": "Summon The Battleship. The Battleship grants your team damage reduction and shoots missiles every 4 seconds in an area for every trait you have active.",
+      "tiers": [
+        {
+          "count": "2",
+          "effect": "1% DR, 1 missile per active trait - missiles deal 75 magic damage."
+        },
+        {
+          "count": "3",
+          "effect": "2% DR, 2 missiles per active trait - missiles deal 130 magic damage. Gain an Orbital unit every round."
+        },
+        {
+          "count": "4",
+          "effect": "3% DR, 2 missiles per active trait - missiles deal 200 magic damage. Gain an Orbital unit every round."
+        }
+      ],
       "units": [
         "RocketBott",
         "StarStruck",
@@ -3165,7 +3651,7 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#6cd0ff",
       "tagline": "Supplemental archive entry",
-      "description": "All-Wise is linked to units in the roster archive.",
+      "description": "SocraTech summons 2 placeable Thinking Statues that have a special effect based on the Philosopher path.",
       "tiers": [],
       "units": [
         "SocraTech"
@@ -3177,7 +3663,7 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#6cd0ff",
       "tagline": "Supplemental archive entry",
-      "description": "Boogie Wonderland is linked to units in the roster archive.",
+      "description": "Every 5th cast, SoulSync turns the battlefield into a dance floor, causing all allies & enemies to uncontrollably dance for 5 seconds.",
       "tiers": [],
       "units": [
         "SoulSync"
@@ -3189,7 +3675,7 @@ window.CS_DATA = {
       "type": "origin",
       "color": "#b06cff",
       "tagline": "Marked targets, uppercuts, and endless duel pressure.",
-      "description": "On combat start, Stylet marks every enemy. The first attack on a marked enemy uppercuts them and deals physical damage. If only one enemy remains, Stylet repeatedly dashes through them until they die.",
+      "description": "On combat start, Mark all enemies. The first time Stylet attacks a marked enemy, uppercut them, knocking them up and dealing physical damage.\n\nIf only 1 enemy is left, dash through them infinitely until they die",
       "tiers": [],
       "units": [
         "Stylet"
@@ -3682,8 +4168,8 @@ window.CS_DATA = {
       "category": "Riang",
       "unit": "FrontPoint",
       "color": "#6cd0ff",
-       "excerpt": "As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family...",
-       "content": "As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family’s fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins."
+      "excerpt": "As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family...",
+      "content": "As a child, he lost his family and his arms in a tragic forest fire. The only thing he has left of his family is the Eisaku Blade, an ancient glaive passed down for generations, dating back to before the war. Wanting to keep his family’s fighting spirit alive, he acquired prosthetics and became a vigilante, busting illegal smugglers and dangerous assassins."
     },
     {
       "id": "unit-consume-os",

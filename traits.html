@@ -191,6 +191,8 @@
     }
     .trait-detail__tagline,
     .trait-detail__desc { font-style: normal; }
+    .trait-detail__desc p + p { margin-top: 1.2rem; }
+    .trait-detail__desc { border-left: 0; padding-left: 0; }
     .trait-detail__hero-bg { opacity: 0.025; }
     .trait-unit-card__portrait {
       background: #080b14 !important;
@@ -282,19 +284,30 @@
       return source.slice(0, 2).toUpperCase();
     }
     function traitMark(traitName) { return getInitialMark(traitName, "TR"); }
-    function cleanTraitDescription(description) {
-      let text = String(description || '').trim();
+    function escapeTraitText(value) {
+      return String(value ?? '').replace(/[&<>"']/g, ch => (
+        { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]
+      ));
+    }
+    // In-game tooltip text, shown as written: blank lines split paragraphs.
+    function traitDescriptionHTML(description) {
+      const text = String(description || '').trim();
       if (!text) return '';
-      text = text
-        .replace(/\b(?:final|next|each|every)\s+breakpoints?\b/gi, '')
-        .replace(/\bbreakpoints?\b/gi, '')
-        .replace(/\b\d+(?:\.\d+)?(?:\s*\/\s*\d+(?:\.\d+)?)+\s*%?/g, '')
-        .replace(/\b\d+(?:\.\d+)?\s*%?/g, '')
-        .replace(/\s*\([^)]*\)/g, '')
-        .replace(/\s{2,}/g, ' ')
-        .replace(/\s+([,.])/g, '$1')
-        .trim();
-      return text;
+      return text.split(/\n\s*\n/).map(p => `<p>${escapeTraitText(p).replace(/\n/g, '<br>')}</p>`).join('');
+    }
+    function traitTiersHTML(trait) {
+      const tiers = Array.isArray(trait.tiers) ? trait.tiers : [];
+      if (!tiers.length) return '';
+      return `
+        <p class="trait-detail__section-label">Breakpoints</p>
+        <div class="trait-detail__tiers">
+          ${tiers.map(tier => `
+            <div class="trait-detail__tier">
+              <span class="trait-detail__tier-num" style="color:${trait.color}">${escapeTraitText(tier.count)}</span>
+              <span class="trait-detail__tier-effect">${escapeTraitText(tier.effect)}</span>
+            </div>
+          `).join('')}
+        </div>`;
     }
     function traitIconHTML(traitName, className) {
       const safeName = imageSafeName(traitName);
@@ -442,13 +455,14 @@
                   ${trait.type === "origin" ? "Origin" : "Class"}
                 </span>
                 <h2 class="trait-detail__name">${trait.name}</h2>
-                <p class="trait-detail__tagline">${cleanTraitDescription(trait.description)}</p>
               </div>
             </div>
           </div>
         </div>
         <div class="trait-detail__body" style="--current-trait-color:${trait.color}">
-          <blockquote class="trait-detail__desc">${cleanTraitDescription(trait.description)}</blockquote>
+          ${trait.description ? `<blockquote class="trait-detail__desc">${traitDescriptionHTML(trait.description)}</blockquote>` : ''}
+
+          ${traitTiersHTML(trait)}
 
           ${traitUnits.length > 0 ? `
             <p class="trait-detail__section-label">

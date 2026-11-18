@@ -239,6 +239,14 @@
     renderSpotlight(current + Number(step || 0));
   }
 
+  // First paragraph of the in-game trait description (falls back to the first breakpoint).
+  function traitCardSummary(trait) {
+    const firstParagraph = String(trait.description || '').trim().split(/\n\s*\n/)[0].trim();
+    if (firstParagraph) return firstParagraph;
+    const firstTier = Array.isArray(trait.tiers) && trait.tiers[0];
+    return firstTier ? firstTier.effect : (trait.tagline || '');
+  }
+
   function renderTraitGrid(filter = 'all') {
     const grid = document.getElementById('traitsGrid');
     if (!grid) return;
@@ -248,7 +256,7 @@
         <div class="trait-card__icon">${traitIconMarkup(trait, 'trait-card__icon-image')}</div>
         <div class="trait-card__type" style="color:${escapeHtml(trait.color || '#45d8ff')}">${escapeHtml(trait.type || 'trait')}</div>
         <h3 class="trait-card__name">${escapeHtml(trait.name)}</h3>
-        <p class="trait-card__tagline">${escapeHtml(trait.tagline || '')}</p>
+        <p class="trait-card__tagline">${escapeHtml(traitCardSummary(trait))}</p>
       </article>
     `).join('') || '<p class="section-desc">Trait data was not found.</p>';
   }

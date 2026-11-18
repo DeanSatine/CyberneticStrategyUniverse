@@ -1200,6 +1200,7 @@ img { display: block; max-width: 100%; }
   color: var(--text-mid);
   font-style: italic;
   line-height: 1.8;
+  white-space: pre-line;
   margin-bottom: 2.5rem;
 }
 .modal__tiers { margin-bottom: 2.5rem; }
